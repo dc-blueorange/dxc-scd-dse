@@ -69,11 +69,11 @@ def print_report(results):
     for result in results:
         writer.writerow([result["database"], result["table"], result["column"], result["file"]])
 
-    def print_markdown_report(results):
-        print("| Database | Table | Column | File |")
-        print("| --- | --- | --- | --- |")
-        for result in results:
-            print(f"| {result['database']} | {result['table']} | {result['column']} | {result['file']} |")
+def print_markdown_report(results):
+    print("| Database | Table | Column | File |")
+    print("| --- | --- | --- | --- |")
+    for result in results:
+        print(f"| {result['database']} | {result['table']} | {result['column']} | {result['file']} |")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scan SQL files and report database table info")
