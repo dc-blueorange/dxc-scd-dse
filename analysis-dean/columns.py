@@ -39,13 +39,13 @@ def scan_sql_file(filepath, mode):
         pattern = None
         if mode == 'dentists':
             # Matching column names: NPI, dentist, hygienist, or provider.
-            pattern = r'\b(?:NPI|dentist|hygienist|provider)\b'
+            pattern = r'(?:NPI|dentist|hygienist|provider)'
         elif mode == 'networks':
             # Matching column names: provider, network provider, dental network provider, network, or dental network.
-            pattern = r'\b(?:dental network provider|network provider|dental network|provider|network)\b'
+            pattern = r'(?:dental network provider|network provider|dental network|provider|network)'
         elif mode == 'dsos':
             # Matching column names: dso, dental service organization, service org, dental support organization, support organization, support org, service, or support.
-            pattern = r'\b(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)\b'
+            pattern = r'(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)'
         if pattern and re.search(pattern, columns_section, flags=re.IGNORECASE):
             match_found = re.search(pattern, columns_section, flags=re.IGNORECASE).group(0)
             logger.warning(f"Found table: {table_name} with match: {match_found}")
