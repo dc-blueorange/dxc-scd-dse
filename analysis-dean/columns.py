@@ -75,10 +75,17 @@ def print_report(results, header):
     for result in results:
         writer.writerow([result["database"], result["table"], result["match"], result["file"]])
 
+def print_json_report(results, header):
+    import json
+    print(header)
+    print(json.dumps(results, indent=4))
+
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scan SQL files and report columns based on mode")
     parser.add_argument('--dentists', action='store_true', help="Scan for dentists columns")
     parser.add_argument('--networks', action='store_true', help="Scan for networks columns")
+    parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related columns")
+    parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related columns")
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
     args = parser.parse_args()
