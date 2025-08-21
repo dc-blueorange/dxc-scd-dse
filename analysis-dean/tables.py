@@ -87,7 +87,7 @@ if __name__ == "__main__":
     parser.add_argument('--networks', action='store_true', help="Scan for networks table names")
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related table names")
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
-    parser.add_argument('path', nargs='+', help="Path(s) to directories and/or SQL file paths to process")
+    parser.add_argument('path', nargs='*', default=[], help="Path(s) to directories and/or SQL file paths to process")
     args = parser.parse_args()
     modes = []
     if args.dentists:
@@ -98,7 +98,10 @@ if __name__ == "__main__":
         modes.append('dsos')
     if not modes:
         parser.error("No mode selected. Use at least one of --dentists, --networks, or --dsos.")
-    paths = args.path
+    if not args.path:
+        paths = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
+    else:
+        paths = args.path
     for mode in modes:
         results = []
         for path in paths:
