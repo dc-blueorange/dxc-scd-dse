@@ -9,7 +9,7 @@ It supports multiple modes via commandline flags:
 """
 import logging
 import os
-import regex
+import re
 import argparse
 import csv
 import sys
@@ -27,12 +27,12 @@ def scan_sql_file(filepath, mode):
         print(f"Error reading {filepath}: {e}")
         return results
 
-    db_match = regex.search(r"USE\s+\[(\w+)\]", content, flags=regex.IGNORECASE | regex.DOTALL | regex.MULTILINE)
+    db_match = re.search(r"USE\s+\[(\w+)\]", content, flags=re.IGNORECASE | re.DOTALL | re.MULTILINE)
     database = db_match.group(1) if db_match else "Unknown"
     logger.warning(f"Database determined: {database} file={filepath}")
 
-    table_regex = regex.compile(r"CREATE\s+\S+\s+[`']?(\S+)[`']?\s*\((.*?)\)\s*GO", 
-                             regex.IGNORECASE | regex.DOTALL | regex.MULTILINE)
+    table_regex = re.compile(r"CREATE\s+\S+\s+[`']?(\S+)[`']?\s*\((.*?)\)\s*GO", 
+                             re.IGNORECASE | re.DOTALL | re.MULTILINE)
     for table_match in table_regex.finditer(content):
         table_name = table_match.group(1)
         print ('table', table_name)
