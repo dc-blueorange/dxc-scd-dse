@@ -80,6 +80,7 @@ if __name__ == "__main__":
     parser.add_argument('--dentists', action='store_true', help="Scan for dentists columns")
     parser.add_argument('--networks', action='store_true', help="Scan for networks columns")
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related columns")
+    parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
     args = parser.parse_args()
     modes = []
     if args.dentists:
@@ -94,4 +95,7 @@ if __name__ == "__main__":
     for mode in modes:
         results = scan_directories(directories, mode)
         header = f"--- Report for {mode.capitalize()} Mode ---"
-        print_report(results, header)
+        if args.json:
+            print_json_report(results, header)
+        else:
+            print_report(results, header)
