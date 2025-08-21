@@ -38,23 +38,11 @@ def scan_sql_file(filepath):
     for table_match in table_regex.finditer(content):
         table_name = table_match.group(1)
         logger.warning(f"Found table: {table_name}")
-        columns_section = table_match.group(2)
-        logger.warning(f"Found columns: {columns_section}")
-        # Split columns by newlines, and try to extract column definitions line by line
-        for line in columns_section.splitlines():
-            line = line.strip()
-            if not line:
-                continue
-            col_name_match = re.match(r"[`']?(\w+)[`']?\s", line, re.IGNORECASE)
-            if col_name_match and re.search(r"npi", col_name_match.group(1), re.IGNORECASE):
-                logger.debug(f"Found column with NPI: {col_name_match.group(1)} in table: {table_name}")
-                results.append({
-                    'database': database,
-                    'table': table_name,
-                    'column': col_name_match.group(1),
-                    'file': filepath
-                })
-    exit()
+        results.append({
+            'database': database,
+            'table': table_name,
+            'file': filepath
+        })
     return results
 
 def scan_directories(directories):
@@ -70,11 +58,11 @@ def scan_directories(directories):
 
 def print_report(results):
     if not results:
-        print("No columns with 'NPI' found in the provided SQL files.")
+        print("No databases or tables found in the provided SQL files.")
     else:
-        print("Found the following NPI columns:")
+        print("Found the following databases and tables:")
         for result in results:
-            print(f"Database: {result['database']}, Table: {result['table']}, Column: {result['column']} (File: {result['file']})")
+            print(f"Database: {result['database']}, Table: {result['table']} (File: {result['file']})")
 
 if __name__ == "__main__":
     directories = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
