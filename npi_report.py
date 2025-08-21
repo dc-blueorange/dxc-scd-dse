@@ -64,7 +64,7 @@ def scan_directories(directories):
 def print_report(results):
     import csv, sys
     writer = csv.writer(sys.stdout)
-    writer.writerow(["database", "table", "column", "file"])
+    writer.writerow(["Database", "Table", "Column", "File"])
     for result in results:
         writer.writerow([result["database"], result["table"], result["column"], result["file"]])
 
