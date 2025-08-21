@@ -31,8 +31,7 @@ def scan_sql_file(filepath, mode):
     database = db_match.group(1) if db_match else "Unknown"
     logger.warning(f"Database determined: {database} file={filepath}")
 
-    table_regex = re.compile(r"CREATE\s+\S+\s+[`']?(\S+)[`']?\s*\((.*)\)\s*GO", 
-                             re.IGNORECASE | re.DOTALL | re.MULTILINE)
+    table_regex = re.compile(r'CREATE\s+\S+\s+[`\']?(\S+)[`\']?\s*\((.*?)\)\s*GO', re.IGNORECASE | re.DOTALL | re.MULTILINE)
     for table_match in table_regex.finditer(content):
         table_name = table_match.group(1)
         columns_section = table_match.group(2)
@@ -57,15 +56,21 @@ def scan_sql_file(filepath, mode):
             })
     return results
 
-def scan_directories(directories, mode):
+def scan_directories(paths, mode):
     all_results = []
-    for directory in directories:
-        for root, dirs, files in os.walk(directory):
-            for file in files:
-                if file.lower().endswith('.sql'):
-                    full_path = os.path.join(root, file)
-                    file_results = scan_sql_file(full_path, mode)
-                    all_results.extend(file_results)
+    for path in paths:
+        if os.path.isfile(path):
+            file_results = scan_sql_file(path, mode)
+            all_results.extend(file_results)
+        elif os.path.isdir(path):
+            for root, dirs, files in os.walk(path):
+                for file in files:
+                    if file.lower().endswith('.sql'):
+                        full_path = os.path.join(root, file)
+                        file_results = scan_sql_file(full_path, mode)
+                        all_results.extend(file_results)
+        else:
+            logger.error(f"Path {path} is neither a file nor a directory")
     return all_results
 
 def print_report(results, header):
@@ -77,7 +82,7 @@ def print_report(results, header):
 
 def print_json_report(results, header):
     import json
-    print(header)
+    if header: print(header)
     print(json.dumps(results, indent=4))
 
 if __name__ == "__main__":
@@ -86,6 +91,7 @@ if __name__ == "__main__":
     parser.add_argument('--networks', action='store_true', help="Scan for networks columns")
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related columns")
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
+    parser.add_argument('paths', nargs='*', help="Directories and/or SQL file paths to process")
     args = parser.parse_args()
     modes = []
     if args.dentists:
@@ -96,11 +102,15 @@ if __name__ == "__main__":
         modes.append('dsos')
     if not modes:
         parser.error("No mode selected. Use at least one of --dentists, --networks, or --dsos.")
-    directories = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
+    if args.paths:
+        paths = args.paths
+    else:
+        paths = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
     for mode in modes:
-        results = scan_directories(directories, mode)
-        header = f"--- Report for {mode.capitalize()} Mode ---"
+        results = scan_directories(paths, mode)
         if args.json:
+            header = ''
             print_json_report(results, header)
         else:
+            header = f"--- Report for {mode.capitalize()} Mode ---"
             print_report(results, header)

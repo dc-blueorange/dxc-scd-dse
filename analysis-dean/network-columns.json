@@ -1,0 +1,98 @@
+[
+    {
+        "database": "rpt",
+        "table": "[dbo].[SSISDeliveryDays]",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/rpt.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "[dbo].[Credential]",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "master",
+        "table": "[dbo].[udfCMNGroupLISTHierarchyMembers]",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "[dbo].[BillingActivity]",
+        "match": "Provider",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "[dbo].[Aetna_xml]",
+        "match": "Provider",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[Groups]",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[RTServiceAudit]",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[OfficeResponse]",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[SubCategory]",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "chs",
+        "table": "[dbo].[PartnerPartnerCode]",
+        "match": "Provider",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "pfs",
+        "table": "[dbo].[BillingActivity]",
+        "match": "Provider",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[DssNetRev_Current]",
+        "match": "Network",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[DssSalesCommission]",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[acctAllDeclines]",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "ptp",
+        "table": "[dbo].[BillingInfo]",
+        "match": "Provider",
+        "file": "Livesql3/ptp.sql"
+    },
+    {
+        "database": "dxcps",
+        "table": "[dbo].[Account_Type_T]",
+        "match": "Network",
+        "file": "Livesql3/dxcps.sql"
+    }
+]

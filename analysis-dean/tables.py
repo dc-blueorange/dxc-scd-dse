@@ -31,8 +31,7 @@ def scan_sql_file(filepath, mode):
     database = db_match.group(1) if db_match else "Unknown"
     logger.warning(f"Database determined: {database} file={filepath}")
 
-    table_regex = re.compile(r"CREATE\s+\S+\s+[`']?(\S+)[`']?\s*\((.*)\)\s*GO", 
-                             re.IGNORECASE | re.DOTALL | re.MULTILINE)
+    table_regex = re.compile(r'CREATE\s+\S+\s+[`\']?(\S+).*?GO', re.IGNORECASE | re.DOTALL | re.MULTILINE)
     for table_match in table_regex.finditer(content):
         table_name = table_match.group(1)
         # Instead of searching columns_section, search table_name for pattern matches.
@@ -46,7 +45,7 @@ def scan_sql_file(filepath, mode):
         if pattern:
             tables_regex = re.compile(pattern, flags=re.IGNORECASE | re.DOTALL | re.MULTILINE)
             for match_found in tables_regex.finditer(table_name):
-                match = match_found.group(1)
+                match = match_found.group(0)
                 logger.warning(f"Found table (matched table name filter): {table_name} with match: {match}")
                 results.append({
                     'database': database,
@@ -86,7 +85,7 @@ if __name__ == "__main__":
     parser.add_argument('--networks', action='store_true', help="Scan for networks table names")
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related table names")
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
-    parser.add_argument('paths', nargs='+', help="List of directories and/or SQL file paths to process")
+    parser.add_argument('path', nargs='*', help="Path(s) to directories and/or SQL file paths to process")
     args = parser.parse_args()
     modes = []
     if args.dentists:
@@ -97,7 +96,9 @@ if __name__ == "__main__":
         modes.append('dsos')
     if not modes:
         parser.error("No mode selected. Use at least one of --dentists, --networks, or --dsos.")
-    paths = args.paths
+    paths = args.path
+    if not paths:
+        paths = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
     for mode in modes:
         results = []
         for path in paths:

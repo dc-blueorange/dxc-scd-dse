@@ -1,0 +1,170 @@
+[
+    {
+        "database": "rpt",
+        "table": "[dbo].[SSISDeliveryDays]",
+        "match": "Support",
+        "file": "DTT-ANA-PRD/rpt.sql"
+    },
+    {
+        "database": "master",
+        "table": "[dbo].[udfCMNGroupLISTHierarchyMembers]",
+        "match": "Service",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "erp",
+        "table": "[dbo].[ClientGLEntrySummary]",
+        "match": "Support",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "sch",
+        "table": "[dbo].[ProcedureSchedules]",
+        "match": "Support",
+        "file": "DTT-TRX-PRD/sch.sql"
+    },
+    {
+        "database": "schDev",
+        "table": "[dbo].[ProcedureSchedules]",
+        "match": "Support",
+        "file": "DTT-TRX-PRD/schDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "[dbo].[ClientGLEntrySummary]",
+        "match": "Support",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "entyDev",
+        "table": "[dbo].[Entities]",
+        "match": "Support",
+        "file": "DTT-TRX-PRD/entyDev.sql"
+    },
+    {
+        "database": "merchant",
+        "table": "[dbo].[AccountToken]",
+        "match": "Service",
+        "file": "Livesql3/merchant.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "[dbo].[BillingActivity]",
+        "match": "Support",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "[dbo].[Aetna_xml]",
+        "match": "Service",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[Groups]",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[RTServiceAudit]",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[SAServiceAudit]",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[OfficeResponse]",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[SubCategory]",
+        "match": "Support",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "chs",
+        "table": "[dbo].[PartnerPartnerCode]",
+        "match": "Service",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "pfs",
+        "table": "[dbo].[BillingActivity]",
+        "match": "Support",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[DssNetRev_Current]",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[DssSalesCommission]",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[DssCommissionEarnedPointsDetail]",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[acctAllDeclines]",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[arc_Attachment_AttachmentID_Delete_List]",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "ptp",
+        "table": "[dbo].[BillingInfo]",
+        "match": "Service",
+        "file": "Livesql3/ptp.sql"
+    },
+    {
+        "database": "dxcps",
+        "table": "[dbo].[Register_T]",
+        "match": "Support",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "database": "dxcps",
+        "table": "[dbo].[Payment_Type_Flag_T]",
+        "match": "Support",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "database": "dxcps",
+        "table": "[dbo].[Customer_T]",
+        "match": "Service",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "database": "dxcps",
+        "table": "[dbo].[Account_Type_T]",
+        "match": "dSo",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "[dbo].[Association]",
+        "match": "Service",
+        "file": "Livesql3/ddir.sql"
+    }
+]
