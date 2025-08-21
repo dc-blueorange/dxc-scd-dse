@@ -77,7 +77,7 @@ def print_markdown_report(results):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scan SQL files and report database table info")
-    parser.add_argument('--markdown', action='store_true', help="Output in markdown format")
+    parser.add_argument('-md', '--markdown', action='store_true', help="Output in markdown format")
     args = parser.parse_args()
     directories = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
     results = scan_directories(directories)
