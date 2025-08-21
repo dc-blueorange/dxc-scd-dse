@@ -86,6 +86,7 @@ if __name__ == "__main__":
     parser.add_argument('--networks', action='store_true', help="Scan for networks table names")
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related table names")
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
+    parser.add_argument('paths', nargs='+', help="List of directories and/or SQL file paths to process")
     args = parser.parse_args()
     modes = []
     if args.dentists:
@@ -96,9 +97,16 @@ if __name__ == "__main__":
         modes.append('dsos')
     if not modes:
         parser.error("No mode selected. Use at least one of --dentists, --networks, or --dsos.")
-    directories = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
+    paths = args.paths
     for mode in modes:
-        results = scan_directories(directories, mode)
+        results = []
+        for path in paths:
+            if os.path.isfile(path) and path.lower().endswith('.sql'):
+                results.extend(scan_sql_file(path, mode))
+            elif os.path.isdir(path):
+                results.extend(scan_directories([path], mode))
+            else:
+                print(f"Path {path} is not a valid directory or SQL file.")
         header = f"--- Report for {mode.capitalize()} Table Name Mode ---"
         if args.json:
             print_json_report(results, header)
