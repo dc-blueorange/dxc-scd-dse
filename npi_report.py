@@ -37,12 +37,15 @@ def scan_sql_file(filepath):
     # print(content)
     for table_match in table_regex.finditer(content):
         table_name = table_match.group(1)
-        logger.warning(f"Found table: {table_name}")
-        results.append({
-            'database': database,
-            'table': table_name,
-            'file': filepath
-        })
+        columns_section = table_match.group(2)
+        # Only include tables that have at least one column matching the specified keywords.
+        if re.search(r'\b(?:NPI|dentist|hygienist|provider)\b', columns_section, flags=re.IGNORECASE):
+            logger.warning(f"Found table (matched column filter): {table_name}")
+            results.append({
+                'database': database,
+                'table': table_name,
+                'file': filepath
+            })
     return results
 
 def scan_directories(directories):
