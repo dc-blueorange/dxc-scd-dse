@@ -77,19 +77,6 @@ def print_json_report(results):
     import json
     print(json.dumps(results, indent=4))
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description="Scan SQL files and report database table info for table name matching")
-    parser.add_argument('-md', '--markdown', action='store_true', help="Output in markdown format")
-    parser.add_argument('-js', '--json', action='store_true', help="Output in JSON format")
-    args = parser.parse_args()
-    directories = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
-    results = scan_directories(directories)
-    if args.json:
-        print_json_report(results)
-    elif args.markdown:
-        print_markdown_report(results)
-    else:
-        print_report(results)
 #!/usr/bin/env python3
 """
 This script scans SQL files in the directories:
