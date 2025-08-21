@@ -33,7 +33,7 @@ def scan_sql_file(filepath):
     # Find all table definitions
     # Assumes table definition starts with CREATE TABLE and ends with a semicolon, supporting multiline statements
     # table_regex = re.compile(r"CREATE\s+\S+\s+[`']?(\w+)[`']?\s*\((.*?)\)\s*;", re.IGNORECASE | re.DOTALL | re.MULTILINE)
-    table_regex = re.compile(r".*CREATE\s+\S+\s+[`']?(\S+)[`']?\s*\((.*)\)\s*.*GO", re.IGNORECASE | re.DOTALL | re.MULTILINE)
+    table_regex = re.compile(r"CREATE\s+\S+\s+[`']?(\S+)[`']?\s*\((.*)\)\s*.*GO", re.IGNORECASE | re.DOTALL | re.MULTILINE)
     # print(content)
     for table_match in table_regex.finditer(content):
         table_name = table_match.group(1)
