@@ -67,7 +67,7 @@ def print_report(results):
     else:
         print("Found the following databases and tables:")
         for result in results:
-            print(f"Database: {result['database']}, Table: {result['table']} (File: {result['file']})")
+            print(f"Database: {result['database']}, Table: {result['table']}, Column: {result['column']} (File: {result['file']})")
 
 if __name__ == "__main__":
     directories = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
