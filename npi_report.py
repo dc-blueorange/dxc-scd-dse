@@ -62,12 +62,11 @@ def scan_directories(directories):
     return all_results
 
 def print_report(results):
-    if not results:
-        print("No databases or tables found in the provided SQL files.")
-    else:
-        print("Found the following databases and tables:")
-        for result in results:
-            print(f"Database: {result['database']}, Table: {result['table']}, Column: {result['column']} (File: {result['file']})")
+    import csv, sys
+    writer = csv.writer(sys.stdout)
+    writer.writerow(["database", "table", "column", "file"])
+    for result in results:
+        writer.writerow([result["database"], result["table"], result["column"], result["file"]])
 
 if __name__ == "__main__":
     directories = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
