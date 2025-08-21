@@ -82,7 +82,7 @@ def print_report(results, header):
 
 def print_json_report(results, header):
     import json
-    print(header)
+    if header: print(header)
     print(json.dumps(results, indent=4))
 
 if __name__ == "__main__":
@@ -108,8 +108,9 @@ if __name__ == "__main__":
         paths = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
     for mode in modes:
         results = scan_directories(paths, mode)
-        header = f"--- Report for {mode.capitalize()} Mode ---"
         if args.json:
+            header = ''
             print_json_report(results, header)
         else:
+            header = f"--- Report for {mode.capitalize()} Mode ---"
             print_report(results, header)
