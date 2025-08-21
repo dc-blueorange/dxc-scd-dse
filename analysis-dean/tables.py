@@ -135,8 +135,8 @@ def scan_sql_file(filepath, mode):
             pattern = r'\b(?:dental network provider|network provider|dental network|provider|network)\b'
         elif mode == 'dsos':
             pattern = r'\b(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)\b'
-        if pattern and re.search(pattern, table_name, flags=re.IGNORECASE):
-            match_found = re.search(pattern, table_name, flags=re.IGNORECASE).group(0)
+        if pattern and re.search(pattern, table_name, flags=re.IGNORECASE | re.DOTALL | re.MULTILINE):
+            match_found = re.search(pattern, table_name, flags=re.IGNORECASE | re.DOTALL | re.MULTILINE).group(0)
             logger.warning(f"Found table (matched table name filter): {table_name} with match: {match_found}")
             results.append({
                 'database': database,
