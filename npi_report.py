@@ -44,6 +44,7 @@ def scan_sql_file(filepath):
             results.append({
                 'database': database,
                 'table': table_name,
+                'column': columns_section,
                 'file': filepath
             })
     return results
