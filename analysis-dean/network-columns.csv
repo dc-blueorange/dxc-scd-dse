@@ -1,0 +1,18 @@
+--- Report for Networks Mode ---
+Database,Table,Matched,File
+rpt,[dbo].[SSISDeliveryDays],Provider,DTT-ANA-PRD/rpt.sql
+partcredDM,[dbo].[Credential],Provider,DTT-ANA-PRD/partcredDM.sql
+master,[dbo].[udfCMNGroupLISTHierarchyMembers],Provider,DTT-ANA-PRD/ent.sql
+pnt,[dbo].[BillingActivity],Provider,Livesql3/pnt.sql
+dhmo,[dbo].[Aetna_xml],Provider,Livesql3/dhmo.sql
+common,[dbo].[Groups],Provider,Livesql3/Common.sql
+dci,[dbo].[RTServiceAudit],Provider,Livesql3/dci.sql
+dci,[dbo].[OfficeResponse],Provider,Livesql3/dci.sql
+cred,[dbo].[SubCategory],Provider,Livesql3/cred.sql
+chs,[dbo].[PartnerPartnerCode],Provider,Livesql3/chs.sql
+pfs,[dbo].[BillingActivity],Provider,Livesql3/pfs.sql
+reports,[dbo].[DssNetRev_Current],Network,Livesql3/reportst.sql
+reports,[dbo].[DssSalesCommission],Provider,Livesql3/reportst.sql
+reports,[dbo].[acctAllDeclines],Provider,Livesql3/reportst.sql
+ptp,[dbo].[BillingInfo],Provider,Livesql3/ptp.sql
+dxcps,[dbo].[Account_Type_T],Network,Livesql3/dxcps.sql
