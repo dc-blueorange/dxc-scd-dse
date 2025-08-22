@@ -83,9 +83,18 @@ def scan_tables_sql_file(filepath, mode):
     database = db_match.group(1) if db_match else "Unknown"
     logger.warning(f"Database determined: {database} file={filepath}")
 
-    table_regex = re.compile(r'CREATE\s+(?:TABLE|VIEW)\s+[`\']?(\S+).*?GO', re.IGNORECASE | re.DOTALL | re.MULTILINE)
+    table_regex = re.compile(
+        r"""
+        (CREATE\s+(?:TABLE|VIEW))           # group(1): CREATE TABLE or CREATE VIEW
+        \s+\[([^\]]+)\]\.\[([^\]]+)\]       # group(2): schema, group(3): object name
+        \s*\(?(.*?)\)?                      # group(4): contents inside () (non-greedy)
+        (?:ON\s+\[PRIMARY\][^\)]*)?         # ignore filegroup etc (optional, Table only)
+        \s*GO\b                             # GO batch separator
+        """,
+        re.IGNORECASE | re.VERBOSE | re.DOTALL | re.MULTILINE
+    )
     for table_match in table_regex.finditer(content):
-        table_name = table_match.group(1)
+        table_name = table_match.group(3)
         pattern = None
         if mode == 'dentists':
             pattern = r'(?:NPI|dentist|hygienist|provider)'
