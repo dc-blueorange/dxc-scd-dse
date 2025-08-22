@@ -33,26 +33,40 @@ def scan_columns_sql_file(filepath, mode):
     database = db_match.group(1) if db_match else "Unknown"
     logger.warning(f"Database determined: {database} file={filepath}")
 
-    table_regex = re.compile(r'CREATE\s+\S+\s+[`\']?(\S+)[`\']?\s*\((.*?)\)\s*GO', re.IGNORECASE | re.DOTALL | re.MULTILINE)
+    table_regex = re.compile(
+        r"""
+        (CREATE\s+(?:TABLE|VIEW))           # group(1): CREATE TABLE or CREATE VIEW
+        \s+\[([^\]]+)\]\.\[([^\]]+)\]       # group(2): schema, group(3): object name
+        \s*\(?(.*?)\)?                      # group(4): contents inside () (non-greedy)
+        (?:ON\s+\[PRIMARY\][^\)]*)?         # ignore filegroup etc (optional, Table only)
+        \s*GO\b                             # GO batch separator
+        """,
+        re.IGNORECASE | re.VERBOSE | re.DOTALL | re.MULTILINE
+    )
     for table_match in table_regex.finditer(content):
-        table_name = table_match.group(1)
-        columns_section = table_match.group(2)
+        table_name = table_match.group(3)
+        columns_section = table_match.group(4)
+        logger.debug(f"Found table: {table_name} with column defs: {columns_section}")
+        # exit()
+
         pattern = None
         if mode == 'dentists':
-            pattern = r'(?:NPI|dentist|hygienist|provider)'
+            pattern = r'\[\s*([^\]]*(?:NPI|dentist|hygienist|provider)\][^\]]*)\s*\]\s*\['
         elif mode == 'networks':
-            pattern = r'(?:dental network provider|network provider|dental network|provider|network)'
+            pattern = r'\[\s*([^\]]*(?:dental network provider|network provider|dental network|provider|network)[^\]]*)\s*\]\s*\['
         elif mode == 'dsos':
-            pattern = r'(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)'
-        if pattern and re.search(pattern, columns_section, flags=re.IGNORECASE):
-            match_found = re.search(pattern, columns_section, flags=re.IGNORECASE).group(0)
-            logger.warning(f"Found column match in table: {table_name} with match: {match_found}")
-            results.append({
-                'database': database,
-                'table': table_name,
-                'match': match_found,
-                'file': filepath
-            })
+            pattern = r'\[\s*([^\]]*(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)[^\]]*)\s*\]\s*\['
+        if pattern:
+            tablenames_regex = re.compile(pattern, flags=re.IGNORECASE | re.DOTALL)
+            for match_found in tablenames_regex.finditer(columns_section):
+                match = match_found.group(0)
+                logger.warning(f"Found table (matched table name filter): {table_name} with match: {match}")
+                results.append({
+                    'database': database,
+                    'table': table_name,
+                    'match': match,
+                    'file': filepath
+                })
     return results
 
 def scan_tables_sql_file(filepath, mode):
@@ -79,15 +93,17 @@ def scan_tables_sql_file(filepath, mode):
             pattern = r'(?:dental network provider|network provider|dental network|provider|network)'
         elif mode == 'dsos':
             pattern = r'(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)'
-        if pattern and re.search(pattern, table_name, flags=re.IGNORECASE):
-            match_found = re.search(pattern, table_name, flags=re.IGNORECASE).group(0)
-            logger.warning(f"Found table (matched name): {table_name} with match: {match_found}")
-            results.append({
-                'database': database,
-                'table': table_name,
-                'match': match_found,
-                'file': filepath
-            })
+        if pattern:
+            tables_regex = re.compile(pattern, flags=re.IGNORECASE | re.DOTALL | re.MULTILINE)
+            for match_found in tables_regex.finditer(table_name):
+                match = match_found.group(0)
+                logger.warning(f"Found table (matched table name filter): {table_name} with match: {match}")
+                results.append({
+                    'database': database,
+                    'table': table_name,
+                    'match': match,
+                    'file': filepath
+                })
     return results
 
 def scan_directories(paths, mode, no_columns):
