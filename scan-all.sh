@@ -12,3 +12,6 @@ python3 analysis-dean/schema-analyzer.py --dsos > analysis-dean/dso-columns.csv
 python3 analysis-dean/schema-analyzer.py --dsos -nc > analysis-dean/dso-tables.csv
 python3 analysis-dean/schema-analyzer.py --dsos -js > analysis-dean/dso-columns.json
 python3 analysis-dean/schema-analyzer.py --dsos -js -nc > analysis-dean/dso-tables.json
+
+python3 analysis-dean/schema-analyzer.py --foreign-keys > analysis-dean/foreign-keys.csv
+python3 analysis-dean/schema-analyzer.py --foreign-keys -js > analysis-dean/foreign-keys.json
