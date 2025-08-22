@@ -1,110 +1,3393 @@
+--- Report for Dentists Mode (Tables and Columns) ---
 [
     {
-        "database": "rpt",
-        "table": "[dbo].[SSISDeliveryDays]",
-        "match": "Provider",
-        "file": "DTT-ANA-PRD/rpt.sql"
+        "database": "dw_dxc_dev",
+        "table": "smilebrands_claim_status_report__dbt_tmp",
+        "match": "rendering_provider_npi",
+        "file": "DTT-ANA-PRD/dw_dxc_dev.sql"
     },
     {
         "database": "partcredDM",
-        "table": "[dbo].[Credential]",
-        "match": "Provider",
+        "table": "Credential",
+        "match": "ProviderID",
         "file": "DTT-ANA-PRD/partcredDM.sql"
     },
     {
+        "database": "partcredDM",
+        "table": "DSSCredBillingAlt",
+        "match": "ProviderDirectoryPayerID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "DSSCredBillingAlt",
+        "match": "ProviderDirectoryID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "DSSCredBillingAlt",
+        "match": "ProviderName",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "Outreach",
+        "match": "ProviderID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "PayerPartnerOutreach",
+        "match": "ProviderDirectoryPayerID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "PayerPartnerOutreach",
+        "match": "ProviderDirectoryID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "PayerPartnerOutreach",
+        "match": "OutreachCycleStartDateProviderDirectoryPayerStatusID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "PayerPartnerOutreach",
+        "match": "OutreachEndDateProviderDirectoryPayerStatusID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "PayerPartnerOutreach",
+        "match": "OutreachEndDateProviderDirectoryPayerStatusCategory",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "RecredentialingCycleOutreach",
+        "match": "ProviderDirectoryPayerID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "RecredentialingCycleOutreach",
+        "match": "ProviderDirectoryID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "RecredentialingCycleOutreach",
+        "match": "ProviderName",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "RecredentialingCycleOutreachSummary",
+        "match": "ProviderDirectoryID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "RecredentialingCycleOutreachSummary",
+        "match": "ProviderDirectoryPayerID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "RecredentialingCycleOutreachSummary",
+        "match": "LastProviderUpdatedDate",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "RenewDates",
+        "match": "ProviderDirectoryPayerID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "RenewDates",
+        "match": "ProviderDirectoryID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "partcredDM",
+        "table": "RenewDates",
+        "match": "DecisionProviderDirectoryPayerHistoryID",
+        "file": "DTT-ANA-PRD/partcredDM.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "match": "BillingProvNPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "match": "RenderingProvNPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dci_claim_6mos",
+        "match": "ProviderRuleId",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dci_rtserviceaudit_6mos",
+        "match": "ProviderTIN",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dci_rtserviceaudit_6mos",
+        "match": "NPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dea_attachments_6mos",
+        "match": "BillingNPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dea_attachments_6mos",
+        "match": "RenderingNPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "appointmentprovidermapping",
+        "match": "providerid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "appointmentprovidermapping",
+        "match": "_airbyte_appointmentprovidermapping_hashid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "eligibility",
+        "match": "defaultproviderid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "eligibility",
+        "match": "providerid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "groupsetting",
+        "match": "defaultproviderid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "payercredential",
+        "match": "providerid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "provider",
+        "match": "npi",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "provider",
+        "match": "provider_unique",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "provider",
+        "match": "_airbyte_provider_hashid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions",
+        "match": "provider_first_name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions",
+        "match": "provider_last_name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions",
+        "match": "provider_npi",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions",
+        "match": "provider_tax_id",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
+        "match": "Rendering_Provider_First_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
+        "match": "Rendering_Provider_Last_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
+        "match": "Rendering_Provider_NPI",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
+        "match": "Billing_Provider_First_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
+        "match": "Billing_Provider_Last_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
+        "match": "Billing_Provider_NPI",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
+        "match": "Billing_Provider_Tax_ID",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
+        "match": "Billing_Provider_Phone",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Provider_Claim_ID",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Billing_Provider_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Billing_Provider_Tax_ID",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Billing_Provider_License",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Billing_Provider_Address",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Billing_Provider_City",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Billing_Provider_State",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Billing_Provider_Zip",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Rendering_Provider_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Rendering_Provider_Tax_ID",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Rendering_Provider_License",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Rendering_Provider_NPI",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Rendering_Provider_Address",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Rendering_Provider_City",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Rendering_Provider_State",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "match": "Rendering_Provider_Zip",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
+        "match": "Rendering_Provider_First_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
+        "match": "Rendering_Provider_Last_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
+        "match": "Rendering_Provider_NPI",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_First_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_Last_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_NPI",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_Tax_ID",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_Phone",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_Email",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
+        "match": "Rendering_Provider_First_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
+        "match": "Rendering_Provider_Last_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
+        "match": "Rendering_Provider_NPI",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_First_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_Last_Name",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_NPI",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_Tax_ID",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_Phone",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "database": "lkr",
+        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
+        "match": "Billing_Provider_Email",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
         "database": "master",
-        "table": "[dbo].[udfCMNGroupLISTHierarchyMembers]",
-        "match": "Provider",
+        "table": "rptCLCClaimAGGMonthToYesterdayVSCurrentStatusTotal",
+        "match": "ProviderMatches#",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
+        "database": "master",
+        "table": "rptCLCClaimAGGMonthToYesterdayVSCurrentStatusTotal",
+        "match": "ProviderMatches$",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Claims",
+        "match": "ProviderMatch",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Claims",
+        "match": "PM_207_ProviderMatchRequired",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Claims",
+        "match": "REC_1055_ElectronicOrPaperAttachmentSentByProvider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Claims",
+        "match": "SUS_1210_RTResponsePendingProviderReview",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Claims",
+        "match": "UR_1625_ProviderCredentialed",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCycles",
+        "match": "ProviderMatchRequiredOccurrence",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCycles",
+        "match": "ProviderMatchRequiredElapsedTimeMinutes",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCycles",
+        "match": "LastProviderMatchDate",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCycles",
+        "match": "FirstProviderMatchDate",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCycles",
+        "match": "ProviderClaimID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
+        "match": "ProviderMatchRequiredOccurrence",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
+        "match": "ProviderMatchRequiredElapsedTimeMinutes",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
+        "match": "LastProviderMatchDate",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
+        "match": "FirstProviderMatchDate",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
+        "match": "ProviderClaimID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "DCIClaimPaymentFLATClaimPaymentsLifeCycles",
+        "match": "NPI",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "LDP0AI-COH",
+        "match": "ProviderClaimID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "LDP0AI-COH",
+        "match": "RenderingProviderFullName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "LDP0AI-PCDvip",
+        "match": "ProviderClaimID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "LDP0AI-PCDvip",
+        "match": "RenderingProviderName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "rptDCIClaimDETUserResolvedClaimsDetail",
+        "match": "ProviderLastName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "rptDCIClaimDETUserResolvedClaimsDetail",
+        "match": "ProviderFirstName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "TEMP_DLS3",
+        "match": "ProviderMatch",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
+        "match": "ProviderReceivedApprovalOccurrence",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
+        "match": "FirstProviderReceivedApprovalDate",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
+        "match": "LastProviderReceivedApprovalDate",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
+        "match": "ProviderFormsIncluded",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
+        "match": "ProviderStateFormsIncluded",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETLocationsProviderProfileAnswers",
+        "match": "ProviderProfileLocationAnswerID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETLocationsProviderProfileAnswers",
+        "match": "ProviderProfileID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETMinReqdProviderProfileAnswers",
+        "match": "ProviderProfileAnswerID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETMinReqdProviderProfileAnswers",
+        "match": "ProviderProfileID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETProviderProfiles",
+        "match": "ProviderProfileID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETProviderProfiles",
+        "match": "ProviderDirectoryID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETProviderProfiles",
+        "match": "hasProviderProfileAnswers",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETUnpivotedUserAnswers",
+        "match": "UnpivotedUserAnswerID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETUnpivotedUserAnswers",
+        "match": "ProviderProfileID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Appointments",
+        "match": "RenderingProviderFirstName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Appointments",
+        "match": "RenderingProviderLastName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Appointments",
+        "match": "RenderingProviderUserID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Appointments",
+        "match": "BillingProviderFirstName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Appointments",
+        "match": "BillingProviderLastName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Appointments",
+        "match": "BillingProviderLocationName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Appointments",
+        "match": "BillingProviderUserID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Appointments",
+        "match": "BillingProviderState",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "ClearinghouseClaims",
+        "match": "BillingProviderFullName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "ClearinghouseClaims",
+        "match": "BillingProviderNPI",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "ClearinghouseClaims",
+        "match": "BillingProviderTaxID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "ClearinghouseClaims",
+        "match": "RenderingProviderFullName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "ClearinghouseClaims",
+        "match": "RenderingProviderNPI",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "match": "BillingProviderTaxID",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "match": "RenderingProviderNPI",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "match": "BillingProviderTaxID",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "match": "RenderingProviderNPI",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "match": "BillingProviderZipCode",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "match": "BillingProviderTaxID",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "match": "RenderingProviderNPI",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "match": "BillingProviderTaxID",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "match": "RenderingProviderNPI",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "match": "BillingProviderZipCode",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "match": "BillingProviderTaxID",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "match": "RenderingProviderNPI",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "match": "BillingProviderTaxID",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "match": "RenderingProviderNPI",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
         "database": "pnt",
-        "table": "[dbo].[BillingActivity]",
-        "match": "Provider",
+        "table": "StatementReminder",
+        "match": "ProviderName",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "dhmo",
-        "table": "[dbo].[Aetna_xml]",
+        "table": "Aetna_xml_Data",
         "match": "Provider",
         "file": "Livesql3/dhmo.sql"
     },
     {
+        "database": "dhmo",
+        "table": "PayerGroup",
+        "match": "ProviderID",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
         "database": "common",
-        "table": "[dbo].[Groups]",
-        "match": "Provider",
+        "table": "Groups",
+        "match": "AutoAddProvider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Groups",
+        "match": "RegistrationPID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Users",
+        "match": "BillingNPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Users",
+        "match": "RenderingNPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Users",
+        "match": "ProviderRuleOnly",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Credential",
+        "match": "ProviderType",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "CredentialAudit",
+        "match": "ProviderType",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "DenticalLocationInfo",
+        "match": "ProviderPayerEnrollmentId",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Enrollment",
+        "match": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Enrollment",
+        "match": "PayerProviderId",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistration",
+        "match": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistrationAudit",
+        "match": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "GroupsAudit",
+        "match": "RegistrationPID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "HawaiiDentalLicenseLookup",
+        "match": "ProviderName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "MessagePortalConversation",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "MessagePortalConversationModelAudit",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "MessagePortalDocumentCompressionAudit",
+        "match": "ProviderFormDocumentMetaID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "MetProviderDir",
+        "match": "MetProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "MetProviderDir",
+        "match": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "MetProviderDir",
+        "match": "NPI2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderOrgName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderLastName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderFirstName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderMiddleName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderNamePrefixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderNameSuffixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderCredentialText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderOtherLastName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderOtherFirstName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderOtherMiddleName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderOtherNamePrefixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderOtherNameSuffixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderOtherCredentialText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderOtherLastNameTypeCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderFirstLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderSecondLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessMailingAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessMailingAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessMailingAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessMailingAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessMailingAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderFirstLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderSecondLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessPracticeLocAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessPracticeLocAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessPracticeLocAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessPracticeLocAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderBusinessPracticeLocAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderEnumerationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "NPIDeactivationReasonCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "NPIDeactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "NPIReactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderGenderCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "HealthcareProviderTaxonomyCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderLicenseNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "match": "ProviderLicenseNumberStateCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderOrgName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderLastName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderFirstName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderMiddleName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderNamePrefixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderNameSuffixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderCredentialText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderOtherLastName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderOtherFirstName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderOtherMiddleName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderOtherNamePrefixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderOtherNameSuffixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderOtherCredentialText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderOtherLastNameTypeCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderFirstLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderSecondLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessMailingAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessMailingAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessMailingAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessMailingAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessMailingAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderFirstLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderSecondLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessPracticeLocAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessPracticeLocAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessPracticeLocAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessPracticeLocAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderBusinessPracticeLocAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderEnumerationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "NPIDeactivationReasonCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "NPIDeactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "NPIReactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderGenderCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "HealthcareProviderTaxonomyCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderLicenseNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "match": "ProviderLicenseNumberStateCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderOrgName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderLastName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderFirstName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderMiddleName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderNamePrefixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderNameSuffixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderCredentialText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderOtherLastName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderOtherFirstName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderOtherMiddleName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderOtherNamePrefixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderOtherNameSuffixText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderOtherCredentialText",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderOtherLastNameTypeCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderFirstLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderSecondLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessMailingAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessMailingAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessMailingAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessMailingAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessMailingAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderFirstLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderSecondLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessPracticeLocAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessPracticeLocAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessPracticeLocAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessPracticeLocAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderBusinessPracticeLocAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderEnumerationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "NPIDeactivationReasonCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "NPIDeactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "NPIReactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderGenderCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "HealthcareProviderTaxonomyCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderLicenseNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "match": "ProviderLicenseNumberStateCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Payer",
+        "match": "BillingProviderMatch",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Payer",
+        "match": "RenderingProviderMatch",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "PayerAudit",
+        "match": "BillingProviderMatch",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "PayerAudit",
+        "match": "RenderingProviderMatch",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "PayerCredentialType",
+        "match": "RequiredProviderType",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "PPEInserts",
+        "match": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDir",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDir",
+        "match": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDir_new",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDir_new",
+        "match": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirAudit",
+        "match": "ProviderDirAuditID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirAudit",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectory",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectory",
+        "match": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryAppsetNoteAlert",
+        "match": "ProviderAppsetNoteAlertID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryAppsetNoteAlert",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryChangeDetail",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryChangeDetail",
+        "match": "ProviderValue",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "match": "ProviderDirectoryCompareID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "match": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "match": "ProviderDirectoryHistoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "match": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocation",
+        "match": "ProviderDirectoryLocationID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocation",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocation",
+        "match": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "match": "ProviderDirectoryLocationCompareID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "match": "ProviderDirectoryLocationID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "match": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "providerdirectoryold",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "providerdirectoryold",
+        "match": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayer",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayer",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayer",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerDocument",
+        "match": "ProviderDirectoryPayerDocumentID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerDocument",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerHistory",
+        "match": "ProviderDirectoryPayerHistoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerHistory",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerHistory",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerHistory",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerLocationPlan",
+        "match": "ProviderDirectoryLocationID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerNote",
+        "match": "ProviderDirectoryPayerNoteID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerNote",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerNoteHistory",
+        "match": "ProviderDirectoryPayerNoteHistoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerNoteHistory",
+        "match": "ProviderDirectoryPayerNoteID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerPlan",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerStatus",
+        "match": "ProviderDirectoryPayerStatusID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerStatusDetail",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerTag",
+        "match": "ProviderDirectoryPayerTagID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerTag",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerTagLookup",
+        "match": "ProviderDirectoryPayerTagLookupID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerCredential",
+        "match": "ProviderCredentialID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerCredential",
+        "match": "ProviderTIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerCredential",
+        "match": "ProviderLicense",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerCredential",
+        "match": "ProviderType",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollment",
+        "match": "ProviderEnrollmentID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollment",
+        "match": "ProviderTIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollment",
+        "match": "ProviderLicense",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollment",
+        "match": "NationalProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollment",
+        "match": "MetProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollment",
+        "match": "PayerProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollmentAudit",
+        "match": "ProviderPayerEnrollmentAuditID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollmentAudit",
+        "match": "ProviderEnrollmentID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollmentAudit",
+        "match": "ProviderTIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollmentAudit",
+        "match": "ProviderLicense",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollmentAudit",
+        "match": "NationalProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollmentAudit",
+        "match": "MetProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderRule",
+        "match": "ProviderRuleID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderRuleAudit",
+        "match": "ProviderRuleAuditID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderRuleAudit",
+        "match": "ProviderRuleID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Results",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "RohidIslandTemp",
+        "match": "Organizational_NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "RohidIslandTemp",
+        "match": "Individual_NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "RohidIslandTempNew",
+        "match": "Organizational_NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "RohidIslandTempNew",
+        "match": "Individual_NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "SalesLead",
+        "match": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "SupportRequest",
+        "match": "ProviderName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "UsersAudit",
+        "match": "BillingNPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "UsersAudit",
+        "match": "RenderingNPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "UsersAudit",
+        "match": "ProviderRuleOnly",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "tempcpa1",
+        "match": "icNPI",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "dci",
-        "table": "[dbo].[RTServiceAudit]",
-        "match": "Provider",
+        "table": "RTServiceAudit",
+        "match": "ProviderTIN",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "[dbo].[OfficeResponse]",
-        "match": "Provider",
+        "table": "RTServiceAudit",
+        "match": "NPI",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimHistory",
+        "match": "ProviderRuleId",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "Claim",
+        "match": "ProviderRuleId",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "arc_Claim_ClaimProviderID_List",
+        "match": "ClaimProviderID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "arc_Claim_ProviderCredentialID_List",
+        "match": "ProviderCredentialID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "arc_ProviderCredentialAuditID_Archive_List",
+        "match": "ProviderCredentialAuditID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimExtension",
+        "match": "RefProviderNo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimItemProvider",
+        "match": "ClaimItemProviderID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimItemProviderCredential",
+        "match": "ClaimItemProviderCredentialID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimItemProviderCredential",
+        "match": "ClaimItemProviderID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimPayment",
+        "match": "Npi",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimPaymentAdjustment",
+        "match": "ProviderID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimPaymentClaim",
+        "match": "ProviderClaimID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimPaymentReportClaim",
+        "match": "ProviderClaimID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimProvider",
+        "match": "ClaimProviderID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimProvider",
+        "match": "ProviderType",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimProvider",
+        "match": "BillingNPI",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimProvider",
+        "match": "RenderingNPI",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimProvider",
+        "match": "ProviderRuleId",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimProviderAddress",
+        "match": "ClaimProviderID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "CredentialUpdate",
+        "match": "ClaimProviderID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "DciGroup",
+        "match": "AutoAddProvider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "DciGroupAudit",
+        "match": "AutoAddProvider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "DciPms",
+        "match": "AutoAddProvider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ProviderCredential",
+        "match": "ProviderCredentialID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ProviderCredential",
+        "match": "ClaimProviderID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ProviderCredential",
+        "match": "ProviderType",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ProviderCredentialAudit",
+        "match": "ProviderCredentialAuditID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ProviderCredentialAudit",
+        "match": "ProviderCredentialID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ProviderCredentialAudit",
+        "match": "ClaimProviderID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ProviderCredentialAudit",
+        "match": "ProviderType",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "reports",
+        "match": "DentalBenefitProvidersTrans",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "reports",
+        "match": "ComputerAgeDentist",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "cred",
-        "table": "[dbo].[SubCategory]",
-        "match": "Provider",
+        "table": "Question",
+        "match": "ProviderMapping",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "Question",
+        "match": "ProviderEditable",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "UserAnswer",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSet",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderForm",
+        "match": "ProviderFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderStateForm",
+        "match": "ProviderStateFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetAnswer",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormAnswer",
+        "match": "ProviderFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetEnrollmentTicket",
+        "match": "ProviderPayerEnrollmentID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetHistory",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetLocation",
+        "match": "NPI",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetNote",
+        "match": "VisibleToProvider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetTicket",
+        "match": "ProviderPayerEnrollmentID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "HawaiiDentalLicenseLookup",
+        "match": "ProviderName",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "MedicarePreclusionLookup",
+        "match": "Npi",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "OutreachCycle",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "OutreachCycleAudit",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerConfig",
+        "match": "UpdateProvider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerConfig",
+        "match": "PlanAtProvider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerConfig",
+        "match": "UpdateEffectiveDateOnProvider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerDataChange",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerProcessOutreach",
+        "match": "ProviderDirectoryPayerID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerProcessOutreachCallTask",
+        "match": "ProviderDirectoryID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderApplicationStatus",
+        "match": "ProviderId",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderApplicationStatusLocation",
+        "match": "NPI",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderDetail",
+        "match": "ProviderDetailID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderDetail",
+        "match": "ProviderId",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderDetail",
+        "match": "ProviderSiteDetailID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderDetail",
+        "match": "AffiliatedNpi",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderDetail",
+        "match": "AddlAffiliatedNpis",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderDocument",
+        "match": "ProviderDocumentID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderDocumentMeta",
+        "match": "ProviderDocumentMetaID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderDocumentMeta",
+        "match": "ProviderDocumentID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormAnswerMigrationAudit",
+        "match": "ProviderFormAnswerMigrationAuditID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormAnswerMigrationAudit",
+        "match": "ProviderFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormAnswerMigrationAudit",
+        "match": "ProviderFormAnswerID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormDocument",
+        "match": "ProviderFormDocumentID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormDocument",
+        "match": "ProviderFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormDocumentMeta",
+        "match": "ProviderFormDocumentMetaID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormDocumentMeta",
+        "match": "ProviderFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormDocumentMeta",
+        "match": "ProviderFormDocumentID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormDocumentMeta",
+        "match": "ProviderDocumentMetaID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormHistory",
+        "match": "ProviderFormHistoryID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormHistory",
+        "match": "ProviderFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormNote",
+        "match": "ProviderFormNoteID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormNote",
+        "match": "ProviderFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormStatus",
+        "match": "ProviderFormStatusID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderGroupDetail",
+        "match": "ProviderGroupDetailID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderGroupDetail",
+        "match": "Npi",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderProfileSection",
+        "match": "ProviderID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderProfileSummary",
+        "match": "ProviderProfileSummaryID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderProfileSummary",
+        "match": "ProviderID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "match": "ProviderSiteDetailID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "match": "Npi",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "match": "ProviderGroupNetworkRoleId",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "match": "ProviderGroupDetailID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderStateFormAnswer",
+        "match": "ProviderStateFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderStateFormHistory",
+        "match": "ProviderStateFormHistoryID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderStateFormHistory",
+        "match": "ProviderStateFormID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderStateFormNote",
+        "match": "ProviderStateFormNoteID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderStateFormNote",
+        "match": "ProviderStateFormID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "chs",
-        "table": "[dbo].[PartnerPartnerCode]",
+        "table": "MetaClaim",
+        "match": "BillingProvNPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaim",
+        "match": "RenderingProvNPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimStatusTracing_Facility",
+        "match": "NPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPayment",
+        "match": "Npi",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentAdjustment",
+        "match": "ProviderID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentClaim",
+        "match": "ProviderClaimID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "match": "ProviderPrimaryID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "match": "ProviderSecondaryID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "match": "ProviderFirstName",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "match": "ProviderLastName",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "match": "ProviderPrimaryID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "match": "ProviderSecondaryID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "match": "ProviderFirstName",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "match": "ProviderLastName",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimPayment",
+        "match": "Npi",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligRequest",
+        "match": "BillingProvNPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligResponse",
+        "match": "BillingProvNPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEnrollment",
+        "match": "Npi",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "OfficeResponsePreAuth",
+        "match": "ProviderCtrlNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "OfficeResponsePreAuth",
+        "match": "ProviderID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerWidgetDeliveryRegistration",
         "match": "NPI",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "pfs",
-        "table": "[dbo].[BillingActivity]",
-        "match": "Provider",
+        "table": "Settlement",
+        "match": "ProviderNetAmount",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "database": "pfs",
+        "table": "SettlementHistory",
+        "match": "ProviderNetAmount",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "reports",
-        "table": "[dbo].[DssNetRev_Current]",
-        "match": "Dentist",
+        "table": "GroupActivity",
+        "match": "ClaimProviderMatchCount",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "[dbo].[DssSalesCommission]",
-        "match": "Dentist",
+        "table": "DSSPayerCredBilling",
+        "match": "ProviderDirectoryID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "[dbo].[DssCommissionEarnedPointsDetail]",
+        "table": "DSSPayerCredBilling",
+        "match": "Providername",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "CSRequest_Practice",
+        "match": "Organizational NPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DataBillRpt",
+        "match": "ProviderRev",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dhmo",
+        "match": "Provider First",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dhmo",
+        "match": "Provider Last",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dhmo_add_groups",
+        "match": "Provider First",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dhmo_add_groups",
+        "match": "Provider Last",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DSSRetentionActivity",
+        "match": "ProviderTranCount",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DSSRetentionActivity",
+        "match": "ProviderRevenue",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DSSWebPortal",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dsswebportal_20101202",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Match_Anthem_BO",
+        "match": "BillingProvider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Match_Anthem_BO_1",
+        "match": "BillingProvider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_HMWG",
         "match": "NPI",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "[dbo].[acctAllDeclines]",
+        "table": "NEASubscriptionAggregation",
+        "match": "PossibleDXCOverchargeToProvider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerBillingGPStage",
+        "match": "ProviderTin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerProviderTrans",
+        "match": "PayerProviderTransID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ProviderMatching",
         "match": "NPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "match": "ProviderPayerTransID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "match": "BProviderLastName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "match": "BProviderFirstName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "match": "RProviderLastName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "match": "RProviderFirstName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "match": "ProviderAdd1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "match": "BProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "match": "RProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_ADPProviderCredentialAudit",
+        "match": "ProviderType",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_AnthemWebPortal",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_BNDProviderCredentialAudit",
+        "match": "ProviderType",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_GEDCProviderCredentialAudit",
+        "match": "ProviderType",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_LuminaProviderCredentialAudit",
+        "match": "ProviderType",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "match": "BillingProviderTaxID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "match": "RenderingProviderNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "match": "BillingProviderTaxID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "match": "RenderingProviderNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "match": "BillingProviderTaxID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "match": "RenderingProviderNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "match": "BillingProviderTaxID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "match": "RenderingProviderNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "match": "BillingProviderTaxID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "match": "RenderingProviderNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "match": "BillingProviderTaxID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "match": "RenderingProviderNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tempECEHG",
+        "match": "ProviderID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tempECEHG",
+        "match": "NPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tempECEHG",
+        "match": "ProviderName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temptom",
+        "match": "BillingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temptom",
+        "match": "RenderingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PayerProviderTrans",
+        "match": "PayerProviderTransID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tomtemp28",
+        "match": "BillingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tomtemp28",
+        "match": "RenderingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "UCCI",
+        "match": "Provider ID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "UCCI",
+        "match": "NPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "xls_DeltaCA",
+        "match": "PROVIDER",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "balclaims",
+        "match": "billingprovnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "balclaims",
+        "match": "renderingprovnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ClaimPaymentRegistrationRemoval",
+        "match": "providerprimaryid",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ClaimPaymentRegistrationRemoval",
+        "match": "providersecondaryid",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dfcgroups",
+        "match": "BillNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dfcProvs",
+        "match": "renderingNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GEDCclaims",
+        "match": "billingnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GEDCclaims",
+        "match": "renderingnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GEDFileSummary",
+        "match": "billingnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GEDFileSummary",
+        "match": "renderingnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "TempDenticonUsers",
+        "match": "BillingNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "TempDenticonUsers",
+        "match": "RenderingNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "TempDenticonUsers",
+        "match": "ProviderRuleOnly",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpEaglesLanding",
+        "match": "Provider Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpeagleslandingitems",
+        "match": "Provider Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tomdcp20110404load",
+        "match": "BillingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tomdcp20110404load",
+        "match": "RenderingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "WesternUsers",
+        "match": "BillingNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "WesternUsers",
+        "match": "RenderingNPI",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "dea",
-        "table": "[dbo].[arc_Attachment_AttachmentID_Delete_List]",
-        "match": "NPI",
+        "table": "Attachment",
+        "match": "BillingNPI",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "Attachment",
+        "match": "RenderingNPI",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "ptp",
-        "table": "[dbo].[BillingInfo]",
-        "match": "Provider",
+        "table": "ProviderPayment",
+        "match": "ProviderPaymentID",
         "file": "Livesql3/ptp.sql"
     },
     {
         "database": "ddir",
-        "table": "[dbo].[Association]",
-        "match": "Dentist",
+        "table": "PracticeProfile",
+        "match": "PublishDentists",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeProfileAudit",
+        "match": "PublishDentists",
         "file": "Livesql3/ddir.sql"
     }
 ]

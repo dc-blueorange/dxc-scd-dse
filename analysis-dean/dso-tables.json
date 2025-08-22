@@ -1,0 +1,1269 @@
+--- Report for Dsos Mode (Tables Only) ---
+[
+    {
+        "database": "dw_atm_dxc",
+        "table": "[dbo].[dci_rtserviceaudit_6mos](",
+        "match": "service",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[demandSourceType]",
+        "match": "dSo",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[ItemDemandSource]",
+        "match": "dSo",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemBillingRate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemCorrelateditem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemItemAccountingBookDetail]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemItemVendor]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemPresentationItem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemPrice]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemQuantity]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemSiteCategory]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemSubsidiaryMap]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemTaskTemplate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceItemTranslation]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[servicePurchaseItemItemAccountingBookDetail]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[servicePurchaseItemItemVendor]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[servicePurchaseItemSubsidiaryMap]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[servicePurchaseItemTranslation]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemBillingRate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemCorrelateditem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemItemAccountingBookDetail]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemItemVendor]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemPresentationItem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemPrice]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemQuantity]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemSiteCategory]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemSubsidiaryMap]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemTaskTemplate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceResaleItemTranslation]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemBillingRate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemCorrelateditem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemItemAccountingBookDetail]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemPresentationItem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemPrice]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemQuantity]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemSiteCategory]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemSubsidiaryMap]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemTaskTemplate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "[dbo].[serviceSaleItemTranslation]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[demandSourceType]",
+        "match": "dSo",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[ItemDemandSource]",
+        "match": "dSo",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemBillingRate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemCorrelateditem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemItemAccountingBookDetail]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemItemVendor]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemPresentationItem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemPrice]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemQuantity]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemSiteCategory]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemSubsidiaryMap]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemTaskTemplate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceItemTranslation]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[servicePurchaseItemItemAccountingBookDetail]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[servicePurchaseItemItemVendor]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[servicePurchaseItemSubsidiaryMap]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[servicePurchaseItemTranslation]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemBillingRate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemCorrelateditem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemItemAccountingBookDetail]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemItemVendor]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemPresentationItem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemPrice]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemQuantity]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemSiteCategory]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemSubsidiaryMap]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemTaskTemplate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceResaleItemTranslation]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemBillingRate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemCorrelateditem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemItemAccountingBookDetail]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemPresentationItem]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemPrice]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemQuantity]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemSiteCategory]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemSubsidiaryMap]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemTaskTemplate]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "[dbo].[serviceSaleItemTranslation]",
+        "match": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "merchant",
+        "table": "[dbo].[RTServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/merchant.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "[dbo].[DataBill_Support_Temp](",
+        "match": "Support",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "[dbo].[RTServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "[dbo].[SAServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "[dbo].[ServiceDowntime](",
+        "match": "Service",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "[dbo].[ServiceHostConfiguration](",
+        "match": "Service",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "[dbo].[ServiceProperty](",
+        "match": "Service",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "[dbo].[ServicePropertyAudit](",
+        "match": "Service",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "[dbo].[OfficeServiceClient](",
+        "match": "Service",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[GroupSupportUser](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportUser](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[vwSupportNames]",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[AlertSAServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[MerchantMigrationServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[MerchantServiceAudit_Arc](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[RTServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceClient](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceClientAccess](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceClientPMS](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceClientUser](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceCode](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceDowntime](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceFee](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceHostConfiguration](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceProperty](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServicePropertyAudit](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceServiceCode](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceServiceCode](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceStatus](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ServiceType](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportDataSourceRequest](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportDataSourceResponse](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportEventOps](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportFunction](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportGroup](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportGroupFunction](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportGroupUser](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportMessage](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportNote](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportPayerSet](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportPayerSetGroup](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportRequest](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportRole](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[supportrole_backup1115_1102AM](",
+        "match": "support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[supportrole_bak](",
+        "match": "support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportRole_Bak2](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportServiceCodePayerSet](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportServiceCodePayerSet](",
+        "match": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportTask](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportTaskUser](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportTeam](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportTeamUser](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportUserAudit](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportUserCommission](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportUserCommission_0318](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportUserConfig](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportUserLoginAudit](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportUserLoginChangeAudit](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[SupportUserPasswordHistory](",
+        "match": "Support",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[RTServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[vRTServiceAudit]",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[SAServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[vSAServiceAudit]",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ServiceProperty](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ServiceConfiguration]",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[arc_Claim_RTServiceAuditID_Delete_List](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[arc_Claim_RTServiceAuditID_Delete_ListClaim](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[arc_Claim_SAServiceAuditID_Delete_List](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[arc_Claim_SAServiceAuditID_Delete_ListClaim](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[arc_RTServiceAuditID_Archive_List](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[arc_SAServiceAuditID_Archive_List](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[DentalServiceType](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[PayerService](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[PayerServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ServiceClientProperty](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ServiceCredential](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ServiceInfo](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ServicePropertyAudit](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ServiceTypeProcedure](",
+        "match": "Service",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ApplicationSetSupportUserHistory](",
+        "match": "Support",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[NPDBServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "ntf",
+        "table": "[dbo].[SAServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/ntf.sql"
+    },
+    {
+        "database": "ntf",
+        "table": "[dbo].[ServiceDowntime](",
+        "match": "Service",
+        "file": "Livesql3/ntf.sql"
+    },
+    {
+        "database": "ntf",
+        "table": "[dbo].[ServiceHostConfiguration](",
+        "match": "Service",
+        "file": "Livesql3/ntf.sql"
+    },
+    {
+        "database": "ntf",
+        "table": "[dbo].[ServiceProperty](",
+        "match": "Service",
+        "file": "Livesql3/ntf.sql"
+    },
+    {
+        "database": "ntf",
+        "table": "[dbo].[ServicePropertyAudit](",
+        "match": "Service",
+        "file": "Livesql3/ntf.sql"
+    },
+    {
+        "database": "chs",
+        "table": "[dbo].[RTServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "[dbo].[ServiceProperty](",
+        "match": "Service",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "[dbo].[ServicePropertyAudit](",
+        "match": "Service",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "pfs",
+        "table": "[dbo].[ServiceProperty](",
+        "match": "Service",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "database": "pfs",
+        "table": "[dbo].[RTServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "database": "pfs",
+        "table": "[dbo].[SAServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "database": "pfs",
+        "table": "[dbo].[ServicePropertyAudit](",
+        "match": "Service",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[DssSupportUserProfile](",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[DssFonalitySupportSum](",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[RTServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[RTServiceReports](",
+        "match": "Service",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[SAServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[ServiceDowntime](",
+        "match": "Service",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[ServiceFailure](",
+        "match": "Service",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[ServiceHostConfiguration](",
+        "match": "Service",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[ServiceProperty](",
+        "match": "Service",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[ServicePropertyAudit](",
+        "match": "Service",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[SupportACD](",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[supportacdbkp](",
+        "match": "support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[SupportCDR](",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[SupportCDR2](",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[supportcdrbkp](",
+        "match": "support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[supportFonalityCDRTmp](",
+        "match": "support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[SupportTicketSLA](",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[temp_DSO_Claims](",
+        "match": "DSO",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[temp_DSO_Claims_TransactionEvents](",
+        "match": "DSO",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[temp_DSO_Cred](",
+        "match": "DSO",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[temp_DSO_ERA](",
+        "match": "DSO",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[temp_DSO_PatStmt](",
+        "match": "DSO",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[temp_DSO_RTClaims](",
+        "match": "DSO",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[temp_DSO_RTCount](",
+        "match": "DSO",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[temp_DSO_Subscription_ClientSubscriptionEvents](",
+        "match": "DSO",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[TicketSupportPass](",
+        "match": "Support",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[arc_Attachment_RTServiceAuditID_Delete_List](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[arc_Attachment_SAServiceAuditID_Delete_List](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[AttachmentService](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[AttachmentServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[RTServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[SAServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[ServiceDowntime](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[ServiceHostConfiguration](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[ServiceProperty](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "[dbo].[ServicePropertyAudit](",
+        "match": "Service",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dxcps",
+        "table": "[dbo].[Service_Plan_T](",
+        "match": "Service",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "database": "dxcps",
+        "table": "[dbo].[Service_T](",
+        "match": "Service",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "[dbo].[PracticeService](",
+        "match": "Service",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "[dbo].[PracticeServiceAudit](",
+        "match": "Service",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "[dbo].[Service](",
+        "match": "Service",
+        "file": "Livesql3/ddir.sql"
+    }
+]
