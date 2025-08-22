@@ -44,8 +44,8 @@ def scan_sql_file(filepath, mode, columns=True):
             ref_column = fk_match.group("ref_column")
             results.append({
                 'database': database,
-                'table': f"{source_table}.{constraint}",
-                'match': f"{ref_table}.{ref_column}",
+                'source': f"{source_table}.{constraint}",
+                'target': f"{ref_table}.{ref_column}",
                 'file': filepath
             })
         return results
@@ -122,12 +122,17 @@ def scan_directories(paths, mode, no_columns):
             logger.error(f"Path {path} is neither a file nor a directory")
     return all_results
 
-def print_report(results, header):
+def print_report(results, header, mode):
     print(header)
     writer = csv.writer(sys.stdout)
-    writer.writerow(["Database", "Table", "Matched", "File"])
-    for result in results:
-        writer.writerow([result["database"], result["table"], result["match"], result["file"]])
+    if mode == 'foreignkeys':
+        writer.writerow(["Database", "Source", "Target", "File"])
+        for result in results:
+            writer.writerow([result["database"], result["source"], result["target"], result["file"]])
+    else:
+        writer.writerow(["Database", "Table", "Matched", "File"])
+        for result in results:
+            writer.writerow([result["database"], result["table"], result["match"], result["file"]])
 
 def print_json_report(results, header):
     if header:
@@ -141,7 +146,7 @@ if __name__ == "__main__":
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related items")
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
     parser.add_argument('--no-columns', '-nc', action='store_true', help="Only show tables (ignoring column definitions)")
-    parser.add_argument('--foreign-keys', '-fc', action='store_true', help="Extract foreign key definitions")
+    parser.add_argument('--foreign-keys', '-fc', action='store_true', help="Extract all foreign key definitions")
     parser.add_argument('paths', nargs='*', help="Directories and/or SQL file paths to process")
     args = parser.parse_args()
 
@@ -164,8 +169,11 @@ if __name__ == "__main__":
 
     for mode in modes:
         results = scan_directories(paths, mode, args.no_columns)
-        header = f"--- Report for {mode.capitalize()} Mode ({'Tables Only' if args.no_columns else 'Tables and Columns'}) ---"
+        if args.foreign_keys:
+            header = f"--- Report for {mode.capitalize()} Mode ({'Tables Only' if args.no_columns else 'Sources and Targets'}) ---"
+        else:
+            header = f"--- Report for {mode.capitalize()} Mode ({'Tables Only' if args.no_columns else 'Tables and Columns'}) ---"
         if args.json:
             print_json_report(results, header)
         else:
-            print_report(results, header)
+            print_report(results, header, mode)
