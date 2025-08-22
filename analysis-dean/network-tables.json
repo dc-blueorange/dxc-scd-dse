@@ -1,0 +1,615 @@
+--- Report for Networks Mode (Tables Only) ---
+[
+    {
+        "database": "dw_dxc",
+        "table": "[dbo].[direct_logo_provider_statements]",
+        "match": "provider",
+        "file": "DTT-ANA-PRD/dw_dxc.sql"
+    },
+    {
+        "database": "dw_dxc",
+        "table": "[dbo].[provider_rules_details_vw]",
+        "match": "provider",
+        "file": "DTT-ANA-PRD/dw_dxc.sql"
+    },
+    {
+        "database": "dw_dxc",
+        "table": "[dbo].[VIP_Provider_Detail_Info]",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/dw_dxc.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "[dbo].[_airbyte_raw_AppointmentProviderMapping](",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "[dbo].[_airbyte_raw_Provider](",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "[dbo].[appointmentprovidermapping](",
+        "match": "provider",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "ext_raw_ec",
+        "table": "[dbo].[provider](",
+        "match": "provider",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "database": "master",
+        "table": "[dbo].[udfCREDActiveNonDemoProviderProfiles](@groupID",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "[dbo].[udfCREDApplicationLevelBasicProviderInformation]()",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "[dbo].[udfCREDDDSEnrollUIDisplayedProviderProfiles]()",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "[ddsenroll].[CREDProviderDETLocationsProviderProfileAnswers](",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "[ddsenroll].[CREDProviderDETLocationsProviderProfileAnswers](",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "[ddsenroll].[CREDProviderDETMinReqdProviderProfileAnswers](",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "[ddsenroll].[CREDProviderDETMinReqdProviderProfileAnswers](",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "[ddsenroll].[CREDProviderDETProviderProfiles](",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "[ddsenroll].[CREDProviderDETProviderProfiles](",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "[ddsenroll].[CREDProviderDETUnpivotedUserAnswers](",
+        "match": "Provider",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[MetProviderDir](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDir](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDir_new](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirAudit](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectory](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryAppsetNoteAlert](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryChangeDetail](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryChangeMapping](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryCompare](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryHistory](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryLocation](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryLocationCompare](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[providerdirectoryold](",
+        "match": "provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayer](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerDocument](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerHistory](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerLocationPlan](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerNote](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerNoteHistory](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerPlan](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerStatus](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerStatusDetail](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerStatusReason](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerTag](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPayerTagLookup](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderDirectoryPlanConfig](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderPayerCredential](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderPayerEnrollment](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderPayerEnrollmentAudit](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderRule](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "[dbo].[ProviderRuleAudit](",
+        "match": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[arc_Claim_ClaimProviderID_List](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[arc_Claim_ProviderCredentialID_List](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[arc_ProviderCredentialAuditID_Archive_List](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ClaimItemProvider](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ClaimItemProviderCredential](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ClaimProvider](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ClaimProviderAddress](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ERAProviderAdjustmentCode](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ProviderCredential](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ProviderCredentialAudit](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ProviderHold](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "[dbo].[ProviderRegistration](",
+        "match": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderProfileQuestion](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderProfileAnswerView]",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderForm](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderStateForm](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderFormAnswer](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ApplicationSetProviderFormLocationView]",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderProfileQuestionView]",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderProfileLocationView]",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderApplicationStatus](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderApplicationStatusLocation](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderApplicationStatusPlan](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderDetail](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderDocument](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderDocumentMeta](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderFormAnswerMigrationAudit](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderFormDocument](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderFormDocumentMeta](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderFormHistory](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderFormNote](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderFormStatus](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderGroupDetail](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderProfileSection](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderProfileSummary](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderSiteDetail](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderStateFormAnswer](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderStateFormHistory](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "[dbo].[ProviderStateFormNote](",
+        "match": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "chs",
+        "table": "[dbo].[ProviderPartnerMap](",
+        "match": "Provider",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[enrollmentpayerprovider](",
+        "match": "provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[PayerProviderTrans](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[ProviderMatching](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[ProviderPayerTrans](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[rpt_ADPProviderAudit](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[rpt_ADPProviderCredentialAudit](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[rpt_BNDProviderAudit](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[rpt_BNDProviderCredentialAudit](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[rpt_GEDCProviderAudit](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[rpt_GEDCProviderCredentialAudit](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[rpt_LuminaProviderAudit](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[rpt_LuminaProviderCredentialAudit](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "[dbo].[Test_PayerProviderTrans](",
+        "match": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "ptp",
+        "table": "[dbo].[ProviderPayment](",
+        "match": "Provider",
+        "file": "Livesql3/ptp.sql"
+    }
+]

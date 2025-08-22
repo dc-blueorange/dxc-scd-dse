@@ -16,7 +16,7 @@ import csv
 import sys
 import json
 
-logging.basicConfig(level=logging.WARN)
+logging.basicConfig(level=logging.ERROR)
 logger = logging.getLogger(__name__)
 
 def scan_columns_sql_file(filepath, mode):
@@ -51,7 +51,7 @@ def scan_columns_sql_file(filepath, mode):
 
         pattern = None
         if mode == 'dentists':
-            pattern = r'\[\s*([^\]]*(?:NPI|dentist|hygienist|provider)\][^\]]*)\s*\]\s*\['
+            pattern = r'\[\s*([^\]]*(?:NPI|dentist|hygienist|provider)[^\]]*)\s*\]\s*\['
         elif mode == 'networks':
             pattern = r'\[\s*([^\]]*(?:dental network provider|network provider|dental network|provider|network)[^\]]*)\s*\]\s*\['
         elif mode == 'dsos':
@@ -59,7 +59,7 @@ def scan_columns_sql_file(filepath, mode):
         if pattern:
             tablenames_regex = re.compile(pattern, flags=re.IGNORECASE | re.DOTALL)
             for match_found in tablenames_regex.finditer(columns_section):
-                match = match_found.group(0)
+                match = match_found.group(1)
                 logger.warning(f"Found table (matched table name filter): {table_name} with match: {match}")
                 results.append({
                     'database': database,
@@ -83,7 +83,7 @@ def scan_tables_sql_file(filepath, mode):
     database = db_match.group(1) if db_match else "Unknown"
     logger.warning(f"Database determined: {database} file={filepath}")
 
-    table_regex = re.compile(r'CREATE\s+\S+\s+[`\']?(\S+).*?GO', re.IGNORECASE | re.DOTALL | re.MULTILINE)
+    table_regex = re.compile(r'CREATE\s+(?:TABLE|VIEW)\s+[`\']?(\S+).*?GO', re.IGNORECASE | re.DOTALL | re.MULTILINE)
     for table_match in table_regex.finditer(content):
         table_name = table_match.group(1)
         pattern = None
