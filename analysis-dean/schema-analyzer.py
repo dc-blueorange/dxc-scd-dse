@@ -32,6 +32,23 @@ def scan_sql_file(filepath, mode, columns=True):
     db_match = re.search(r"USE\s+\[(\w+)\]", content, flags=re.IGNORECASE | re.DOTALL | re.MULTILINE)
     database = db_match.group(1) if db_match else "Unknown"
     logger.warning(f"Database determined: {database} file={filepath}")
+    if mode == 'foreignkeys':
+        fk_regex = re.compile(r"""
+            (?:ALTER\s+TABLE\s+)?\[\s*dbo\s*\]\.\[\s*(?P<source_table>[^\]]+)\s*\].*?ADD\s+CONSTRAINT\s+\[\s*(?P<constraint>[^\]]+)\s*\]\s+FOREIGN\s+KEY\s*\(\s*\[\s*(?P<source_column>[^\]]+)\s*\]\s*\)\s+REFERENCES\s+\[\s*dbo\s*\]\.\[\s*(?P<ref_table>[^\]]+)\s*\]\s*\(\s*\[\s*(?P<ref_column>[^\]]+)\s*\]\s*\)
+        """, re.IGNORECASE | re.DOTALL | re.VERBOSE)
+        for fk_match in fk_regex.finditer(content):
+            source_table = fk_match.group("source_table")
+            constraint = fk_match.group("constraint")
+            source_column = fk_match.group("source_column")
+            ref_table = fk_match.group("ref_table")
+            ref_column = fk_match.group("ref_column")
+            results.append({
+                'database': database,
+                'table': f"{source_table}.{constraint}",
+                'match': f"{ref_table}.{ref_column}",
+                'file': filepath
+            })
+        return results
 
     table_regex = re.compile(
         r"""
@@ -124,6 +141,7 @@ if __name__ == "__main__":
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related items")
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
     parser.add_argument('--no-columns', '-nc', action='store_true', help="Only show tables (ignoring column definitions)")
+    parser.add_argument('--foreign-keys', '-fc', action='store_true', help="Extract foreign key definitions")
     parser.add_argument('paths', nargs='*', help="Directories and/or SQL file paths to process")
     args = parser.parse_args()
 
@@ -134,6 +152,8 @@ if __name__ == "__main__":
         modes.append('networks')
     if args.dsos:
         modes.append('dsos')
+    if args.foreign_keys:
+        modes.append('foreignkeys')
     if not modes:
         parser.error("No mode selected. Use at least one of --dentists, --networks, or --dsos.")
 
