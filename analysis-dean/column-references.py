@@ -4,6 +4,20 @@ import json
 import os
 import sys
 
+def load_json_file(filepath):
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            content = f.read()
+            # Remove any header lines before the JSON array
+            start_index = content.find('[')
+            if start_index == -1:
+                raise ValueError("No JSON array found in file.")
+            json_content = content[start_index:]
+            return json.loads(json_content)
+    except Exception as e:
+        print(f"Error reading or parsing file {filepath}: {e}", file=sys.stderr)
+        sys.exit(1)
+
 def main():
     parser = argparse.ArgumentParser(
         description='Enhance columnsSource columns file with foreign key references'
@@ -16,19 +30,8 @@ def main():
     columns_source_file_path = args.source_columns
     foreign_keys_file_path = args.foreign_keys
 
-    try:
-        with open(columns_source_file_path, 'r', encoding='utf-8') as f:
-            columns_source_data = json.load(f)
-    except Exception as e:
-        print("Error reading or parsing columnsSource columns file:", e, file=sys.stderr)
-        sys.exit(1)
-
-    try:
-        with open(foreign_keys_file_path, 'r', encoding='utf-8') as f:
-            foreign_keys = json.load(f)
-    except Exception as e:
-        print("Error reading or parsing foreign keys file:", e, file=sys.stderr)
-        sys.exit(1)
+    columns_source_data = load_json_file(columns_source_file_path)
+    foreign_keys = load_json_file(foreign_keys_file_path)
 
     enhanced_data = []
     for entry in columns_source_data:
