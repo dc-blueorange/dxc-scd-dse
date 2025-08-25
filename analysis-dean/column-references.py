@@ -3,6 +3,9 @@ import argparse
 import json
 import os
 import sys
+import logging
+
+logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
 
 def load_json_file(filepath):
     try:
@@ -15,7 +18,7 @@ def load_json_file(filepath):
             json_content = content[start_index:]
             return json.loads(json_content)
     except Exception as e:
-        print(f"Error reading or parsing file {filepath}: {e}", file=sys.stderr)
+        logging.error(f"Error reading or parsing file {filepath}: {e}")
         sys.exit(1)
 
 def main():
@@ -30,7 +33,10 @@ def main():
     columns_source_file_path = args.source_columns
     foreign_keys_file_path = args.foreign_keys
 
+    logging.info("Loading source columns file: %s", columns_source_file_path)
     columns_source_data = load_json_file(columns_source_file_path)
+
+    logging.info("Loading foreign keys file: %s", foreign_keys_file_path)
     foreign_keys = load_json_file(foreign_keys_file_path)
 
     enhanced_data = []
@@ -39,6 +45,7 @@ def main():
         if search_key:
             references = [{"database": fk["database"], "source": fk["source"]}
                           for fk in foreign_keys if fk.get("target") == search_key]
+            logging.debug("Found references for match '%s': %s", search_key, references)
         else:
             references = []
         new_entry = dict(entry)
@@ -54,9 +61,9 @@ def main():
     try:
         with open(output_file_path, 'w', encoding='utf-8') as f:
             json.dump(enhanced_data, f, indent=4)
-        print("Enhanced columnsSource columns file created:", output_file_path)
+        logging.info("Enhanced columnsSource columns file created: %s", output_file_path)
     except Exception as e:
-        print("Error writing enhanced file:", e, file=sys.stderr)
+        logging.error("Error writing enhanced file: %s", e)
         sys.exit(1)
 
 if __name__ == '__main__':
