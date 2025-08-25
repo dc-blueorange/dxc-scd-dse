@@ -1,66 +1,60 @@
-#!/usr/bin/env python
-const fs = require('fs');
-const path = require('path');
-const { ArgumentParser } = require('argparse');
+#!/usr/bin/env python3
+import argparse
+import json
+import os
+import sys
 
-const parser = new ArgumentParser({
-    description: 'Enhance columnsSource columns file with foreign key references'
-});
-parser.add_argument('--source-columns', '-sc', { required: true, help: 'Path to columnsSource columns JSON file' });
-parser.add_argument('--foreign-keys', '-fk', { required: true, help: 'Path to foreign keys JSON file' });
-parser.add_argument('--out', { required: false, help: 'Path to output enhanced JSON file' });
+def main():
+    parser = argparse.ArgumentParser(
+        description='Enhance columnsSource columns file with foreign key references'
+    )
+    parser.add_argument('--source-columns', '-sc', required=True, help='Path to columnsSource columns JSON file')
+    parser.add_argument('--foreign-keys', '-fk', required=True, help='Path to foreign keys JSON file')
+    parser.add_argument('--out', required=False, help='Path to output enhanced JSON file')
+    args = parser.parse_args()
 
-const args = parser.parse_args();
+    columns_source_file_path = args.source_columns
+    foreign_keys_file_path = args.foreign_keys
 
-const columnsSourceFilePath = args.columnsSource;
-const foreignKeysFilePath = args.keys;
-let outputFilePath;
+    try:
+        with open(columns_source_file_path, 'r', encoding='utf-8') as f:
+            columns_source_data = json.load(f)
+    except Exception as e:
+        print("Error reading or parsing columnsSource columns file:", e, file=sys.stderr)
+        sys.exit(1)
 
-// Load columnsSource-columns.json
-let columnsSourceData;
-try {
-    const columnsSourceJson = fs.readFileSync(columnsSourceFilePath, 'utf8');
-    columnsSourceData = JSON.parse(columnsSourceJson);
-} catch (err) {
-    console.error("Error reading or parsing columnsSource columns file:", err);
-    process.exit(1);
-}
+    try:
+        with open(foreign_keys_file_path, 'r', encoding='utf-8') as f:
+            foreign_keys = json.load(f)
+    except Exception as e:
+        print("Error reading or parsing foreign keys file:", e, file=sys.stderr)
+        sys.exit(1)
 
-// Load foreign-keys.json
-let foreignKeys;
-try {
-    const fkJson = fs.readFileSync(foreignKeysFilePath, 'utf8');
-    foreignKeys = JSON.parse(fkJson);
-} catch (err) {
-    console.error("Error reading or parsing foreign keys file:", err);
-    process.exit(1);
-}
+    enhanced_data = []
+    for entry in columns_source_data:
+        search_key = entry.get("match")
+        if search_key:
+            references = [{"database": fk["database"], "source": fk["source"]}
+                          for fk in foreign_keys if fk.get("target") == search_key]
+        else:
+            references = []
+        new_entry = dict(entry)
+        new_entry["references"] = references
+        enhanced_data.append(new_entry)
 
-// Process each entry from columnsSourceData.
-// Each element is assumed to have a property 'match' which is a string in the format "Table.Column".
-// For each 'match', find all references in foreignKeys whose "target" exactly matches the 'match' string.
-// Add a "references" property (an array) to a copy of the original entry.
-const enhancedData = columnsSourceData.map(entry => {
-    let searchKey = entry.match;
-    const references = searchKey ? foreignKeys.filter(fk => fk.target === searchKey)
-                                  .map(fk => ({ database: fk.database, source: fk.source }))
-                                  : [];
-    return Object.assign({}, entry, { references });
-});
+    if args.out:
+        output_file_path = args.out
+    else:
+        base, ext = os.path.splitext(columns_source_file_path)
+        output_file_path = base + "-enhanced" + ext
 
-// Determine output filename: if the --out flag is provided, use that; otherwise, generate one.
-if (args.out) {
-    outputFilePath = args.out;
-} else {
-    const parsedcolumnsSourcePath = path.parse(columnsSourceFilePath);
-    const newFileName = parsedcolumnsSourcePath.name + "-enhanced" + parsedcolumnsSourcePath.ext;
-    outputFilePath = path.join(parsedcolumnsSourcePath.dir, newFileName);
-}
+    try:
+        with open(output_file_path, 'w', encoding='utf-8') as f:
+            json.dump(enhanced_data, f, indent=4)
+        print("Enhanced columnsSource columns file created:", output_file_path)
+    except Exception as e:
+        print("Error writing enhanced file:", e, file=sys.stderr)
+        sys.exit(1)
 
-try {
-    fs.writeFileSync(outputFilePath, JSON.stringify(enhancedData, null, 4));
-    console.log("Enhanced columnsSource columns file created: " + outputFilePath);
-} catch (err) {
-    console.error("Error writing enhanced file:", err);
-    process.exit(1);
-}
+if __name__ == '__main__':
+    main()
