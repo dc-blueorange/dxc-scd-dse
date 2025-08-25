@@ -5,8 +5,6 @@ import os
 import sys
 import logging
 
-logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s')
-
 def load_json_file(filepath):
     try:
         with open(filepath, 'r', encoding='utf-8') as f:
@@ -28,7 +26,15 @@ def main():
     parser.add_argument('--source-columns', '-sc', required=True, help='Path to columnsSource columns JSON file')
     parser.add_argument('--foreign-keys', '-fk', required=True, help='Path to foreign keys JSON file')
     parser.add_argument('--out', required=False, help='Path to output enhanced JSON file')
+    parser.add_argument('--log-level', required=False, default='INFO', help='Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)')
     args = parser.parse_args()
+
+    # Set logging level based on flag
+    numeric_level = getattr(logging, args.log_level.upper(), None)
+    if not isinstance(numeric_level, int):
+        print(f'Invalid log level: {args.log_level}', file=sys.stderr)
+        sys.exit(1)
+    logging.basicConfig(level=numeric_level, format='%(levelname)s: %(message)s')
 
     columns_source_file_path = args.source_columns
     foreign_keys_file_path = args.foreign_keys
