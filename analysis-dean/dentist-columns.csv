@@ -1,4 +1,3 @@
---- Report for Dentists Mode (Tables and Columns) ---
 Database,Table,Matched,File
 dw_dxc_dev,smilebrands_claim_status_report__dbt_tmp,rendering_provider_npi,DTT-ANA-PRD/dw_dxc_dev.sql
 partcredDM,Credential,ProviderID,DTT-ANA-PRD/partcredDM.sql

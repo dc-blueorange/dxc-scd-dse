@@ -1,4 +1,3 @@
---- Report for Dsos Mode (Tables Only) ---
 Database,Table,Matched,File
 dw_atm_dxc,dci_rtserviceaudit_6mos,service,DTT-ANA-PRD/dw_atm_dxc.sql
 nsDev,demandSourceType,dSo,DTT-TRX-PRD/nsDev.sql
