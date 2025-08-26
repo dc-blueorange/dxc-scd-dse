@@ -60,8 +60,8 @@ def main():
                 if fk_db == source_db and fk_table == source_table and fk_key == source_column:
                     references.append({
                         "database": fk_db,
-                        "fk_table": fk_table,
-                        "fk_key": fk_key,
+                        # "fk_table": fk_table,
+                        # "fk_key": fk_key,
                         "constraint": fk.get("constraint"),
                         "ref_table": fk.get("ref_table"),
                         "ref_column": fk.get("ref_column"),
@@ -72,7 +72,8 @@ def main():
             logging.warning("Entry missing one or more required fields (database, table, column): %s", entry)
         new_entry = dict(entry)
         new_entry["references"] = references
-        enhanced_data.append(new_entry)
+        if references:
+            enhanced_data.append(new_entry)
 
     if args.out:
         output_file = args.out
