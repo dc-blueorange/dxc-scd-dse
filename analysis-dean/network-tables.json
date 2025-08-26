@@ -3,577 +3,577 @@
     {
         "database": "dw_dxc",
         "table": "direct_logo_provider_statements",
-        "match": "provider",
+        "column": "provider",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "dw_dxc",
         "table": "provider_rules_details_vw",
-        "match": "provider",
+        "column": "provider",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "dw_dxc",
         "table": "VIP_Provider_Detail_Info",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "_airbyte_raw_AppointmentProviderMapping",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "_airbyte_raw_Provider",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "appointmentprovidermapping",
-        "match": "provider",
+        "column": "provider",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "provider",
-        "match": "provider",
+        "column": "provider",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "master",
         "table": "CREDProviderDETLocationsProviderProfileAnswers",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "CREDProviderDETLocationsProviderProfileAnswers",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "CREDProviderDETMinReqdProviderProfileAnswers",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "CREDProviderDETMinReqdProviderProfileAnswers",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "CREDProviderDETProviderProfiles",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "CREDProviderDETProviderProfiles",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "CREDProviderDETUnpivotedUserAnswers",
-        "match": "Provider",
+        "column": "Provider",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "common",
         "table": "MetProviderDir",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDir",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDir_new",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectory",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryAppsetNoteAlert",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryChangeDetail",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryChangeMapping",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryCompare",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryHistory",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryLocation",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryLocationCompare",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "providerdirectoryold",
-        "match": "provider",
+        "column": "provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayer",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerDocument",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerHistory",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerLocationPlan",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerNote",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerNoteHistory",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerPlan",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerStatus",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerStatusDetail",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerStatusReason",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerTag",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerTagLookup",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPlanConfig",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderPayerCredential",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderPayerEnrollment",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderPayerEnrollmentAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderRule",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderRuleAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_ClaimProviderID_List",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_ProviderCredentialID_List",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_ProviderCredentialAuditID_Archive_List",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimItemProvider",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimItemProviderCredential",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimProvider",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimProviderAddress",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ERAProviderAdjustmentCode",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ProviderCredential",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ProviderCredentialAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ProviderHold",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ProviderRegistration",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "cred",
         "table": "ProviderProfileQuestion",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderForm",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderStateForm",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderFormAnswer",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderProfileLocationView",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderApplicationStatus",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderApplicationStatusLocation",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderApplicationStatusPlan",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderDetail",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderDocument",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderDocumentMeta",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderFormAnswerMigrationAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderFormDocument",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderFormDocumentMeta",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderFormHistory",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderFormNote",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderFormStatus",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderGroupDetail",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderProfileSection",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderProfileSummary",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderSiteDetail",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderStateFormAnswer",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderStateFormHistory",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderStateFormNote",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "chs",
         "table": "ProviderPartnerMap",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "reports",
         "table": "enrollmentpayerprovider",
-        "match": "provider",
+        "column": "provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "PayerProviderTrans",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ProviderMatching",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ProviderPayerTrans",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_ADPProviderAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_ADPProviderCredentialAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_BNDProviderAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_BNDProviderCredentialAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_GEDCProviderAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_GEDCProviderCredentialAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_LuminaProviderAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_LuminaProviderCredentialAudit",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Test_PayerProviderTrans",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "ptp",
         "table": "ProviderPayment",
-        "match": "Provider",
+        "column": "Provider",
         "file": "Livesql3/ptp.sql"
     }
 ]

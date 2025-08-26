@@ -3,4933 +3,4933 @@
     {
         "database": "dw_dxc_dev",
         "table": "smilebrands_claim_status_report__dbt_tmp",
-        "match": "first_service_started_at",
+        "column": "first_service_started_at",
         "file": "DTT-ANA-PRD/dw_dxc_dev.sql"
     },
     {
         "database": "dw_dxc_dev",
         "table": "smilebrands_claim_status_report__dbt_tmp",
-        "match": "last_service_started_at",
+        "column": "last_service_started_at",
         "file": "DTT-ANA-PRD/dw_dxc_dev.sql"
     },
     {
         "database": "rpt",
         "table": "SSISGrandfatheredReportsMap",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISGrandfatheredReportsMap",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISTemplateReports",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISTemplateReports",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISTemplateReports",
-        "match": "ActiveModifySupportUserID",
+        "column": "ActiveModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClients",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClients",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClients",
-        "match": "ActiveModifySupportUserID",
+        "column": "ActiveModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsEmails",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsEmails",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsEmails",
-        "match": "ActiveModifySupportUserID",
+        "column": "ActiveModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISReportClientTypes",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISReportClientTypes",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISReportClientTypes",
-        "match": "ActiveModifySupportUserID",
+        "column": "ActiveModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsFTPDistributions",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsFTPDistributions",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsAudit",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsAudit",
-        "match": "ActiveModifySupportUserID",
+        "column": "ActiveModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsEmailsAudit",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsEmailsAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsEmailsAudit",
-        "match": "ActiveModifySupportUserID",
+        "column": "ActiveModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsFTPDistributionsAudit",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISDistributionClientsFTPDistributionsAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISTemplateReportFeatureNames",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISTemplateReportFeatureNames",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "rpt",
         "table": "SSISTemplateReportFeatureNames",
-        "match": "ActiveModifySupportUserID",
+        "column": "ActiveModifySupportUserID",
         "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "dw_dxc",
         "table": "DssCommissionEarnedPointsDetail_aud",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "dw_dxc",
         "table": "DssCommissionEarnedPointsDetail_aud",
-        "match": "SupportedPMS",
+        "column": "SupportedPMS",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "dw_dxc",
         "table": "DssCommissionEarnedPointsDetail_aud",
-        "match": "NotSupportedPMS",
+        "column": "NotSupportedPMS",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "dw_dxc",
         "table": "DssSalesCommission_aud",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "dw_dxc",
         "table": "DssSalesCommissionDetail_aud",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "dw_dxc",
         "table": "DssSalesCommissionDetail_aud",
-        "match": "SupportedPMS",
+        "column": "SupportedPMS",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "dw_dxc",
         "table": "DssSalesCommissionDetail_aud",
-        "match": "NotSupportedPMS",
+        "column": "NotSupportedPMS",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "chs_MetaClaim_Since2023",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "cred_billingactivity",
-        "match": "Group_Package_Service_Code",
+        "column": "Group_Package_Service_Code",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "cred_billingactivity",
-        "match": "Group_Commission_Support_User_ID",
+        "column": "Group_Commission_Support_User_ID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "cred_billingactivity",
-        "match": "Group_Commission_Support_User_Last_Name",
+        "column": "Group_Commission_Support_User_Last_Name",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "cred_billingactivity",
-        "match": "Group_Commission_Support_User_First_Name",
+        "column": "Group_Commission_Support_User_First_Name",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_billingactivity",
-        "match": "Group_Package_Service_Code",
+        "column": "Group_Package_Service_Code",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_billingactivity",
-        "match": "Group_Commission_Support_User_ID",
+        "column": "Group_Commission_Support_User_ID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_billingactivity",
-        "match": "Group_Commission_Support_User_Last_Name",
+        "column": "Group_Commission_Support_User_Last_Name",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_billingactivity",
-        "match": "Group_Commission_Support_User_First_Name",
+        "column": "Group_Commission_Support_User_First_Name",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_claim_6mos",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_claim_6mos",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_rtserviceaudit_6mos",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_rtserviceaudit_6mos",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_rtserviceaudit_6mos",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_rtserviceaudit_6mos",
-        "match": "SubServiceType",
+        "column": "SubServiceType",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dea_attachments_6mos",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dea_attachments_6mos",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dea_attachments_6mos",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dea_attachments_6mos",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dea_attachments_6mos",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "pnt_billingactivity",
-        "match": "Group_Package_Service_Code",
+        "column": "Group_Package_Service_Code",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "pnt_billingactivity",
-        "match": "Group_Commission_Support_User_ID",
+        "column": "Group_Commission_Support_User_ID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "pnt_billingactivity",
-        "match": "Group_Commission_Support_User_Last_Name",
+        "column": "Group_Commission_Support_User_Last_Name",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "pnt_billingactivity",
-        "match": "Group_Commission_Support_User_First_Name",
+        "column": "Group_Commission_Support_User_First_Name",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "dataconnectionpool",
-        "match": "servicesource",
+        "column": "servicesource",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "eligibilitydata",
-        "match": "servicesource",
+        "column": "servicesource",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "eligibilityschedule",
-        "match": "servicesource",
+        "column": "servicesource",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "errortype",
-        "match": "serviceerror",
+        "column": "serviceerror",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "errortype",
-        "match": "servicesource",
+        "column": "servicesource",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "ext_raw_ec",
         "table": "payerproperty",
-        "match": "servicesource",
+        "column": "servicesource",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQ07M1755241406650_realtime_dci_transactions_outbound_vw",
-        "match": "transaction_service_type_id",
+        "column": "transaction_service_type_id",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQ07M1755241406650_realtime_dci_transactions_outbound_vw",
-        "match": "transaction_sub_service_type_id",
+        "column": "transaction_sub_service_type_id",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "match": "Service_Date",
+        "column": "Service_Date",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "match": "Service_Started_At",
+        "column": "Service_Started_At",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "match": "Service_Started_At",
+        "column": "Service_Started_At",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "match": "Service_Date",
+        "column": "Service_Date",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "match": "Service_Date",
+        "column": "Service_Date",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQRMC1755242563835_realtime_dci_transactions_inbound_vw",
-        "match": "transaction_service_type_id",
+        "column": "transaction_service_type_id",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQRMC1755242563835_realtime_dci_transactions_inbound_vw",
-        "match": "transaction_sub_service_type_id",
+        "column": "transaction_sub_service_type_id",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "bdd",
         "table": "ClaimConnectClaimDeliveryFacts",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "DTT-ANA-PRD/bdd.sql"
     },
     {
         "database": "bireports",
         "table": "AccountRevenueDetail",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "DTT-ANA-PRD/bireports.sql"
     },
     {
         "database": "bireports",
         "table": "IdleAccount",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "DTT-ANA-PRD/bireports.sql"
     },
     {
         "database": "master",
         "table": "DCIClaimFLATClaimsLifeCycles",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "DCIClaimFLATClaimsLifeCyclesArchive",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "DEAAttachmentFLATAttachmentsLifeCycles",
-        "match": "First101DeliveredByWebserviceDate",
+        "column": "First101DeliveredByWebserviceDate",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "DEAAttachmentFLATAttachmentsLifeCycles",
-        "match": "Last101DeliveredByWebserviceDate",
+        "column": "Last101DeliveredByWebserviceDate",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "DEAAttachmentFLATAttachmentsLifeCycles",
-        "match": "First104DownloadedByWebserviceDate",
+        "column": "First104DownloadedByWebserviceDate",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "DEAAttachmentFLATAttachmentsLifeCycles",
-        "match": "Last104DownloadedByWebserviceDate",
+        "column": "Last104DownloadedByWebserviceDate",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "rptCLCtClaimDETClaimStatusDetailXDaysAged",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "rptDCIClaimDETClaimsEnteredDetails",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "rptDCIClaimDETUserResolvedClaimsDetail",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "Appointments",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "ClearinghouseClaims",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "trxWsdm",
         "table": "ClientSubscriptionEvents",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "DTT-TRX-PRD/trxWsdm.sql"
     },
     {
         "database": "trxWsdm",
         "table": "ClientSubscriptionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxWsdm.sql"
     },
     {
         "database": "trxWsdm",
         "table": "ClientTransactions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxWsdm.sql"
     },
     {
         "database": "trxWsdm",
         "table": "TransactionDimensions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxWsdm.sql"
     },
     {
         "database": "trxWsdm",
         "table": "TransactionEventClientUsage",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxWsdm.sql"
     },
     {
         "database": "trxWsdm",
         "table": "TransactionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxWsdm.sql"
     },
     {
         "database": "trxTest",
         "table": "ClientSubscriptionEvents",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "DTT-TRX-PRD/trxTest.sql"
     },
     {
         "database": "trxTest",
         "table": "ClientSubscriptionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxTest.sql"
     },
     {
         "database": "trxTest",
         "table": "ClientTransactions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxTest.sql"
     },
     {
         "database": "trxTest",
         "table": "TransactionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxTest.sql"
     },
     {
         "database": "trx",
         "table": "ClientSubscriptionEvents",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "DTT-TRX-PRD/trx.sql"
     },
     {
         "database": "trx",
         "table": "ClientSubscriptionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trx.sql"
     },
     {
         "database": "trx",
         "table": "ClientTransactions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trx.sql"
     },
     {
         "database": "trx",
         "table": "TransactionDimensions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trx.sql"
     },
     {
         "database": "trx",
         "table": "TransactionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trx.sql"
     },
     {
         "database": "trxQA",
         "table": "ClientTransactions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxQA.sql"
     },
     {
         "database": "trxQA",
         "table": "TransactionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxQA.sql"
     },
     {
         "database": "trxQA",
         "table": "ClientSubscriptionEvents",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "DTT-TRX-PRD/trxQA.sql"
     },
     {
         "database": "trxQA",
         "table": "ClientSubscriptionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxQA.sql"
     },
     {
         "database": "trxQA",
         "table": "TransactionDimensions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxQA.sql"
     },
     {
         "database": "trxQA",
         "table": "TransactionEventClientUsage",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxQA.sql"
     },
     {
         "database": "ns",
         "table": "Charge_copy",
-        "match": "serviceenddate",
+        "column": "serviceenddate",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "Charge_copy",
-        "match": "servicestartdate",
+        "column": "servicestartdate",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "Customer_copy",
-        "match": "custentity_exclude_from_inv_support",
+        "column": "custentity_exclude_from_inv_support",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "Customer_copy",
-        "match": "leadsource",
+        "column": "leadsource",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "Item_copy",
-        "match": "alternatedemandsourceitem",
+        "column": "alternatedemandsourceitem",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "Item_copy",
-        "match": "demandsource",
+        "column": "demandsource",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "Transaction_copy",
-        "match": "custbody_support_file",
+        "column": "custbody_support_file",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "Transaction_copy",
-        "match": "leadsource",
+        "column": "leadsource",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "TransactionLine_copy",
-        "match": "custcol_ava_is_taxable_service",
+        "column": "custcol_ava_is_taxable_service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "trxDev",
         "table": "ClientSubscriptionEvents",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "DTT-TRX-PRD/trxDev.sql"
     },
     {
         "database": "trxDev",
         "table": "ClientSubscriptionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxDev.sql"
     },
     {
         "database": "trxDev",
         "table": "ClientTransactions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxDev.sql"
     },
     {
         "database": "trxDev",
         "table": "TransactionDimensions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxDev.sql"
     },
     {
         "database": "trxDev",
         "table": "TransactionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxDev.sql"
     },
     {
         "database": "erp",
         "table": "ClientGLEntrySummary",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientGLEntrySummaryAudit",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary",
-        "match": "VipServiceCode",
+        "column": "VipServiceCode",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary",
-        "match": "ProductGroupPackageContractServiceCode",
+        "column": "ProductGroupPackageContractServiceCode",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary",
-        "match": "DBSServicesRenderedPeriod",
+        "column": "DBSServicesRenderedPeriod",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary_20250128Backup",
-        "match": "VipServiceCode",
+        "column": "VipServiceCode",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary_20250128Backup",
-        "match": "ProductGroupPackageContractServiceCode",
+        "column": "ProductGroupPackageContractServiceCode",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary_20250128Backup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary_TEST",
-        "match": "VipServiceCode",
+        "column": "VipServiceCode",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary_TEST",
-        "match": "ProductGroupPackageContractServiceCode",
+        "column": "ProductGroupPackageContractServiceCode",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummary_TEST",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummaryAudit",
-        "match": "VipServiceCode",
+        "column": "VipServiceCode",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummaryAudit",
-        "match": "ProductGroupPackageContractServiceCode",
+        "column": "ProductGroupPackageContractServiceCode",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ClientUsageSummaryAudit",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPAccountLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPAccountLookupAudit",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPItemFeatureNameLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPItemFeatureNameLookupAudit",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPItemLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPItemLookupAudit",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPItemMasterItemLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPMasterItemLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPRecordTypeLookup",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPRecordTypeLookup",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPRecordTypeLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPRecordTypeLookupAudit",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPRecordTypeLookupAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPRecordTypeLookupAudit",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPSubsidiaryLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "erp",
         "table": "ERPSubsidiaryLookupAudit",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
         "database": "trxBrch",
         "table": "ClientSubscriptionEvents",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "DTT-TRX-PRD/trxBrch.sql"
     },
     {
         "database": "trxBrch",
         "table": "ClientSubscriptionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxBrch.sql"
     },
     {
         "database": "trxBrch",
         "table": "ClientTransactions",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxBrch.sql"
     },
     {
         "database": "trxBrch",
         "table": "TransactionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/trxBrch.sql"
     },
     {
         "database": "sch",
         "table": "ProcedureSchedules",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/sch.sql"
     },
     {
         "database": "sch",
         "table": "ProcedureSchedulesAudit",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/sch.sql"
     },
     {
         "database": "schDev",
         "table": "ProcedureSchedules",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/schDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ClientGLEntrySummary",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ClientUsageSummary",
-        "match": "VipServiceCode",
+        "column": "VipServiceCode",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ClientUsageSummary",
-        "match": "ProductGroupPackageContractServiceCode",
+        "column": "ProductGroupPackageContractServiceCode",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ClientUsageSummary",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ERPItemLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ERPItemMasterItemLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ERPMasterItemLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ERPRecordTypeLookup",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ERPRecordTypeLookup",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "erpDev",
         "table": "ERPSubsidiaryLookup",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "entyDev",
         "table": "Entities",
-        "match": "SupportClientType",
+        "column": "SupportClientType",
         "file": "DTT-TRX-PRD/entyDev.sql"
     },
     {
         "database": "entyDev",
         "table": "Entities",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/entyDev.sql"
     },
     {
         "database": "merchant",
         "table": "RTServiceAudit",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/merchant.sql"
     },
     {
         "database": "merchant",
         "table": "RTServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/merchant.sql"
     },
     {
         "database": "merchant",
         "table": "RTServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/merchant.sql"
     },
     {
         "database": "merchant",
         "table": "RTServiceAudit",
-        "match": "SubServiceType",
+        "column": "SubServiceType",
         "file": "Livesql3/merchant.sql"
     },
     {
         "database": "pnt",
         "table": "PntGroup",
-        "match": "ReturnService",
+        "column": "ReturnService",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "PntGroupHistory",
-        "match": "ReturnService",
+        "column": "ReturnService",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "RTServiceAudit",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "RTServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "RTServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "RTServiceAudit",
-        "match": "SubServiceType",
+        "column": "SubServiceType",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "SAServiceAudit",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "SAServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "SAServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceDowntime",
-        "match": "ServiceDowntimeID",
+        "column": "ServiceDowntimeID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceDowntime",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceDowntime",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceHostConfigurationID",
+        "column": "ServiceHostConfigurationID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceProperty",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceProperty",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceProperty",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyAuditID",
+        "column": "ServicePropertyAuditID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServicePropertyAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServicePropertyAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "Statement",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementFile",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementFile",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementFileAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementFileAudit",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementFileNote",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementHistory",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementHistory",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementPageCount",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementReminder",
-        "match": "ServiceDate",
+        "column": "ServiceDate",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "StatementReminder",
-        "match": "ServiceTime",
+        "column": "ServiceTime",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "dhmo",
         "table": "OfficeServiceClient",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dhmo.sql"
     },
     {
         "database": "common",
         "table": "Groups",
-        "match": "Serviced",
+        "column": "Serviced",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Users",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupsUsers",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "UserAddress",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupSupportUser",
-        "match": "GroupSupportUserID",
+        "column": "GroupSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupSupportUser",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUser",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUser",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUser",
-        "match": "LastServiceAccessTime",
+        "column": "LastServiceAccessTime",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Reseller",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "CommissionStatement",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProductGroupPackage",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProductGroupPackage",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "StatementItem",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "AlertSAServiceAudit",
-        "match": "AlertSAServiceAuditID",
+        "column": "AlertSAServiceAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "AlertSAServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "AlertSAServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "BenefitSearchUpgrade_Aetna06062024",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ClientRevenueDetail",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ClientRevenueDetail",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ContactUs",
-        "match": "Services",
+        "column": "Services",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ContactUsNote",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "DebugAlert",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "DebugAlert",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "DmdFileUploadImage",
-        "match": "ReviewSupportUserId",
+        "column": "ReviewSupportUserId",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "DmdFileUploadImage",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "DmdFileUploadImageAudit",
-        "match": "ReviewSupportUserId",
+        "column": "ReviewSupportUserId",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "DmdPmsGroup",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Entity",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Entity",
-        "match": "PrimarySupportUserID",
+        "column": "PrimarySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Entity",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "EntityAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "EntityAudit",
-        "match": "PrimarySupportUserID",
+        "column": "PrimarySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "EntityAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "EntityDescriptor",
-        "match": "InitialServiceStatus",
+        "column": "InitialServiceStatus",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "EntityDescriptor",
-        "match": "FinalServiceStatus",
+        "column": "FinalServiceStatus",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "EntityGroup",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "EntityGroupAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ERARegistration",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ERARegistrationAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ERARoutingSummary",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ERARoutingSummary",
-        "match": "RefreshSupportUserID",
+        "column": "RefreshSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupCommission",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupMerchant",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupPayer",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupPayerAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Groups_Test",
-        "match": "Serviced",
+        "column": "Serviced",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupsAudit",
-        "match": "Serviced",
+        "column": "Serviced",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupsUsersAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupUserSecurity",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "GroupUserSecurityAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantApplication",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantMigration",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantMigrationLink",
-        "match": "InMerchantMigrationServiceAuditID",
+        "column": "InMerchantMigrationServiceAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantMigrationLink",
-        "match": "OutMerchantMigrationServiceAuditID",
+        "column": "OutMerchantMigrationServiceAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantMigrationSchedule",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantMigrationServiceAudit",
-        "match": "MerchantMigrationServiceAuditID",
+        "column": "MerchantMigrationServiceAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantServiceAudit_Arc",
-        "match": "MerchantServiceAuditID",
+        "column": "MerchantServiceAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantServiceAudit_Arc",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantServiceAudit_Arc",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MessagePortalConversationAudit",
-        "match": "SupportUserId",
+        "column": "SupportUserId",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MessagePortalConversationModelAudit",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MessagePortalConversationModelAudit",
-        "match": "SupportUserParticipants",
+        "column": "SupportUserParticipants",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MessagePortalMessage",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MessagePortalParticipants",
-        "match": "SupportUserId",
+        "column": "SupportUserId",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "NotificationMessage",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "NppesDocumentMeta",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Packages_added",
-        "match": "PackageSupportUserName",
+        "column": "PackageSupportUserName",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Packages_deleted",
-        "match": "PackageSupportUserName",
+        "column": "PackageSupportUserName",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PartnerSecurity",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PartnerSecurityAccess",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PartnerSecurityTokenConfig",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PartnerSecurityTokenConfig",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Payer",
-        "match": "PaperSubmissionSupported",
+        "column": "PaperSubmissionSupported",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Payer",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerAddress",
-        "match": "ConfirmedSupportUserID",
+        "column": "ConfirmedSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerAddressAudit",
-        "match": "ConfirmedSupportUserID",
+        "column": "ConfirmedSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerDocType",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerDocType",
-        "match": "ServiceStatus",
+        "column": "ServiceStatus",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerEnrollment",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerMatchGroup",
-        "match": "SupportUserId",
+        "column": "SupportUserId",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerMatchGroupAudit",
-        "match": "SupportUserId",
+        "column": "SupportUserId",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerMatchStandardAddress",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerMatchStandardAddressAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PayerMemberEnrollment",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Pms",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PmsGroup",
-        "match": "VersionSupported",
+        "column": "VersionSupported",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "pmsgroup_test",
-        "match": "VersionSupported",
+        "column": "VersionSupported",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PmsGroupAudit",
-        "match": "VersionSupported",
+        "column": "VersionSupported",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "PricingPolicy",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProductGroupPackage10062024_DB2225",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProductGroupPackage10062024_DB2225",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProductPackageSetOverride",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProductPartnerPackage",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectory",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryAppsetNoteAlert",
-        "match": "ReadSupportUserID",
+        "column": "ReadSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryHistory",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "providerdirectoryold",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerDocument",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerNoteHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderPayerEnrollment",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderPayerEnrollmentAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "RecurringBills",
-        "match": "Services",
+        "column": "Services",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ReleaseGroup",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ReleaseGroup",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ReleaseGroupAudit",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ReleaseGroupAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ReleaseGroupType",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ReleaseGroupTypeAudit",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ResellerAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Roles",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "RTServiceAudit",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "RTServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "RTServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SalesLeadNote",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SalesUserAccessAssignment",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ScheduledEvent",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ScheduledEvent",
-        "match": "UpdateSupportUserID",
+        "column": "UpdateSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClient",
-        "match": "ServiceClientID",
+        "column": "ServiceClientID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClient",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClientAccess",
-        "match": "ServiceClientAccessID",
+        "column": "ServiceClientAccessID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClientAccess",
-        "match": "ServiceClientID",
+        "column": "ServiceClientID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClientAccess",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClientAccess",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClientPMS",
-        "match": "ServiceClientID",
+        "column": "ServiceClientID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClientUser",
-        "match": "ServiceClientID",
+        "column": "ServiceClientID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceCode",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceDowntime",
-        "match": "ServiceDowntimeID",
+        "column": "ServiceDowntimeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceDowntime",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceDowntime",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceFee",
-        "match": "ServiceFeeID",
+        "column": "ServiceFeeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceFee",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceHostConfigurationID",
+        "column": "ServiceHostConfigurationID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceProperty",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceProperty",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceProperty",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyAuditID",
+        "column": "ServicePropertyAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServicePropertyAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServicePropertyAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceServiceCode",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceServiceCode",
-        "match": "ServiceServiceCode",
+        "column": "ServiceServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceStatus",
-        "match": "ServiceStatus",
+        "column": "ServiceStatus",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceType",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SimpleFileTransferAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "StatementActivityLog",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "StatementItemSummary",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "StatementItemSummaryTemp1",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportDataSourceRequest",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportDataSourceRequest",
-        "match": "ReadSupportUserID",
+        "column": "ReadSupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportEventOps",
-        "match": "SupportEventOpsID",
+        "column": "SupportEventOpsID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportFunction",
-        "match": "SupportFunctionID",
+        "column": "SupportFunctionID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroup",
-        "match": "SupportGroupID",
+        "column": "SupportGroupID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroupFunction",
-        "match": "SupportGroupFunctionID",
+        "column": "SupportGroupFunctionID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroupFunction",
-        "match": "SupportGroupID",
+        "column": "SupportGroupID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroupFunction",
-        "match": "SupportFunctionID",
+        "column": "SupportFunctionID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroupUser",
-        "match": "SupportGroupUserID",
+        "column": "SupportGroupUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroupUser",
-        "match": "SupportGroupID",
+        "column": "SupportGroupID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroupUser",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportNote",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportNote",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportPayerSetGroup",
-        "match": "SupportGroupID",
+        "column": "SupportGroupID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportRole",
-        "match": "SupportRoleID",
+        "column": "SupportRoleID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "supportrole_backup1115_1102AM",
-        "match": "SupportRoleID",
+        "column": "SupportRoleID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "supportrole_bak",
-        "match": "SupportRoleID",
+        "column": "SupportRoleID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportRole_Bak2",
-        "match": "SupportRoleID",
+        "column": "SupportRoleID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportServiceCodePayerSet",
-        "match": "SupportServiceCodePayerSetID",
+        "column": "SupportServiceCodePayerSetID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportServiceCodePayerSet",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportTaskUser",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportTeam",
-        "match": "SupportTeamID",
+        "column": "SupportTeamID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportTeamUser",
-        "match": "SupportTeamUserID",
+        "column": "SupportTeamUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportTeamUser",
-        "match": "SupportTeamID",
+        "column": "SupportTeamID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportTeamUser",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserAudit",
-        "match": "SupportUserAuditID",
+        "column": "SupportUserAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserCommission",
-        "match": "SupportUserCommissionID",
+        "column": "SupportUserCommissionID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserCommission",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserCommission_0318",
-        "match": "SupportUserCommissionID",
+        "column": "SupportUserCommissionID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserCommission_0318",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserConfig",
-        "match": "SupportUserConfigID",
+        "column": "SupportUserConfigID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserConfig",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserLoginAudit",
-        "match": "SupportUserLoginAuditID",
+        "column": "SupportUserLoginAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserLoginAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserLoginChangeAudit",
-        "match": "SupportUserLoginChangeAuditID",
+        "column": "SupportUserLoginChangeAuditID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserLoginChangeAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserLoginChangeAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserPasswordHistory",
-        "match": "SupportUserPasswordHistoryID",
+        "column": "SupportUserPasswordHistoryID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserPasswordHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Ticket",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "TicketAppointment",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "TicketAttachment",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "TicketNote",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "TicketNotification",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "TicketStatusHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "TicketSubcategory",
-        "match": "DefaultSupportUser",
+        "column": "DefaultSupportUser",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "TicketSubcategoryHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "TicketSubCategoryTypeHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "TicketUserAssignment",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "UserAddressAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "UserAlias",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "UserAliasAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "UserLoginChangeAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "UsersAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "VIP",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "VIP",
-        "match": "PrimarySupportUserID",
+        "column": "PrimarySupportUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "dci",
         "table": "RTServiceAudit",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "RTServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "RTServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "RTServiceAudit",
-        "match": "SubServiceType",
+        "column": "SubServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimHistory",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimHistory",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "SAServiceAudit",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "SAServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "SAServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "OfficeResponse",
-        "match": "SAServiceAuditId",
+        "column": "SAServiceAuditId",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "OfficeResponse",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceProperty",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceProperty",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceProperty",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimItem",
-        "match": "ServiceStartDate",
+        "column": "ServiceStartDate",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimItem",
-        "match": "ServiceEndDate",
+        "column": "ServiceEndDate",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "Claim",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "Claim",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPayer",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_RTServiceAuditID_Delete_List",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_RTServiceAuditID_Delete_ListClaim",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_SAServiceAuditID_Delete_List",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_SAServiceAuditID_Delete_ListClaim",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_RTServiceAuditID_Archive_List",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_SAServiceAuditID_Archive_List",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "BenefitSearchUpgrade",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimArchive",
-        "match": "serviceauditid",
+        "column": "serviceauditid",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimArchive",
-        "match": "rtserviceauditid",
+        "column": "rtserviceauditid",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimExtension",
-        "match": "CAChildrenServices",
+        "column": "CAChildrenServices",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimFileUpload",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimFileUploadAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimFileUploadNote",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPayment",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPayment",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPayment",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPaymentClaim",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPaymentClaimItem",
-        "match": "ServicePaidCount",
+        "column": "ServicePaidCount",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPaymentClaimItem",
-        "match": "ServiceCount",
+        "column": "ServiceCount",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPaymentClaimItem",
-        "match": "ServiceIdentification",
+        "column": "ServiceIdentification",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPaymentClaimItem",
-        "match": "ServiceDate",
+        "column": "ServiceDate",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPaymentHistory",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPaymentReport",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimPaymentReportClaim",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ClaimResponse",
-        "match": "SAServiceAuditId",
+        "column": "SAServiceAuditId",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "OfficeResponseAudit",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "OpsAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "OpsAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PartnerClaimDeliveryOps",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PartnerClaimDeliveryOps",
-        "match": "SAServiceAuditId",
+        "column": "SAServiceAuditId",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PartnerClaimDeliveryRegistration",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PayerService",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PayerService",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PayerServiceAudit",
-        "match": "PayerServiceAuditID",
+        "column": "PayerServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PayerServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PayerServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "Procedure",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ProcedureAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ProviderRegistration",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ProviderRegistration",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "RTBAWidgetUpdate",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceClientProperty",
-        "match": "ServiceClientPropertyID",
+        "column": "ServiceClientPropertyID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceClientProperty",
-        "match": "ServiceClientID",
+        "column": "ServiceClientID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceCredential",
-        "match": "ServiceCredentialID",
+        "column": "ServiceCredentialID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceCredential",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceCredential",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceInfo",
-        "match": "ServiceInfoID",
+        "column": "ServiceInfoID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceInfo",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceInfo",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyAuditID",
+        "column": "ServicePropertyAuditID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServicePropertyAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServicePropertyAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceTypeProcedure",
-        "match": "ServiceTypeCode",
+        "column": "ServiceTypeCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "SummaryAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "XmlEdiErrorCode",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "XmlEdiErrorCode",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "cred",
         "table": "ApplicationSet",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ApplicationSetDocument",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ApplicationSetDocumentMeta",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ApplicationSetHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ApplicationSetSupportUserHistory",
-        "match": "SupportUserHistoryID",
+        "column": "SupportUserHistoryID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ApplicationSetSupportUserHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "NPDBServiceAudit",
-        "match": "NPDBServiceAuditID",
+        "column": "NPDBServiceAuditID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "OutreachPayerConfig",
-        "match": "SupportEmail",
+        "column": "SupportEmail",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "OutreachPayerConfig",
-        "match": "SupportPhone",
+        "column": "SupportPhone",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "OutreachPayerConfigAudit",
-        "match": "SupportEmail",
+        "column": "SupportEmail",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "OutreachPayerConfigAudit",
-        "match": "SupportPhone",
+        "column": "SupportPhone",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "OutreachStaffGroupMembers",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "OutreachStaffGroupMembersAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PayerChecklistAnswer",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PayerChecklistAnswer",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PayerConfig",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PayerEmailConfig",
-        "match": "CreateSupportuserID",
+        "column": "CreateSupportuserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PayerEmailConfig",
-        "match": "ModifySupportuserID",
+        "column": "ModifySupportuserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PayerTagValueConfig",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PrimaryDataSourceConfig",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PrimaryDataSourceConfig",
-        "match": "BillingServiceCode",
+        "column": "BillingServiceCode",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PrimaryDataSourceLookupResponse",
-        "match": "CreateSupportUserID",
+        "column": "CreateSupportUserID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderGroupDetail",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderGroupDetail",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "ntf",
         "table": "SAServiceAudit",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "SAServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "SAServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceDowntime",
-        "match": "ServiceDowntimeID",
+        "column": "ServiceDowntimeID",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceDowntime",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceDowntime",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceHostConfigurationID",
+        "column": "ServiceHostConfigurationID",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceProperty",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceProperty",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceProperty",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyAuditID",
+        "column": "ServicePropertyAuditID",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServicePropertyAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServicePropertyAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "chs",
         "table": "MetaClaim",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimStatusTracing_Contractors",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPayment",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPayment",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentClaim",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentClaimItem",
-        "match": "ServicePaidCount",
+        "column": "ServicePaidCount",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentClaimItem",
-        "match": "ServiceCount",
+        "column": "ServiceCount",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentClaimItem",
-        "match": "ServiceIdentification",
+        "column": "ServiceIdentification",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentClaimItem",
-        "match": "ServiceDate",
+        "column": "ServiceDate",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistration",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistrationHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "DBA",
-        "match": "EnteredSupportUserID",
+        "column": "EnteredSupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "DBA",
-        "match": "ApprovedSupportUserID",
+        "column": "ApprovedSupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "MetaFileNote",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "PartnerMessageRoutingExclude",
-        "match": "SupportUserId",
+        "column": "SupportUserId",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "PartnerMessageRoutingExcludeAudit",
-        "match": "SupportUserId",
+        "column": "SupportUserId",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "PartnerPartnerCodeBillingConfig",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "PartnerStatementItemAdjustment",
-        "match": "EnteredSupportUserID",
+        "column": "EnteredSupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "PartnerStatementItemAdjustment",
-        "match": "ApprovedSupportUserID",
+        "column": "ApprovedSupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "PartnerStatementItemAdjustmentAudit",
-        "match": "EnteredSupportUserID",
+        "column": "EnteredSupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "PartnerStatementItemAdjustmentAudit",
-        "match": "ApprovedSupportUserID",
+        "column": "ApprovedSupportUserID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "PartnerTranSubTypePayerNameTranslation",
-        "match": "SupportUserId",
+        "column": "SupportUserId",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "PartnerTranSubTypePayerNameTranslationAudit",
-        "match": "SupportUserId",
+        "column": "SupportUserId",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "RTServiceAudit",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "RTServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "RTServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "RTServiceAudit",
-        "match": "SubServiceType",
+        "column": "SubServiceType",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ServiceProperty",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ServiceProperty",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ServiceProperty",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyAuditID",
+        "column": "ServicePropertyAuditID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ServicePropertyAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ServicePropertyAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "pfs",
         "table": "ServiceProperty",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "ServiceProperty",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "ServiceProperty",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "ApplicationDigest",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationRequest",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationRequest",
-        "match": "ServiceClientID",
+        "column": "ServiceClientID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationRequest",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationRequest",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationRequest",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationRequestHistory",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationRequestHistory",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationRequestHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationResponse",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "AuthorizationResponse",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditApplication",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditApplication",
-        "match": "ServiceClientID",
+        "column": "ServiceClientID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditApplication",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditApplication",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditApplication",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditApplicationHistory",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditApplicationHistory",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditApplicationHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditOffer",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditOffer",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditPartner",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "CreditReport",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "PartnerCreditPlan",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "PartnerError",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "PFSGroup",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "PFSGroup",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "PFSGroupHistory",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "PFSGroupHistory",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "RTServiceAudit",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "RTServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "RTServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "SAServiceAudit",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "SAServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "SAServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyAuditID",
+        "column": "ServicePropertyAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "ServicePropertyAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "ServicePropertyAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "Settlement",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "Settlement",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "SettlementHistory",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "SettlementHistory",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPoints",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSupportUserProfile",
-        "match": "DssSupportUserProfileID",
+        "column": "DssSupportUserProfileID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSupportUserProfile",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "residual",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "residual",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "residual",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommission",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "GroupActivity",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "GroupActivity",
-        "match": "SupportUserFirstName",
+        "column": "SupportUserFirstName",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "GroupActivity",
-        "match": "SupportUserLastName",
+        "column": "SupportUserLastName",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssStatementItemSummary",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetail",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetail",
-        "match": "SupportedPMS",
+        "column": "SupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetail",
-        "match": "NotSupportedPMS",
+        "column": "NotSupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Billing_StatementActivityLog",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ClaimConnectClaimDeliveryFacts",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Claims_status40",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Claims_status40",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Claims_status40",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "CommissionRates",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "CommissionSplitTemp",
-        "match": "New Support User ",
+        "column": "New Support User ",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "commreport",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "CredReports",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DSSCommissionAuditbyTin",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPoints2",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetail0218",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetail0218",
-        "match": "SupportedPMS",
+        "column": "SupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetail0218",
-        "match": "NotSupportedPMS",
+        "column": "NotSupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetail2",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetail2",
-        "match": "SupportedPMS",
+        "column": "SupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetail2",
-        "match": "NotSupportedPMS",
+        "column": "NotSupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetailbkup",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetailbkup",
-        "match": "SupportedPMS",
+        "column": "SupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssCommissionEarnedPointsDetailbkup",
-        "match": "NotSupportedPMS",
+        "column": "NotSupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssFDResidualReport",
-        "match": "Assist_Service",
+        "column": "Assist_Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssFirstDataResidual",
-        "match": "Assist_Service",
+        "column": "Assist_Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssFirstDataResidual",
-        "match": "Assist_Service2",
+        "column": "Assist_Service2",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssFonalitySupportSum",
-        "match": "DssFonalitySupportSumID",
+        "column": "DssFonalitySupportSumID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssGroup",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssGroupCommissionCalc",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssGroupCommissionCalcDaily",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommission032018",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionDetail",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionDetail",
-        "match": "SupportedPMS",
+        "column": "SupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionDetail",
-        "match": "NotSupportedPMS",
+        "column": "NotSupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionDetail012018",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionDetail012018",
-        "match": "SupportedPMS",
+        "column": "SupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionDetail012018",
-        "match": "NotSupportedPMS",
+        "column": "NotSupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionDetail0218",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionDetail0218",
-        "match": "SupportedPMS",
+        "column": "SupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionDetail0218",
-        "match": "NotSupportedPMS",
+        "column": "NotSupportedPMS",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionTempA",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssSalesCommissionTempB",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "EncountersClaims",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "GPMissingItems",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "GroupTransSummaryType",
-        "match": "SupportRoleFlag",
+        "column": "SupportRoleFlag",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "MacroReport",
-        "match": "SupportUserid",
+        "column": "SupportUserid",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "March 2021A",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "NEASubscriptionAggregation",
-        "match": "VIPServiceCode",
+        "column": "VIPServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "NEASubscriptionAggregation",
-        "match": "PackageServiceCode",
+        "column": "PackageServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "OldClaims",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "OldClaims",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "OldClaims",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "PartnerStatementItemAdjustment08162022",
-        "match": "EnteredSupportUserID",
+        "column": "EnteredSupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "PartnerStatementItemAdjustment08162022",
-        "match": "ApprovedSupportUserID",
+        "column": "ApprovedSupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_backup_012115",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_backup_012115",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_backup_012115",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_backup_022315",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_backup_022315",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_backup_022315",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_10212015",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_10212015",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_10212015",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_Audit",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_Audit",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_Audit",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_Audit02172017",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_Audit02172017",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_Audit02172017",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_old",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_old",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New_old",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New06202016_newcolumn ",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New06202016_newcolumn ",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Residual_New06202016_newcolumn ",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "residual_old",
-        "match": "Assist Service",
+        "column": "Assist Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "residual_old",
-        "match": "Assist Service1",
+        "column": "Assist Service1",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "residual_old",
-        "match": "AXB PSF Services and Professional Services",
+        "column": "AXB PSF Services and Professional Services",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_AvgRTtrans",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_AvgRTtrans",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_GHI_Activity",
-        "match": "SupportUser",
+        "column": "SupportUser",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_NewActivity",
-        "match": "SupportUser",
+        "column": "SupportUser",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_PartnerBillingIntegrity",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTServiceAudit",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTServiceAudit",
-        "match": "SubServiceType",
+        "column": "SubServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTServiceReports",
-        "match": "RTServiceReportsID",
+        "column": "RTServiceReportsID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTServiceReports",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTServiceReports",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTTrans",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SAServiceAudit",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SAServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SAServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceDowntime",
-        "match": "ServiceDowntimeID",
+        "column": "ServiceDowntimeID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceDowntime",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceDowntime",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceFailure",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceFailure",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceHostConfigurationID",
+        "column": "ServiceHostConfigurationID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceProperty",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceProperty",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceProperty",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyAuditID",
+        "column": "ServicePropertyAuditID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServicePropertyAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServicePropertyAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SupportACD",
-        "match": "SupportAcdID",
+        "column": "SupportAcdID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SupportACD",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SupportCDR",
-        "match": "SupportCdrID",
+        "column": "SupportCdrID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SupportCDR",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "supportFonalityCDRTmp",
-        "match": "supportext",
+        "column": "supportext",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "supportFonalityCDRTmp",
-        "match": "supportqueue",
+        "column": "supportqueue",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "supportFonalityCDRTmp",
-        "match": "CSsupportcall",
+        "column": "CSsupportcall",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "supportFonalityCDRTmp",
-        "match": "supportcall",
+        "column": "supportcall",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Claims",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Claims_TransactionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Cred",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_ERA",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_PatStmt",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_RTClaims",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_RTCount",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
-        "match": "RecordModifySupportUserID",
+        "column": "RecordModifySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temptom",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "TEST_DssSalesCommission",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "tomtemp28",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "dfcgroups",
-        "match": "Serviced",
+        "column": "Serviced",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssVIP",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssVIP",
-        "match": "PrimarySupportUserID",
+        "column": "PrimarySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "GEDCclaims",
-        "match": "servicestartdate",
+        "column": "servicestartdate",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "GEDFileSummary",
-        "match": "servicestartdate",
+        "column": "servicestartdate",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "StatementItemSummary",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "TempDenticonUsers",
-        "match": "ModifySupportUserID",
+        "column": "ModifySupportUserID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "tomdcp20110404load",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "dea",
         "table": "arc_Attachment_RTServiceAuditID_Delete_List",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "arc_Attachment_SAServiceAuditID_Delete_List",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "Attachment",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "Attachment",
-        "match": "ServiceAuditID",
+        "column": "ServiceAuditID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "Attachment",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "Attachment",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "Attachment",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentHistory",
-        "match": "ServiceAuditId",
+        "column": "ServiceAuditId",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentHistory",
-        "match": "SupportUserId",
+        "column": "SupportUserId",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentHistory",
-        "match": "RtServiceAuditId",
+        "column": "RtServiceAuditId",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentService",
-        "match": "AttachmentServiceID",
+        "column": "AttachmentServiceID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentService",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentService",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentService",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentServiceAudit",
-        "match": "AttachmentServiceAuditID",
+        "column": "AttachmentServiceAuditID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentServiceAudit",
-        "match": "AttachmentServiceID",
+        "column": "AttachmentServiceID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentServiceAudit",
-        "match": "SupportUserID",
+        "column": "SupportUserID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "RTServiceAudit",
-        "match": "RTServiceAuditID",
+        "column": "RTServiceAuditID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "RTServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "RTServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "RTServiceAudit",
-        "match": "SubServiceType",
+        "column": "SubServiceType",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "SAServiceAudit",
-        "match": "SAServiceAuditID",
+        "column": "SAServiceAuditID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "SAServiceAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "SAServiceAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceDowntime",
-        "match": "ServiceDowntimeID",
+        "column": "ServiceDowntimeID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceDowntime",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceDowntime",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceHostConfigurationID",
+        "column": "ServiceHostConfigurationID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceHostConfiguration",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceProperty",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceProperty",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceProperty",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyAuditID",
+        "column": "ServicePropertyAuditID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServicePropertyAudit",
-        "match": "ServicePropertyID",
+        "column": "ServicePropertyID",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServicePropertyAudit",
-        "match": "ServiceCode",
+        "column": "ServiceCode",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServicePropertyAudit",
-        "match": "ServiceType",
+        "column": "ServiceType",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "ptp",
         "table": "ProviderPayment",
-        "match": "DateOfService",
+        "column": "DateOfService",
         "file": "Livesql3/ptp.sql"
     },
     {
         "database": "dxcps",
         "table": "Payment_Type_T",
-        "match": "Supported_CH",
+        "column": "Supported_CH",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "dxcps",
         "table": "User_T",
-        "match": "Service_User",
+        "column": "Service_User",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "dxcps",
         "table": "FD_GlobalBIN",
-        "match": "AccountFundSource",
+        "column": "AccountFundSource",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "dxcps",
         "table": "Processor_T",
-        "match": "Service_ID",
+        "column": "Service_ID",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "dxcps",
         "table": "Service_Plan_T",
-        "match": "Service_ID",
+        "column": "Service_ID",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "dxcps",
         "table": "Service_T",
-        "match": "Service_ID",
+        "column": "Service_ID",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "dxcps",
         "table": "Service_T",
-        "match": "Service_Name",
+        "column": "Service_Name",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "dxcps",
         "table": "Service_T",
-        "match": "Service_Desc",
+        "column": "Service_Desc",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "ddir",
         "table": "PracticeProfile",
-        "match": "PublishServices",
+        "column": "PublishServices",
         "file": "Livesql3/ddir.sql"
     },
     {
         "database": "ddir",
         "table": "PracticeProfileAudit",
-        "match": "PublishServices",
+        "column": "PublishServices",
         "file": "Livesql3/ddir.sql"
     },
     {
         "database": "ddir",
         "table": "PracticeService",
-        "match": "ServiceID",
+        "column": "ServiceID",
         "file": "Livesql3/ddir.sql"
     },
     {
         "database": "ddir",
         "table": "PracticeServiceAudit",
-        "match": "PracticeServiceAuditID",
+        "column": "PracticeServiceAuditID",
         "file": "Livesql3/ddir.sql"
     },
     {
         "database": "ddir",
         "table": "PracticeServiceAudit",
-        "match": "ServiceID",
+        "column": "ServiceID",
         "file": "Livesql3/ddir.sql"
     },
     {
         "database": "ddir",
         "table": "Service",
-        "match": "ServiceID",
+        "column": "ServiceID",
         "file": "Livesql3/ddir.sql"
     }
 ]

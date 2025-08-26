@@ -1,0 +1,212 @@
+[
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocation",
+        "column": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ProviderDirectoryLocation_ProviderDirectoryPayer_ProviderDirectoryPayerID",
+                "ref_table": "ProviderDirectoryPayer",
+                "ref_column": "ProviderDirectoryPayerID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayer",
+        "column": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ProviderDirectoryPayer_ProviderDirectory_ProviderDirectoryID",
+                "ref_table": "ProviderDirectory",
+                "ref_column": "ProviderDirectoryID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerDocument",
+        "column": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ProviderDirectoryPayerDocument_ProviderDirectoryPayer_ProviderDirectoryPayerID",
+                "ref_table": "ProviderDirectoryPayer",
+                "ref_column": "ProviderDirectoryPayerID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerNote",
+        "column": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ProviderDirectoryPayerNote_ProviderDirectoryPayer_ProviderDirectoryPayerID",
+                "ref_table": "ProviderDirectoryPayer",
+                "ref_column": "ProviderDirectoryPayerID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerPlan",
+        "column": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ProviderDirectoryPayerPlan_ProviderDirectoryPayer_ProviderDirectoryPayerID",
+                "ref_table": "ProviderDirectoryPayer",
+                "ref_column": "ProviderDirectoryPayerID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerTag",
+        "column": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ProviderDirectoryPayerTag_ProviderDirectoryPayer_ProviderDirectoryPayerID",
+                "ref_table": "ProviderDirectoryPayer",
+                "ref_column": "ProviderDirectoryPayerID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "dci",
+        "table": "ClaimItemProviderCredential",
+        "column": "ClaimItemProviderID",
+        "file": "Livesql3/dci.sql",
+        "references": [
+            {
+                "database": "dci",
+                "constraint": "FK_ClaimItemProviderCredential_ClaimItemProvider_ClaimItemProviderID",
+                "ref_table": "ClaimItemProvider",
+                "ref_column": "ClaimItemProviderID",
+                "file": "Livesql3/dci.sql"
+            }
+        ]
+    },
+    {
+        "database": "dci",
+        "table": "ClaimProviderAddress",
+        "column": "ClaimProviderID",
+        "file": "Livesql3/dci.sql",
+        "references": [
+            {
+                "database": "dci",
+                "constraint": "FK_ClaimProviderAddress_ClaimProvider_ClaimProviderID",
+                "ref_table": "ClaimProvider",
+                "ref_column": "ClaimProviderID",
+                "file": "Livesql3/dci.sql"
+            }
+        ]
+    },
+    {
+        "database": "dci",
+        "table": "ProviderCredential",
+        "column": "ClaimProviderID",
+        "file": "Livesql3/dci.sql",
+        "references": [
+            {
+                "database": "dci",
+                "constraint": "FK_ProviderCredential_ClaimProvider_ClaimProviderID",
+                "ref_table": "ClaimProvider",
+                "ref_column": "ClaimProviderID",
+                "file": "Livesql3/dci.sql"
+            }
+        ]
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormAnswer",
+        "column": "ProviderFormID",
+        "file": "Livesql3/cred.sql",
+        "references": [
+            {
+                "database": "cred",
+                "constraint": "FK_ProviderFormAnswer_ProviderForm_ProviderFormID",
+                "ref_table": "ProviderForm",
+                "ref_column": "ProviderFormID",
+                "file": "Livesql3/cred.sql"
+            }
+        ]
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormDocumentMeta",
+        "column": "ProviderDocumentMetaID",
+        "file": "Livesql3/cred.sql",
+        "references": [
+            {
+                "database": "cred",
+                "constraint": "FK_ProviderFormDocumentMeta_ProviderDocumentMeta_ProviderDocumentMetaID",
+                "ref_table": "ProviderDocumentMeta",
+                "ref_column": "ProviderDocumentMetaID",
+                "file": "Livesql3/cred.sql"
+            }
+        ]
+    },
+    {
+        "database": "cred",
+        "table": "ProviderFormNote",
+        "column": "ProviderFormID",
+        "file": "Livesql3/cred.sql",
+        "references": [
+            {
+                "database": "cred",
+                "constraint": "FK_ProviderFormNote_ProviderForm_ProviderFormID",
+                "ref_table": "ProviderForm",
+                "ref_column": "ProviderFormID",
+                "file": "Livesql3/cred.sql"
+            }
+        ]
+    },
+    {
+        "database": "cred",
+        "table": "ProviderStateFormAnswer",
+        "column": "ProviderStateFormID",
+        "file": "Livesql3/cred.sql",
+        "references": [
+            {
+                "database": "cred",
+                "constraint": "FK_ProviderStateFormAnswer_ProviderStateForm_ProviderStateFormID",
+                "ref_table": "ProviderStateForm",
+                "ref_column": "ProviderStateFormID",
+                "file": "Livesql3/cred.sql"
+            }
+        ]
+    },
+    {
+        "database": "cred",
+        "table": "ProviderStateFormNote",
+        "column": "ProviderStateFormID",
+        "file": "Livesql3/cred.sql",
+        "references": [
+            {
+                "database": "cred",
+                "constraint": "FK_ProviderStateFormNote_ProviderStateForm_ProviderStateFormID",
+                "ref_table": "ProviderStateForm",
+                "ref_column": "ProviderStateFormID",
+                "file": "Livesql3/cred.sql"
+            }
+        ]
+    }
+]
