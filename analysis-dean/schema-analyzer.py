@@ -34,18 +34,21 @@ def scan_sql_file(filepath, mode, columns=True):
     logger.warning(f"Database determined: {database} file={filepath}")
     if mode == 'foreignkeys':
         fk_regex = re.compile(r"""
-            (?:ALTER\s+TABLE\s+)?\[\s*dbo\s*\]\.\[\s*(?P<source_table>[^\]]+)\s*\].*?ADD\s+CONSTRAINT\s+\[\s*(?P<constraint>[^\]]+)\s*\]\s+FOREIGN\s+KEY\s*\(\s*\[\s*(?P<source_column>[^\]]+)\s*\]\s*\)\s+REFERENCES\s+\[\s*dbo\s*\]\.\[\s*(?P<ref_table>[^\]]+)\s*\]\s*\(\s*\[\s*(?P<ref_column>[^\]]+)\s*\]\s*\)
-        """, re.IGNORECASE | re.DOTALL | re.VERBOSE)
+                ALTER\s+TABLE\s+\[\s*dbo\s*\]\.\[\s*(?P<fk_table>[^\]]+)\s*\]\s+WITH\s+CHECK\s+ADD\s+CONSTRAINT\s+\[\s*(?P<constraint>[^\]]+)\s*\]\s+FOREIGN\s+KEY\s*\(\s*\[\s*(?P<fk_key>[^\]]+)\s*\]\s*\)\s+REFERENCES\s+\[\s*dbo\s*\]\.\[\s*(?P<ref_table>[^\]]+)\s*\]\s*\(\s*\[\s*(?P<ref_column>[^\]]+)\s*\]\s*\)
+            """, re.IGNORECASE | re.DOTALL | re.VERBOSE)
         for fk_match in fk_regex.finditer(content):
-            source_table = fk_match.group("source_table")
+            fk_table = fk_match.group("fk_table")
             constraint = fk_match.group("constraint")
-            source_column = fk_match.group("source_column")
+            fk_key = fk_match.group("fk_key")
             ref_table = fk_match.group("ref_table")
             ref_column = fk_match.group("ref_column")
             results.append({
                 'database': database,
-                'source': f"{source_table}.{constraint}",
-                'target': f"{ref_table}.{ref_column}",
+                'fk_table': f"{fk_table}",
+                'fk_key': f"{fk_key}",
+                'constraint': f"{constraint}",
+                'ref_table': f"{ref_table}",
+                'ref_column': f"{ref_column}",
                 'file': filepath
             })
         return results
@@ -82,7 +85,7 @@ def scan_sql_file(filepath, mode, columns=True):
                     results.append({
                         'database': database,
                         'table': table_name,
-                        'match': match,
+                        'column': match,
                         'file': filepath
                     })
         else:
@@ -100,7 +103,7 @@ def scan_sql_file(filepath, mode, columns=True):
                     results.append({
                         'database': database,
                         'table': table_name,
-                        'match': match,
+                        'column': match,
                         'file': filepath
                     })
     return results
@@ -126,13 +129,13 @@ def print_report(results, header, mode):
     print(header)
     writer = csv.writer(sys.stdout)
     if mode == 'foreignkeys':
-        writer.writerow(["Database", "Source", "Target", "File"])
+        writer.writerow(["Database", "Source Table", "Source Key Column", "Target Table", "Target Column", "File"])
         for result in results:
-            writer.writerow([result["database"], result["source"], result["target"], result["file"]])
+            writer.writerow([result["database"], result["fk_table"], result["fk_key"], result["constraint"], result["ref_table"], result["ref_column"], result["file"]])
     else:
         writer.writerow(["Database", "Table", "Matched", "File"])
         for result in results:
-            writer.writerow([result["database"], result["table"], result["match"], result["file"]])
+            writer.writerow([result["database"], result["table"], result["column"], result["file"]])
 
 def print_json_report(results, header):
     if header:

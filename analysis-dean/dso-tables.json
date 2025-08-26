@@ -3,1261 +3,1261 @@
     {
         "database": "dw_atm_dxc",
         "table": "dci_rtserviceaudit_6mos",
-        "match": "service",
+        "column": "service",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "nsDev",
         "table": "demandSourceType",
-        "match": "dSo",
+        "column": "dSo",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "ItemDemandSource",
-        "match": "dSo",
+        "column": "dSo",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemBillingRate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemCorrelateditem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemItemAccountingBookDetail",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemItemVendor",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemPresentationItem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemPrice",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemQuantity",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemSiteCategory",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemSubsidiaryMap",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemTaskTemplate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceItemTranslation",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "servicePurchaseItemItemAccountingBookDetail",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "servicePurchaseItemItemVendor",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "servicePurchaseItemSubsidiaryMap",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "servicePurchaseItemTranslation",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemBillingRate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemCorrelateditem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemItemAccountingBookDetail",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemItemVendor",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemPresentationItem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemPrice",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemQuantity",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemSiteCategory",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemSubsidiaryMap",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemTaskTemplate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceResaleItemTranslation",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemBillingRate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemCorrelateditem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemItemAccountingBookDetail",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemPresentationItem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemPrice",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemQuantity",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemSiteCategory",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemSubsidiaryMap",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemTaskTemplate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "nsDev",
         "table": "serviceSaleItemTranslation",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
         "database": "ns",
         "table": "demandSourceType",
-        "match": "dSo",
+        "column": "dSo",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "ItemDemandSource",
-        "match": "dSo",
+        "column": "dSo",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemBillingRate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemCorrelateditem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemItemAccountingBookDetail",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemItemVendor",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemPresentationItem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemPrice",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemQuantity",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemSiteCategory",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemSubsidiaryMap",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemTaskTemplate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceItemTranslation",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "servicePurchaseItemItemAccountingBookDetail",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "servicePurchaseItemItemVendor",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "servicePurchaseItemSubsidiaryMap",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "servicePurchaseItemTranslation",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemBillingRate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemCorrelateditem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemItemAccountingBookDetail",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemItemVendor",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemPresentationItem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemPrice",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemQuantity",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemSiteCategory",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemSubsidiaryMap",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemTaskTemplate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceResaleItemTranslation",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemBillingRate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemCorrelateditem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemItemAccountingBookDetail",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemPresentationItem",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemPrice",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemQuantity",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemSiteCategory",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemSubsidiaryMap",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemTaskTemplate",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
         "table": "serviceSaleItemTranslation",
-        "match": "service",
+        "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "merchant",
         "table": "RTServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/merchant.sql"
     },
     {
         "database": "pnt",
         "table": "DataBill_Support_Temp",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "RTServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "SAServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceDowntime",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceHostConfiguration",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServiceProperty",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "pnt",
         "table": "ServicePropertyAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
         "database": "dhmo",
         "table": "OfficeServiceClient",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dhmo.sql"
     },
     {
         "database": "common",
         "table": "GroupSupportUser",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUser",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "AlertSAServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantMigrationServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MerchantServiceAudit_Arc",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "RTServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClient",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClientAccess",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClientPMS",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceClientUser",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceCode",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceDowntime",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceFee",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceHostConfiguration",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceProperty",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServicePropertyAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceServiceCode",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceServiceCode",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceStatus",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ServiceType",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportDataSourceRequest",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportDataSourceResponse",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportEventOps",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportFunction",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroup",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroupFunction",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportGroupUser",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportMessage",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportNote",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportPayerSet",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportPayerSetGroup",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportRequest",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportRole",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "supportrole_backup1115_1102AM",
-        "match": "support",
+        "column": "support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "supportrole_bak",
-        "match": "support",
+        "column": "support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportRole_Bak2",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportServiceCodePayerSet",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportServiceCodePayerSet",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportTask",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportTaskUser",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportTeam",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportTeamUser",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserAudit",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserCommission",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserCommission_0318",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserConfig",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserLoginAudit",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserLoginChangeAudit",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "SupportUserPasswordHistory",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "dci",
         "table": "RTServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "vRTServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "SAServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "vSAServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceProperty",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceConfiguration",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_RTServiceAuditID_Delete_List",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_RTServiceAuditID_Delete_ListClaim",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_SAServiceAuditID_Delete_List",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_Claim_SAServiceAuditID_Delete_ListClaim",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_RTServiceAuditID_Archive_List",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_SAServiceAuditID_Archive_List",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "DentalServiceType",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PayerService",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "PayerServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceClientProperty",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceCredential",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceInfo",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServicePropertyAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "ServiceTypeProcedure",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "cred",
         "table": "ApplicationSetSupportUserHistory",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "NPDBServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "ntf",
         "table": "SAServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceDowntime",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceHostConfiguration",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServiceProperty",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "ntf",
         "table": "ServicePropertyAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
         "database": "chs",
         "table": "RTServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ServiceProperty",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ServicePropertyAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "pfs",
         "table": "ServiceProperty",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "RTServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "SAServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "ServicePropertyAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "reports",
         "table": "DssSupportUserProfile",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssFonalitySupportSum",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "RTServiceReports",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SAServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceDowntime",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceFailure",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceHostConfiguration",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServiceProperty",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ServicePropertyAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SupportACD",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "supportacdbkp",
-        "match": "support",
+        "column": "support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SupportCDR",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SupportCDR2",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "supportcdrbkp",
-        "match": "support",
+        "column": "support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "supportFonalityCDRTmp",
-        "match": "support",
+        "column": "support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "SupportTicketSLA",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Claims",
-        "match": "DSO",
+        "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Claims_TransactionEvents",
-        "match": "DSO",
+        "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Cred",
-        "match": "DSO",
+        "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_ERA",
-        "match": "DSO",
+        "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_PatStmt",
-        "match": "DSO",
+        "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_RTClaims",
-        "match": "DSO",
+        "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_RTCount",
-        "match": "DSO",
+        "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
-        "match": "DSO",
+        "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "TicketSupportPass",
-        "match": "Support",
+        "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "dea",
         "table": "arc_Attachment_RTServiceAuditID_Delete_List",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "arc_Attachment_SAServiceAuditID_Delete_List",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentService",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "AttachmentServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "RTServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "SAServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceDowntime",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceHostConfiguration",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServiceProperty",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dea",
         "table": "ServicePropertyAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
         "database": "dxcps",
         "table": "Service_Plan_T",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "dxcps",
         "table": "Service_T",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/dxcps.sql"
     },
     {
         "database": "ddir",
         "table": "PracticeService",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/ddir.sql"
     },
     {
         "database": "ddir",
         "table": "PracticeServiceAudit",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/ddir.sql"
     },
     {
         "database": "ddir",
         "table": "Service",
-        "match": "Service",
+        "column": "Service",
         "file": "Livesql3/ddir.sql"
     }
 ]
