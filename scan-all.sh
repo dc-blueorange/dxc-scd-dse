@@ -15,3 +15,7 @@ python3 analysis-dean/schema-analyzer.py --dsos -js -nc > analysis-dean/dso-tabl
 
 python3 analysis-dean/schema-analyzer.py --foreign-keys > analysis-dean/foreign-keys.csv
 python3 analysis-dean/schema-analyzer.py --foreign-keys -js > analysis-dean/foreign-keys.json
+
+python3 analysis-dean/column-references.py -sc analysis-dean/dentist-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/dentist-references.json 
+python3 analysis-dean/column-references.py -sc analysis-dean/network-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/network-references.json 
+python3 analysis-dean/column-references.py -sc analysis-dean/dso-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/dso-references.json 
