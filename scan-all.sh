@@ -20,7 +20,12 @@ python3 analysis-dean/column-references.py -sc analysis-dean/dentist-columns.jso
 python3 analysis-dean/column-references.py -sc analysis-dean/network-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/network-references.json 
 python3 analysis-dean/column-references.py -sc analysis-dean/dso-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/dso-references.json
 
-
+echo
+echo "Counting dentists, networks and DSOs..."
+echo Dentist columns: $(jq 'length' analysis-dean/dentist-columns.json)
+echo Provider Network columns: $(jq 'length' analysis-dean/network-columns.json)
+echo DSO columns: $(jq 'length' analysis-dean/dso-columns.json)
+echo
 echo "Counting foreign key references to dentists, networks and DSOs..."
 echo Dentist references: $(jq 'length' analysis-dean/dentist-references.json)
 echo Provider Network references: $(jq 'length' analysis-dean/network-references.json)

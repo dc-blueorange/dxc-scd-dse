@@ -138,8 +138,6 @@ def print_report(results, header, mode):
             writer.writerow([result["database"], result["table"], result["column"], result["file"]])
 
 def print_json_report(results, header):
-    if header:
-        print(header)
     print(json.dumps(results, indent=4))
 
 if __name__ == "__main__":
