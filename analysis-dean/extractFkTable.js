@@ -8,14 +8,12 @@ ALTER TABLE [dbo].[ProviderPartnerMap] CHECK CONSTRAINT [FK_ProviderPartnerMap_P
 GO`;
 
 // Revised regex explanation:
-// - Matches "ALTER TABLE" followed by optional whitespace.
-// - Matches "[dbo].[" with optional spaces before/after dbo.
-// - Captures in group "fk_table" any characters until the closing "]".
-// - Then non-greedily matches any text until the keyword CONSTRAINT.
-// - Then it matches the CONSTRAINT clause, FOREIGN KEY clause and the REFERENCES clause.
-//   It captures the constraint name, foreign key and reference table/column using named groups.
+// The regex now explicitly requires that after the table name there is "WITH CHECK ADD".
+// It then matches the CONSTRAINT clause, FOREIGN KEY clause and the REFERENCES clause.
+// This prevents the regex from matching the first ALTER TABLE statement, ensuring that 
+// only the statement for ProviderPartnerMap is captured.
 // The regex uses the flags "i" for case-insensitive and "s" so that dot (.) matches newline characters.
-const regex = /ALTER\s+TABLE\s+\[\s*dbo\s*\]\.\[\s*(?<fk_table>[^\]]+)\s*\].*?CONSTRAINT\s+\[\s*(?<constraint>[^\]]+)\s*\]\s+FOREIGN\s+KEY\s*\(\s*\[\s*(?<fk_key>[^\]]+)\s*\]\s*\)\s+REFERENCES\s+\[\s*dbo\s*\]\.\[\s*(?<ref_table>[^\]]+)\s*\]\s*\(\s*\[\s*(?<ref_column>[^\]]+)\s*\]\s*\)/is;
+const regex = /ALTER\s+TABLE\s+\[\s*dbo\s*\]\.\[\s*(?<fk_table>[^\]]+)\s*\]\s+WITH\s+CHECK\s+ADD\s+CONSTRAINT\s+\[\s*(?<constraint>[^\]]+)\s*\]\s+FOREIGN\s+KEY\s*\(\s*\[\s*(?<fk_key>[^\]]+)\s*\]\s*\)\s+REFERENCES\s+\[\s*dbo\s*\]\.\[\s*(?<ref_table>[^\]]+)\s*\]\s*\(\s*\[\s*(?<ref_column>[^\]]+)\s*\]\s*\)/is;
 
 const match = input.match(regex);
 if (match && match.groups) {
