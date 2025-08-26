@@ -1,5 +1,8 @@
 Database,Table,Matched,File
 dw_dxc_dev,smilebrands_claim_status_report__dbt_tmp,rendering_provider_npi,DTT-ANA-PRD/dw_dxc_dev.sql
+rpt,SSISGrandfatheredReportsMap,PackageVariable_fileNameOrtho,DTT-ANA-PRD/rpt.sql
+rpt,SSISGrandfatheredReportsMap,PackageVariable_fileNameNonOrtho,DTT-ANA-PRD/rpt.sql
+rpt,SSISGrandfatheredReportsMap,PackageVariable_fileNameOrthoOsa,DTT-ANA-PRD/rpt.sql
 partcredDM,Credential,ProviderID,DTT-ANA-PRD/partcredDM.sql
 partcredDM,DSSCredBillingAlt,ProviderDirectoryPayerID,DTT-ANA-PRD/partcredDM.sql
 partcredDM,DSSCredBillingAlt,ProviderDirectoryID,DTT-ANA-PRD/partcredDM.sql
@@ -21,6 +24,10 @@ partcredDM,RenewDates,ProviderDirectoryID,DTT-ANA-PRD/partcredDM.sql
 partcredDM,RenewDates,DecisionProviderDirectoryPayerHistoryID,DTT-ANA-PRD/partcredDM.sql
 dw_atm_dxc,chs_MetaClaim_Since2023,BillingProvNPI,DTT-ANA-PRD/dw_atm_dxc.sql
 dw_atm_dxc,chs_MetaClaim_Since2023,RenderingProvNPI,DTT-ANA-PRD/dw_atm_dxc.sql
+dw_atm_dxc,dci_claim_6mos,OrthoDate,DTT-ANA-PRD/dw_atm_dxc.sql
+dw_atm_dxc,dci_claim_6mos,OrthoTotal,DTT-ANA-PRD/dw_atm_dxc.sql
+dw_atm_dxc,dci_claim_6mos,OrthoRemain,DTT-ANA-PRD/dw_atm_dxc.sql
+dw_atm_dxc,dci_claim_6mos,IsOrthoRelated,DTT-ANA-PRD/dw_atm_dxc.sql
 dw_atm_dxc,dci_claim_6mos,ProviderRuleId,DTT-ANA-PRD/dw_atm_dxc.sql
 dw_atm_dxc,dci_rtserviceaudit_6mos,ProviderTIN,DTT-ANA-PRD/dw_atm_dxc.sql
 dw_atm_dxc,dci_rtserviceaudit_6mos,NPI,DTT-ANA-PRD/dw_atm_dxc.sql
@@ -281,8 +288,10 @@ common,NppesLookup_old1,ProviderGenderCode,Livesql3/Common.sql
 common,NppesLookup_old1,HealthcareProviderTaxonomyCode,Livesql3/Common.sql
 common,NppesLookup_old1,ProviderLicenseNumber,Livesql3/Common.sql
 common,NppesLookup_old1,ProviderLicenseNumberStateCode,Livesql3/Common.sql
+common,Payer,ValidateRepOrtho,Livesql3/Common.sql
 common,Payer,BillingProviderMatch,Livesql3/Common.sql
 common,Payer,RenderingProviderMatch,Livesql3/Common.sql
+common,PayerAudit,ValidateRepOrtho,Livesql3/Common.sql
 common,PayerAudit,BillingProviderMatch,Livesql3/Common.sql
 common,PayerAudit,RenderingProviderMatch,Livesql3/Common.sql
 common,PayerCredentialType,RequiredProviderType,Livesql3/Common.sql
@@ -369,11 +378,20 @@ common,tempcpa1,icNPI,Livesql3/Common.sql
 dci,RTServiceAudit,ProviderTIN,Livesql3/dci.sql
 dci,RTServiceAudit,NPI,Livesql3/dci.sql
 dci,ClaimHistory,ProviderRuleId,Livesql3/dci.sql
+dci,Claim,OrthoDate,Livesql3/dci.sql
+dci,Claim,OrthoTotal,Livesql3/dci.sql
+dci,Claim,OrthoRemain,Livesql3/dci.sql
+dci,Claim,IsOrthoRelated,Livesql3/dci.sql
 dci,Claim,ProviderRuleId,Livesql3/dci.sql
+dci,ClaimPayer,ValidateRepOrtho,Livesql3/dci.sql
 dci,arc_Claim_ClaimProviderID_List,ClaimProviderID,Livesql3/dci.sql
 dci,arc_Claim_ProviderCredentialID_List,ProviderCredentialID,Livesql3/dci.sql
 dci,arc_ProviderCredentialAuditID_Archive_List,ProviderCredentialAuditID,Livesql3/dci.sql
+dci,ClaimArchive,orthodate,Livesql3/dci.sql
+dci,ClaimArchive,orthototal,Livesql3/dci.sql
+dci,ClaimArchive,orthoremain,Livesql3/dci.sql
 dci,ClaimExtension,RefProviderNo,Livesql3/dci.sql
+dci,ClaimExtension,OrthoInd,Livesql3/dci.sql
 dci,ClaimItemProvider,ClaimItemProviderID,Livesql3/dci.sql
 dci,ClaimItemProviderCredential,ClaimItemProviderCredentialID,Livesql3/dci.sql
 dci,ClaimItemProviderCredential,ClaimItemProviderID,Livesql3/dci.sql
@@ -535,6 +553,7 @@ reports,tempECEHG,ProviderName,Livesql3/reportst.sql
 reports,temptom,BillingProvNPI,Livesql3/reportst.sql
 reports,temptom,RenderingProvNPI,Livesql3/reportst.sql
 reports,Test_PayerProviderTrans,PayerProviderTransID,Livesql3/reportst.sql
+reports,tmpOrtho,Name of Doctor and Staff,Livesql3/reportst.sql
 reports,tomtemp28,BillingProvNPI,Livesql3/reportst.sql
 reports,tomtemp28,RenderingProvNPI,Livesql3/reportst.sql
 reports,UCCI,Provider ID,Livesql3/reportst.sql

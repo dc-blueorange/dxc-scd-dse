@@ -6,6 +6,24 @@
         "file": "DTT-ANA-PRD/dw_dxc_dev.sql"
     },
     {
+        "database": "rpt",
+        "table": "SSISGrandfatheredReportsMap",
+        "column": "PackageVariable_fileNameOrtho",
+        "file": "DTT-ANA-PRD/rpt.sql"
+    },
+    {
+        "database": "rpt",
+        "table": "SSISGrandfatheredReportsMap",
+        "column": "PackageVariable_fileNameNonOrtho",
+        "file": "DTT-ANA-PRD/rpt.sql"
+    },
+    {
+        "database": "rpt",
+        "table": "SSISGrandfatheredReportsMap",
+        "column": "PackageVariable_fileNameOrthoOsa",
+        "file": "DTT-ANA-PRD/rpt.sql"
+    },
+    {
         "database": "partcredDM",
         "table": "Credential",
         "column": "ProviderID",
@@ -129,6 +147,30 @@
         "database": "dw_atm_dxc",
         "table": "chs_MetaClaim_Since2023",
         "column": "RenderingProvNPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dci_claim_6mos",
+        "column": "OrthoDate",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dci_claim_6mos",
+        "column": "OrthoTotal",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dci_claim_6mos",
+        "column": "OrthoRemain",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dci_claim_6mos",
+        "column": "IsOrthoRelated",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
@@ -1694,6 +1736,12 @@
     {
         "database": "common",
         "table": "Payer",
+        "column": "ValidateRepOrtho",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Payer",
         "column": "BillingProviderMatch",
         "file": "Livesql3/Common.sql"
     },
@@ -1701,6 +1749,12 @@
         "database": "common",
         "table": "Payer",
         "column": "RenderingProviderMatch",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "PayerAudit",
+        "column": "ValidateRepOrtho",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -2222,7 +2276,37 @@
     {
         "database": "dci",
         "table": "Claim",
+        "column": "OrthoDate",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "Claim",
+        "column": "OrthoTotal",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "Claim",
+        "column": "OrthoRemain",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "Claim",
+        "column": "IsOrthoRelated",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "Claim",
         "column": "ProviderRuleId",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimPayer",
+        "column": "ValidateRepOrtho",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -2245,8 +2329,32 @@
     },
     {
         "database": "dci",
+        "table": "ClaimArchive",
+        "column": "orthodate",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimArchive",
+        "column": "orthototal",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimArchive",
+        "column": "orthoremain",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
         "table": "ClaimExtension",
         "column": "RefProviderNo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "ClaimExtension",
+        "column": "OrthoInd",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -3213,6 +3321,12 @@
         "database": "reports",
         "table": "Test_PayerProviderTrans",
         "column": "PayerProviderTransID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpOrtho",
+        "column": "Name of Doctor and Staff",
         "file": "Livesql3/reportst.sql"
     },
     {
