@@ -72,9 +72,9 @@ def scan_sql_file(filepath, mode, columns=True):
         pattern = None
         if columns:
             if mode == 'dentists':
-                pattern = r'\[\s*([^\]]*(?:NPI|dentist|hygienist|provider)[^\]]*)\s*\]\s*\['
+                pattern = r'\[\s*([^\]]*(?:NPI|dentist|doctor|nurse|hygienist|provider|ortho)[^\]]*)\s*\]\s*\['
             elif mode == 'networks':
-                pattern = r'\[\s*([^\]]*(?:dental network provider|network provider|dental network|provider|network)[^\]]*)\s*\]\s*\['
+                pattern = r'\[\s*([^\]]*(?:dental partner network|partner network|dental network|partner|network)[^\]]*)\s*\]\s*\['
             elif mode == 'dsos':
                 pattern = r'\[\s*([^\]]*(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)[^\]]*)\s*\]\s*\['
             if pattern:

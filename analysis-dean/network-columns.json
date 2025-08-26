@@ -1,11 +1,5 @@
 [
     {
-        "database": "dw_dxc_dev",
-        "table": "smilebrands_claim_status_report__dbt_tmp",
-        "column": "rendering_provider_npi",
-        "file": "DTT-ANA-PRD/dw_dxc_dev.sql"
-    },
-    {
         "database": "ext_raw",
         "table": "FiservJan24$",
         "column": "Card Network",
@@ -13,128 +7,86 @@
     },
     {
         "database": "partcredDM",
-        "table": "Credential",
-        "column": "ProviderID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "DSSCredBillingAlt",
-        "column": "ProviderDirectoryPayerID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "DSSCredBillingAlt",
-        "column": "ProviderDirectoryID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "DSSCredBillingAlt",
-        "column": "ProviderName",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "Outreach",
-        "column": "ProviderID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
         "table": "PayerPartnerOutreach",
-        "column": "ProviderDirectoryPayerID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "PayerPartnerOutreach",
-        "column": "ProviderDirectoryID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "PayerPartnerOutreach",
-        "column": "OutreachCycleStartDateProviderDirectoryPayerStatusID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "PayerPartnerOutreach",
-        "column": "OutreachEndDateProviderDirectoryPayerStatusID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "PayerPartnerOutreach",
-        "column": "OutreachEndDateProviderDirectoryPayerStatusCategory",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "RecredentialingCycleOutreach",
-        "column": "ProviderDirectoryPayerID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "RecredentialingCycleOutreach",
-        "column": "ProviderDirectoryID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "RecredentialingCycleOutreach",
-        "column": "ProviderName",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "RecredentialingCycleOutreachSummary",
-        "column": "ProviderDirectoryID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "RecredentialingCycleOutreachSummary",
-        "column": "ProviderDirectoryPayerID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "RecredentialingCycleOutreachSummary",
-        "column": "LastProviderUpdatedDate",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "RenewDates",
-        "column": "ProviderDirectoryPayerID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "RenewDates",
-        "column": "ProviderDirectoryID",
-        "file": "DTT-ANA-PRD/partcredDM.sql"
-    },
-    {
-        "database": "partcredDM",
-        "table": "RenewDates",
-        "column": "DecisionProviderDirectoryPayerHistoryID",
+        "column": "PayerPartnerOutreachID",
         "file": "DTT-ANA-PRD/partcredDM.sql"
     },
     {
         "database": "dw_atm_dxc",
-        "table": "dci_claim_6mos",
-        "column": "ProviderRuleId",
+        "table": "chs_MetaClaim_Since2023",
+        "column": "SourcePartnerCode",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "column": "DestPartnerCode",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "column": "PartnerAccountNumber",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "cred_billingactivity",
+        "column": "Group_Package_Partner_ID",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "cred_billingactivity",
+        "column": "Group_Package_Partner_Name",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dci_billingactivity",
+        "column": "Group_Package_Partner_ID",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dci_billingactivity",
+        "column": "Group_Package_Partner_Name",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
         "database": "dw_atm_dxc",
         "table": "dci_rtserviceaudit_6mos",
-        "column": "ProviderTIN",
+        "column": "PartnerID",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dea_attachments_6mos",
+        "column": "SourcePartnerCode",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dea_attachments_6mos",
+        "column": "DestPartnerCode",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "dea_attachments_6mos",
+        "column": "PartnerClaimID",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "pnt_billingactivity",
+        "column": "Group_Package_Partner_ID",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "database": "dw_atm_dxc",
+        "table": "pnt_billingactivity",
+        "column": "Group_Package_Partner_Name",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
@@ -142,36 +94,6 @@
         "table": "cardpaymentmethods",
         "column": "network",
         "file": "DTT-ANA-PRD/ext_raw_pc.sql"
-    },
-    {
-        "database": "ext_raw_ec",
-        "table": "appointmentprovidermapping",
-        "column": "providerid",
-        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
-    },
-    {
-        "database": "ext_raw_ec",
-        "table": "appointmentprovidermapping",
-        "column": "_airbyte_appointmentprovidermapping_hashid",
-        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
-    },
-    {
-        "database": "ext_raw_ec",
-        "table": "eligibility",
-        "column": "defaultproviderid",
-        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
-    },
-    {
-        "database": "ext_raw_ec",
-        "table": "eligibility",
-        "column": "providerid",
-        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
-    },
-    {
-        "database": "ext_raw_ec",
-        "table": "groupsetting",
-        "column": "defaultproviderid",
-        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
         "database": "ext_raw_ec",
@@ -192,658 +114,550 @@
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
-        "database": "ext_raw_ec",
-        "table": "payercredential",
-        "column": "providerid",
-        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
-    },
-    {
-        "database": "ext_raw_ec",
-        "table": "provider",
-        "column": "provider_unique",
-        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
-    },
-    {
-        "database": "ext_raw_ec",
-        "table": "provider",
-        "column": "_airbyte_provider_hashid",
-        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
-    },
-    {
         "database": "lkr",
-        "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions",
-        "column": "provider_first_name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions",
-        "column": "provider_last_name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions",
-        "column": "provider_npi",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions",
-        "column": "provider_tax_id",
+        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
+        "column": "Source_Partner_Code",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "column": "Rendering_Provider_First_Name",
+        "column": "Source_Partner_Name",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "column": "Rendering_Provider_Last_Name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "column": "Rendering_Provider_NPI",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "column": "Billing_Provider_First_Name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "column": "Billing_Provider_Last_Name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "column": "Billing_Provider_NPI",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "column": "Billing_Provider_Tax_ID",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses",
-        "column": "Billing_Provider_Phone",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Provider_Claim_ID",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Billing_Provider_Name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Billing_Provider_Tax_ID",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Billing_Provider_License",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Billing_Provider_Address",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Billing_Provider_City",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Billing_Provider_State",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Billing_Provider_Zip",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Rendering_Provider_Name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Rendering_Provider_Tax_ID",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Rendering_Provider_License",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Rendering_Provider_NPI",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Rendering_Provider_Address",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Rendering_Provider_City",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Rendering_Provider_State",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
-        "column": "Rendering_Provider_Zip",
+        "column": "Claim_Status_Source_Partner_Code",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "column": "Rendering_Provider_First_Name",
+        "column": "Source_Partner_Code",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "column": "Rendering_Provider_Last_Name",
+        "column": "Source_Partner_Name",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "column": "Rendering_Provider_NPI",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_First_Name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_Last_Name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_NPI",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_Tax_ID",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_Phone",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_Email",
+        "column": "Claim_Status_Source_Partner_Code",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "column": "Rendering_Provider_First_Name",
+        "column": "Source_Partner_Code",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "column": "Rendering_Provider_Last_Name",
+        "column": "Source_Partner_Name",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "lkr",
         "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "column": "Rendering_Provider_NPI",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_First_Name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_Last_Name",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_NPI",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_Tax_ID",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_Phone",
-        "file": "DTT-ANA-PRD/lkr.sql"
-    },
-    {
-        "database": "lkr",
-        "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors",
-        "column": "Billing_Provider_Email",
+        "column": "Claim_Status_Source_Partner_Code",
         "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "database": "master",
-        "table": "rptCLCClaimAGGMonthToYesterdayVSCurrentStatusTotal",
-        "column": "ProviderMatches#",
+        "table": "DataloadSQL3_Payers_Table",
+        "column": "MasterDestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "rptCLCClaimAGGMonthToYesterdayVSCurrentStatusTotal",
-        "column": "ProviderMatches$",
+        "table": "DataloadSQL3_Payers_Table",
+        "column": "DestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "Claims",
-        "column": "ProviderMatch",
+        "table": "DataloadSQL3_Payers_Table",
+        "column": "AlternateDestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "Claims",
-        "column": "PM_207_ProviderMatchRequired",
+        "table": "DataloadSQL3_Payers_Table",
+        "column": "DASPrintDestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "Claims",
-        "column": "REC_1055_ElectronicOrPaperAttachmentSentByProvider",
+        "table": "DataloadSQL3_Payers_Table",
+        "column": "DASPortalPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "Claims",
-        "column": "SUS_1210_RTResponsePendingProviderReview",
+        "table": "DataloadSQL3_Payers_Table",
+        "column": "DASFileDeliveryPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "Claims",
-        "column": "UR_1625_ProviderCredentialed",
+        "table": "DCIClaimPaymentFLATClaimPaymentsLifeCycles",
+        "column": "PayerPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCycles",
-        "column": "ProviderMatchRequiredOccurrence",
+        "table": "DCIClaimPaymentFLATClaimPaymentsLifeCycles",
+        "column": "ProcessorPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCycles",
-        "column": "ProviderMatchRequiredElapsedTimeMinutes",
+        "table": "DEAAttachmentFLATAttachmentsLifeCycles",
+        "column": "SourcePartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCycles",
-        "column": "LastProviderMatchDate",
+        "table": "DEAAttachmentFLATAttachmentsLifeCycles",
+        "column": "DestinationPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCycles",
-        "column": "FirstProviderMatchDate",
+        "table": "DEAAttachmentFLATAttachmentsLifeCycles",
+        "column": "First60SentToPartnerDate",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCycles",
-        "column": "ProviderClaimID",
+        "table": "DEAAttachmentFLATAttachmentsLifeCycles",
+        "column": "Last60SentToPartnerDate",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
-        "column": "ProviderMatchRequiredOccurrence",
+        "table": "DEAAttachmentFLATAttachmentsLifeCycles",
+        "column": "First100PartnerViewedDate",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
-        "column": "ProviderMatchRequiredElapsedTimeMinutes",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
-        "column": "LastProviderMatchDate",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
-        "column": "FirstProviderMatchDate",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "DCIClaimFLATClaimsLifeCyclesArchive",
-        "column": "ProviderClaimID",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "LDP0AI-COH",
-        "column": "ProviderClaimID",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "LDP0AI-COH",
-        "column": "RenderingProviderFullName",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "LDP0AI-PCDvip",
-        "column": "ProviderClaimID",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "LDP0AI-PCDvip",
-        "column": "RenderingProviderName",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "rptDCIClaimDETUserResolvedClaimsDetail",
-        "column": "ProviderLastName",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "rptDCIClaimDETUserResolvedClaimsDetail",
-        "column": "ProviderFirstName",
+        "table": "DEAAttachmentFLATAttachmentsLifeCycles",
+        "column": "Last100PartnerViewedDate",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "TEMP_DLS3",
-        "column": "ProviderMatch",
+        "column": "SourcePartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
-        "column": "ProviderReceivedApprovalOccurrence",
+        "table": "TEMP_DLS3",
+        "column": "DestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
-        "column": "FirstProviderReceivedApprovalDate",
+        "table": "Payers",
+        "column": "MasterDestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
-        "column": "LastProviderReceivedApprovalDate",
+        "table": "Payers",
+        "column": "DestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
-        "column": "ProviderFormsIncluded",
+        "table": "Payers",
+        "column": "AlternateDestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDApplicationSetFLATAppSetsLifeCycles",
-        "column": "ProviderStateFormsIncluded",
+        "table": "Payers",
+        "column": "DASPrintDestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDProviderDETLocationsProviderProfileAnswers",
-        "column": "ProviderProfileLocationAnswerID",
+        "table": "Payers",
+        "column": "DASPortalPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDProviderDETLocationsProviderProfileAnswers",
-        "column": "ProviderProfileID",
+        "table": "Payers",
+        "column": "DASFileDeliveryPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDProviderDETMinReqdProviderProfileAnswers",
-        "column": "ProviderProfileAnswerID",
+        "table": "PayersAudit",
+        "column": "MasterDestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDProviderDETMinReqdProviderProfileAnswers",
-        "column": "ProviderProfileID",
+        "table": "PayersAudit",
+        "column": "DestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDProviderDETProviderProfiles",
-        "column": "ProviderProfileID",
+        "table": "PayersAudit",
+        "column": "AlternateDestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDProviderDETProviderProfiles",
-        "column": "ProviderDirectoryID",
+        "table": "PayersAudit",
+        "column": "DASPrintDestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDProviderDETProviderProfiles",
-        "column": "hasProviderProfileAnswers",
+        "table": "PayersAudit",
+        "column": "DASPortalPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "CREDProviderDETUnpivotedUserAnswers",
-        "column": "ProviderProfileID",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "Appointments",
-        "column": "RenderingProviderFirstName",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "Appointments",
-        "column": "RenderingProviderLastName",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "Appointments",
-        "column": "RenderingProviderUserID",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "Appointments",
-        "column": "BillingProviderFirstName",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "Appointments",
-        "column": "BillingProviderLastName",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "Appointments",
-        "column": "BillingProviderLocationName",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "Appointments",
-        "column": "BillingProviderUserID",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "Appointments",
-        "column": "BillingProviderState",
+        "table": "PayersAudit",
+        "column": "DASFileDeliveryPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "ClearinghouseClaims",
-        "column": "BillingProviderFullName",
+        "column": "DestinationPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "ClearinghouseClaims",
-        "column": "BillingProviderNPI",
+        "table": "Claims",
+        "column": "SourcePartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "ClearinghouseClaims",
-        "column": "BillingProviderTaxID",
+        "table": "Claims",
+        "column": "DestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "ClearinghouseClaims",
-        "column": "RenderingProviderFullName",
+        "table": "Claims",
+        "column": "SourcePartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
-        "table": "ClearinghouseClaims",
-        "column": "RenderingProviderNPI",
+        "table": "Claims",
+        "column": "DestPartnerCode",
         "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "dw",
+        "table": "Subscriptions_Snapshot",
+        "column": "Partner_Tran_Type_ID",
+        "file": "DTT-TRX-PRD/dw.sql"
+    },
+    {
+        "database": "dw",
+        "table": "Subscriptions_Snapshot",
+        "column": "Partner_Tran_Sub_Type_ID",
+        "file": "DTT-TRX-PRD/dw.sql"
     },
     {
         "database": "trxWsdm",
-        "table": "ClientTransactions",
-        "column": "BillingProviderTaxID",
+        "table": "ClientSubscriptionEvents",
+        "column": "PartnerID",
         "file": "DTT-TRX-PRD/trxWsdm.sql"
     },
     {
         "database": "trxWsdm",
         "table": "ClientTransactions",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerDescription",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeName",
         "file": "DTT-TRX-PRD/trxWsdm.sql"
     },
     {
         "database": "trxTest",
-        "table": "ClientTransactions",
-        "column": "BillingProviderTaxID",
+        "table": "ClientSubscriptionEvents",
+        "column": "PartnerID",
         "file": "DTT-TRX-PRD/trxTest.sql"
     },
     {
         "database": "trxTest",
         "table": "ClientTransactions",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeID",
         "file": "DTT-TRX-PRD/trxTest.sql"
     },
     {
         "database": "trxTest",
         "table": "ClientTransactions",
-        "column": "BillingProviderZipCode",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerDescription",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeName",
         "file": "DTT-TRX-PRD/trxTest.sql"
     },
     {
         "database": "trx",
-        "table": "ClientTransactions",
-        "column": "BillingProviderTaxID",
+        "table": "ClientSubscriptionEvents",
+        "column": "PartnerID",
         "file": "DTT-TRX-PRD/trx.sql"
     },
     {
         "database": "trx",
         "table": "ClientTransactions",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerDescription",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeName",
         "file": "DTT-TRX-PRD/trx.sql"
     },
     {
         "database": "trxQA",
         "table": "ClientTransactions",
-        "column": "BillingProviderTaxID",
+        "column": "PartnerTranTypeID",
         "file": "DTT-TRX-PRD/trxQA.sql"
     },
     {
         "database": "trxQA",
         "table": "ClientTransactions",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeName",
         "file": "DTT-TRX-PRD/trxQA.sql"
     },
     {
         "database": "trxQA",
         "table": "ClientTransactions",
-        "column": "BillingProviderZipCode",
+        "column": "SourcePartnerCode",
         "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerDescription",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientSubscriptionEvents",
+        "column": "PartnerID",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Customer_copy",
+        "column": "partner",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Entity_copy",
+        "column": "partner",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Item_copy",
+        "column": "availabletopartners",
+        "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
@@ -852,831 +666,1149 @@
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "database": "ns",
+        "table": "SalesInvoiced_copy",
+        "column": "partner",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "custbodydxc_trx_partner_code",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "partner",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "ZABSubscriptionItem_copy",
+        "column": "custrecorddxc_si_partner_code",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
         "database": "trxDev",
-        "table": "ClientTransactions",
-        "column": "BillingProviderTaxID",
+        "table": "ClientSubscriptionEvents",
+        "column": "PartnerID",
         "file": "DTT-TRX-PRD/trxDev.sql"
     },
     {
         "database": "trxDev",
         "table": "ClientTransactions",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeID",
         "file": "DTT-TRX-PRD/trxDev.sql"
     },
     {
-        "database": "trxBrch",
+        "database": "trxDev",
         "table": "ClientTransactions",
-        "column": "BillingProviderTaxID",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerDescription",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientGLEntrySummary",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientGLEntrySummary",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientGLEntrySummary",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientGLEntrySummary",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientGLEntrySummaryAudit",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientGLEntrySummaryAudit",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientGLEntrySummaryAudit",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientGLEntrySummaryAudit",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "SourcePartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "PartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "PartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "InvoicedPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "InvoicedPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "PartnerPayerSetTierIncluded",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "PartnerPartnerGroupBy",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "ProductGroupPackageContractPartnerID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "SourcePartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "InvoicedPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "InvoicedPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerPayerSetTierIncluded",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerPartnerGroupBy",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "ProductGroupPackageContractPartnerID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "SourcePartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "PartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "PartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "InvoicedPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "InvoicedPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "PartnerPayerSetTierIncluded",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "PartnerPartnerGroupBy",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "ProductGroupPackageContractPartnerID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "SourcePartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "PartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "PartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "InvoicedPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "InvoicedPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "PartnerPayerSetTierIncluded",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "PartnerPartnerGroupBy",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "ProductGroupPackageContractPartnerID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ERPItemLookup",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ERPItemLookup",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ERPItemLookup",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ERPItemLookup",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ERPItemLookupAudit",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ERPItemLookupAudit",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ERPItemLookupAudit",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "erp",
+        "table": "ERPItemLookupAudit",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "database": "rpt",
+        "table": "HSOneAprilMissingBillingClaimsCorrections",
+        "column": "PartnerCode",
+        "file": "DTT-TRX-PRD/rpt.sql"
+    },
+    {
+        "database": "rpt",
+        "table": "HSOneMayMissingBillingClaimsCorrections",
+        "column": "PartnerCode",
+        "file": "DTT-TRX-PRD/rpt.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientSubscriptionEvents",
+        "column": "PartnerID",
         "file": "DTT-TRX-PRD/trxBrch.sql"
     },
     {
         "database": "trxBrch",
         "table": "ClientTransactions",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeID",
         "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "SourcePartnerDescription",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "TransactionEvents",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientGLEntrySummary",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientGLEntrySummary",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientGLEntrySummary",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientGLEntrySummary",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "SourcePartnerCode",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "SourcePartnerName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "PartnerCode",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "PartnerName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "InvoicedPartnerCode",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "InvoicedPartnerName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "PartnerPayerSetTierIncluded",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "PartnerPartnerGroupBy",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "ProductGroupPackageContractPartnerID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ERPItemLookup",
+        "column": "PartnerTranTypeID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ERPItemLookup",
+        "column": "PartnerTranTypeName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ERPItemLookup",
+        "column": "PartnerTranSubTypeID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "database": "erpDev",
+        "table": "ERPItemLookup",
+        "column": "PartnerTranSubTypeName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
         "database": "pnt",
-        "table": "StatementReminder",
-        "column": "ProviderName",
+        "table": "RTServiceAudit",
+        "column": "PartnerID",
         "file": "Livesql3/pnt.sql"
-    },
-    {
-        "database": "dhmo",
-        "table": "Aetna_xml_Data",
-        "column": "Provider",
-        "file": "Livesql3/dhmo.sql"
-    },
-    {
-        "database": "dhmo",
-        "table": "PayerGroup",
-        "column": "ProviderID",
-        "file": "Livesql3/dhmo.sql"
-    },
-    {
-        "database": "common",
-        "table": "Groups",
-        "column": "AutoAddProvider",
-        "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "Users",
-        "column": "ProviderRuleOnly",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "Credential",
-        "column": "ProviderType",
+        "table": "SupportUser",
+        "column": "CHSPartnerCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "CredentialAudit",
-        "column": "ProviderType",
+        "table": "ProductPackageFeatures",
+        "column": "PartnerRegistrationTier",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "DenticalLocationInfo",
-        "column": "ProviderPayerEnrollmentId",
+        "table": "ProductGroupPackage",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "Enrollment",
-        "column": "PayerProviderId",
+        "table": "AppAlert",
+        "column": "PartnerId",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "HawaiiDentalLicenseLookup",
-        "column": "ProviderName",
+        "table": "EHGGroupKeyToPID",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "MessagePortalConversation",
-        "column": "ProviderID",
+        "table": "EHGGroupKeyToPID_DXE",
+        "column": "PartnerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistration",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistration",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistration",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistration",
+        "column": "SecondaryDestPartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistrationAudit",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistrationAudit",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistrationAudit",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARegistrationAudit",
+        "column": "SecondaryDestPartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "ClaimSourcePartner",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "EnrollmentPartner",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "EraSourcePartner",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "EnrollmentIncludePartner",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARoutingInformation",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARoutingInformation",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARoutingInformation",
+        "column": "SecondaryDestPartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERARoutingSummary",
+        "column": "PartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ERASegmentDefault",
+        "column": "PartnerCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "GroupPartnerDisplay",
+        "column": "PartnerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "GroupRegTierSelection",
+        "column": "PartnerRegistrationID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "MessagePortalConversationAudit",
+        "column": "NonPartnerPayerEmail",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "MessagePortalConversationModelAudit",
-        "column": "ProviderID",
+        "column": "NonPartnerPayerParticipants",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "MessagePortalDocumentCompressionAudit",
-        "column": "ProviderFormDocumentMetaID",
+        "table": "Messages",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "MetProviderDir",
-        "column": "MetProviderID",
+        "table": "Partner",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderOrgName",
+        "table": "Partner",
+        "column": "OverridePartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderLastName",
+        "table": "PartnerCaseConfig",
+        "column": "PartnerCaseConfigID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderFirstName",
+        "table": "PartnerCaseConfig",
+        "column": "PartnerCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderMiddleName",
+        "table": "PartnerConfigType",
+        "column": "PartnerConfigTypeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderNamePrefixText",
+        "table": "PartnerLoginConfig",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderNameSuffixText",
+        "table": "PartnerRegistrationCode",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderCredentialText",
+        "table": "PartnerSecurity",
+        "column": "PartnerSecurityID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderOtherLastName",
+        "table": "PartnerSecurityAccess",
+        "column": "PartnerSecurityAccessID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderOtherFirstName",
+        "table": "PartnerSecurityAccess",
+        "column": "PartnerUserID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderOtherMiddleName",
+        "table": "PartnerSecurityTokenConfig",
+        "column": "PartnerSecurityTokenConfigID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderOtherNamePrefixText",
+        "table": "PartnerTranSubType",
+        "column": "PartnerTranSubTypeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderOtherNameSuffixText",
+        "table": "PartnerTranSubType",
+        "column": "PartnerTranTypeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderOtherCredentialText",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerTranSubTypeConfigTypeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderOtherLastNameTypeCode",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerTranSubTypeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderFirstLineBusinessMailingAddress",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerConfigTypeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderSecondLineBusinessMailingAddress",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "PartnerTranSubTypeConfigurationID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessMailingAddressCityName",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "PartnerCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessMailingAddressStateName",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "PartnerTranSubTypeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessMailingAddressPostalCode",
+        "table": "PartnerTranType",
+        "column": "PartnerTranTypeID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessMailingAddressCountryCode",
+        "table": "ProductCombination",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessMailingAddressTelephoneNumber",
+        "table": "ProductFeaturePromoOffer",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderFirstLineBusinessPracticeLocAddress",
+        "table": "ProductGroupPackage10062024_DB2225",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderSecondLineBusinessPracticeLocAddress",
+        "table": "ProductPartnerPackage",
+        "column": "PartnerPackageID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessPracticeLocAddressCityName",
+        "table": "ProductPartnerPackage",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessPracticeLocAddressStateName",
+        "table": "ProductPartnerRegistration",
+        "column": "PartnerRegistrationID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessPracticeLocAddressPostalCode",
+        "table": "ProductPartnerRegistration",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessPracticeLocAddressCountryCode",
+        "table": "ProductPartnerRegistrationFeature",
+        "column": "PartnerRegistrationFeatureID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderBusinessPracticeLocAddressTelephoneNumber",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderEnumerationDate",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderGenderCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup",
-        "column": "HealthcareProviderTaxonomyCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderLicenseNumber",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup",
-        "column": "ProviderLicenseNumberStateCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderOrgName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderLastName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderFirstName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderMiddleName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderNamePrefixText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderNameSuffixText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderCredentialText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderOtherLastName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderOtherFirstName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderOtherMiddleName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderOtherNamePrefixText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderOtherNameSuffixText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderOtherCredentialText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderOtherLastNameTypeCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderFirstLineBusinessMailingAddress",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderSecondLineBusinessMailingAddress",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessMailingAddressCityName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessMailingAddressStateName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessMailingAddressPostalCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessMailingAddressCountryCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessMailingAddressTelephoneNumber",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderFirstLineBusinessPracticeLocAddress",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderSecondLineBusinessPracticeLocAddress",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessPracticeLocAddressCityName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessPracticeLocAddressStateName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessPracticeLocAddressPostalCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessPracticeLocAddressCountryCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderBusinessPracticeLocAddressTelephoneNumber",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderEnumerationDate",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderGenderCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "HealthcareProviderTaxonomyCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderLicenseNumber",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "ProviderLicenseNumberStateCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderOrgName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderLastName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderFirstName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderMiddleName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderNamePrefixText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderNameSuffixText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderCredentialText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderOtherLastName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderOtherFirstName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderOtherMiddleName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderOtherNamePrefixText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderOtherNameSuffixText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderOtherCredentialText",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderOtherLastNameTypeCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderFirstLineBusinessMailingAddress",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderSecondLineBusinessMailingAddress",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessMailingAddressCityName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessMailingAddressStateName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessMailingAddressPostalCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessMailingAddressCountryCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessMailingAddressTelephoneNumber",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderFirstLineBusinessPracticeLocAddress",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderSecondLineBusinessPracticeLocAddress",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessPracticeLocAddressCityName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessPracticeLocAddressStateName",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessPracticeLocAddressPostalCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessPracticeLocAddressCountryCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderBusinessPracticeLocAddressTelephoneNumber",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderEnumerationDate",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderGenderCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "HealthcareProviderTaxonomyCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderLicenseNumber",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "ProviderLicenseNumberStateCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "Payer",
-        "column": "BillingProviderMatch",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "Payer",
-        "column": "RenderingProviderMatch",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "PayerAudit",
-        "column": "BillingProviderMatch",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "PayerAudit",
-        "column": "RenderingProviderMatch",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "PayerCredentialType",
-        "column": "RequiredProviderType",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDir",
-        "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDir_new",
-        "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirAudit",
-        "column": "ProviderDirAuditID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirAudit",
-        "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectory",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryAppsetNoteAlert",
-        "column": "ProviderAppsetNoteAlertID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryAppsetNoteAlert",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryChangeDetail",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryChangeDetail",
-        "column": "ProviderValue",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryCompare",
-        "column": "ProviderDirectoryCompareID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryCompare",
-        "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryCompare",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryHistory",
-        "column": "ProviderDirectoryHistoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryHistory",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryLocation",
-        "column": "ProviderDirectoryLocationID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryLocation",
-        "column": "ProviderDirectoryPayerID",
+        "table": "ProductPartnerRegistrationFeature",
+        "column": "PartnerRegistrationID",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1694,30 +1826,6 @@
     {
         "database": "common",
         "table": "ProviderDirectoryLocationCompare",
-        "column": "ProviderDirectoryLocationCompareID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryLocationCompare",
-        "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryLocationCompare",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryLocationCompare",
-        "column": "ProviderDirectoryLocationID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryLocationCompare",
         "column": "LowestNetwork",
         "file": "Livesql3/Common.sql"
     },
@@ -1729,548 +1837,152 @@
     },
     {
         "database": "common",
-        "table": "providerdirectoryold",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayer",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayer",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayer",
-        "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerDocument",
-        "column": "ProviderDirectoryPayerDocumentID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerDocument",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerHistory",
-        "column": "ProviderDirectoryPayerHistoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerHistory",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerHistory",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerHistory",
-        "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerLocationPlan",
-        "column": "ProviderDirectoryLocationID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerNote",
-        "column": "ProviderDirectoryPayerNoteID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerNote",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerNoteHistory",
-        "column": "ProviderDirectoryPayerNoteHistoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerNoteHistory",
-        "column": "ProviderDirectoryPayerNoteID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerPlan",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerStatus",
-        "column": "ProviderDirectoryPayerStatusID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerStatusDetail",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerTag",
-        "column": "ProviderDirectoryPayerTagID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerTag",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryPayerTagLookup",
-        "column": "ProviderDirectoryPayerTagLookupID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerCredential",
-        "column": "ProviderCredentialID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerCredential",
-        "column": "ProviderTIN",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerCredential",
-        "column": "ProviderLicense",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerCredential",
-        "column": "ProviderType",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
         "table": "ProviderPayerEnrollment",
-        "column": "ProviderEnrollmentID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerEnrollment",
-        "column": "ProviderTIN",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerEnrollment",
-        "column": "ProviderLicense",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerEnrollment",
-        "column": "NationalProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerEnrollment",
-        "column": "MetProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerEnrollment",
-        "column": "PayerProviderID",
+        "column": "DestPartnerCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderPayerEnrollmentAudit",
-        "column": "ProviderPayerEnrollmentAuditID",
+        "column": "DestPartnerCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "ProviderPayerEnrollmentAudit",
-        "column": "ProviderEnrollmentID",
+        "table": "SalesCampaign",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "ProviderPayerEnrollmentAudit",
-        "column": "ProviderTIN",
+        "table": "SupportUserAudit",
+        "column": "CHSPartnerCode",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "ProviderPayerEnrollmentAudit",
-        "column": "ProviderLicense",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerEnrollmentAudit",
-        "column": "NationalProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderPayerEnrollmentAudit",
-        "column": "MetProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderRule",
-        "column": "ProviderRuleID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderRuleAudit",
-        "column": "ProviderRuleAuditID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderRuleAudit",
-        "column": "ProviderRuleID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "Results",
-        "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "SalesLead",
-        "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "SupportRequest",
-        "column": "ProviderName",
+        "table": "UserLoginAudit",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "UsersAudit",
-        "column": "ProviderRuleOnly",
+        "column": "PartnerID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "dci",
         "table": "RTServiceAudit",
-        "column": "ProviderTIN",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ClaimHistory",
-        "column": "ProviderRuleId",
+        "column": "PartnerID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "Claim",
-        "column": "ProviderRuleId",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "arc_Claim_ClaimProviderID_List",
-        "column": "ClaimProviderID",
+        "table": "Claim",
+        "column": "DestPartnerCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "arc_Claim_ProviderCredentialID_List",
-        "column": "ProviderCredentialID",
+        "table": "PartnerBillingActivity",
+        "column": "PartnerBillingActivityID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "arc_ProviderCredentialAuditID_Archive_List",
-        "column": "ProviderCredentialAuditID",
+        "table": "PartnerBillingActivity",
+        "column": "PartnerCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimExtension",
-        "column": "RefProviderNo",
+        "table": "PartnerBillingActivity",
+        "column": "PartnerStatementItemID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimItemProvider",
-        "column": "ClaimItemProviderID",
+        "table": "ClaimFileUpload",
+        "column": "PartnerID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimItemProviderCredential",
-        "column": "ClaimItemProviderCredentialID",
+        "table": "ClaimFileUploadAudit",
+        "column": "PartnerID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimItemProviderCredential",
-        "column": "ClaimItemProviderID",
+        "table": "ClaimPayment",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimPaymentAdjustment",
-        "column": "ProviderID",
+        "table": "ClaimPayment",
+        "column": "OrigSourcePartnerCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimPaymentClaim",
-        "column": "ProviderClaimID",
+        "table": "ClaimPaymentReport",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimPaymentReportClaim",
-        "column": "ProviderClaimID",
+        "table": "ClaimStatusUpgrade",
+        "column": "PartnerCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimProvider",
-        "column": "ClaimProviderID",
+        "table": "PartnerBillingActivity_old",
+        "column": "PartnerBillingActivityID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimProvider",
-        "column": "ProviderType",
+        "table": "PartnerBillingActivity_old",
+        "column": "PartnerCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimProvider",
-        "column": "ProviderRuleId",
+        "table": "PartnerBillingActivity_old",
+        "column": "PartnerStatementItemID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "ClaimProviderAddress",
-        "column": "ClaimProviderID",
+        "table": "PartnerERAAdjustment",
+        "column": "PartnerERAAdjustmentID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "CredentialUpdate",
-        "column": "ClaimProviderID",
+        "table": "PartnerERAAdjustment",
+        "column": "PartnerCode",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
-        "table": "DciGroup",
-        "column": "AutoAddProvider",
+        "table": "PartnerStatusCategory",
+        "column": "PartnerCode",
         "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "DciGroupAudit",
-        "column": "AutoAddProvider",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "DciPms",
-        "column": "AutoAddProvider",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ProviderCredential",
-        "column": "ProviderCredentialID",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ProviderCredential",
-        "column": "ClaimProviderID",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ProviderCredential",
-        "column": "ProviderType",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ProviderCredentialAudit",
-        "column": "ProviderCredentialAuditID",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ProviderCredentialAudit",
-        "column": "ProviderCredentialID",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ProviderCredentialAudit",
-        "column": "ClaimProviderID",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ProviderCredentialAudit",
-        "column": "ProviderType",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "reports",
-        "column": "DentalBenefitProvidersTrans",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "cred",
-        "table": "Question",
-        "column": "ProviderMapping",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "Question",
-        "column": "ProviderEditable",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "UserAnswer",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ApplicationSet",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderForm",
-        "column": "ProviderFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderStateForm",
-        "column": "ProviderStateFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ApplicationSetAnswer",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormAnswer",
-        "column": "ProviderFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ApplicationSetEnrollmentTicket",
-        "column": "ProviderPayerEnrollmentID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ApplicationSetHistory",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ApplicationSetNote",
-        "column": "VisibleToProvider",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ApplicationSetTicket",
-        "column": "ProviderPayerEnrollmentID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "HawaiiDentalLicenseLookup",
-        "column": "ProviderName",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "OutreachCycle",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "OutreachCycleAudit",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "PayerConfig",
-        "column": "UpdateProvider",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "PayerConfig",
-        "column": "PlanAtProvider",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "PayerConfig",
-        "column": "UpdateEffectiveDateOnProvider",
+        "column": "NonPartnerPayer",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -2287,38 +1999,8 @@
     },
     {
         "database": "cred",
-        "table": "PayerDataChange",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "PayerProcessOutreach",
-        "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "PayerProcessOutreachCallTask",
-        "column": "ProviderDirectoryID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderApplicationStatus",
-        "column": "ProviderId",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderDetail",
-        "column": "ProviderDetailID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderDetail",
-        "column": "ProviderId",
+        "table": "PayerForm",
+        "column": "HideOnPartnerView",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -2329,267 +2011,1221 @@
     },
     {
         "database": "cred",
-        "table": "ProviderDetail",
-        "column": "ProviderSiteDetailID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderDocument",
-        "column": "ProviderDocumentID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderDocumentMeta",
-        "column": "ProviderDocumentMetaID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderDocumentMeta",
-        "column": "ProviderDocumentID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormAnswerMigrationAudit",
-        "column": "ProviderFormAnswerMigrationAuditID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormAnswerMigrationAudit",
-        "column": "ProviderFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormAnswerMigrationAudit",
-        "column": "ProviderFormAnswerID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormDocument",
-        "column": "ProviderFormDocumentID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormDocument",
-        "column": "ProviderFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormDocumentMeta",
-        "column": "ProviderFormDocumentMetaID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormDocumentMeta",
-        "column": "ProviderFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormDocumentMeta",
-        "column": "ProviderFormDocumentID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormDocumentMeta",
-        "column": "ProviderDocumentMetaID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormHistory",
-        "column": "ProviderFormHistoryID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormHistory",
-        "column": "ProviderFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormNote",
-        "column": "ProviderFormNoteID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormNote",
-        "column": "ProviderFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderFormStatus",
-        "column": "ProviderFormStatusID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderGroupDetail",
-        "column": "ProviderGroupDetailID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderProfileSection",
-        "column": "ProviderID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderProfileSummary",
-        "column": "ProviderProfileSummaryID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderProfileSummary",
-        "column": "ProviderID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderSiteDetail",
-        "column": "ProviderSiteDetailID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
         "table": "ProviderSiteDetail",
         "column": "ProviderGroupNetworkRoleId",
         "file": "Livesql3/cred.sql"
     },
     {
-        "database": "cred",
-        "table": "ProviderSiteDetail",
-        "column": "ProviderGroupDetailID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderStateFormAnswer",
-        "column": "ProviderStateFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderStateFormHistory",
-        "column": "ProviderStateFormHistoryID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderStateFormHistory",
-        "column": "ProviderStateFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderStateFormNote",
-        "column": "ProviderStateFormNoteID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderStateFormNote",
-        "column": "ProviderStateFormID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
         "database": "chs",
-        "table": "ClaimPaymentAdjustment",
-        "column": "ProviderID",
+        "table": "PartnerPartnerCode",
+        "column": "PartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
-        "table": "ClaimPaymentClaim",
-        "column": "ProviderClaimID",
+        "table": "PartnerPartnerCode",
+        "column": "PartnerPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCode",
+        "column": "BillingPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCode",
+        "column": "GPPartnerNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCode",
+        "column": "GPPartnerAddressID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerCode",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerCode",
+        "column": "SecondaryDestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItem",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItem",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItem",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItem",
+        "column": "InvoicedPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItem",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBillingActivity",
+        "column": "PartnerBillingActivityID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBillingActivity",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBillingActivity",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaFile",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaFile",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "PartnerAttachmentID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimStatusTracing",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimStatusTracing",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimStatusTracing",
+        "column": "PartnerBilledDate",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimStatusTracing_Facility",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimDigest",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimEraDigest",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPayment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPayment",
+        "column": "OrigSourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentDigest",
+        "column": "PartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistration",
-        "column": "ProviderPrimaryID",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistration",
-        "column": "ProviderSecondaryID",
+        "column": "DestPartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistration",
-        "column": "ProviderFirstName",
+        "column": "PartnerAccountNumber",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistration",
-        "column": "ProviderLastName",
+        "column": "SecondaryDestPartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistrationHistory",
-        "column": "ProviderPrimaryID",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistrationHistory",
-        "column": "ProviderSecondaryID",
+        "column": "DestPartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistrationHistory",
-        "column": "ProviderFirstName",
+        "column": "PartnerAccountNumber",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "ClaimPaymentRegistrationHistory",
-        "column": "ProviderLastName",
+        "column": "SecondaryDestPartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
-        "table": "OfficeResponsePreAuth",
-        "column": "ProviderCtrlNumber",
+        "table": "ClaimStatusTracingAudit",
+        "column": "PartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
-        "table": "OfficeResponsePreAuth",
-        "column": "ProviderID",
+        "table": "ClaimStatusTracingAudit",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimStatusTracingAudit",
+        "column": "PartnerBilledDate",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "DBA",
+        "column": "PartnerStatementItemAdjustmentID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "DBA",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "DBA",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "DBA",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "DBA",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "DBA",
+        "column": "PartnerAdjustmentProcessTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "FileDocumentMap",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaAck",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaAck",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaAppAdvice",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaAppAdvice",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaAttachment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaAttachment",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaBankPayment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaBankPayment",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimPayment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimPayment",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimPayment",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimPayment",
+        "column": "SecondaryDestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimStatus",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimStatus",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimStatus",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimStatusRequest",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimStatusRequest",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligRequest",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligRequest",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligRequest",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligResponse",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligResponse",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligResponse",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEnrollment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaEnrollment",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaFileAudit",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaFileAudit",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaImplAck",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaImplAck",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaImplAck",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaOfficeResponse",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaOfficeResponse",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaOfficeResponse",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaOfficeResponse",
+        "column": "SecondaryDestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaTransportAudit",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaTransportAudit",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaTransportAudit",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "NonCompliantFile",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerAdjustmentProcessType",
+        "column": "PartnerAdjustmentProcessTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBankAccount",
+        "column": "PartnerBankAccountID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBankAccount",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBankAccount",
+        "column": "PartnerSiteID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBillingActivity_old",
+        "column": "PartnerBillingActivityID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBillingActivity_old",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBillingActivity_old",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerClaimResubmit",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerConfigType",
+        "column": "PartnerConfigTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerConfigType",
+        "column": "InPartnerConfigTypeSelection",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerDestinationResponseConfig",
+        "column": "PartnerDestinationResponseConfigID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerDestinationResponseConfig",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerDowntime",
+        "column": "PartnerDowntimeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerDowntime",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerLineCtrlConfig",
+        "column": "PartnerLineCtrlConfigID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerLineCtrlConfig",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerLineCtrlConfig",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerMessageRoutingExclude",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerMessageRoutingExclude",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerMessageRoutingExcludeAudit",
+        "column": "PartnerMessageRoutingExcludeAuditID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerMessageRoutingExcludeAudit",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerMessageRoutingExcludeAudit",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerMessageRoutingExcludeInfo",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeAudit",
+        "column": "PartnerPartnerCodeAuditID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeAudit",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeAudit",
+        "column": "PartnerPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeAudit",
+        "column": "BillingPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeAudit",
+        "column": "GPPartnerNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeAudit",
+        "column": "GPPartnerAddressID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeBillingConfig",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeBillingConfig",
+        "column": "PartnerPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeBillingConfig",
+        "column": "BillingPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeBillingConfig",
+        "column": "GPPartnerNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCodeBillingConfig",
+        "column": "GPPartnerAddressID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPayerDestUpgradeConfig",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPayerDestUpgradeConfig",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPayerMatchUpgrade",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPayerSet",
+        "column": "PartnerPayerSetID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPayerSet",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPayerSetAudit",
+        "column": "PartnerPayerSetAuditID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPayerSetAudit",
+        "column": "PartnerPayerSetID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPayerSetAudit",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPrice",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPrice",
+        "column": "PartnerPayerSetID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPriceAudit",
+        "column": "PartnerPriceAuditID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPriceAudit",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPriceAudit",
+        "column": "PartnerPayerSetID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustment",
+        "column": "PartnerStatementItemAdjustmentID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustment",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustment",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustment",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustment",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustment",
+        "column": "PartnerAdjustmentProcessTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustmentAudit",
+        "column": "PartnerStatementItemAdjustmentAuditID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustmentAudit",
+        "column": "PartnerStatementItemAdjustmentID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustmentAudit",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustmentAudit",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustmentAudit",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustmentAudit",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustmentAudit",
+        "column": "PartnerAdjustmentProcessTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAudit",
+        "column": "PartnerStatementItemAuditID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAudit",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAudit",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAudit",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAudit",
+        "column": "InvoicedPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAudit",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemSummary",
+        "column": "PartnerStatementItemSummaryID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemSummary",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerSubAccount",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerSubAccount",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubType",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubType",
+        "column": "PartnerTranTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerTranSubTypeConfigTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerConfigTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "PartnerTranSubTypeConfigurationID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "InboundPartnerTranSubTypeConfigTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "OutboundPartnerTranSubTypeConfigTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypePayerNameTranslation",
+        "column": "PartnerTranSubTypePayerNameTranslationID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypePayerNameTranslation",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypePayerNameTranslation",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypePayerNameTranslationAudit",
+        "column": "PartnerTranSubTypePayerNameTranslationAuditID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypePayerNameTranslationAudit",
+        "column": "PartnerTranSubTypePayerNameTranslationID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypePayerNameTranslationAudit",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypePayerNameTranslationAudit",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeStatus",
+        "column": "PartnerTranSubTypeStatusID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeStatus",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeStatus",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranType",
+        "column": "PartnerTranTypeID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerWidgetDeliveryOps",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerWidgetDeliveryRegistration",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PartnerWidgetDeliveryRegistration",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerClaimPrice",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerClaimPrice",
+        "column": "DXCtoPartner",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerClaimPriceAudit",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerClaimPriceAudit",
+        "column": "DXCtoPartner",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerPartnerCode",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerPartnerCode",
+        "column": "AlternateDestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerPartnerCode",
+        "column": "AttachmentPrintDestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerPartnerCodeAudit",
+        "column": "PayerPartnerCodeAuditID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerPartnerCodeAudit",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerPartnerCodeAudit",
+        "column": "AlternateDestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "PayerPartnerCodeAudit",
+        "column": "AttachmentPrintDestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ProcessInfo",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ProviderPartnerMap",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "RuleConfig",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "SourceDestConfig",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "SourceDestConfig",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "TxIDGenerator",
+        "column": "PartnerCode",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "pfs",
+        "table": "PartnerCreditPlan",
+        "column": "PartnerCreditPlanID",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "database": "pfs",
         "table": "Settlement",
-        "column": "ProviderNetAmount",
+        "column": "PartnerDiscountAmount",
         "file": "Livesql3/pfs.sql"
     },
     {
         "database": "pfs",
         "table": "SettlementHistory",
-        "column": "ProviderNetAmount",
+        "column": "PartnerDiscountAmount",
         "file": "Livesql3/pfs.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssNetRev_Current",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssNetRev_2010",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
@@ -2611,56 +3247,326 @@
     },
     {
         "database": "reports",
-        "table": "GroupActivity",
-        "column": "ClaimProviderMatchCount",
+        "table": "Billing_PartnerStatementItem",
+        "column": "PartnerStatementItemID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "DSSPayerCredBilling",
-        "column": "ProviderDirectoryID",
+        "table": "Billing_PartnerStatementItem",
+        "column": "PartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "DSSPayerCredBilling",
-        "column": "Providername",
+        "table": "Billing_PartnerStatementItem",
+        "column": "RMSrcAmtPartner",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "DataBillRpt",
-        "column": "ProviderRev",
+        "table": "Billing_PartnerStatementItem",
+        "column": "InvoicedPartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "dhmo",
-        "column": "Provider First",
+        "table": "Billing_PartnerStatementItem",
+        "column": "PartnerPriceID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "dhmo",
-        "column": "Provider Last",
+        "table": "PayerPartnerTrans",
+        "column": "PayerPartnerTransID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "dhmo_add_groups",
-        "column": "Provider First",
+        "table": "PayerPartnerTrans",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "dhmo_add_groups",
-        "column": "Provider Last",
+        "table": "PayerPartnerTrans",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerPartnerTrans",
+        "column": "MasterDestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerPartnerTrans",
+        "column": "PartnerTranSubType",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage2",
+        "column": "PartnerBillingGPStageID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage2",
+        "column": "InvoicedPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage2",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssStagingClaimPricing",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssStagingClaimPricing",
+        "column": "DXCtoPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingTranTypeToMasterItem",
+        "column": "PartnerTranTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "alert_MultipleBuildingFiles",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "BancTecClaimRejection",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_GPManualBillItems",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_GPManualBillItems",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_NEAStatementItems",
+        "column": "partnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_NEAStatementItems",
+        "column": "partnerstatementloadeddate",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PartnerPartnerCodeDualProcessing",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PartnerPartnerCodeDualProcessing",
+        "column": "AlternatePartnerPartnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PartnerStatementItemCredits",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PartnerStatementItemCredits",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PartnerStatementItemCredits",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PartnerTranSubTypePayerNameTranslation",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PartnerTranSubTypePayerNameTranslation",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PayerPartnerTrans",
+        "column": "PayerPartnerTransID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PayerPartnerTrans",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PayerPartnerTrans",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PayerPartnerTrans",
+        "column": "MasterDestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PayerPartnerTrans",
+        "column": "PartnerTranSubType",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "bkwrpt",
+        "column": "partnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "bkwrpt",
+        "column": "destpartnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "bkwtest",
+        "column": "partnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "bkwtest",
+        "column": "destpartnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "CSRequest_Practice",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DASplay",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DataBillTemp",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DecemberPartnerMetaClaims",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DecemberPartnerMetaClaims",
+        "column": "InvoicedPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DecemberPartnerMetaClaims",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DecemberPartnerMetaClaims",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssChsClaimStatusTrack",
+        "column": "destpartnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssChsFileSummary",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssChsRespProfile",
+        "column": "partnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssChsRespProfile",
+        "column": "sourcepartnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssChsRespProfileBkup",
+        "column": "partnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssChsRespProfileBkup",
+        "column": "sourcepartnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssDimCHSPartnerCode",
+        "column": "PartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DssFDResidualReport",
         "column": "DebitNetworkFees",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssFileIO",
+        "column": "PartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -2677,92 +3583,386 @@
     },
     {
         "database": "reports",
-        "table": "DSSRetentionActivity",
-        "column": "ProviderTranCount",
+        "table": "DssStagingClaimPricingAudit",
+        "column": "PartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "DSSRetentionActivity",
-        "column": "ProviderRevenue",
+        "table": "DssStagingClaimPricingAudit",
+        "column": "DXCtoPartner",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "DSSWebPortal",
-        "column": "Provider",
+        "column": "partnerid",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DSSWebPortal",
+        "column": "UIPartnerID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "dsswebportal_20101202",
-        "column": "Provider",
+        "column": "partnerid",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dsswebportal_20101202",
+        "column": "UIPartnerID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DssYearNetRev",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "ERAexceptions",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GPTransactionStage",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GPTransactionStage_Test",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GPTransactionStage_Test_New",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GPTransactionStage_Test_Old",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "load_databill",
+        "column": "PartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Match_Anthem_BO",
-        "column": "BillingProvider",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Match_Anthem_BO_1",
-        "column": "BillingProvider",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "NEASubscriptionAggregation",
-        "column": "PossibleDXCOverchargeToProvider",
+        "table": "Matching_Anthem",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "NetSuiteCustomers",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "NetSuiteCustomers_Prod",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "NetSuiteCustomers-diff",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage1",
+        "column": "PartnerBillingGPStageID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage1",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage1",
+        "column": "InvoicedPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage1",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage1",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage3",
+        "column": "PartnerBillingGPStageID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage3",
+        "column": "InvoicedPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingGPStage3",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingStaticItemNumber",
+        "column": "PartnerBillingStaticItemNumberID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingStaticItemNumber",
+        "column": "PartnerTranTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingStaticItemNumber",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingTranSubTypeToItemNumber",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerBillingTranTypeToItemNumber",
+        "column": "PartnerTranTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerStatementItemAdjustment08162022",
+        "column": "PartnerStatementItemAdjustmentID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerStatementItemAdjustment08162022",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerStatementItemAdjustment08162022",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerStatementItemAdjustment08162022",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerStatementItemAdjustment08162022",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerStatementItemAdjustment08162022",
+        "column": "PartnerAdjustmentProcessTypeID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "PayerBillingGPStage",
-        "column": "ProviderTin",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerBillingGPStage",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerBillingGPStage1",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerBillingGPStage1",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerBillingGPStage2",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerBillingGPStage2",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerBillingGPStageArchive",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerBillingGPStageArchive",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerBillingRoutingHistory",
+        "column": "destpartnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerCredPsv",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerCredPsv",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerCredPsvStage",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerCredPsvStage",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerPartnerTrans_Temp",
+        "column": "PayerPartnerTransID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerPartnerTrans_Temp",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerPartnerTrans_Temp",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerPartnerTrans_Temp",
+        "column": "MasterDestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerPartnerTrans_Temp",
+        "column": "PartnerTranSubType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "PayerProviderTrans",
-        "column": "PayerProviderTransID",
+        "column": "PartnerTranTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerProviderTrans",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerProviderTrans",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayerTrans",
+        "column": "PartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ProviderPayerTrans",
-        "column": "ProviderPayerTransID",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ProviderPayerTrans",
-        "column": "BProviderLastName",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "ProviderPayerTrans",
-        "column": "BProviderFirstName",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "ProviderPayerTrans",
-        "column": "RProviderLastName",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "ProviderPayerTrans",
-        "column": "RProviderFirstName",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "ProviderPayerTrans",
-        "column": "ProviderAdd1",
+        "column": "UIPartnerID",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -2929,171 +4129,807 @@
     },
     {
         "database": "reports",
-        "table": "rpt_ADPProviderCredentialAudit",
-        "column": "ProviderType",
+        "table": "RIITemp",
+        "column": "TradingPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "routeERAexceptions",
+        "column": "PartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "rpt_AnthemWebPortal",
-        "column": "Provider",
+        "column": "PartnerID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "rpt_BNDProviderCredentialAudit",
-        "column": "ProviderType",
+        "table": "rpt_DSSStagingClaimPricing",
+        "column": "PartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "rpt_GEDCProviderCredentialAudit",
-        "column": "ProviderType",
+        "table": "rpt_DSSStagingClaimPricing",
+        "column": "DXCtoPartner",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "rpt_LuminaProviderCredentialAudit",
-        "column": "ProviderType",
+        "table": "rpt_MismatchDestinationPartner",
+        "column": "PricingPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_MismatchDestinationPartner",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_MismatchDestinationPartner",
+        "column": "PartnerPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_MissingPartnerPartnerCode",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_MonthlyBilling_Incoming",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_MonthlyBilling_IncomingPayerBreakdown",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_MonthlyBilling_MetRTBreakdown",
+        "column": "DCPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_MonthlyBilling_Outgoing",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_MonthlyBilling_OutgoingPCSum",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_MonthlyBilling_RTTransactions",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_ValidationPassRate_Dest",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "rpt_ValidationPassRate_Source",
+        "column": "Partner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "RTTrans",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "SummaryTrans",
+        "column": "PartnerID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Claims",
-        "column": "BillingProviderTaxID",
+        "column": "PartnerTranTypeID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Claims",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "SourcePartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "PartnerTranSubTypeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims_TransactionEvents",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims_TransactionEvents",
+        "column": "PartnerTranSubTypeName",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Cred",
-        "column": "BillingProviderTaxID",
+        "column": "PartnerTranTypeID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_Cred",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "SourcePartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "PartnerTranSubTypeName",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_ERA",
-        "column": "BillingProviderTaxID",
+        "column": "PartnerTranTypeID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_ERA",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "SourcePartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "PartnerTranSubTypeName",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_PatStmt",
-        "column": "BillingProviderTaxID",
+        "column": "PartnerTranTypeID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_PatStmt",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "SourcePartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "PartnerTranSubTypeName",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_RTClaims",
-        "column": "BillingProviderTaxID",
+        "column": "PartnerTranTypeID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_RTClaims",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "SourcePartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "PartnerTranSubTypeName",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_RTCount",
-        "column": "BillingProviderTaxID",
+        "column": "PartnerTranTypeID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "temp_DSO_RTCount",
-        "column": "RenderingProviderNPI",
+        "column": "PartnerTranTypeName",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "tempECEHG",
-        "column": "ProviderID",
+        "table": "temp_DSO_RTCount",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "tempECEHG",
-        "column": "ProviderName",
+        "table": "temp_DSO_RTCount",
+        "column": "SourcePartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "PartnerTranSubTypeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
+        "column": "PartnerID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temptom",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temptom",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temptom",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PartnerStatementItem",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PartnerStatementItem",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PartnerStatementItem",
+        "column": "RMSrcAmtPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PartnerStatementItem",
+        "column": "InvoicedPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PartnerStatementItem",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PayerPartnerTrans",
+        "column": "PayerPartnerTransID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PayerPartnerTrans",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PayerPartnerTrans",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PayerPartnerTrans",
+        "column": "MasterDestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Test_PayerPartnerTrans",
+        "column": "PartnerTranSubType",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "Test_PayerProviderTrans",
-        "column": "PayerProviderTransID",
+        "column": "PartnerTranTypeID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "UCCI",
-        "column": "Provider ID",
+        "table": "Test_PayerProviderTrans",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "xls_DeltaCA",
-        "column": "PROVIDER",
+        "table": "Test_PayerProviderTrans",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tomtemp28",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tomtemp28",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tomtemp28",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "VIPBillingGPStage1",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "VIPBillingGPStage1",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "VIPBillingGPStage1Arch",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "VIPBillingGPStage1Arch",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "VIPBillingGPStageArchive",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "VIPBillingGPStageArchive",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "VipCredTemp",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "VipCredTemp",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "balclaims",
+        "column": "destpartnercode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ClaimPaymentRegistrationRemoval",
-        "column": "providerprimaryid",
+        "column": "sourcepartnercode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "ClaimPaymentRegistrationRemoval",
-        "column": "providersecondaryid",
+        "column": "destpartnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DeltaERAPaymentUtilization",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GPManualBillItems",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "GPManualBillItems",
+        "column": "partnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "nea201206",
+        "column": "partnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "NEADataAll",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "NEADataAll",
+        "column": "PartnerPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "NEAStatementItems",
+        "column": "partnercode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "NEAStatementItems",
+        "column": "partnerstatementloadeddate",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerPortalMonthlyRpt",
+        "column": "PartnerID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerStatementItemCredits",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerStatementItemCredits",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PartnerStatementItemCredits",
+        "column": "RMSrcAmtPartner",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "TempDenticonUsers",
-        "column": "ProviderRuleOnly",
+        "column": "PartnerID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "tmpEaglesLanding",
-        "column": "Provider Name",
+        "table": "tomdcp20110404load",
+        "column": "SourcePartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "tmpeagleslandingitems",
-        "column": "Provider Name",
+        "table": "tomdcp20110404load",
+        "column": "DestPartnerCode",
         "file": "Livesql3/reportst.sql"
     },
     {
-        "database": "ptp",
-        "table": "ProviderPayment",
-        "column": "ProviderPaymentID",
-        "file": "Livesql3/ptp.sql"
+        "database": "reports",
+        "table": "tomdcp20110404load",
+        "column": "PartnerAccountNumber",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "WesternUsers",
+        "column": "PartnerID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "dea",
+        "table": "Attachment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "Attachment",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "Attachment",
+        "column": "PartnerClaimID",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "Attachment",
+        "column": "PartnerAttachmentID",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "database": "dea",
+        "table": "AttachmentHistory",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/dea.sql"
     },
     {
         "database": "dxcps",
