@@ -36,38 +36,54 @@ def main():
         sys.exit(1)
     logging.basicConfig(level=numeric_level, format='%(levelname)s: %(message)s')
 
-    columns_source_file_path = args.source_columns
-    foreign_keys_file_path = args.foreign_keys
+    source_file = args.source_columns
+    foreign_keys_file = args.foreign_keys
 
-    logging.info("Loading source columns file: %s", columns_source_file_path)
-    columns_source_data = load_json_file(columns_source_file_path)
+    logging.info("Loading source columns file: %s", source_file)
+    source_data = load_json_file(source_file)
 
-    logging.info("Loading foreign keys file: %s", foreign_keys_file_path)
-    foreign_keys = load_json_file(foreign_keys_file_path)
+    logging.info("Loading foreign keys file: %s", foreign_keys_file)
+    fk_data = load_json_file(foreign_keys_file)
 
     enhanced_data = []
-    for entry in columns_source_data:
-        search_key = entry.get("match")
-        if search_key:
-            references = [{"database": fk["database"], "source": fk["source"]}
-                          for fk in foreign_keys if fk.get("target") == search_key]
-            logging.debug("Found references for match '%s': %s", search_key, references)
+    for entry in source_data:
+        # Retrieve the required fields from the source record
+        source_db = entry.get("database")
+        source_table = entry.get("table")
+        source_column = entry.get("column")
+        references = []
+        if source_db and source_table and source_column:
+            for fk in fk_data:
+                fk_db = fk.get("database")
+                fk_table = fk.get("fk_table")
+                fk_key = fk.get("fk_key")
+                if fk_db == source_db and fk_table == source_table and fk_key == source_column:
+                    references.append({
+                        "database": fk_db,
+                        "fk_table": fk_table,
+                        "fk_key": fk_key,
+                        "constraint": fk.get("constraint"),
+                        "ref_table": fk.get("ref_table"),
+                        "ref_column": fk.get("ref_column"),
+                        "file": fk.get("file")
+                    })
+            logging.debug("Found references for database '%s', table '%s', column '%s': %s", source_db, source_table, source_column, references)
         else:
-            references = []
+            logging.warning("Entry missing one or more required fields (database, table, column): %s", entry)
         new_entry = dict(entry)
         new_entry["references"] = references
         enhanced_data.append(new_entry)
 
     if args.out:
-        output_file_path = args.out
+        output_file = args.out
     else:
-        base, ext = os.path.splitext(columns_source_file_path)
-        output_file_path = base + "-enhanced" + ext
+        base, ext = os.path.splitext(source_file)
+        output_file = base + "-enhanced" + ext
 
     try:
-        with open(output_file_path, 'w', encoding='utf-8') as f:
+        with open(output_file, 'w', encoding='utf-8') as f:
             json.dump(enhanced_data, f, indent=4)
-        logging.info("Enhanced columnsSource columns file created: %s", output_file_path)
+        logging.info("Enhanced columnsSource columns file created: %s", output_file)
     except Exception as e:
         logging.error("Error writing enhanced file: %s", e)
         sys.exit(1)
