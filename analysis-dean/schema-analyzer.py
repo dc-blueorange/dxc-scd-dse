@@ -126,7 +126,7 @@ def scan_directories(paths, mode, no_columns):
     return all_results
 
 def print_report(results, header, mode):
-    print(header)
+    # print(header)
     writer = csv.writer(sys.stdout)
     if mode == 'foreignkeys':
         writer.writerow(["Database", "Source Table", "Source Key Column", "Target Table", "Target Column", "File"])

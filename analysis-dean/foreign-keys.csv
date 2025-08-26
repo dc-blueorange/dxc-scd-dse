@@ -1,4 +1,3 @@
---- Report for Foreignkeys Mode (Sources and Targets) ---
 Database,Source Table,Source Key Column,Target Table,Target Column,File
 rpt,CategoryQuestion,CategoryID,FK_CategoryQuestion_Category_CategoryID,Category,CategoryID,DTT-ANA-PRD/rpt.sql
 rpt,CategoryQuestion,QuestionID,FK_CategoryQuestion_Question_QuestionID,Question,QuestionID,DTT-ANA-PRD/rpt.sql
