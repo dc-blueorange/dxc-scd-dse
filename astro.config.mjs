@@ -5,6 +5,9 @@ export default defineConfig({
   integrations: [react()],
   site: 'http://localhost:3000/',
   vite: {
+    ssr: {
+      noExternal: ['@astrojs/react']
+    },
     resolve: {
       dedupe: ['react', 'react-dom']
     }
