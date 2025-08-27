@@ -22,13 +22,13 @@ python3 analysis-dean/schema-analyzer.py --foreign-keys > analysis-dean/foreign-
 python3 analysis-dean/schema-analyzer.py --foreign-keys -js > analysis-dean/foreign-keys.json
 
 python3 analysis-dean/column-references.py -sc analysis-dean/dentist-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/dentist-references.json 
-# python3 analysis-dean/column-references.py -sc analysis-dean/office-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/office-references.json 
+python3 analysis-dean/column-references.py -sc analysis-dean/office-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/office-references.json 
 python3 analysis-dean/column-references.py -sc analysis-dean/network-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/network-references.json 
 python3 analysis-dean/column-references.py -sc analysis-dean/dso-columns.json -fk analysis-dean/foreign-keys.json --out analysis-dean/dso-references.json
 
 echo
 echo
-echo "Counting dentists, networks and DSOs..."
+echo "Counting dentists, offices, networks and DSOs..."
 echo Dentists: $(jq 'length' analysis-dean/dentist-tables.json)
 echo Dentist columns: $(jq 'length' analysis-dean/dentist-columns.json)
 echo Offices: $(jq 'length' analysis-dean/office-tables.json)
@@ -38,7 +38,7 @@ echo Provider Network columns: $(jq 'length' analysis-dean/network-columns.json)
 echo DSOs: $(jq 'length' analysis-dean/dso-tables.json)
 echo DSO columns: $(jq 'length' analysis-dean/dso-columns.json)
 echo
-echo "Counting foreign key references to dentists, networks and DSOs..."
+echo "Counting foreign key references to dentists, offices, networks and DSOs..."
 echo Dentist references: $(jq 'length' analysis-dean/dentist-references.json)
 echo Office references: $(jq 'length' analysis-dean/office-references.json)
 echo Provider Network references: $(jq 'length' analysis-dean/network-references.json)
