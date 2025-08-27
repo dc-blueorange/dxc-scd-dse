@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import * as d3 from "d3";
 
-const NetworkDiagram = () => {
+const NetworkDiagram = ({ debug = false }) => {
   const svgRef = useRef(null);
   const [data, setData] = useState({ nodes: [], links: [] });
   const simulationRef = useRef(null);
@@ -170,7 +170,13 @@ const NetworkDiagram = () => {
     node.append("title")
       .text((d) => `${d.database} : ${d.table} : ${d.column}`);
 
+    let tickCount = 0;
     simulation.on("tick", () => {
+      tickCount++;
+      // Log node positions every 10 ticks if debug is enabled.
+      if (debug && tickCount % 10 === 0) {
+        console.debug("Tick", tickCount, simulation.nodes().map(n => ({ id: n.id, x: n.x, y: n.y })));
+      }
       link.attr("x1", (d) => d.source.x)
           .attr("y1", (d) => d.source.y)
           .attr("x2", (d) => d.target.x)
@@ -218,7 +224,7 @@ const NetworkDiagram = () => {
       tooltip.remove();
       window.removeEventListener("resize", handleResize);
     };
-  }, [data]);
+  }, [data, debug]);
 
   return <svg ref={svgRef}></svg>;
 };
