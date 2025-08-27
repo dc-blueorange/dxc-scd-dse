@@ -71,6 +71,21 @@ const NetworkDiagram = () => {
     // Clear previous content.
     svg.selectAll("*").remove();
 
+    // Create a tooltip div if it doesn't exist.
+    let tooltip = d3.select("body").select(".tooltip");
+    if (tooltip.empty()) {
+      tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("padding", "8px")
+        .style("background", "rgba(0,0,0,0.7)")
+        .style("color", "#fff")
+        .style("border-radius", "4px")
+        .style("pointer-events", "none")
+        .style("opacity", 0);
+    }
+
     const simulation = d3.forceSimulation(data.nodes)
       .force("link", d3.forceLink(data.links).id((d) => d.id).distance(150))
       .force("charge", d3.forceManyBody().strength(-300))
@@ -94,6 +109,26 @@ const NetworkDiagram = () => {
       .attr("fill", (d) => colorScale(d.type))
       .call(drag(simulation));
 
+    // Tooltip events:
+    node.on("mouseover", (event, d) => {
+          tooltip.transition().duration(200).style("opacity", 0.9);
+          tooltip.html(
+            `<strong>Database:</strong> ${d.database}<br/>
+             <strong>Table:</strong> ${d.table}<br/>
+             <strong>Column:</strong> ${d.column}<br/>
+             <strong>File:</strong> ${d.file || "N/A"}<br/>
+             <strong>Type:</strong> ${d.type}`
+          );
+        })
+        .on("mousemove", (event) => {
+          tooltip.style("left", (event.pageX + 10) + "px")
+                 .style("top", (event.pageY + 10) + "px");
+        })
+        .on("mouseout", () => {
+          tooltip.transition().duration(500).style("opacity", 0);
+        });
+
+    // Append title for basic accessibility as well.
     node.append("title")
       .text((d) => `${d.database} : ${d.table} : ${d.column}`);
 
@@ -131,7 +166,10 @@ const NetworkDiagram = () => {
         .on("end", dragended);
     }
 
-    return () => simulation.stop();
+    return () => {
+      simulation.stop();
+      tooltip.remove();
+    };
   }, [data]);
 
   return <svg ref={svgRef}></svg>;
