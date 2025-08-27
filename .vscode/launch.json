@@ -49,14 +49,7 @@
                 "${workspaceFolder}/analysis-dean/dentist-references.json"
             ],
             "console": "integratedTerminal"
-        },
-        {
-            "name": "Debug NetworkDiagram",
-            "type": "chrome",
-            "request": "launch",
-            "url": "http://localhost:3000/",
-            "webRoot": "${workspaceFolder}",
-            "sourceMaps": true
         }
+        
     ]
 }
