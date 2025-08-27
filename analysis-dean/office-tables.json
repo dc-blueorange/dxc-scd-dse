@@ -1,0 +1,290 @@
+[
+    {
+        "database": "ext_raw_pc",
+        "table": "_airbyte_raw_BackOfficeUsers",
+        "column": "Office",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "database": "ext_raw_pc",
+        "table": "_airbyte_raw_BackOfficeUserTokens",
+        "column": "Office",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "database": "ext_raw_pc",
+        "table": "backofficeusers",
+        "column": "office",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "database": "ext_raw_pc",
+        "table": "backofficeusertokens",
+        "column": "office",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDApplicationSetDETApprovedAppsPayerApprovedLocations",
+        "column": "Location",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDProviderDETLocationsProviderProfileAnswers",
+        "column": "Location",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "aggregateItemLocation",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "AllocationMethod",
+        "column": "location",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "assemblyItemLocations",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "LocationMainAddress",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "LocationReturnAddress",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "LocationType",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "nsDev",
+        "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
+        "column": "location",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "database": "ns",
+        "table": "aggregateItemLocation",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "AllocationMethod",
+        "column": "location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "assemblyItemLocations",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "LocationMainAddress",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "LocationReturnAddress",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "LocationType",
+        "column": "Location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
+        "column": "location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "DCPOffice_20110815",
+        "column": "Office",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "OfficeServiceClient",
+        "column": "Office",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "SPDOOffice",
+        "column": "Office",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "common",
+        "table": "DenticalLocationInfo",
+        "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "FrontOfficeBilling",
+        "column": "Office",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocation",
+        "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerLocationPlan",
+        "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "dci",
+        "table": "OfficeResponse",
+        "column": "Office",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "vOfficeResponse",
+        "column": "Office",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "arc_OfficeResponse_Archive_List",
+        "column": "Office",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "arc_OfficeResponse_OfficeResponseID_Delete_List",
+        "column": "Office",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "arc_OfficeResponse_OfficeResponseID_Delete_List",
+        "column": "Office",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "OfficeResponseAudit",
+        "column": "Office",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "cred",
+        "table": "LocationQuestion",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "AdditionalLocationQuestionView",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetLocationView",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderProfileLocationView",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "GroupLocation",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "GroupLocationAnswer",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetLocation",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderApplicationStatusLocation",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "UserLocation",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaOfficeResponse",
+        "column": "Office",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaOfficeResponseFile",
+        "column": "Office",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "OfficeResponsePreAuth",
+        "column": "Office",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayConnectLocationNumber",
+        "column": "Location",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "bndofficemcna",
+        "column": "office",
+        "file": "Livesql3/reportst.sql"
+    }
+]
