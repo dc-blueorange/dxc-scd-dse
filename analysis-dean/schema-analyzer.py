@@ -21,6 +21,9 @@ logger = logging.getLogger(__name__)
 
 def scan_sql_file(filepath, mode, columns=True):
     results = []
+    regexDentistWords = r'(?:dentist|doctor|nurse|hygienist|provider|ortho)'
+    regexNetworkWords = r'(?:dental partner network|partner network|dental network|partner|network)'
+    regexDSOWords = r'(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)'
     try:
         with open(filepath, 'r', encoding='utf-16', errors='replace') as f:
             content = f.read()
@@ -72,11 +75,11 @@ def scan_sql_file(filepath, mode, columns=True):
         pattern = None
         if columns:
             if mode == 'dentists':
-                pattern = r'\[\s*([^\]]*(?:NPI|dentist|doctor|nurse|hygienist|provider|ortho)[^\]]*)\s*\]\s*\['
+                pattern = r'\[\s*([^\]]*' + regexDentistWords + r'[^\]]*)\s*\]\s*\['
             elif mode == 'networks':
-                pattern = r'\[\s*([^\]]*(?:dental partner network|partner network|dental network|partner|network)[^\]]*)\s*\]\s*\['
+                pattern = r'\[\s*([^\]]*' + regexNetworkWords + r'[^\]]*)\s*\]\s*\['
             elif mode == 'dsos':
-                pattern = r'\[\s*([^\]]*(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)[^\]]*)\s*\]\s*\['
+                pattern = r'\[\s*([^\]]*' + regexDSOWords + r'[^\]]*)\s*\]\s*\['
             if pattern:
                 tablenames_regex = re.compile(pattern, flags=re.IGNORECASE | re.DOTALL)
                 for match_found in tablenames_regex.finditer(columns_section):
@@ -90,11 +93,11 @@ def scan_sql_file(filepath, mode, columns=True):
                     })
         else:
             if mode == 'dentists':
-                pattern = r'(?:NPI|dentist|hygienist|provider)'
+                pattern = regexDentistWords
             elif mode == 'networks':
-                pattern = r'(?:dental network provider|network provider|dental network|provider|network)'
+                pattern = regexNetworkWords
             elif mode == 'dsos':
-                pattern = r'(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)'
+                pattern = regexDSOWords
             if pattern:
                 tables_regex = re.compile(pattern, flags=re.IGNORECASE | re.DOTALL | re.MULTILINE)
                 for match_found in tables_regex.finditer(table_name):

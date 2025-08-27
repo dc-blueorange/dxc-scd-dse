@@ -13,7 +13,6 @@ master,CREDProviderDETMinReqdProviderProfileAnswers,Provider,DTT-ANA-PRD/ent.sql
 master,CREDProviderDETProviderProfiles,Provider,DTT-ANA-PRD/ent.sql
 master,CREDProviderDETProviderProfiles,Provider,DTT-ANA-PRD/ent.sql
 master,CREDProviderDETUnpivotedUserAnswers,Provider,DTT-ANA-PRD/ent.sql
-master,CREDProviderDETUnpivotedUserAnswers,npi,DTT-ANA-PRD/ent.sql
 common,MetProviderDir,Provider,Livesql3/Common.sql
 common,ProviderDir,Provider,Livesql3/Common.sql
 common,ProviderDir_new,Provider,Livesql3/Common.sql
@@ -95,5 +94,6 @@ reports,rpt_GEDCProviderCredentialAudit,Provider,Livesql3/reportst.sql
 reports,rpt_LuminaProviderAudit,Provider,Livesql3/reportst.sql
 reports,rpt_LuminaProviderCredentialAudit,Provider,Livesql3/reportst.sql
 reports,Test_PayerProviderTrans,Provider,Livesql3/reportst.sql
+reports,tmpOrtho,Ortho,Livesql3/reportst.sql
 ptp,ProviderPayment,Provider,Livesql3/ptp.sql
 ddir,Dentist,Dentist,Livesql3/ddir.sql

@@ -84,12 +84,6 @@
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
-        "database": "master",
-        "table": "CREDProviderDETUnpivotedUserAnswers",
-        "column": "npi",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
         "database": "common",
         "table": "MetProviderDir",
         "column": "Provider",
@@ -573,6 +567,12 @@
         "database": "reports",
         "table": "Test_PayerProviderTrans",
         "column": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpOrtho",
+        "column": "Ortho",
         "file": "Livesql3/reportst.sql"
     },
     {

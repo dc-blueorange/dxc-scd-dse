@@ -19,6 +19,16 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "Run schema-analyzer networks",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/analysis-dean/schema-analyzer.py",
+            "args": [
+                "--dentists"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Run column-references",
             "type": "debugpy",
             "request": "launch",

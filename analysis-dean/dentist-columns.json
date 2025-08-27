@@ -139,18 +139,6 @@
     },
     {
         "database": "dw_atm_dxc",
-        "table": "chs_MetaClaim_Since2023",
-        "column": "BillingProvNPI",
-        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
-    },
-    {
-        "database": "dw_atm_dxc",
-        "table": "chs_MetaClaim_Since2023",
-        "column": "RenderingProvNPI",
-        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
-    },
-    {
-        "database": "dw_atm_dxc",
         "table": "dci_claim_6mos",
         "column": "OrthoDate",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
@@ -183,24 +171,6 @@
         "database": "dw_atm_dxc",
         "table": "dci_rtserviceaudit_6mos",
         "column": "ProviderTIN",
-        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
-    },
-    {
-        "database": "dw_atm_dxc",
-        "table": "dci_rtserviceaudit_6mos",
-        "column": "NPI",
-        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
-    },
-    {
-        "database": "dw_atm_dxc",
-        "table": "dea_attachments_6mos",
-        "column": "BillingNPI",
-        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
-    },
-    {
-        "database": "dw_atm_dxc",
-        "table": "dea_attachments_6mos",
-        "column": "RenderingNPI",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
@@ -237,12 +207,6 @@
         "database": "ext_raw_ec",
         "table": "payercredential",
         "column": "providerid",
-        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
-    },
-    {
-        "database": "ext_raw_ec",
-        "table": "provider",
-        "column": "npi",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
@@ -637,12 +601,6 @@
     },
     {
         "database": "master",
-        "table": "DCIClaimPaymentFLATClaimPaymentsLifeCycles",
-        "column": "NPI",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
         "table": "LDP0AI-COH",
         "column": "ProviderClaimID",
         "file": "DTT-ANA-PRD/ent.sql"
@@ -753,12 +711,6 @@
         "database": "master",
         "table": "CREDProviderDETProviderProfiles",
         "column": "hasProviderProfileAnswers",
-        "file": "DTT-ANA-PRD/ent.sql"
-    },
-    {
-        "database": "master",
-        "table": "CREDProviderDETUnpivotedUserAnswers",
-        "column": "UnpivotedUserAnswerID",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
@@ -955,24 +907,6 @@
     },
     {
         "database": "common",
-        "table": "Groups",
-        "column": "RegistrationPID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "Users",
-        "column": "BillingNPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "Users",
-        "column": "RenderingNPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
         "table": "Users",
         "column": "ProviderRuleOnly",
         "file": "Livesql3/Common.sql"
@@ -998,31 +932,7 @@
     {
         "database": "common",
         "table": "Enrollment",
-        "column": "Npi",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "Enrollment",
         "column": "PayerProviderId",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ERARegistration",
-        "column": "Npi",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ERARegistrationAudit",
-        "column": "Npi",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "GroupsAudit",
-        "column": "RegistrationPID",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1057,24 +967,6 @@
     },
     {
         "database": "common",
-        "table": "MetProviderDir",
-        "column": "NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "MetProviderDir",
-        "column": "NPI2",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup",
-        "column": "NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
         "table": "NppesLookup",
         "column": "ProviderOrgName",
         "file": "Livesql3/Common.sql"
@@ -1245,24 +1137,6 @@
         "database": "common",
         "table": "NppesLookup",
         "column": "ProviderEnumerationDate",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup",
-        "column": "NPIDeactivationReasonCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup",
-        "column": "NPIDeactivationDate",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup",
-        "column": "NPIReactivationDate",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1292,12 +1166,6 @@
     {
         "database": "common",
         "table": "NppesLookup_old",
-        "column": "NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
         "column": "ProviderOrgName",
         "file": "Livesql3/Common.sql"
     },
@@ -1467,24 +1335,6 @@
         "database": "common",
         "table": "NppesLookup_old",
         "column": "ProviderEnumerationDate",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "NPIDeactivationReasonCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "NPIDeactivationDate",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old",
-        "column": "NPIReactivationDate",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1514,12 +1364,6 @@
     {
         "database": "common",
         "table": "NppesLookup_old1",
-        "column": "NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
         "column": "ProviderOrgName",
         "file": "Livesql3/Common.sql"
     },
@@ -1689,24 +1533,6 @@
         "database": "common",
         "table": "NppesLookup_old1",
         "column": "ProviderEnumerationDate",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "NPIDeactivationReasonCode",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "NPIDeactivationDate",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "NppesLookup_old1",
-        "column": "NPIReactivationDate",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1777,32 +1603,14 @@
     },
     {
         "database": "common",
-        "table": "PPEInserts",
-        "column": "NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
         "table": "ProviderDir",
         "column": "ProviderID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
-        "table": "ProviderDir",
-        "column": "NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
         "table": "ProviderDir_new",
         "column": "ProviderID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDir_new",
-        "column": "NPI",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1821,12 +1629,6 @@
         "database": "common",
         "table": "ProviderDirectory",
         "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectory",
-        "column": "Npi",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1873,12 +1675,6 @@
     },
     {
         "database": "common",
-        "table": "ProviderDirectoryCompare",
-        "column": "Npi",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
         "table": "ProviderDirectoryHistory",
         "column": "ProviderDirectoryHistoryID",
         "file": "Livesql3/Common.sql"
@@ -1891,12 +1687,6 @@
     },
     {
         "database": "common",
-        "table": "ProviderDirectoryHistory",
-        "column": "Npi",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
         "table": "ProviderDirectoryLocation",
         "column": "ProviderDirectoryLocationID",
         "file": "Livesql3/Common.sql"
@@ -1905,12 +1695,6 @@
         "database": "common",
         "table": "ProviderDirectoryLocation",
         "column": "ProviderDirectoryPayerID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "ProviderDirectoryLocation",
-        "column": "Npi",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1939,20 +1723,8 @@
     },
     {
         "database": "common",
-        "table": "ProviderDirectoryLocationCompare",
-        "column": "Npi",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
         "table": "providerdirectoryold",
         "column": "ProviderDirectoryID",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "providerdirectoryold",
-        "column": "Npi",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -2197,30 +1969,6 @@
     },
     {
         "database": "common",
-        "table": "RohidIslandTemp",
-        "column": "Organizational_NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "RohidIslandTemp",
-        "column": "Individual_NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "RohidIslandTempNew",
-        "column": "Organizational_NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "RohidIslandTempNew",
-        "column": "Individual_NPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
         "table": "SalesLead",
         "column": "ProviderID",
         "file": "Livesql3/Common.sql"
@@ -2234,37 +1982,13 @@
     {
         "database": "common",
         "table": "UsersAudit",
-        "column": "BillingNPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "UsersAudit",
-        "column": "RenderingNPI",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "UsersAudit",
         "column": "ProviderRuleOnly",
-        "file": "Livesql3/Common.sql"
-    },
-    {
-        "database": "common",
-        "table": "tempcpa1",
-        "column": "icNPI",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "dci",
         "table": "RTServiceAudit",
         "column": "ProviderTIN",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "RTServiceAudit",
-        "column": "NPI",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -2377,12 +2101,6 @@
     },
     {
         "database": "dci",
-        "table": "ClaimPayment",
-        "column": "Npi",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
         "table": "ClaimPaymentAdjustment",
         "column": "ProviderID",
         "file": "Livesql3/dci.sql"
@@ -2409,18 +2127,6 @@
         "database": "dci",
         "table": "ClaimProvider",
         "column": "ProviderType",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ClaimProvider",
-        "column": "BillingNPI",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "ClaimProvider",
-        "column": "RenderingNPI",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -2575,12 +2281,6 @@
     },
     {
         "database": "cred",
-        "table": "ApplicationSetLocation",
-        "column": "NPI",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
         "table": "ApplicationSetNote",
         "column": "VisibleToProvider",
         "file": "Livesql3/cred.sql"
@@ -2595,12 +2295,6 @@
         "database": "cred",
         "table": "HawaiiDentalLicenseLookup",
         "column": "ProviderName",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "MedicarePreclusionLookup",
-        "column": "Npi",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -2659,12 +2353,6 @@
     },
     {
         "database": "cred",
-        "table": "ProviderApplicationStatusLocation",
-        "column": "NPI",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
         "table": "ProviderDetail",
         "column": "ProviderDetailID",
         "file": "Livesql3/cred.sql"
@@ -2679,18 +2367,6 @@
         "database": "cred",
         "table": "ProviderDetail",
         "column": "ProviderSiteDetailID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderDetail",
-        "column": "AffiliatedNpi",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderDetail",
-        "column": "AddlAffiliatedNpis",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -2803,12 +2479,6 @@
     },
     {
         "database": "cred",
-        "table": "ProviderGroupDetail",
-        "column": "Npi",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
         "table": "ProviderProfileSection",
         "column": "ProviderID",
         "file": "Livesql3/cred.sql"
@@ -2829,12 +2499,6 @@
         "database": "cred",
         "table": "ProviderSiteDetail",
         "column": "ProviderSiteDetailID",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderSiteDetail",
-        "column": "Npi",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -2878,30 +2542,6 @@
         "table": "ProviderStateFormNote",
         "column": "ProviderStateFormID",
         "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "chs",
-        "table": "MetaClaim",
-        "column": "BillingProvNPI",
-        "file": "Livesql3/chs.sql"
-    },
-    {
-        "database": "chs",
-        "table": "MetaClaim",
-        "column": "RenderingProvNPI",
-        "file": "Livesql3/chs.sql"
-    },
-    {
-        "database": "chs",
-        "table": "ClaimStatusTracing_Facility",
-        "column": "NPI",
-        "file": "Livesql3/chs.sql"
-    },
-    {
-        "database": "chs",
-        "table": "ClaimPayment",
-        "column": "Npi",
-        "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
@@ -2965,30 +2605,6 @@
     },
     {
         "database": "chs",
-        "table": "MetaClaimPayment",
-        "column": "Npi",
-        "file": "Livesql3/chs.sql"
-    },
-    {
-        "database": "chs",
-        "table": "MetaEligRequest",
-        "column": "BillingProvNPI",
-        "file": "Livesql3/chs.sql"
-    },
-    {
-        "database": "chs",
-        "table": "MetaEligResponse",
-        "column": "BillingProvNPI",
-        "file": "Livesql3/chs.sql"
-    },
-    {
-        "database": "chs",
-        "table": "MetaEnrollment",
-        "column": "Npi",
-        "file": "Livesql3/chs.sql"
-    },
-    {
-        "database": "chs",
         "table": "OfficeResponsePreAuth",
         "column": "ProviderCtrlNumber",
         "file": "Livesql3/chs.sql"
@@ -2997,12 +2613,6 @@
         "database": "chs",
         "table": "OfficeResponsePreAuth",
         "column": "ProviderID",
-        "file": "Livesql3/chs.sql"
-    },
-    {
-        "database": "chs",
-        "table": "PartnerWidgetDeliveryRegistration",
-        "column": "NPI",
         "file": "Livesql3/chs.sql"
     },
     {
@@ -3033,12 +2643,6 @@
         "database": "reports",
         "table": "DSSPayerCredBilling",
         "column": "Providername",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "CSRequest_Practice",
-        "column": "Organizational NPI",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3109,12 +2713,6 @@
     },
     {
         "database": "reports",
-        "table": "Matching_HMWG",
-        "column": "NPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
         "table": "NEASubscriptionAggregation",
         "column": "PossibleDXCOverchargeToProvider",
         "file": "Livesql3/reportst.sql"
@@ -3129,12 +2727,6 @@
         "database": "reports",
         "table": "PayerProviderTrans",
         "column": "PayerProviderTransID",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "ProviderMatching",
-        "column": "NPI",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3171,18 +2763,6 @@
         "database": "reports",
         "table": "ProviderPayerTrans",
         "column": "ProviderAdd1",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "ProviderPayerTrans",
-        "column": "BProvNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "ProviderPayerTrans",
-        "column": "RProvNPI",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3296,25 +2876,7 @@
     {
         "database": "reports",
         "table": "tempECEHG",
-        "column": "NPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "tempECEHG",
         "column": "ProviderName",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "temptom",
-        "column": "BillingProvNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "temptom",
-        "column": "RenderingProvNPI",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3331,44 +2893,14 @@
     },
     {
         "database": "reports",
-        "table": "tomtemp28",
-        "column": "BillingProvNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "tomtemp28",
-        "column": "RenderingProvNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
         "table": "UCCI",
         "column": "Provider ID",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
-        "table": "UCCI",
-        "column": "NPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
         "table": "xls_DeltaCA",
         "column": "PROVIDER",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "balclaims",
-        "column": "billingprovnpi",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "balclaims",
-        "column": "renderingprovnpi",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3381,54 +2913,6 @@
         "database": "reports",
         "table": "ClaimPaymentRegistrationRemoval",
         "column": "providersecondaryid",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "dfcgroups",
-        "column": "BillNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "dfcProvs",
-        "column": "renderingNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "GEDCclaims",
-        "column": "billingnpi",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "GEDCclaims",
-        "column": "renderingnpi",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "GEDFileSummary",
-        "column": "billingnpi",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "GEDFileSummary",
-        "column": "renderingnpi",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "TempDenticonUsers",
-        "column": "BillingNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "TempDenticonUsers",
-        "column": "RenderingNPI",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3448,42 +2932,6 @@
         "table": "tmpeagleslandingitems",
         "column": "Provider Name",
         "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "tomdcp20110404load",
-        "column": "BillingProvNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "tomdcp20110404load",
-        "column": "RenderingProvNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "WesternUsers",
-        "column": "BillingNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "reports",
-        "table": "WesternUsers",
-        "column": "RenderingNPI",
-        "file": "Livesql3/reportst.sql"
-    },
-    {
-        "database": "dea",
-        "table": "Attachment",
-        "column": "BillingNPI",
-        "file": "Livesql3/dea.sql"
-    },
-    {
-        "database": "dea",
-        "table": "Attachment",
-        "column": "RenderingNPI",
-        "file": "Livesql3/dea.sql"
     },
     {
         "database": "ptp",
