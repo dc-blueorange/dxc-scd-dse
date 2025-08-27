@@ -4,6 +4,7 @@ import json
 import os
 import sys
 import logging
+import re
 
 def load_json_file(filepath):
     try:
@@ -26,6 +27,7 @@ def main():
     parser.add_argument('--source-columns', '-sc', required=True, help='Path to columnsSource columns JSON file')
     parser.add_argument('--foreign-keys', '-fk', required=True, help='Path to foreign keys JSON file')
     parser.add_argument('--out', required=False, help='Path to output enhanced JSON file')
+    parser.add_argument('--offices', action='store_true', help='Only process rows with "office" or "location" in the table name')
     parser.add_argument('--log-level', required=False, default='INFO', help='Logging level (DEBUG, INFO, WARNING, ERROR, CRITICAL)')
     args = parser.parse_args()
 
@@ -46,7 +48,17 @@ def main():
     fk_data = load_json_file(foreign_keys_file)
 
     enhanced_data = []
+    # If --offices flag is set, prepare the regex used for filtering.
+    office_regex = re.compile(r'\b(?:office|location)\b', re.IGNORECASE) if args.offices else None
+
     for entry in source_data:
+        # If --offices flag is set, only process entry if its table matches the regex.
+        if office_regex:
+            table_field = entry.get("table", "")
+            if not office_regex.search(table_field):
+                logging.debug("Skipping entry due to offices filter: %s", entry)
+                continue
+
         # Retrieve the required fields from the source record
         source_db = entry.get("database")
         source_table = entry.get("table")
@@ -60,8 +72,6 @@ def main():
                 if fk_db == source_db and fk_table == source_table and fk_key == source_column:
                     references.append({
                         "database": fk_db,
-                        # "fk_table": fk_table,
-                        # "fk_key": fk_key,
                         "constraint": fk.get("constraint"),
                         "ref_table": fk.get("ref_table"),
                         "ref_column": fk.get("ref_column"),

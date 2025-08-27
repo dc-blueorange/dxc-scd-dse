@@ -21,6 +21,10 @@ logger = logging.getLogger(__name__)
 
 def scan_sql_file(filepath, mode, columns=True):
     results = []
+    regexDentistWords = r'(?:dentist|doctor|nurse|hygienist|provider|ortho)'
+    regexOfficeWords = r'(?:office|location)'
+    regexNetworkWords = r'(?:dental partner network|partner network|dental network|partner|network)'
+    regexDSOWords = r'(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)'
     try:
         with open(filepath, 'r', encoding='utf-16', errors='replace') as f:
             content = f.read()
@@ -72,11 +76,13 @@ def scan_sql_file(filepath, mode, columns=True):
         pattern = None
         if columns:
             if mode == 'dentists':
-                pattern = r'\[\s*([^\]]*(?:NPI|dentist|doctor|nurse|hygienist|provider|ortho)[^\]]*)\s*\]\s*\['
+                pattern = r'\[\s*([^\]]*' + regexDentistWords + r'[^\]]*)\s*\]\s*\['
+            elif mode == 'offices':
+                pattern = r'\[\s*([^\]]*' + regexOfficeWords + r'[^\]]*)\s*\]\s*\['
             elif mode == 'networks':
-                pattern = r'\[\s*([^\]]*(?:dental partner network|partner network|dental network|partner|network)[^\]]*)\s*\]\s*\['
+                pattern = r'\[\s*([^\]]*' + regexNetworkWords + r'[^\]]*)\s*\]\s*\['
             elif mode == 'dsos':
-                pattern = r'\[\s*([^\]]*(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)[^\]]*)\s*\]\s*\['
+                pattern = r'\[\s*([^\]]*' + regexDSOWords + r'[^\]]*)\s*\]\s*\['
             if pattern:
                 tablenames_regex = re.compile(pattern, flags=re.IGNORECASE | re.DOTALL)
                 for match_found in tablenames_regex.finditer(columns_section):
@@ -90,11 +96,13 @@ def scan_sql_file(filepath, mode, columns=True):
                     })
         else:
             if mode == 'dentists':
-                pattern = r'(?:NPI|dentist|hygienist|provider)'
+                pattern = regexDentistWords
+            elif mode == 'offices':
+                pattern = regexOfficeWords
             elif mode == 'networks':
-                pattern = r'(?:dental network provider|network provider|dental network|provider|network)'
+                pattern = regexNetworkWords
             elif mode == 'dsos':
-                pattern = r'(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)'
+                pattern = regexDSOWords
             if pattern:
                 tables_regex = re.compile(pattern, flags=re.IGNORECASE | re.DOTALL | re.MULTILINE)
                 for match_found in tables_regex.finditer(table_name):
@@ -143,6 +151,7 @@ def print_json_report(results, header):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Scan SQL files for schema details and report matching tables/columns based on mode. By default, reports columns from table definitions. Use --no-columns (-nc) to only report based on table names.")
     parser.add_argument('--dentists', action='store_true', help="Scan for dentists")
+    parser.add_argument('--offices', action='store_true', help="Scan for offices")
     parser.add_argument('--networks', action='store_true', help="Scan for networks")
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related items")
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
@@ -154,6 +163,8 @@ if __name__ == "__main__":
     modes = []
     if args.dentists:
         modes.append('dentists')
+    if args.offices:
+        modes.append('offices')
     if args.networks:
         modes.append('networks')
     if args.dsos:
@@ -161,7 +172,7 @@ if __name__ == "__main__":
     if args.foreign_keys:
         modes.append('foreignkeys')
     if not modes:
-        parser.error("No mode selected. Use at least one of --dentists, --networks, or --dsos.")
+        parser.error("No mode selected. Use at least one of --dentists, --offices, --networks, or --dsos.")
 
     if args.paths:
         paths = args.paths

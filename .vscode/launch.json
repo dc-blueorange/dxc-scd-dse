@@ -19,6 +19,26 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "Run schema-analyzer dentists",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/analysis-dean/schema-analyzer.py",
+            "args": [
+                "--dentists"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Run schema-analyzer offices",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/analysis-dean/schema-analyzer.py",
+            "args": [
+                "--offices"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Run column-references",
             "type": "debugpy",
             "request": "launch",
