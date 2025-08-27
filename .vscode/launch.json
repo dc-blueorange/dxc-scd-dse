@@ -49,7 +49,21 @@
                 "${workspaceFolder}/analysis-dean/dentist-references.json"
             ],
             "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug NetworkDiagram",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": [
+                "astro",
+                "dev"
+            ],
+            "port": 9229,
+            "console": "integratedTerminal",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
         }
-        
     ]
 }
