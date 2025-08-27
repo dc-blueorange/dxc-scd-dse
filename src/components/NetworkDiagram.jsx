@@ -4,6 +4,15 @@ import * as d3 from "d3";
 const NetworkDiagram = () => {
   const svgRef = useRef(null);
   const [data, setData] = useState({ nodes: [], links: [] });
+  const simulationRef = useRef(null);
+
+  // Function to update dimensions based on current viewport.
+  const getDimensions = () => {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  };
 
   // Load all JSON files from the /analysis-dean directory (assumed to be served from public)
   useEffect(() => {
@@ -56,8 +65,7 @@ const NetworkDiagram = () => {
   useEffect(() => {
     if (data.nodes.length === 0) return;
 
-    const width = 960;
-    const height = 600;
+    let { width, height } = getDimensions();
 
     // Color scale based on node type.
     const colorScale = d3.scaleOrdinal()
@@ -100,10 +108,14 @@ const NetworkDiagram = () => {
         .style("opacity", 0);
     }
 
+    // Create simulation with current dimensions.
     const simulation = d3.forceSimulation(data.nodes)
       .force("link", d3.forceLink(data.links).id((d) => d.id).distance(150))
       .force("charge", d3.forceManyBody().strength(-300))
       .force("center", d3.forceCenter(width / 2, height / 2));
+
+    // Save simulation to reference for later resize updates.
+    simulationRef.current = simulation;
 
     const link = svg.append("g")
       .attr("stroke", "red")
@@ -126,7 +138,6 @@ const NetworkDiagram = () => {
 
     // Tooltip events:
     node.on("mouseover", (event, d) => {
-          // Determine title label based on the node type.
           let titleLabel = "";
           if (d.type === "dentist") {
             titleLabel = "Dentist";
@@ -193,9 +204,19 @@ const NetworkDiagram = () => {
         .on("end", dragended);
     }
 
+    // Add window resize listener to update SVG dimensions and simulation center
+    const handleResize = () => {
+      let { width, height } = getDimensions();
+      svg.attr("width", width).attr("height", height);
+      simulation.force("center", d3.forceCenter(width / 2, height / 2)).alpha(0.5).restart();
+    };
+
+    window.addEventListener("resize", handleResize);
+
     return () => {
       simulation.stop();
       tooltip.remove();
+      window.removeEventListener("resize", handleResize);
     };
   }, [data]);
 
