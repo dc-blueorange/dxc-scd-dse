@@ -71,6 +71,20 @@ const NetworkDiagram = () => {
     // Clear previous content.
     svg.selectAll("*").remove();
 
+    // Define arrow marker for links (edges).
+    const defs = svg.append("defs");
+    defs.append("marker")
+      .attr("id", "arrowhead")
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 15)
+      .attr("refY", 0)
+      .attr("markerWidth", 6)
+      .attr("markerHeight", 6)
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M0,-5L10,0L0,5")
+      .attr("fill", "red");
+
     // Create a tooltip div if it doesn't exist.
     let tooltip = d3.select("body").select(".tooltip");
     if (tooltip.empty()) {
@@ -97,7 +111,8 @@ const NetworkDiagram = () => {
       .selectAll("line")
       .data(data.links)
       .enter().append("line")
-      .attr("stroke-width", 1.5);
+      .attr("stroke-width", 1.5)
+      .attr("marker-end", "url(#arrowhead)");
 
     const node = svg.append("g")
       .attr("stroke", "#fff")
