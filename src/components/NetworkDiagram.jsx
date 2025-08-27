@@ -111,9 +111,21 @@ const NetworkDiagram = () => {
 
     // Tooltip events:
     node.on("mouseover", (event, d) => {
+          // Determine title label based on the node type.
+          let titleLabel = "";
+          if (d.type === "dentist") {
+            titleLabel = "Dentist";
+          } else if (d.type === "network") {
+            titleLabel = "Provider Network";
+          } else if (d.type === "dso") {
+            titleLabel = "DSO";
+          } else {
+            titleLabel = "Unknown";
+          }
           tooltip.transition().duration(200).style("opacity", 0.9);
           tooltip.html(
-            `<strong>Database:</strong> ${d.database}<br/>
+            `<h3 style="margin:0;padding:0 0 4px 0;">${titleLabel}</h3>
+             <strong>Database:</strong> ${d.database}<br/>
              <strong>Table:</strong> ${d.table}<br/>
              <strong>Column:</strong> ${d.column}<br/>
              <strong>File:</strong> ${d.file || "N/A"}<br/>
