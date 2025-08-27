@@ -20,14 +20,16 @@ const NetworkDiagram = ({ debug = false }) => {
       fetch("/analysis-dean/dentist-references.json").then((res) => res.json()).catch(() => []),
       fetch("/analysis-dean/network-references.json").then((res) => res.json()).catch(() => []),
       fetch("/analysis-dean/dso-references.json").then((res) => res.json()).catch(() => []),
-    ]).then(([dentistRefs, networkRefs, dsoRefs]) => {
+      fetch("/analysis-dean/office-references.json").then((res) => res.json()).catch(() => [])
+    ]).then(([dentistRefs, networkRefs, dsoRefs, officeRefs]) => {
       // Tag nodes according to origin.
       dentistRefs.forEach((node) => (node.type = "dentist"));
       networkRefs.forEach((node) => (node.type = "network"));
       dsoRefs.forEach((node) => (node.type = "dso"));
+      officeRefs.forEach((node) => (node.type = "office"));
 
       // Merge the nodes.
-      let allNodes = [...dentistRefs, ...networkRefs, ...dsoRefs];
+      let allNodes = [...dentistRefs, ...networkRefs, ...dsoRefs, ...officeRefs];
       // Use a Map to deduplicate nodes based on composite key.
       const nodeMap = new Map();
       allNodes.forEach((n) => {
@@ -69,8 +71,8 @@ const NetworkDiagram = ({ debug = false }) => {
 
     // Color scale based on node type.
     const colorScale = d3.scaleOrdinal()
-      .domain(["dentist", "network", "dso"])
-      .range(["steelblue", "green", "tomato"]);
+      .domain(["dentist", "network", "dso", "office"])
+      .range(["steelblue", "green", "tomato", "purple"]);
 
     const svg = d3.select(svgRef.current)
       .attr("width", width)
@@ -145,6 +147,8 @@ const NetworkDiagram = ({ debug = false }) => {
             titleLabel = "Provider Network";
           } else if (d.type === "dso") {
             titleLabel = "DSO";
+          } else if (d.type === "office") {
+            titleLabel = "Office";
           } else {
             titleLabel = "Unknown";
           }
