@@ -92,7 +92,7 @@ const NetworkDiagram = () => {
       .force("center", d3.forceCenter(width / 2, height / 2));
 
     const link = svg.append("g")
-      .attr("stroke", "#999")
+      .attr("stroke", "red")
       .attr("stroke-opacity", 0.6)
       .selectAll("line")
       .data(data.links)
