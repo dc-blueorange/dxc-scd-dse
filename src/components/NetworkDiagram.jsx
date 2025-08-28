@@ -145,7 +145,7 @@ const NetworkDiagram = ({ debug = false }) => {
       .attr("fill", (d) => colorScale(d.type))
       .call(drag(simulation));
 
-    // Append text labels with navy blue color.
+    // Append text labels with larger font size and darker color.
     const labels = svg.append("g")
       .selectAll("text")
       .data(data.nodes)
@@ -153,7 +153,8 @@ const NetworkDiagram = ({ debug = false }) => {
       .append("text")
       .attr("x", 12)
       .attr("y", 4)
-      .style("fill", "navy")
+      .style("fill", "black")
+      .style("font-size", "16px")
       .text(d => d.label);
 
     // Tooltip events: show HTML popup with node data on hover.
