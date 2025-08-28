@@ -55,10 +55,10 @@ echo DSO table name matches: $(jq 'length' analysis-dean/dso-tables.json)
 echo DSO column name matches: $(jq 'length' analysis-dean/dso-columns.json)
 echo
 echo "Counting unique dentists, offices, networks and DSOs with column hits..."
-echo Dentists with Column Hits: $(wc -l analysis-dean/dentist-unique-table-column-matches.csv)
-echo Offices with Column Hits: $(wc -l analysis-dean/office-unique-table-column-matches.csv)
-echo Providers with Column Hitsetworks: $(wc -l analysis-dean/network-unique-table-column-matches.csv)
-echo DSOs with Column Hits: $(wc -l analysis-dean/dso-unique-table-column-matches.csv)
+echo Dentists with Column Hits: $(wc -l < analysis-dean/dentist-unique-table-column-matches.csv)
+echo Offices with Column Hits: $(wc -l < analysis-dean/office-unique-table-column-matches.csv)
+echo Providers with Column Hitsetworks: $(wc -l < analysis-dean/network-unique-table-column-matches.csv)
+echo DSOs with Column Hits: $(wc -l < analysis-dean/dso-unique-table-column-matches.csv)
 echo
 echo "Counting foreign key references to dentists, offices, networks and DSOs..."
 echo Dentist references: $(jq 'length' analysis-dean/dentist-references.json)
