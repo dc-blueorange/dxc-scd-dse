@@ -2,21 +2,29 @@ python3 analysis-dean/schema-analyzer.py --dentists > analysis-dean/dentist-colu
 python3 analysis-dean/schema-analyzer.py --dentists -tn > analysis-dean/dentist-tables.csv
 python3 analysis-dean/schema-analyzer.py --dentists -js > analysis-dean/dentist-columns.json
 python3 analysis-dean/schema-analyzer.py --dentists -js -tn > analysis-dean/dentist-tables.json
+jq '[.[] | "\(.database),\(.table)"] | unique | .[]' analysis-dean/dentist-columns.json > analysis-dean/dentist-table-column-matches.csv
+jq 'map([.database,.table]) | unique' analysis-dean/dentist-columns.json > analysis-dean/dentist-table-column-matches.json
 
 python3 analysis-dean/schema-analyzer.py --offices > analysis-dean/office-columns.csv
 python3 analysis-dean/schema-analyzer.py --offices -tn > analysis-dean/office-tables.csv
 python3 analysis-dean/schema-analyzer.py --offices -js > analysis-dean/office-columns.json
 python3 analysis-dean/schema-analyzer.py --offices -js -tn > analysis-dean/office-tables.json
+jq '[.[] | "\(.database),\(.table)"] | unique | .[]' analysis-dean/office-columns.json > analysis-dean/office-table-column-matches.csv
+jq 'map([.database,.table]) | unique' analysis-dean/office-columns.json > analysis-dean/office-table-column-matches.json
 
 python3 analysis-dean/schema-analyzer.py --networks > analysis-dean/network-columns.csv
 python3 analysis-dean/schema-analyzer.py --networks -tn > analysis-dean/network-tables.csv
 python3 analysis-dean/schema-analyzer.py --networks -js > analysis-dean/network-columns.json
 python3 analysis-dean/schema-analyzer.py --networks -js -tn > analysis-dean/network-tables.json
+jq '[.[] | "\(.database),\(.table)"] | unique | .[]' analysis-dean/network-columns.json > analysis-dean/network-table-column-matches.csv
+jq 'map([.database,.table]) | unique' analysis-dean/network-columns.json > analysis-dean/network-table-column-matches.json
 
 python3 analysis-dean/schema-analyzer.py --dsos > analysis-dean/dso-columns.csv
 python3 analysis-dean/schema-analyzer.py --dsos -tn > analysis-dean/dso-tables.csv
 python3 analysis-dean/schema-analyzer.py --dsos -js > analysis-dean/dso-columns.json
 python3 analysis-dean/schema-analyzer.py --dsos -js -tn > analysis-dean/dso-tables.json
+jq '[.[] | "\(.database),\(.table)"] | unique | .[]' analysis-dean/dso-columns.json > analysis-dean/dso-table-column-matches.csv
+jq 'map([.database,.table]) | unique' analysis-dean/dso-columns.json > analysis-dean/dso-table-column-matches.json
 
 python3 analysis-dean/schema-analyzer.py --foreign-keys > analysis-dean/foreign-keys.csv
 python3 analysis-dean/schema-analyzer.py --foreign-keys -js > analysis-dean/foreign-keys.json
@@ -43,3 +51,4 @@ echo Dentist references: $(jq 'length' analysis-dean/dentist-references.json)
 echo Office references: $(jq 'length' analysis-dean/office-references.json)
 echo Provider Network references: $(jq 'length' analysis-dean/network-references.json)
 echo DSO references: $(jq 'length' analysis-dean/dso-references.json)
+
