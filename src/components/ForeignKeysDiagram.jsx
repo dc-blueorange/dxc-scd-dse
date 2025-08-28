@@ -1,0 +1,175 @@
+import React, { useRef, useEffect, useState } from "react";
+import * as d3 from "d3";
+
+const ForeignKeysDiagram = () => {
+  const svgRef = useRef(null);
+  const [data, setData] = useState({ nodes: [], links: [] });
+
+  // Load foreign keys JSON from public/analysis-dean/foreign-keys.json
+  useEffect(() => {
+    fetch("/analysis-dean/foreign-keys.json")
+      .then((res) => res.json())
+      .then((fkeys) => {
+        // Build unique nodes for source and target.
+        // Source node: represents "database-fk_table"
+        // Target node: represents "ref_table-ref_column"
+        const nodesMap = new Map();
+        const links = [];
+        fkeys.forEach((d) => {
+          const sourceId = `${d.database}-${d.fk_table}`;
+          const targetId = `${d.ref_table}-${d.ref_column}`;
+          if (!nodesMap.has(sourceId)) {
+            nodesMap.set(sourceId, {
+              id: sourceId,
+              label: sourceId,
+              type: "source",
+              collapsed: false
+            });
+          }
+          if (!nodesMap.has(targetId)) {
+            nodesMap.set(targetId, {
+              id: targetId,
+              label: targetId,
+              type: "target",
+              collapsed: false
+            });
+          }
+          links.push({
+            source: sourceId,
+            target: targetId,
+            constraint: d.constraint
+          });
+        });
+        setData({ nodes: Array.from(nodesMap.values()), links: links });
+      })
+      .catch((err) => console.error(err));
+  }, []);
+
+  // Build a collapsible force-directed diagram
+  useEffect(() => {
+    if (data.nodes.length === 0) return;
+
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    const svg = d3.select(svgRef.current)
+      .attr("width", width)
+      .attr("height", height);
+
+    // Clear previous content.
+    svg.selectAll("*").remove();
+
+    // Add zoom container.
+    const container = svg.append("g");
+
+    // Create zoom handler.
+    const zoom = d3.zoom()
+      .scaleExtent([0.2, 4])
+      .on("zoom", (event) => {
+        container.attr("transform", event.transform);
+      });
+    svg.call(zoom);
+
+    // Define an arrow marker.
+    const defs = svg.append("defs");
+    defs.append("marker")
+      .attr("id", "arrowhead")
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 15)
+      .attr("refY", 0)
+      .attr("markerWidth", 6)
+      .attr("markerHeight", 6)
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M0,-5L10,0L0,5")
+      .attr("fill", "gray");
+
+    // Initialize force simulation.
+    const simulation = d3.forceSimulation(data.nodes)
+      .force("link", d3.forceLink(data.links).id((d) => d.id).distance(150))
+      .force("charge", d3.forceManyBody().strength(-300))
+      .force("center", d3.forceCenter(width / 2, height / 2));
+
+    // Draw links (edges).
+    const link = container.append("g")
+      .attr("stroke", "gray")
+      .attr("stroke-width", 1.5)
+      .selectAll("line")
+      .data(data.links)
+      .enter().append("line")
+      .attr("marker-end", "url(#arrowhead)");
+
+    // Draw nodes.
+    const node = container.append("g")
+      .attr("stroke", "#fff")
+      .attr("stroke-width", 1.5)
+      .selectAll("g")
+      .data(data.nodes)
+      .enter().append("g")
+      .on("click", (event, d) => {
+        // Toggle collapsed state.
+        d.collapsed = !d.collapsed;
+        update();
+      });
+
+    // Append circle and text to each node.
+    node.append("circle")
+      .attr("r", 10)
+      .attr("fill", d => d.type === "source" ? "steelblue" : "tomato");
+
+    node.append("text")
+      .attr("x", 12)
+      .attr("y", 4)
+      .text(d => d.label);
+
+    // Update function: collapse links from nodes that are collapsed.
+    function update() {
+      link.style("display", d => {
+        // If the source node is collapsed, hide its outgoing links.
+        const sourceNode = data.nodes.find(n => n.id === d.source.id);
+        return sourceNode && sourceNode.collapsed ? "none" : "block";
+      });
+    }
+
+    simulation.on("tick", () => {
+      link.attr("x1", d => d.source.x)
+          .attr("y1", d => d.source.y)
+          .attr("x2", d => d.target.x)
+          .attr("y2", d => d.target.y);
+
+      node.attr("transform", d => `translate(${d.x}, ${d.y})`);
+    });
+
+    function drag(simulation) {
+      function dragstarted(event, d) {
+        if (!event.active) simulation.alphaTarget(0.3).restart();
+        d.fx = d.x;
+        d.fy = d.y;
+      }
+      function dragged(event, d) {
+        d.fx = event.x;
+        d.fy = event.y;
+      }
+      function dragended(event, d) {
+        if (!event.active) simulation.alphaTarget(0);
+        d.fx = null;
+        d.fy = null;
+      }
+      return d3.drag()
+        .on("start", dragstarted)
+        .on("drag", dragged)
+        .on("end", dragended);
+    }
+
+    node.call(drag(simulation));
+
+    // Cleanup on unmount.
+    return () => {
+      simulation.stop();
+    };
+  }, [data]);
+
+  return <svg ref={svgRef}></svg>;
+};
+
+export default ForeignKeysDiagram;
