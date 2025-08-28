@@ -1,401 +1,468 @@
 [
     {
+        "schema": "dbo",
         "database": "ext_raw_pc",
         "table": "_airbyte_raw_BackOfficeUsers",
         "column": "Office",
         "file": "DTT-ANA-PRD/ext_raw_pc.sql"
     },
     {
+        "schema": "dbo",
         "database": "ext_raw_pc",
         "table": "_airbyte_raw_BackOfficeUserTokens",
         "column": "Office",
         "file": "DTT-ANA-PRD/ext_raw_pc.sql"
     },
     {
+        "schema": "dbo",
         "database": "ext_raw_pc",
         "table": "backofficeusers",
         "column": "office",
         "file": "DTT-ANA-PRD/ext_raw_pc.sql"
     },
     {
+        "schema": "dbo",
         "database": "ext_raw_pc",
         "table": "backofficeusertokens",
         "column": "office",
         "file": "DTT-ANA-PRD/ext_raw_pc.sql"
     },
     {
+        "schema": "ddsenroll",
         "database": "master",
         "table": "CREDApplicationSetDETApprovedAppsPayerApprovedLocations",
         "column": "Location",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
+        "schema": "ddsenroll",
         "database": "master",
         "table": "CREDProviderDETLocationsProviderProfileAnswers",
         "column": "Location",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "aggregateItemLocation",
         "column": "Location",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "AllocationMethod",
         "column": "location",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "assemblyItemLocations",
         "column": "Location",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "LocationMainAddress",
         "column": "Location",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "LocationReturnAddress",
         "column": "Location",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "LocationType",
         "column": "Location",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
         "column": "location",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "aggregateItemLocation",
         "column": "Location",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "AllocationMethod",
         "column": "location",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "assemblyItemLocations",
         "column": "Location",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "LocationMainAddress",
         "column": "Location",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "LocationReturnAddress",
         "column": "Location",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "LocationType",
         "column": "Location",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
         "column": "location",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "pnt",
         "table": "StatementPractice",
         "column": "Practice",
         "file": "Livesql3/pnt.sql"
     },
     {
+        "schema": "dbo",
         "database": "dhmo",
         "table": "DCPOffice_20110815",
         "column": "Office",
         "file": "Livesql3/dhmo.sql"
     },
     {
+        "schema": "dbo",
         "database": "dhmo",
         "table": "OfficeServiceClient",
         "column": "Office",
         "file": "Livesql3/dhmo.sql"
     },
     {
+        "schema": "dbo",
         "database": "dhmo",
         "table": "SPDOOffice",
         "column": "Office",
         "file": "Livesql3/dhmo.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "DenticalLocationInfo",
         "column": "Location",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "FrontOfficeBilling",
         "column": "Office",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryLocation",
         "column": "Location",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryLocationCompare",
         "column": "Location",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryPayerLocationPlan",
         "column": "Location",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "OfficeResponse",
         "column": "Office",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "vOfficeResponse",
         "column": "Office",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "arc_OfficeResponse_Archive_List",
         "column": "Office",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "arc_OfficeResponse_OfficeResponseID_Delete_List",
         "column": "Office",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "arc_OfficeResponse_OfficeResponseID_Delete_List",
         "column": "Office",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "OfficeResponseAudit",
         "column": "Office",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "LocationQuestion",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "AdditionalLocationQuestionView",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ApplicationSetLocationView",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ProviderProfileLocationView",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "GroupLocation",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "GroupLocationAnswer",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ApplicationSetLocation",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ProviderApplicationStatusLocation",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "UserLocation",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "MetaOfficeResponse",
         "column": "Office",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "MetaOfficeResponseFile",
         "column": "Office",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "OfficeResponsePreAuth",
         "column": "Office",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "CSRequest_Practice",
         "column": "Practice",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PayConnectLocationNumber",
         "column": "Location",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "tmort",
         "database": "reports",
         "table": "bndofficemcna",
         "column": "office",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "Practice",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeAssociation",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeAssociationAudit",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeAudit",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeDentalProduct",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeDentalProductAudit",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeHours",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeHoursAudit",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeLanguage",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeLanguageAudit",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeOffer",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeOfferAudit",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeOfferOld",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeProfile",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeProfileAudit",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeService",
         "column": "Practice",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeServiceAudit",
         "column": "Practice",

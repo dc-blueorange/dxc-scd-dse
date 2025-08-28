@@ -1,782 +1,977 @@
 [
-  [
-    "chs",
-    "ClaimPaymentAdjustment"
-  ],
-  [
-    "chs",
-    "ClaimPaymentClaim"
-  ],
-  [
-    "chs",
-    "ClaimPaymentRegistration"
-  ],
-  [
-    "chs",
-    "ClaimPaymentRegistrationHistory"
-  ],
-  [
-    "chs",
-    "OfficeResponsePreAuth"
-  ],
-  [
-    "common",
-    "Credential"
-  ],
-  [
-    "common",
-    "CredentialAudit"
-  ],
-  [
-    "common",
-    "DenticalLocationInfo"
-  ],
-  [
-    "common",
-    "Enrollment"
-  ],
-  [
-    "common",
-    "Groups"
-  ],
-  [
-    "common",
-    "HawaiiDentalLicenseLookup"
-  ],
-  [
-    "common",
-    "MessagePortalConversation"
-  ],
-  [
-    "common",
-    "MessagePortalConversationModelAudit"
-  ],
-  [
-    "common",
-    "MessagePortalDocumentCompressionAudit"
-  ],
-  [
-    "common",
-    "MetProviderDir"
-  ],
-  [
-    "common",
-    "NppesLookup"
-  ],
-  [
-    "common",
-    "NppesLookup_old"
-  ],
-  [
-    "common",
-    "NppesLookup_old1"
-  ],
-  [
-    "common",
-    "Payer"
-  ],
-  [
-    "common",
-    "PayerAudit"
-  ],
-  [
-    "common",
-    "PayerCredentialType"
-  ],
-  [
-    "common",
-    "ProviderDir"
-  ],
-  [
-    "common",
-    "ProviderDirAudit"
-  ],
-  [
-    "common",
-    "ProviderDir_new"
-  ],
-  [
-    "common",
-    "ProviderDirectory"
-  ],
-  [
-    "common",
-    "ProviderDirectoryAppsetNoteAlert"
-  ],
-  [
-    "common",
-    "ProviderDirectoryChangeDetail"
-  ],
-  [
-    "common",
-    "ProviderDirectoryCompare"
-  ],
-  [
-    "common",
-    "ProviderDirectoryHistory"
-  ],
-  [
-    "common",
-    "ProviderDirectoryLocation"
-  ],
-  [
-    "common",
-    "ProviderDirectoryLocationCompare"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayer"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerDocument"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerHistory"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerLocationPlan"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerNote"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerNoteHistory"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerPlan"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerStatus"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerStatusDetail"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerTag"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerTagLookup"
-  ],
-  [
-    "common",
-    "ProviderPayerCredential"
-  ],
-  [
-    "common",
-    "ProviderPayerEnrollment"
-  ],
-  [
-    "common",
-    "ProviderPayerEnrollmentAudit"
-  ],
-  [
-    "common",
-    "ProviderRule"
-  ],
-  [
-    "common",
-    "ProviderRuleAudit"
-  ],
-  [
-    "common",
-    "Results"
-  ],
-  [
-    "common",
-    "SalesLead"
-  ],
-  [
-    "common",
-    "SupportRequest"
-  ],
-  [
-    "common",
-    "Users"
-  ],
-  [
-    "common",
-    "UsersAudit"
-  ],
-  [
-    "common",
-    "providerdirectoryold"
-  ],
-  [
-    "cred",
-    "ApplicationSet"
-  ],
-  [
-    "cred",
-    "ApplicationSetAnswer"
-  ],
-  [
-    "cred",
-    "ApplicationSetEnrollmentTicket"
-  ],
-  [
-    "cred",
-    "ApplicationSetHistory"
-  ],
-  [
-    "cred",
-    "ApplicationSetNote"
-  ],
-  [
-    "cred",
-    "ApplicationSetTicket"
-  ],
-  [
-    "cred",
-    "HawaiiDentalLicenseLookup"
-  ],
-  [
-    "cred",
-    "OutreachCycle"
-  ],
-  [
-    "cred",
-    "OutreachCycleAudit"
-  ],
-  [
-    "cred",
-    "PayerConfig"
-  ],
-  [
-    "cred",
-    "PayerDataChange"
-  ],
-  [
-    "cred",
-    "PayerProcessOutreach"
-  ],
-  [
-    "cred",
-    "PayerProcessOutreachCallTask"
-  ],
-  [
-    "cred",
-    "ProviderApplicationStatus"
-  ],
-  [
-    "cred",
-    "ProviderDetail"
-  ],
-  [
-    "cred",
-    "ProviderDocument"
-  ],
-  [
-    "cred",
-    "ProviderDocumentMeta"
-  ],
-  [
-    "cred",
-    "ProviderForm"
-  ],
-  [
-    "cred",
-    "ProviderFormAnswer"
-  ],
-  [
-    "cred",
-    "ProviderFormAnswerMigrationAudit"
-  ],
-  [
-    "cred",
-    "ProviderFormDocument"
-  ],
-  [
-    "cred",
-    "ProviderFormDocumentMeta"
-  ],
-  [
-    "cred",
-    "ProviderFormHistory"
-  ],
-  [
-    "cred",
-    "ProviderFormNote"
-  ],
-  [
-    "cred",
-    "ProviderFormStatus"
-  ],
-  [
-    "cred",
-    "ProviderGroupDetail"
-  ],
-  [
-    "cred",
-    "ProviderProfileSection"
-  ],
-  [
-    "cred",
-    "ProviderProfileSummary"
-  ],
-  [
-    "cred",
-    "ProviderSiteDetail"
-  ],
-  [
-    "cred",
-    "ProviderStateForm"
-  ],
-  [
-    "cred",
-    "ProviderStateFormAnswer"
-  ],
-  [
-    "cred",
-    "ProviderStateFormHistory"
-  ],
-  [
-    "cred",
-    "ProviderStateFormNote"
-  ],
-  [
-    "cred",
-    "Question"
-  ],
-  [
-    "cred",
-    "UserAnswer"
-  ],
-  [
-    "dci",
-    "Claim"
-  ],
-  [
-    "dci",
-    "ClaimArchive"
-  ],
-  [
-    "dci",
-    "ClaimExtension"
-  ],
-  [
-    "dci",
-    "ClaimHistory"
-  ],
-  [
-    "dci",
-    "ClaimItemProvider"
-  ],
-  [
-    "dci",
-    "ClaimItemProviderCredential"
-  ],
-  [
-    "dci",
-    "ClaimPayer"
-  ],
-  [
-    "dci",
-    "ClaimPaymentAdjustment"
-  ],
-  [
-    "dci",
-    "ClaimPaymentClaim"
-  ],
-  [
-    "dci",
-    "ClaimPaymentReportClaim"
-  ],
-  [
-    "dci",
-    "ClaimProvider"
-  ],
-  [
-    "dci",
-    "ClaimProviderAddress"
-  ],
-  [
-    "dci",
-    "CredentialUpdate"
-  ],
-  [
-    "dci",
-    "DciGroup"
-  ],
-  [
-    "dci",
-    "DciGroupAudit"
-  ],
-  [
-    "dci",
-    "DciPms"
-  ],
-  [
-    "dci",
-    "ProviderCredential"
-  ],
-  [
-    "dci",
-    "ProviderCredentialAudit"
-  ],
-  [
-    "dci",
-    "RTServiceAudit"
-  ],
-  [
-    "dci",
-    "arc_Claim_ClaimProviderID_List"
-  ],
-  [
-    "dci",
-    "arc_Claim_ProviderCredentialID_List"
-  ],
-  [
-    "dci",
-    "arc_ProviderCredentialAuditID_Archive_List"
-  ],
-  [
-    "dci",
-    "reports"
-  ],
-  [
-    "ddir",
-    "PracticeProfile"
-  ],
-  [
-    "ddir",
-    "PracticeProfileAudit"
-  ],
-  [
-    "dhmo",
-    "Aetna_xml_Data"
-  ],
-  [
-    "dhmo",
-    "PayerGroup"
-  ],
-  [
-    "dw_atm_dxc",
-    "dci_claim_6mos"
-  ],
-  [
-    "dw_atm_dxc",
-    "dci_rtserviceaudit_6mos"
-  ],
-  [
-    "dw_dxc_dev",
-    "smilebrands_claim_status_report__dbt_tmp"
-  ],
-  [
-    "ext_raw_ec",
-    "appointmentprovidermapping"
-  ],
-  [
-    "ext_raw_ec",
-    "eligibility"
-  ],
-  [
-    "ext_raw_ec",
-    "groupsetting"
-  ],
-  [
-    "ext_raw_ec",
-    "payercredential"
-  ],
-  [
-    "ext_raw_ec",
-    "provider"
-  ],
-  [
-    "lkr",
-    "LR$LQ2XV1755273788089_eligibility_ai_transactions"
-  ],
-  [
-    "lkr",
-    "LR$LQ7391755234095634_clearinghouse_claim_statuses"
-  ],
-  [
-    "lkr",
-    "LR$LQCDP1755266433236_dci_claim_statuses"
-  ],
-  [
-    "lkr",
-    "LR$LQPAC1755293594531_clearinghouse_enrollment_errors"
-  ],
-  [
-    "lkr",
-    "LR$LQPAC1755300938467_clearinghouse_enrollment_errors"
-  ],
-  [
-    "master",
-    "Appointments"
-  ],
-  [
-    "master",
-    "CREDApplicationSetFLATAppSetsLifeCycles"
-  ],
-  [
-    "master",
-    "CREDProviderDETLocationsProviderProfileAnswers"
-  ],
-  [
-    "master",
-    "CREDProviderDETMinReqdProviderProfileAnswers"
-  ],
-  [
-    "master",
-    "CREDProviderDETProviderProfiles"
-  ],
-  [
-    "master",
-    "CREDProviderDETUnpivotedUserAnswers"
-  ],
-  [
-    "master",
-    "Claims"
-  ],
-  [
-    "master",
-    "ClearinghouseClaims"
-  ],
-  [
-    "master",
-    "DCIClaimFLATClaimsLifeCycles"
-  ],
-  [
-    "master",
-    "DCIClaimFLATClaimsLifeCyclesArchive"
-  ],
-  [
-    "master",
-    "LDP0AI-COH"
-  ],
-  [
-    "master",
-    "LDP0AI-PCDvip"
-  ],
-  [
-    "master",
-    "TEMP_DLS3"
-  ],
-  [
-    "master",
-    "rptCLCClaimAGGMonthToYesterdayVSCurrentStatusTotal"
-  ],
-  [
-    "master",
-    "rptDCIClaimDETUserResolvedClaimsDetail"
-  ],
-  [
-    "partcredDM",
-    "Credential"
-  ],
-  [
-    "partcredDM",
-    "DSSCredBillingAlt"
-  ],
-  [
-    "partcredDM",
-    "Outreach"
-  ],
-  [
-    "partcredDM",
-    "PayerPartnerOutreach"
-  ],
-  [
-    "partcredDM",
-    "RecredentialingCycleOutreach"
-  ],
-  [
-    "partcredDM",
-    "RecredentialingCycleOutreachSummary"
-  ],
-  [
-    "partcredDM",
-    "RenewDates"
-  ],
-  [
-    "pfs",
-    "Settlement"
-  ],
-  [
-    "pfs",
-    "SettlementHistory"
-  ],
-  [
-    "pnt",
-    "StatementReminder"
-  ],
-  [
-    "ptp",
-    "ProviderPayment"
-  ],
-  [
-    "reports",
-    "ClaimPaymentRegistrationRemoval"
-  ],
-  [
-    "reports",
-    "DSSPayerCredBilling"
-  ],
-  [
-    "reports",
-    "DSSRetentionActivity"
-  ],
-  [
-    "reports",
-    "DSSWebPortal"
-  ],
-  [
-    "reports",
-    "DataBillRpt"
-  ],
-  [
-    "reports",
-    "GroupActivity"
-  ],
-  [
-    "reports",
-    "Match_Anthem_BO"
-  ],
-  [
-    "reports",
-    "Match_Anthem_BO_1"
-  ],
-  [
-    "reports",
-    "NEASubscriptionAggregation"
-  ],
-  [
-    "reports",
-    "PayerBillingGPStage"
-  ],
-  [
-    "reports",
-    "PayerProviderTrans"
-  ],
-  [
-    "reports",
-    "ProviderPayerTrans"
-  ],
-  [
-    "reports",
-    "TempDenticonUsers"
-  ],
-  [
-    "reports",
-    "Test_PayerProviderTrans"
-  ],
-  [
-    "reports",
-    "UCCI"
-  ],
-  [
-    "reports",
-    "dhmo"
-  ],
-  [
-    "reports",
-    "dhmo_add_groups"
-  ],
-  [
-    "reports",
-    "dsswebportal_20101202"
-  ],
-  [
-    "reports",
-    "rpt_ADPProviderCredentialAudit"
-  ],
-  [
-    "reports",
-    "rpt_AnthemWebPortal"
-  ],
-  [
-    "reports",
-    "rpt_BNDProviderCredentialAudit"
-  ],
-  [
-    "reports",
-    "rpt_GEDCProviderCredentialAudit"
-  ],
-  [
-    "reports",
-    "rpt_LuminaProviderCredentialAudit"
-  ],
-  [
-    "reports",
-    "tempECEHG"
-  ],
-  [
-    "reports",
-    "temp_DSO_Claims"
-  ],
-  [
-    "reports",
-    "temp_DSO_Cred"
-  ],
-  [
-    "reports",
-    "temp_DSO_ERA"
-  ],
-  [
-    "reports",
-    "temp_DSO_PatStmt"
-  ],
-  [
-    "reports",
-    "temp_DSO_RTClaims"
-  ],
-  [
-    "reports",
-    "temp_DSO_RTCount"
-  ],
-  [
-    "reports",
-    "tmpEaglesLanding"
-  ],
-  [
-    "reports",
-    "tmpOrtho"
-  ],
-  [
-    "reports",
-    "tmpeagleslandingitems"
-  ],
-  [
-    "reports",
-    "xls_DeltaCA"
-  ],
-  [
-    "rpt",
-    "SSISGrandfatheredReportsMap"
-  ],
-  [
-    "trx",
-    "ClientTransactions"
-  ],
-  [
-    "trxBrch",
-    "ClientTransactions"
-  ],
-  [
-    "trxDev",
-    "ClientTransactions"
-  ],
-  [
-    "trxQA",
-    "ClientTransactions"
-  ],
-  [
-    "trxTest",
-    "ClientTransactions"
-  ],
-  [
-    "trxWsdm",
-    "ClientTransactions"
-  ]
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentAdjustment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentRegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentRegistrationHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "OfficeResponsePreAuth"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Credential"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "CredentialAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "DenticalLocationInfo"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Enrollment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Groups"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "HawaiiDentalLicenseLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalConversation"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalConversationModelAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalDocumentCompressionAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MetProviderDir"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesLookup_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesLookup_old1"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Payer"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerCredentialType"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDir"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDir_new"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryAppsetNoteAlert"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryChangeDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryCompare"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryLocation"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryLocationCompare"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayer"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerDocument"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerLocationPlan"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerNoteHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerPlan"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerStatus"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerStatusDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerTag"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerTagLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderPayerCredential"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderPayerEnrollment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderPayerEnrollmentAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderRule"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderRuleAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Results"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SalesLead"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportRequest"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Users"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UsersAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "providerdirectoryold"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSet"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetAnswer"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetEnrollmentTicket"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetTicket"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "HawaiiDentalLicenseLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "OutreachCycle"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "OutreachCycleAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerDataChange"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerProcessOutreach"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerProcessOutreachCallTask"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderApplicationStatus"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderDocument"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderDocumentMeta"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderForm"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderFormAnswer"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderFormAnswerMigrationAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderFormDocument"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderFormDocumentMeta"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderFormHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderFormNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderFormStatus"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderGroupDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderProfileSection"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderProfileSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderSiteDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderStateForm"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderStateFormAnswer"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderStateFormHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderStateFormNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "Question"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "UserAnswer"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "Claim"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimArchive"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimExtension"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimItemProvider"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimItemProviderCredential"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPayer"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentAdjustment"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentReportClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimProvider"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimProviderAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "CredentialUpdate"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "DciGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "DciGroupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "DciPms"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ProviderCredential"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ProviderCredentialAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_Claim_ClaimProviderID_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_Claim_ProviderCredentialID_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_ProviderCredentialAuditID_Archive_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "reports"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeProfile"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeProfileAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "Aetna_xml_Data"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "PayerGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "dci_claim_6mos"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "dci_rtserviceaudit_6mos"
+  },
+  {
+    "schema": "bwyllie",
+    "database": "dw_dxc_dev",
+    "table": "smilebrands_claim_status_report__dbt_tmp"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "appointmentprovidermapping"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "eligibility"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "groupsetting"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "payercredential"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "provider"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQCDP1755266433236_dci_claim_statuses"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors"
+  },
+  {
+    "schema": "claimconnect",
+    "database": "master",
+    "table": "rptCLCClaimAGGMonthToYesterdayVSCurrentStatusTotal"
+  },
+  {
+    "schema": "cycle",
+    "database": "master",
+    "table": "Claims"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "DCIClaimFLATClaimsLifeCycles"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "DCIClaimFLATClaimsLifeCyclesArchive"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "LDP0AI-COH"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "LDP0AI-PCDvip"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "TEMP_DLS3"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "rptDCIClaimDETUserResolvedClaimsDetail"
+  },
+  {
+    "schema": "ddsenroll",
+    "database": "master",
+    "table": "CREDApplicationSetFLATAppSetsLifeCycles"
+  },
+  {
+    "schema": "ddsenroll",
+    "database": "master",
+    "table": "CREDProviderDETLocationsProviderProfileAnswers"
+  },
+  {
+    "schema": "ddsenroll",
+    "database": "master",
+    "table": "CREDProviderDETMinReqdProviderProfileAnswers"
+  },
+  {
+    "schema": "ddsenroll",
+    "database": "master",
+    "table": "CREDProviderDETProviderProfiles"
+  },
+  {
+    "schema": "ddsenroll",
+    "database": "master",
+    "table": "CREDProviderDETUnpivotedUserAnswers"
+  },
+  {
+    "schema": "entity",
+    "database": "master",
+    "table": "Appointments"
+  },
+  {
+    "schema": "payerportal",
+    "database": "master",
+    "table": "ClearinghouseClaims"
+  },
+  {
+    "schema": "dbo",
+    "database": "partcredDM",
+    "table": "Credential"
+  },
+  {
+    "schema": "dbo",
+    "database": "partcredDM",
+    "table": "DSSCredBillingAlt"
+  },
+  {
+    "schema": "dbo",
+    "database": "partcredDM",
+    "table": "Outreach"
+  },
+  {
+    "schema": "dbo",
+    "database": "partcredDM",
+    "table": "PayerPartnerOutreach"
+  },
+  {
+    "schema": "dbo",
+    "database": "partcredDM",
+    "table": "RecredentialingCycleOutreach"
+  },
+  {
+    "schema": "dbo",
+    "database": "partcredDM",
+    "table": "RecredentialingCycleOutreachSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "partcredDM",
+    "table": "RenewDates"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "Settlement"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "SettlementHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "StatementReminder"
+  },
+  {
+    "schema": "dbo",
+    "database": "ptp",
+    "table": "ProviderPayment"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DSSPayerCredBilling"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DSSRetentionActivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DSSWebPortal"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DataBillRpt"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GroupActivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Match_Anthem_BO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Match_Anthem_BO_1"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "NEASubscriptionAggregation"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerBillingGPStage"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerProviderTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ProviderPayerTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Test_PayerProviderTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "UCCI"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "dhmo"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "dhmo_add_groups"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "dsswebportal_20101202"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_ADPProviderCredentialAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_AnthemWebPortal"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_BNDProviderCredentialAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_GEDCProviderCredentialAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_LuminaProviderCredentialAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "tempECEHG"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Claims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Cred"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_ERA"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_PatStmt"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_RTClaims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_RTCount"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "tmpOrtho"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "xls_DeltaCA"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "ClaimPaymentRegistrationRemoval"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "TempDenticonUsers"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "tmpEaglesLanding"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "tmpeagleslandingitems"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISGrandfatheredReportsMap"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "ClientTransactions"
+  }
 ]

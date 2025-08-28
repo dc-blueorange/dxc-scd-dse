@@ -1,83 +1,130 @@
 [
-  [
-    "chs"
-  ],
-  [
-    "common"
-  ],
-  [
-    "cred"
-  ],
-  [
-    "dci"
-  ],
-  [
-    "dea"
-  ],
-  [
-    "dw"
-  ],
-  [
-    "dw_atm_dxc"
-  ],
-  [
-    "dxcps"
-  ],
-  [
-    "erp"
-  ],
-  [
-    "erpDev"
-  ],
-  [
-    "ext_raw"
-  ],
-  [
-    "ext_raw_ec"
-  ],
-  [
-    "ext_raw_pc"
-  ],
-  [
-    "lkr"
-  ],
-  [
-    "master"
-  ],
-  [
-    "ns"
-  ],
-  [
-    "partcredDM"
-  ],
-  [
-    "pfs"
-  ],
-  [
-    "pnt"
-  ],
-  [
-    "reports"
-  ],
-  [
-    "rpt"
-  ],
-  [
-    "trx"
-  ],
-  [
-    "trxBrch"
-  ],
-  [
-    "trxDev"
-  ],
-  [
-    "trxQA"
-  ],
-  [
-    "trxTest"
-  ],
-  [
-    "trxWsdm"
-  ]
+  {
+    "schema": "dbo",
+    "database": "chs"
+  },
+  {
+    "schema": "dbo",
+    "database": "common"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_pc"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr"
+  },
+  {
+    "schema": "dbo",
+    "database": "master"
+  },
+  {
+    "schema": "entity",
+    "database": "master"
+  },
+  {
+    "schema": "payerportal",
+    "database": "master"
+  },
+  {
+    "schema": "temp",
+    "database": "master"
+  },
+  {
+    "schema": "trans",
+    "database": "master"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns"
+  },
+  {
+    "schema": "dbo",
+    "database": "partcredDM"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm"
+  }
 ]

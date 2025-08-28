@@ -1,558 +1,697 @@
 [
-  [
-    "chs",
-    "ClaimPaymentRegistration"
-  ],
-  [
-    "chs",
-    "ClaimPaymentRegistrationHistory"
-  ],
-  [
-    "chs",
-    "MetaClaimStatus"
-  ],
-  [
-    "chs",
-    "MetaOfficeResponse"
-  ],
-  [
-    "chs",
-    "MetaOfficeResponseFile"
-  ],
-  [
-    "chs",
-    "OfficeResponsePreAuth"
-  ],
-  [
-    "common",
-    "ChatConversation"
-  ],
-  [
-    "common",
-    "ContactUs"
-  ],
-  [
-    "common",
-    "DenticalLocationInfo"
-  ],
-  [
-    "common",
-    "DownloadConfig"
-  ],
-  [
-    "common",
-    "DownloadConfig_old"
-  ],
-  [
-    "common",
-    "FrontOfficeBilling"
-  ],
-  [
-    "common",
-    "HawaiiDentalLicenseLookup"
-  ],
-  [
-    "common",
-    "MessagePortalConversation"
-  ],
-  [
-    "common",
-    "NppesDataSourceResponse"
-  ],
-  [
-    "common",
-    "NppesLookup"
-  ],
-  [
-    "common",
-    "NppesLookup_old"
-  ],
-  [
-    "common",
-    "NppesLookup_old1"
-  ],
-  [
-    "common",
-    "Pms"
-  ],
-  [
-    "common",
-    "PmsAudit"
-  ],
-  [
-    "common",
-    "ProviderDirectory"
-  ],
-  [
-    "common",
-    "ProviderDirectoryCompare"
-  ],
-  [
-    "common",
-    "ProviderDirectoryHistory"
-  ],
-  [
-    "common",
-    "ProviderDirectoryLocation"
-  ],
-  [
-    "common",
-    "ProviderDirectoryLocationCompare"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayer"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerHistory"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerLocationPlan"
-  ],
-  [
-    "common",
-    "ProviderPayerEnrollment"
-  ],
-  [
-    "common",
-    "ProviderPayerEnrollmentAudit"
-  ],
-  [
-    "common",
-    "SupportDataSourceResponse"
-  ],
-  [
-    "common",
-    "providerdirectoryold"
-  ],
-  [
-    "cred",
-    "ApplicationSetLocation"
-  ],
-  [
-    "cred",
-    "GroupLocation"
-  ],
-  [
-    "cred",
-    "GroupLocationAnswer"
-  ],
-  [
-    "cred",
-    "HawaiiDentalLicenseLookup"
-  ],
-  [
-    "cred",
-    "LocationQuestion"
-  ],
-  [
-    "cred",
-    "NPDBServiceAudit"
-  ],
-  [
-    "cred",
-    "PayerConfig"
-  ],
-  [
-    "cred",
-    "PayerDataChangeDetail"
-  ],
-  [
-    "cred",
-    "PayerDataCompareConfig"
-  ],
-  [
-    "cred",
-    "PayerDataTagMapping"
-  ],
-  [
-    "cred",
-    "PrimaryDataSourceResponse"
-  ],
-  [
-    "cred",
-    "ProviderApplicationStatusLocation"
-  ],
-  [
-    "cred",
-    "ProviderGroupDetail"
-  ],
-  [
-    "cred",
-    "ProviderSiteDetail"
-  ],
-  [
-    "cred",
-    "UserLocation"
-  ],
-  [
-    "dci",
-    "OfficeResponse"
-  ],
-  [
-    "dci",
-    "OfficeResponseAudit"
-  ],
-  [
-    "dci",
-    "arc_OfficeResponse_Archive_List"
-  ],
-  [
-    "dci",
-    "arc_OfficeResponse_OfficeResponseID_Delete_List"
-  ],
-  [
-    "dci",
-    "reports"
-  ],
-  [
-    "ddir",
-    "Practice"
-  ],
-  [
-    "ddir",
-    "PracticeAssociationAudit"
-  ],
-  [
-    "ddir",
-    "PracticeAudit"
-  ],
-  [
-    "ddir",
-    "PracticeHoursAudit"
-  ],
-  [
-    "ddir",
-    "PracticeLanguageAudit"
-  ],
-  [
-    "ddir",
-    "PracticeOffer"
-  ],
-  [
-    "ddir",
-    "PracticeOfferAudit"
-  ],
-  [
-    "ddir",
-    "PracticeOfferOld"
-  ],
-  [
-    "ddir",
-    "PracticeProfile"
-  ],
-  [
-    "ddir",
-    "PracticeProfileAudit"
-  ],
-  [
-    "ddir",
-    "PracticeServiceAudit"
-  ],
-  [
-    "dhmo",
-    "Aetna_xml_Data"
-  ],
-  [
-    "dhmo",
-    "CapXRef"
-  ],
-  [
-    "dhmo",
-    "Capitation"
-  ],
-  [
-    "dhmo",
-    "Member"
-  ],
-  [
-    "dhmo",
-    "OfficeServiceClient"
-  ],
-  [
-    "dhmo",
-    "PayerGroup"
-  ],
-  [
-    "dhmo",
-    "PayerGroupAudit"
-  ],
-  [
-    "dhmo",
-    "PayerGroupPlan"
-  ],
-  [
-    "dhmo",
-    "Plan"
-  ],
-  [
-    "dhmo",
-    "PlanItem"
-  ],
-  [
-    "dxcps",
-    "Vital_T"
-  ],
-  [
-    "ext_raw_mp",
-    "DXC_ZentistParnershipRevenueTracker2"
-  ],
-  [
-    "ext_raw_mp",
-    "MPExtZentistNotionleadsexport"
-  ],
-  [
-    "ext_raw_mp",
-    "MPExtZentistNotionleadsexportAudit"
-  ],
-  [
-    "ext_raw_mp",
-    "MPExtZentistNotionleadsexporttemp"
-  ],
-  [
-    "ext_raw_pc",
-    "backofficeusers"
-  ],
-  [
-    "ext_raw_pc",
-    "backofficeusertokens"
-  ],
-  [
-    "master",
-    "Appointments"
-  ],
-  [
-    "master",
-    "CREDApplicationSetDETApprovedAppsPayerApprovedLocations"
-  ],
-  [
-    "master",
-    "CREDProviderDETLocationsProviderProfileAnswers"
-  ],
-  [
-    "master",
-    "rptDCIClaimAGGPendingClaimStatusAgedSnapshot"
-  ],
-  [
-    "master",
-    "rptDCIClaimDETUserResolvedClaimsDetail"
-  ],
-  [
-    "ns",
-    "Charge_copy"
-  ],
-  [
-    "ns",
-    "Customer_copy"
-  ],
-  [
-    "ns",
-    "Item_copy"
-  ],
-  [
-    "ns",
-    "SalesInvoiced_copy"
-  ],
-  [
-    "ns",
-    "Subscription_copy"
-  ],
-  [
-    "ns",
-    "TransactionLine_copy"
-  ],
-  [
-    "ns",
-    "Transaction_copy"
-  ],
-  [
-    "ns",
-    "Vendor_copy"
-  ],
-  [
-    "ns",
-    "ZABSubscriptionItem_copy"
-  ],
-  [
-    "ns",
-    "ZABSubscription_copy"
-  ],
-  [
-    "pnt",
-    "Statement"
-  ],
-  [
-    "pnt",
-    "StatementPractice"
-  ],
-  [
-    "pnt",
-    "StatementReminder"
-  ],
-  [
-    "reports",
-    "All$"
-  ],
-  [
-    "reports",
-    "CSRequest_Practice"
-  ],
-  [
-    "reports",
-    "DASplay"
-  ],
-  [
-    "reports",
-    "LibertyMatchBO"
-  ],
-  [
-    "reports",
-    "Matching_Liberty"
-  ],
-  [
-    "reports",
-    "NeaPre2012"
-  ],
-  [
-    "reports",
-    "PayConnectLocationNumber"
-  ],
-  [
-    "reports",
-    "UCCI"
-  ],
-  [
-    "reports",
-    "VendorDashAggr"
-  ],
-  [
-    "reports",
-    "bkwrpt"
-  ],
-  [
-    "reports",
-    "bkwtest"
-  ],
-  [
-    "reports",
-    "bndofficemcna"
-  ],
-  [
-    "reports",
-    "dfcProvs"
-  ],
-  [
-    "reports",
-    "dhmo"
-  ],
-  [
-    "reports",
-    "dhmo_add_groups"
-  ],
-  [
-    "reports",
-    "rpt_NEA_Commission"
-  ],
-  [
-    "reports",
-    "temp_DSO_Claims"
-  ],
-  [
-    "reports",
-    "temp_DSO_Cred"
-  ],
-  [
-    "reports",
-    "temp_DSO_ERA"
-  ],
-  [
-    "reports",
-    "temp_DSO_PatStmt"
-  ],
-  [
-    "reports",
-    "temp_DSO_RTClaims"
-  ],
-  [
-    "reports",
-    "temp_DSO_RTCount"
-  ],
-  [
-    "reports",
-    "temp_DSO_Subscription_ClientSubscriptionEvents"
-  ],
-  [
-    "reports",
-    "tmpEaglesLanding"
-  ],
-  [
-    "reports",
-    "tmpOrtho"
-  ],
-  [
-    "reports",
-    "tmpTDO"
-  ],
-  [
-    "reports",
-    "tmpeagleslandingitems"
-  ],
-  [
-    "rpt",
-    "SSISDistributionClientsFTPDistributions"
-  ],
-  [
-    "rpt",
-    "SSISDistributionClientsFTPDistributionsAudit"
-  ],
-  [
-    "trx",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trx",
-    "ClientTransactions"
-  ],
-  [
-    "trxBrch",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxBrch",
-    "ClientTransactions"
-  ],
-  [
-    "trxDev",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxDev",
-    "ClientTransactions"
-  ],
-  [
-    "trxQA",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxQA",
-    "ClientTransactions"
-  ],
-  [
-    "trxTest",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxTest",
-    "ClientTransactions"
-  ],
-  [
-    "trxWsdm",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxWsdm",
-    "ClientTransactions"
-  ]
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentRegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentRegistrationHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaimStatus"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaOfficeResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaOfficeResponseFile"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "OfficeResponsePreAuth"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ChatConversation"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ContactUs"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "DenticalLocationInfo"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "DownloadConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "DownloadConfig_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "FrontOfficeBilling"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "HawaiiDentalLicenseLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalConversation"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesDataSourceResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesLookup_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesLookup_old1"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Pms"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PmsAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryCompare"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryLocation"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryLocationCompare"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayer"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerLocationPlan"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderPayerEnrollment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderPayerEnrollmentAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportDataSourceResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "providerdirectoryold"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetLocation"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "GroupLocation"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "GroupLocationAnswer"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "HawaiiDentalLicenseLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "LocationQuestion"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "NPDBServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerDataChangeDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerDataCompareConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerDataTagMapping"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PrimaryDataSourceResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderApplicationStatusLocation"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderGroupDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderSiteDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "UserLocation"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "OfficeResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "OfficeResponseAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_OfficeResponse_Archive_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_OfficeResponse_OfficeResponseID_Delete_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "reports"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "Practice"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeAssociationAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeHoursAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeLanguageAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeOffer"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeOfferAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeOfferOld"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeProfile"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeProfileAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "Aetna_xml_Data"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "CapXRef"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "Capitation"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "Member"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "OfficeServiceClient"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "PayerGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "PayerGroupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "PayerGroupPlan"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "Plan"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "PlanItem"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Vital_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_mp",
+    "table": "DXC_ZentistParnershipRevenueTracker2"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_mp",
+    "table": "MPExtZentistNotionleadsexport"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_mp",
+    "table": "MPExtZentistNotionleadsexportAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_mp",
+    "table": "MPExtZentistNotionleadsexporttemp"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_pc",
+    "table": "backofficeusers"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_pc",
+    "table": "backofficeusertokens"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "rptDCIClaimAGGPendingClaimStatusAgedSnapshot"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "rptDCIClaimDETUserResolvedClaimsDetail"
+  },
+  {
+    "schema": "ddsenroll",
+    "database": "master",
+    "table": "CREDApplicationSetDETApprovedAppsPayerApprovedLocations"
+  },
+  {
+    "schema": "ddsenroll",
+    "database": "master",
+    "table": "CREDProviderDETLocationsProviderProfileAnswers"
+  },
+  {
+    "schema": "entity",
+    "database": "master",
+    "table": "Appointments"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Charge_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Customer_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Item_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "SalesInvoiced_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Subscription_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "TransactionLine_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Transaction_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Vendor_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "ZABSubscriptionItem_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "ZABSubscription_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "Statement"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "StatementPractice"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "StatementReminder"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "All$"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "CSRequest_Practice"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DASplay"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "LibertyMatchBO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Matching_Liberty"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "NeaPre2012"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayConnectLocationNumber"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "UCCI"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "VendorDashAggr"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "bkwrpt"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "bkwtest"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "dhmo"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "dhmo_add_groups"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_NEA_Commission"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Claims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Cred"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_ERA"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_PatStmt"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_RTClaims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_RTCount"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Subscription_ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "tmpOrtho"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "tmpTDO"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "bndofficemcna"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "dfcProvs"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "tmpEaglesLanding"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "tmpeagleslandingitems"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISDistributionClientsFTPDistributions"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISDistributionClientsFTPDistributionsAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "ClientTransactions"
+  }
 ]

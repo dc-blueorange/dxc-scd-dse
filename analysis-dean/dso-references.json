@@ -1,5 +1,6 @@
 [
     {
+        "schema": "dbo",
         "database": "common",
         "table": "GroupSupportUser",
         "column": "SupportUserID",
@@ -8,13 +9,15 @@
             {
                 "database": "common",
                 "constraint": "FK_GroupSupportUser_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "Reseller",
         "column": "ServiceCode",
@@ -23,13 +26,15 @@
             {
                 "database": "common",
                 "constraint": "FK_Reseller_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "CommissionStatement",
         "column": "SupportUserID",
@@ -38,13 +43,15 @@
             {
                 "database": "common",
                 "constraint": "FK_CommissionStatement_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProductGroupPackage",
         "column": "SupportUserID",
@@ -53,13 +60,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProductGroupPackage_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProductGroupPackage",
         "column": "ServiceCode",
@@ -68,13 +77,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProductGroupPackage_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "StatementItem",
         "column": "ServiceCode",
@@ -83,13 +94,15 @@
             {
                 "database": "common",
                 "constraint": "FK_StatementItem_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ContactUsNote",
         "column": "SupportUserID",
@@ -98,13 +111,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ContactUsNote_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "Entity",
         "column": "ServiceCode",
@@ -113,13 +128,15 @@
             {
                 "database": "common",
                 "constraint": "FK_Entity_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "EntityDescriptor",
         "column": "InitialServiceStatus",
@@ -128,13 +145,15 @@
             {
                 "database": "common",
                 "constraint": "FK_EntityDescriptor_ServiceStatus_InitialServiceStatus",
-                "ref_table": "ServiceStatus",
-                "ref_column": "ServiceStatus",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceStatus",
+                "fk_column": "ServiceStatus",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "EntityDescriptor",
         "column": "FinalServiceStatus",
@@ -143,13 +162,15 @@
             {
                 "database": "common",
                 "constraint": "FK_EntityDescriptor_ServiceStatus_FinalServiceStatus",
-                "ref_table": "ServiceStatus",
-                "ref_column": "ServiceStatus",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceStatus",
+                "fk_column": "ServiceStatus",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "EntityGroup",
         "column": "SupportUserID",
@@ -158,13 +179,15 @@
             {
                 "database": "common",
                 "constraint": "FK_EntityGroup_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "GroupMerchant",
         "column": "SupportUserID",
@@ -173,13 +196,15 @@
             {
                 "database": "common",
                 "constraint": "FK_GroupMerchant_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "GroupUserSecurity",
         "column": "SupportUserID",
@@ -188,13 +213,15 @@
             {
                 "database": "common",
                 "constraint": "FK_GroupUserSecurity_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "MerchantApplication",
         "column": "SupportUserID",
@@ -203,13 +230,15 @@
             {
                 "database": "common",
                 "constraint": "FK_MerchantApplication_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "MerchantMigration",
         "column": "SupportUserID",
@@ -218,13 +247,15 @@
             {
                 "database": "common",
                 "constraint": "FK_MerchantMigration_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "MerchantMigrationLink",
         "column": "InMerchantMigrationServiceAuditID",
@@ -233,13 +264,15 @@
             {
                 "database": "common",
                 "constraint": "FK_MerchantMigrationLink_MerchantMigrationServiceAudit_InMerchantMigrationServiceAuditID",
-                "ref_table": "MerchantMigrationServiceAudit",
-                "ref_column": "MerchantMigrationServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "MerchantMigrationServiceAudit",
+                "fk_column": "MerchantMigrationServiceAuditID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "MerchantMigrationLink",
         "column": "OutMerchantMigrationServiceAuditID",
@@ -248,13 +281,15 @@
             {
                 "database": "common",
                 "constraint": "FK_MerchantMigrationLink_MerchantMigrationServiceAudit_OutMerchantMigrationServiceAuditID",
-                "ref_table": "MerchantMigrationServiceAudit",
-                "ref_column": "MerchantMigrationServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "MerchantMigrationServiceAudit",
+                "fk_column": "MerchantMigrationServiceAuditID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "MerchantMigrationSchedule",
         "column": "SupportUserID",
@@ -263,13 +298,15 @@
             {
                 "database": "common",
                 "constraint": "FK_MerchantMigrationSchedule_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerSecurity",
         "column": "ServiceCode",
@@ -278,13 +315,15 @@
             {
                 "database": "common",
                 "constraint": "FK_PartnerSecurity_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerSecurityTokenConfig",
         "column": "ServiceCode",
@@ -293,13 +332,15 @@
             {
                 "database": "common",
                 "constraint": "FK_PartnerSecurityTokenConfig_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PayerAddress",
         "column": "ConfirmedSupportUserID",
@@ -308,13 +349,15 @@
             {
                 "database": "common",
                 "constraint": "FK_PayerAddress_SupportUser_ConfirmedSupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PayerDocType",
         "column": "ServiceCode",
@@ -323,13 +366,15 @@
             {
                 "database": "common",
                 "constraint": "FK_PayerDocType_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PayerDocType",
         "column": "ServiceStatus",
@@ -338,13 +383,15 @@
             {
                 "database": "common",
                 "constraint": "FK_PayerDocType_ServiceStatus_ServiceStatus",
-                "ref_table": "ServiceStatus",
-                "ref_column": "ServiceStatus",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceStatus",
+                "fk_column": "ServiceStatus",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PayerEnrollment",
         "column": "ServiceCode",
@@ -353,13 +400,15 @@
             {
                 "database": "common",
                 "constraint": "FK_PayerEnrollment_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PayerMatchGroup",
         "column": "SupportUserId",
@@ -368,13 +417,15 @@
             {
                 "database": "common",
                 "constraint": "FK_PayerMatchGroup_SupportUser_SupportUserId",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "Pms",
         "column": "ServiceCode",
@@ -383,13 +434,15 @@
             {
                 "database": "common",
                 "constraint": "FK_PMS_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProductPackageSetOverride",
         "column": "SupportUserID",
@@ -398,13 +451,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProductPackageSetOverride_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProductPartnerPackage",
         "column": "ServiceCode",
@@ -413,13 +468,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProductPartnerPackage_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryPayerDocument",
         "column": "SupportUserID",
@@ -428,13 +485,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProviderDirectoryPayerDocument_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryPayerNoteHistory",
         "column": "SupportUserID",
@@ -443,13 +502,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProviderDirectoryPayerNoteHistory_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderPayerEnrollment",
         "column": "SupportUserID",
@@ -458,13 +519,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProviderPayerEnrollment_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ReleaseGroup",
         "column": "CreateSupportUserID",
@@ -473,13 +536,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ReleaseGroup_SupportUser_CreateSupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ReleaseGroup",
         "column": "ModifySupportUserID",
@@ -488,13 +553,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ReleaseGroup_SupportUser_ModifySupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ReleaseGroupType",
         "column": "CreateSupportUserID",
@@ -503,13 +570,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ReleaseGroupType_SupportUser_CreateSupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SalesLeadNote",
         "column": "SupportUserID",
@@ -518,13 +587,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SalesLeadNote_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SalesUserAccessAssignment",
         "column": "SupportUserID",
@@ -533,13 +604,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SalesUserAccessAssignment_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceClientAccess",
         "column": "ServiceType",
@@ -548,13 +621,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceClientAccess_ServiceType_ServiceType",
-                "ref_table": "ServiceType",
-                "ref_column": "ServiceType",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceType",
+                "fk_column": "ServiceType",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceClientAccess",
         "column": "ServiceCode",
@@ -563,13 +638,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceClientAccess_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceClientPMS",
         "column": "ServiceClientID",
@@ -578,13 +655,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceClientPMS_ServiceClient_ServiceClientID",
-                "ref_table": "ServiceClient",
-                "ref_column": "ServiceClientID",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceClient",
+                "fk_column": "ServiceClientID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceFee",
         "column": "ServiceCode",
@@ -593,13 +672,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceFee_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceHostConfiguration",
         "column": "ServiceCode",
@@ -608,13 +689,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceHostConfiguration_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceHostConfiguration",
         "column": "ServiceType",
@@ -623,13 +706,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceHostConfiguration_ServiceType_ServiceType",
-                "ref_table": "ServiceType",
-                "ref_column": "ServiceType",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceType",
+                "fk_column": "ServiceType",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceProperty",
         "column": "ServiceCode",
@@ -638,13 +723,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceProperty_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceProperty",
         "column": "ServiceType",
@@ -653,13 +740,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceProperty_ServiceType_ServiceType",
-                "ref_table": "ServiceType",
-                "ref_column": "ServiceType",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceType",
+                "fk_column": "ServiceType",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceServiceCode",
         "column": "ServiceCode",
@@ -668,13 +757,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceServiceCode_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceServiceCode",
         "column": "ServiceServiceCode",
@@ -683,13 +774,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ServiceServiceCode_ServiceCode_ServiceServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "StatementActivityLog",
         "column": "SupportUserID",
@@ -698,13 +791,15 @@
             {
                 "database": "common",
                 "constraint": "FK_StatementActivityLog_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportGroupFunction",
         "column": "SupportGroupID",
@@ -713,13 +808,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportGroupFunction_SupportGroup_SupportGroupID",
-                "ref_table": "SupportGroup",
-                "ref_column": "SupportGroupID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportGroup",
+                "fk_column": "SupportGroupID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportGroupFunction",
         "column": "SupportFunctionID",
@@ -728,13 +825,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportGroupFunction_SupportFunction_SupportFunctionID",
-                "ref_table": "SupportFunction",
-                "ref_column": "SupportFunctionID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportFunction",
+                "fk_column": "SupportFunctionID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportGroupUser",
         "column": "SupportGroupID",
@@ -743,13 +842,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportGroupUser_SupportGroup_SupportGroupID",
-                "ref_table": "SupportGroup",
-                "ref_column": "SupportGroupID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportGroup",
+                "fk_column": "SupportGroupID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportGroupUser",
         "column": "SupportUserID",
@@ -758,13 +859,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportGroupUser_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportNote",
         "column": "SupportUserID",
@@ -773,13 +876,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportNote_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportPayerSetGroup",
         "column": "SupportGroupID",
@@ -788,13 +893,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportPayerSetGroup_SupportGroup_SupportGroupID",
-                "ref_table": "SupportGroup",
-                "ref_column": "SupportGroupID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportGroup",
+                "fk_column": "SupportGroupID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportServiceCodePayerSet",
         "column": "ServiceCode",
@@ -803,13 +910,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportServiceCodePayerSet_ServiceCode_ServiceCode",
-                "ref_table": "ServiceCode",
-                "ref_column": "ServiceCode",
+                "fk_schema": "dbo",
+                "fk_table": "ServiceCode",
+                "fk_column": "ServiceCode",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportTaskUser",
         "column": "SupportUserID",
@@ -818,13 +927,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportTaskUser_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportTeamUser",
         "column": "SupportTeamID",
@@ -833,13 +944,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportTeamUser_SupportTeam_SupportTeamID",
-                "ref_table": "SupportTeam",
-                "ref_column": "SupportTeamID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportTeam",
+                "fk_column": "SupportTeamID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportTeamUser",
         "column": "SupportUserID",
@@ -848,13 +961,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportTeamUser_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportUserCommission",
         "column": "SupportUserID",
@@ -863,13 +978,15 @@
             {
                 "database": "common",
                 "constraint": "FK_SupportUserCommission_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "TicketAppointment",
         "column": "SupportUserID",
@@ -878,13 +995,15 @@
             {
                 "database": "common",
                 "constraint": "FK_TicketAppointment_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "TicketAttachment",
         "column": "SupportUserID",
@@ -893,13 +1012,15 @@
             {
                 "database": "common",
                 "constraint": "FK_TicketAttachment_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "TicketNote",
         "column": "SupportUserID",
@@ -908,13 +1029,15 @@
             {
                 "database": "common",
                 "constraint": "FK_TicketNote_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "TicketNotification",
         "column": "SupportUserID",
@@ -923,13 +1046,15 @@
             {
                 "database": "common",
                 "constraint": "FK_TicketNotification_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "TicketStatusHistory",
         "column": "SupportUserID",
@@ -938,13 +1063,15 @@
             {
                 "database": "common",
                 "constraint": "FK_TicketStatusHistory_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "TicketSubcategory",
         "column": "DefaultSupportUser",
@@ -953,13 +1080,15 @@
             {
                 "database": "common",
                 "constraint": "FK_TicketSubcategory_SupportUser_DefaultSupportUser",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "TicketSubcategoryHistory",
         "column": "SupportUserID",
@@ -968,13 +1097,15 @@
             {
                 "database": "common",
                 "constraint": "FK_TicketSubcategoryHistory_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "TicketSubCategoryTypeHistory",
         "column": "SupportUserID",
@@ -983,13 +1114,15 @@
             {
                 "database": "common",
                 "constraint": "FK_TicketSubCategoryTypeHistory_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "TicketUserAssignment",
         "column": "SupportUserID",
@@ -998,13 +1131,15 @@
             {
                 "database": "common",
                 "constraint": "FK_TicketUserAssignment_SupportUser_SupportUserID",
-                "ref_table": "SupportUser",
-                "ref_column": "SupportUserID",
+                "fk_schema": "dbo",
+                "fk_table": "SupportUser",
+                "fk_column": "SupportUserID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "OfficeResponse",
         "column": "SAServiceAuditId",
@@ -1013,13 +1148,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_OfficeResponse_SAServiceAudit_SAServiceAuditID",
-                "ref_table": "SAServiceAudit",
-                "ref_column": "SAServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "SAServiceAudit",
+                "fk_column": "SAServiceAuditID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "Claim",
         "column": "ServiceAuditID",
@@ -1028,13 +1165,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_Claim_SAServiceAudit_ServiceAuditID",
-                "ref_table": "SAServiceAudit",
-                "ref_column": "SAServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "SAServiceAudit",
+                "fk_column": "SAServiceAuditID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "Claim",
         "column": "RTServiceAuditID",
@@ -1043,13 +1182,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_Claim_RTServiceAudit_RTServiceAuditID",
-                "ref_table": "RTServiceAudit",
-                "ref_column": "RTServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "RTServiceAudit",
+                "fk_column": "RTServiceAuditID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ClaimPayment",
         "column": "SAServiceAuditID",
@@ -1058,13 +1199,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_ClaimPayment_SAServiceAudit_SAServiceAuditID",
-                "ref_table": "SAServiceAudit",
-                "ref_column": "SAServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "SAServiceAudit",
+                "fk_column": "SAServiceAuditID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ClaimPaymentReport",
         "column": "SAServiceAuditID",
@@ -1073,13 +1216,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_ClaimPaymentReport_SAServiceAudit_SAServiceAuditID",
-                "ref_table": "SAServiceAudit",
-                "ref_column": "SAServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "SAServiceAudit",
+                "fk_column": "SAServiceAuditID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ClaimResponse",
         "column": "SAServiceAuditId",
@@ -1088,13 +1233,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_ClaimResponse_SAServiceAudit_SAServiceAuditID",
-                "ref_table": "SAServiceAudit",
-                "ref_column": "SAServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "SAServiceAudit",
+                "fk_column": "SAServiceAuditID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PartnerClaimDeliveryOps",
         "column": "SAServiceAuditId",
@@ -1103,13 +1250,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_PartnerClaimDeliveryOps_SAServiceAudit_SAServiceAuditId",
-                "ref_table": "SAServiceAudit",
-                "ref_column": "SAServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "SAServiceAudit",
+                "fk_column": "SAServiceAuditID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "pfs",
         "table": "CreditOffer",
         "column": "RTServiceAuditID",
@@ -1118,13 +1267,15 @@
             {
                 "database": "pfs",
                 "constraint": "FK_CreditOffer_RTServiceAudit_RTServiceAuditID",
-                "ref_table": "RTServiceAudit",
-                "ref_column": "RTServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "RTServiceAudit",
+                "fk_column": "RTServiceAuditID",
                 "file": "Livesql3/pfs.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "SupportACD",
         "column": "SAServiceAuditID",
@@ -1133,13 +1284,15 @@
             {
                 "database": "reports",
                 "constraint": "FK_SupportACD_SAServiceAudit_SAServiceAuditID",
-                "ref_table": "SAServiceAudit",
-                "ref_column": "SAServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "SAServiceAudit",
+                "fk_column": "SAServiceAuditID",
                 "file": "Livesql3/reportst.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "SupportCDR",
         "column": "SAServiceAuditID",
@@ -1148,13 +1301,15 @@
             {
                 "database": "reports",
                 "constraint": "FK_SupportCDR_SAServiceAudit_SAServiceAuditID",
-                "ref_table": "SAServiceAudit",
-                "ref_column": "SAServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "SAServiceAudit",
+                "fk_column": "SAServiceAuditID",
                 "file": "Livesql3/reportst.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "Attachment",
         "column": "RTServiceAuditID",
@@ -1163,13 +1318,15 @@
             {
                 "database": "dea",
                 "constraint": "FK_Attachment_RTServiceAudit_RTServiceAuditID",
-                "ref_table": "RTServiceAudit",
-                "ref_column": "RTServiceAuditID",
+                "fk_schema": "dbo",
+                "fk_table": "RTServiceAudit",
+                "fk_column": "RTServiceAuditID",
                 "file": "Livesql3/dea.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeService",
         "column": "ServiceID",
@@ -1178,8 +1335,9 @@
             {
                 "database": "ddir",
                 "constraint": "FK_PracticeService_Service_ServiceID",
-                "ref_table": "Service",
-                "ref_column": "ServiceID",
+                "fk_schema": "dbo",
+                "fk_table": "Service",
+                "fk_column": "ServiceID",
                 "file": "Livesql3/ddir.sql"
             }
         ]

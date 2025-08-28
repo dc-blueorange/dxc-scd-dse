@@ -1,875 +1,1021 @@
 [
     {
+        "schema": "dbo",
         "database": "partcredDM",
         "table": "PayerPartnerOutreach",
         "column": "Partner",
         "file": "DTT-ANA-PRD/partcredDM.sql"
     },
     {
+        "schema": "dbo",
         "database": "dw_dxc",
         "table": "historicalpartnerpayerset",
         "column": "partner",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "CustomerPartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "InvoicePartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "PartnerAddressbookEntityAddress",
         "column": "Partner",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "PartnerSystem",
         "column": "Partner",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "PresCategorySiteAudienceSiteAudiencePartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "salesOrderPartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "transactionPartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "creditMemoPartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "CustomerPartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "InvoicePartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "PartnerAddressbookEntityAddress",
         "column": "Partner",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "PartnerSystem",
         "column": "Partner",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "PresCategorySiteAudienceSiteAudiencePartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "salesOrderPartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "transactionPartner",
         "column": "Partner",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "GroupPartnerDisplay",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "Partner",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerCaseConfig",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerConfigType",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerLoginConfig",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerRegistrationCode",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerSecurity",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerSecurityAccess",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerSecurityTokenConfig",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerTranSubType",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerTranSubTypeConfigType",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerTranSubTypeConfiguration",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "PartnerTranType",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProductPartnerPackage",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProductPartnerRegistration",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProductPartnerRegistrationFeature",
         "column": "Partner",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PartnerBillingActivity",
         "column": "Partner",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PartnerBillingActivitySummaryView",
         "column": "Partner",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PartnerBillingActivity_old",
         "column": "Partner",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PartnerClaimDeliveryOps",
         "column": "Partner",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PartnerClaimDeliveryRegistration",
         "column": "Partner",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PartnerERAAdjustment",
         "column": "Partner",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PartnerStatusCategory",
         "column": "Partner",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPartnerCode",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPartnerCode",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerCode",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementItem",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementTotalView",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementTotalView2",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementTotalView3",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerBillingActivity",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerBillingActivityClaimSummaryView",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerBillingActivitySummaryView",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementTotalViewGP",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementTotalViewGP1",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerAdjustmentProcessType",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerBankAccount",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerBillingActivity_old",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerClaimResubmit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerConfigType",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerDestinationResponseConfig",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerDowntime",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerLineCtrlConfig",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerMessageRoutingExclude",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerMessageRoutingExcludeAudit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerMessageRoutingExcludeInfo",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPartnerCodeAudit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPartnerCodeAudit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPartnerCodeBillingConfig",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPartnerCodeBillingConfig",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPayerDestUpgradeConfig",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPayerMatchUpgrade",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPayerSet",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPayerSetAudit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPrice",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerPriceAudit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementItemAdjustment",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementItemAdjustmentAudit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementItemAudit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerStatementItemSummary",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerSubAccount",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerTranSubType",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerTranSubTypeConfigType",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerTranSubTypeConfiguration",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerTranSubTypePayerNameTranslation",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerTranSubTypePayerNameTranslationAudit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerTranSubTypeStatus",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerTranType",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerWidgetDeliveryOps",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PartnerWidgetDeliveryRegistration",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PayerPartnerCode",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "PayerPartnerCodeAudit",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "ProviderPartnerMap",
         "column": "Partner",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "pfs",
         "table": "CreditPartner",
         "column": "Partner",
         "file": "Livesql3/pfs.sql"
     },
     {
+        "schema": "dbo",
         "database": "pfs",
         "table": "PartnerCreditPlan",
         "column": "Partner",
         "file": "Livesql3/pfs.sql"
     },
     {
+        "schema": "dbo",
         "database": "pfs",
         "table": "PartnerError",
         "column": "Partner",
         "file": "Livesql3/pfs.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingOutBoundConfigAndStatusView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingOutBoundPayerSetTierPricingView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingInBoundConfigAndStatusView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingInBoundPayerSetTierPricingView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "Billing_PartnerStatementItem",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerStatementTotalViewGPNew",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PayerPartnerTrans",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PayerPartnerFirstTrans",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PayerPartnerFirstTransAggregator",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingGPStage2",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingGPStageTotalView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerStatementTotalViewGPNew1",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "DSSPartnerBillingView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerStatementTotalViewGPNew2",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingTranTypeToMasterItem",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerContractGroups",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingMaintenanceFeeView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingGPStageTranSubTypeTotalView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerStatementTotalViewGPNew1EBU",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "AttachmentPartnerNumbers",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingHostingFeeView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingInBoundConfigAudit",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingMonthlyMinimumFeeView",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingOutBoundConfigAudit",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerContractFees",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerStatementTotalViewGP",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerStatementTotalViewGPNew1EBU1",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerStatementTotalViewGPNew1EBU1_Test",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerStatementTotalViewGPNewLive",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "Billing_PartnerPartnerCodeDualProcessing",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "Billing_PartnerPartnerCodeDualProcessing",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "Billing_PartnerStatementItemCredits",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "Billing_PartnerTranSubTypePayerNameTranslation",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "Billing_PayerPartnerTrans",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "DecemberPartnerMetaClaims",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "DssDimCHSPartnerCode",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingDirectionToItemNumber",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingGPStage1",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingGPStage3",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingPayerSetToItemNumber",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingStaticItemNumber",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingTranSubTypeToItemNumber",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerBillingTranTypeToItemNumber",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PartnerStatementItemAdjustment08162022",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "PayerPartnerTrans_Temp",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "rpt_MismatchDestinationPartner",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "rpt_MissingPartnerPartnerCode",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "rpt_MissingPartnerPartnerCode",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "rpt_PartnerBillingIntegrity",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "Test_PartnerStatementItem",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "Test_PayerPartnerTrans",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "tmort",
         "database": "reports",
         "table": "PartnerPortalMonthlyRpt",
         "column": "Partner",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "tmort",
         "database": "reports",
         "table": "PartnerStatementItemCredits",
         "column": "Partner",

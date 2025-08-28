@@ -1,107 +1,154 @@
 [
-  [
-    "bdd"
-  ],
-  [
-    "bireports"
-  ],
-  [
-    "chs"
-  ],
-  [
-    "common"
-  ],
-  [
-    "cred"
-  ],
-  [
-    "dci"
-  ],
-  [
-    "ddir"
-  ],
-  [
-    "dea"
-  ],
-  [
-    "dhmo"
-  ],
-  [
-    "dw_atm_dxc"
-  ],
-  [
-    "dw_dxc"
-  ],
-  [
-    "dw_dxc_dev"
-  ],
-  [
-    "dxcps"
-  ],
-  [
-    "entyDev"
-  ],
-  [
-    "erp"
-  ],
-  [
-    "erpDev"
-  ],
-  [
-    "ext_raw_ec"
-  ],
-  [
-    "lkr"
-  ],
-  [
-    "master"
-  ],
-  [
-    "merchant"
-  ],
-  [
-    "ns"
-  ],
-  [
-    "ntf"
-  ],
-  [
-    "pfs"
-  ],
-  [
-    "pnt"
-  ],
-  [
-    "ptp"
-  ],
-  [
-    "reports"
-  ],
-  [
-    "rpt"
-  ],
-  [
-    "sch"
-  ],
-  [
-    "schDev"
-  ],
-  [
-    "trx"
-  ],
-  [
-    "trxBrch"
-  ],
-  [
-    "trxDev"
-  ],
-  [
-    "trxQA"
-  ],
-  [
-    "trxTest"
-  ],
-  [
-    "trxWsdm"
-  ]
+  {
+    "schema": "dbo",
+    "database": "bdd"
+  },
+  {
+    "schema": "dbo",
+    "database": "bireports"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs"
+  },
+  {
+    "schema": "dbo",
+    "database": "common"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_dxc"
+  },
+  {
+    "schema": "bwyllie",
+    "database": "dw_dxc_dev"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps"
+  },
+  {
+    "schema": "dbo",
+    "database": "entyDev"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr"
+  },
+  {
+    "schema": "dbo",
+    "database": "master"
+  },
+  {
+    "schema": "entity",
+    "database": "master"
+  },
+  {
+    "schema": "payerportal",
+    "database": "master"
+  },
+  {
+    "schema": "dbo",
+    "database": "merchant"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns"
+  },
+  {
+    "schema": "dbo",
+    "database": "ntf"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt"
+  },
+  {
+    "schema": "dbo",
+    "database": "ptp"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt"
+  },
+  {
+    "schema": "dbo",
+    "database": "sch"
+  },
+  {
+    "schema": "dbo",
+    "database": "schDev"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm"
+  }
 ]

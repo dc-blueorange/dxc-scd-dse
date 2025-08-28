@@ -1,1902 +1,2377 @@
 [
-  [
-    "bdd",
-    "ClaimConnectClaimDeliveryFacts"
-  ],
-  [
-    "bireports",
-    "AccountRevenueDetail"
-  ],
-  [
-    "bireports",
-    "IdleAccount"
-  ],
-  [
-    "chs",
-    "ClaimPayment"
-  ],
-  [
-    "chs",
-    "ClaimPaymentClaim"
-  ],
-  [
-    "chs",
-    "ClaimPaymentClaimItem"
-  ],
-  [
-    "chs",
-    "ClaimPaymentRegistration"
-  ],
-  [
-    "chs",
-    "ClaimPaymentRegistrationHistory"
-  ],
-  [
-    "chs",
-    "ClaimStatusTracing_Contractors"
-  ],
-  [
-    "chs",
-    "DBA"
-  ],
-  [
-    "chs",
-    "MetaClaim"
-  ],
-  [
-    "chs",
-    "MetaFileNote"
-  ],
-  [
-    "chs",
-    "PartnerMessageRoutingExclude"
-  ],
-  [
-    "chs",
-    "PartnerMessageRoutingExcludeAudit"
-  ],
-  [
-    "chs",
-    "PartnerPartnerCodeBillingConfig"
-  ],
-  [
-    "chs",
-    "PartnerStatementItemAdjustment"
-  ],
-  [
-    "chs",
-    "PartnerStatementItemAdjustmentAudit"
-  ],
-  [
-    "chs",
-    "PartnerTranSubTypePayerNameTranslation"
-  ],
-  [
-    "chs",
-    "PartnerTranSubTypePayerNameTranslationAudit"
-  ],
-  [
-    "chs",
-    "RTServiceAudit"
-  ],
-  [
-    "chs",
-    "ServiceProperty"
-  ],
-  [
-    "chs",
-    "ServicePropertyAudit"
-  ],
-  [
-    "common",
-    "AlertSAServiceAudit"
-  ],
-  [
-    "common",
-    "BenefitSearchUpgrade_Aetna06062024"
-  ],
-  [
-    "common",
-    "ClientRevenueDetail"
-  ],
-  [
-    "common",
-    "CommissionStatement"
-  ],
-  [
-    "common",
-    "ContactUs"
-  ],
-  [
-    "common",
-    "ContactUsNote"
-  ],
-  [
-    "common",
-    "DebugAlert"
-  ],
-  [
-    "common",
-    "DmdFileUploadImage"
-  ],
-  [
-    "common",
-    "DmdFileUploadImageAudit"
-  ],
-  [
-    "common",
-    "DmdPmsGroup"
-  ],
-  [
-    "common",
-    "ERARegistration"
-  ],
-  [
-    "common",
-    "ERARegistrationAudit"
-  ],
-  [
-    "common",
-    "ERARoutingSummary"
-  ],
-  [
-    "common",
-    "Entity"
-  ],
-  [
-    "common",
-    "EntityAudit"
-  ],
-  [
-    "common",
-    "EntityDescriptor"
-  ],
-  [
-    "common",
-    "EntityGroup"
-  ],
-  [
-    "common",
-    "EntityGroupAudit"
-  ],
-  [
-    "common",
-    "GroupCommission"
-  ],
-  [
-    "common",
-    "GroupMerchant"
-  ],
-  [
-    "common",
-    "GroupPayer"
-  ],
-  [
-    "common",
-    "GroupPayerAudit"
-  ],
-  [
-    "common",
-    "GroupSupportUser"
-  ],
-  [
-    "common",
-    "GroupUserSecurity"
-  ],
-  [
-    "common",
-    "GroupUserSecurityAudit"
-  ],
-  [
-    "common",
-    "Groups"
-  ],
-  [
-    "common",
-    "GroupsAudit"
-  ],
-  [
-    "common",
-    "GroupsUsers"
-  ],
-  [
-    "common",
-    "GroupsUsersAudit"
-  ],
-  [
-    "common",
-    "Groups_Test"
-  ],
-  [
-    "common",
-    "MerchantApplication"
-  ],
-  [
-    "common",
-    "MerchantMigration"
-  ],
-  [
-    "common",
-    "MerchantMigrationLink"
-  ],
-  [
-    "common",
-    "MerchantMigrationSchedule"
-  ],
-  [
-    "common",
-    "MerchantMigrationServiceAudit"
-  ],
-  [
-    "common",
-    "MerchantServiceAudit_Arc"
-  ],
-  [
-    "common",
-    "MessagePortalConversationAudit"
-  ],
-  [
-    "common",
-    "MessagePortalConversationModelAudit"
-  ],
-  [
-    "common",
-    "MessagePortalMessage"
-  ],
-  [
-    "common",
-    "MessagePortalParticipants"
-  ],
-  [
-    "common",
-    "NotificationMessage"
-  ],
-  [
-    "common",
-    "NppesDocumentMeta"
-  ],
-  [
-    "common",
-    "Packages_added"
-  ],
-  [
-    "common",
-    "Packages_deleted"
-  ],
-  [
-    "common",
-    "PartnerSecurity"
-  ],
-  [
-    "common",
-    "PartnerSecurityAccess"
-  ],
-  [
-    "common",
-    "PartnerSecurityTokenConfig"
-  ],
-  [
-    "common",
-    "Payer"
-  ],
-  [
-    "common",
-    "PayerAddress"
-  ],
-  [
-    "common",
-    "PayerAddressAudit"
-  ],
-  [
-    "common",
-    "PayerAudit"
-  ],
-  [
-    "common",
-    "PayerDocType"
-  ],
-  [
-    "common",
-    "PayerEnrollment"
-  ],
-  [
-    "common",
-    "PayerMatchGroup"
-  ],
-  [
-    "common",
-    "PayerMatchGroupAudit"
-  ],
-  [
-    "common",
-    "PayerMatchStandardAddress"
-  ],
-  [
-    "common",
-    "PayerMatchStandardAddressAudit"
-  ],
-  [
-    "common",
-    "PayerMemberEnrollment"
-  ],
-  [
-    "common",
-    "Pms"
-  ],
-  [
-    "common",
-    "PmsGroup"
-  ],
-  [
-    "common",
-    "PmsGroupAudit"
-  ],
-  [
-    "common",
-    "PricingPolicy"
-  ],
-  [
-    "common",
-    "ProductGroupPackage"
-  ],
-  [
-    "common",
-    "ProductGroupPackage10062024_DB2225"
-  ],
-  [
-    "common",
-    "ProductPackageSetOverride"
-  ],
-  [
-    "common",
-    "ProductPartnerPackage"
-  ],
-  [
-    "common",
-    "ProviderDirectory"
-  ],
-  [
-    "common",
-    "ProviderDirectoryAppsetNoteAlert"
-  ],
-  [
-    "common",
-    "ProviderDirectoryHistory"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerDocument"
-  ],
-  [
-    "common",
-    "ProviderDirectoryPayerNoteHistory"
-  ],
-  [
-    "common",
-    "ProviderPayerEnrollment"
-  ],
-  [
-    "common",
-    "ProviderPayerEnrollmentAudit"
-  ],
-  [
-    "common",
-    "RTServiceAudit"
-  ],
-  [
-    "common",
-    "RecurringBills"
-  ],
-  [
-    "common",
-    "ReleaseGroup"
-  ],
-  [
-    "common",
-    "ReleaseGroupAudit"
-  ],
-  [
-    "common",
-    "ReleaseGroupType"
-  ],
-  [
-    "common",
-    "ReleaseGroupTypeAudit"
-  ],
-  [
-    "common",
-    "Reseller"
-  ],
-  [
-    "common",
-    "ResellerAudit"
-  ],
-  [
-    "common",
-    "Roles"
-  ],
-  [
-    "common",
-    "SalesLeadNote"
-  ],
-  [
-    "common",
-    "SalesUserAccessAssignment"
-  ],
-  [
-    "common",
-    "ScheduledEvent"
-  ],
-  [
-    "common",
-    "ServiceClient"
-  ],
-  [
-    "common",
-    "ServiceClientAccess"
-  ],
-  [
-    "common",
-    "ServiceClientPMS"
-  ],
-  [
-    "common",
-    "ServiceClientUser"
-  ],
-  [
-    "common",
-    "ServiceCode"
-  ],
-  [
-    "common",
-    "ServiceDowntime"
-  ],
-  [
-    "common",
-    "ServiceFee"
-  ],
-  [
-    "common",
-    "ServiceHostConfiguration"
-  ],
-  [
-    "common",
-    "ServiceProperty"
-  ],
-  [
-    "common",
-    "ServicePropertyAudit"
-  ],
-  [
-    "common",
-    "ServiceServiceCode"
-  ],
-  [
-    "common",
-    "ServiceStatus"
-  ],
-  [
-    "common",
-    "ServiceType"
-  ],
-  [
-    "common",
-    "SimpleFileTransferAudit"
-  ],
-  [
-    "common",
-    "StatementActivityLog"
-  ],
-  [
-    "common",
-    "StatementItem"
-  ],
-  [
-    "common",
-    "StatementItemSummary"
-  ],
-  [
-    "common",
-    "StatementItemSummaryTemp1"
-  ],
-  [
-    "common",
-    "SupportDataSourceRequest"
-  ],
-  [
-    "common",
-    "SupportEventOps"
-  ],
-  [
-    "common",
-    "SupportFunction"
-  ],
-  [
-    "common",
-    "SupportGroup"
-  ],
-  [
-    "common",
-    "SupportGroupFunction"
-  ],
-  [
-    "common",
-    "SupportGroupUser"
-  ],
-  [
-    "common",
-    "SupportNote"
-  ],
-  [
-    "common",
-    "SupportPayerSetGroup"
-  ],
-  [
-    "common",
-    "SupportRole"
-  ],
-  [
-    "common",
-    "SupportRole_Bak2"
-  ],
-  [
-    "common",
-    "SupportServiceCodePayerSet"
-  ],
-  [
-    "common",
-    "SupportTaskUser"
-  ],
-  [
-    "common",
-    "SupportTeam"
-  ],
-  [
-    "common",
-    "SupportTeamUser"
-  ],
-  [
-    "common",
-    "SupportUser"
-  ],
-  [
-    "common",
-    "SupportUserAudit"
-  ],
-  [
-    "common",
-    "SupportUserCommission"
-  ],
-  [
-    "common",
-    "SupportUserCommission_0318"
-  ],
-  [
-    "common",
-    "SupportUserConfig"
-  ],
-  [
-    "common",
-    "SupportUserLoginAudit"
-  ],
-  [
-    "common",
-    "SupportUserLoginChangeAudit"
-  ],
-  [
-    "common",
-    "SupportUserPasswordHistory"
-  ],
-  [
-    "common",
-    "Ticket"
-  ],
-  [
-    "common",
-    "TicketAppointment"
-  ],
-  [
-    "common",
-    "TicketAttachment"
-  ],
-  [
-    "common",
-    "TicketNote"
-  ],
-  [
-    "common",
-    "TicketNotification"
-  ],
-  [
-    "common",
-    "TicketStatusHistory"
-  ],
-  [
-    "common",
-    "TicketSubCategoryTypeHistory"
-  ],
-  [
-    "common",
-    "TicketSubcategory"
-  ],
-  [
-    "common",
-    "TicketSubcategoryHistory"
-  ],
-  [
-    "common",
-    "TicketUserAssignment"
-  ],
-  [
-    "common",
-    "UserAddress"
-  ],
-  [
-    "common",
-    "UserAddressAudit"
-  ],
-  [
-    "common",
-    "UserAlias"
-  ],
-  [
-    "common",
-    "UserAliasAudit"
-  ],
-  [
-    "common",
-    "UserLoginChangeAudit"
-  ],
-  [
-    "common",
-    "Users"
-  ],
-  [
-    "common",
-    "UsersAudit"
-  ],
-  [
-    "common",
-    "VIP"
-  ],
-  [
-    "common",
-    "pmsgroup_test"
-  ],
-  [
-    "common",
-    "providerdirectoryold"
-  ],
-  [
-    "common",
-    "supportrole_backup1115_1102AM"
-  ],
-  [
-    "common",
-    "supportrole_bak"
-  ],
-  [
-    "cred",
-    "ApplicationSet"
-  ],
-  [
-    "cred",
-    "ApplicationSetDocument"
-  ],
-  [
-    "cred",
-    "ApplicationSetDocumentMeta"
-  ],
-  [
-    "cred",
-    "ApplicationSetHistory"
-  ],
-  [
-    "cred",
-    "ApplicationSetSupportUserHistory"
-  ],
-  [
-    "cred",
-    "NPDBServiceAudit"
-  ],
-  [
-    "cred",
-    "OutreachPayerConfig"
-  ],
-  [
-    "cred",
-    "OutreachPayerConfigAudit"
-  ],
-  [
-    "cred",
-    "OutreachStaffGroupMembers"
-  ],
-  [
-    "cred",
-    "OutreachStaffGroupMembersAudit"
-  ],
-  [
-    "cred",
-    "PayerChecklistAnswer"
-  ],
-  [
-    "cred",
-    "PayerConfig"
-  ],
-  [
-    "cred",
-    "PayerEmailConfig"
-  ],
-  [
-    "cred",
-    "PayerTagValueConfig"
-  ],
-  [
-    "cred",
-    "PrimaryDataSourceConfig"
-  ],
-  [
-    "cred",
-    "PrimaryDataSourceLookupResponse"
-  ],
-  [
-    "cred",
-    "ProviderGroupDetail"
-  ],
-  [
-    "dci",
-    "BenefitSearchUpgrade"
-  ],
-  [
-    "dci",
-    "Claim"
-  ],
-  [
-    "dci",
-    "ClaimArchive"
-  ],
-  [
-    "dci",
-    "ClaimExtension"
-  ],
-  [
-    "dci",
-    "ClaimFileUpload"
-  ],
-  [
-    "dci",
-    "ClaimFileUploadAudit"
-  ],
-  [
-    "dci",
-    "ClaimFileUploadNote"
-  ],
-  [
-    "dci",
-    "ClaimHistory"
-  ],
-  [
-    "dci",
-    "ClaimItem"
-  ],
-  [
-    "dci",
-    "ClaimPayer"
-  ],
-  [
-    "dci",
-    "ClaimPayment"
-  ],
-  [
-    "dci",
-    "ClaimPaymentClaim"
-  ],
-  [
-    "dci",
-    "ClaimPaymentClaimItem"
-  ],
-  [
-    "dci",
-    "ClaimPaymentHistory"
-  ],
-  [
-    "dci",
-    "ClaimPaymentReport"
-  ],
-  [
-    "dci",
-    "ClaimPaymentReportClaim"
-  ],
-  [
-    "dci",
-    "ClaimResponse"
-  ],
-  [
-    "dci",
-    "OfficeResponse"
-  ],
-  [
-    "dci",
-    "OfficeResponseAudit"
-  ],
-  [
-    "dci",
-    "OpsAudit"
-  ],
-  [
-    "dci",
-    "PartnerClaimDeliveryOps"
-  ],
-  [
-    "dci",
-    "PartnerClaimDeliveryRegistration"
-  ],
-  [
-    "dci",
-    "PayerService"
-  ],
-  [
-    "dci",
-    "PayerServiceAudit"
-  ],
-  [
-    "dci",
-    "Procedure"
-  ],
-  [
-    "dci",
-    "ProcedureAudit"
-  ],
-  [
-    "dci",
-    "ProviderRegistration"
-  ],
-  [
-    "dci",
-    "RTBAWidgetUpdate"
-  ],
-  [
-    "dci",
-    "RTServiceAudit"
-  ],
-  [
-    "dci",
-    "SAServiceAudit"
-  ],
-  [
-    "dci",
-    "ServiceClientProperty"
-  ],
-  [
-    "dci",
-    "ServiceCredential"
-  ],
-  [
-    "dci",
-    "ServiceInfo"
-  ],
-  [
-    "dci",
-    "ServiceProperty"
-  ],
-  [
-    "dci",
-    "ServicePropertyAudit"
-  ],
-  [
-    "dci",
-    "ServiceTypeProcedure"
-  ],
-  [
-    "dci",
-    "SummaryAudit"
-  ],
-  [
-    "dci",
-    "XmlEdiErrorCode"
-  ],
-  [
-    "dci",
-    "arc_Claim_RTServiceAuditID_Delete_List"
-  ],
-  [
-    "dci",
-    "arc_Claim_RTServiceAuditID_Delete_ListClaim"
-  ],
-  [
-    "dci",
-    "arc_Claim_SAServiceAuditID_Delete_List"
-  ],
-  [
-    "dci",
-    "arc_Claim_SAServiceAuditID_Delete_ListClaim"
-  ],
-  [
-    "dci",
-    "arc_RTServiceAuditID_Archive_List"
-  ],
-  [
-    "dci",
-    "arc_SAServiceAuditID_Archive_List"
-  ],
-  [
-    "ddir",
-    "PracticeProfile"
-  ],
-  [
-    "ddir",
-    "PracticeProfileAudit"
-  ],
-  [
-    "ddir",
-    "PracticeService"
-  ],
-  [
-    "ddir",
-    "PracticeServiceAudit"
-  ],
-  [
-    "ddir",
-    "Service"
-  ],
-  [
-    "dea",
-    "Attachment"
-  ],
-  [
-    "dea",
-    "AttachmentHistory"
-  ],
-  [
-    "dea",
-    "AttachmentService"
-  ],
-  [
-    "dea",
-    "AttachmentServiceAudit"
-  ],
-  [
-    "dea",
-    "RTServiceAudit"
-  ],
-  [
-    "dea",
-    "SAServiceAudit"
-  ],
-  [
-    "dea",
-    "ServiceDowntime"
-  ],
-  [
-    "dea",
-    "ServiceHostConfiguration"
-  ],
-  [
-    "dea",
-    "ServiceProperty"
-  ],
-  [
-    "dea",
-    "ServicePropertyAudit"
-  ],
-  [
-    "dea",
-    "arc_Attachment_RTServiceAuditID_Delete_List"
-  ],
-  [
-    "dea",
-    "arc_Attachment_SAServiceAuditID_Delete_List"
-  ],
-  [
-    "dhmo",
-    "OfficeServiceClient"
-  ],
-  [
-    "dw_atm_dxc",
-    "chs_MetaClaim_Since2023"
-  ],
-  [
-    "dw_atm_dxc",
-    "cred_billingactivity"
-  ],
-  [
-    "dw_atm_dxc",
-    "dci_billingactivity"
-  ],
-  [
-    "dw_atm_dxc",
-    "dci_claim_6mos"
-  ],
-  [
-    "dw_atm_dxc",
-    "dci_rtserviceaudit_6mos"
-  ],
-  [
-    "dw_atm_dxc",
-    "dea_attachments_6mos"
-  ],
-  [
-    "dw_atm_dxc",
-    "pnt_billingactivity"
-  ],
-  [
-    "dw_dxc",
-    "DssCommissionEarnedPointsDetail_aud"
-  ],
-  [
-    "dw_dxc",
-    "DssSalesCommissionDetail_aud"
-  ],
-  [
-    "dw_dxc",
-    "DssSalesCommission_aud"
-  ],
-  [
-    "dw_dxc_dev",
-    "smilebrands_claim_status_report__dbt_tmp"
-  ],
-  [
-    "dxcps",
-    "FD_GlobalBIN"
-  ],
-  [
-    "dxcps",
-    "Payment_Type_T"
-  ],
-  [
-    "dxcps",
-    "Processor_T"
-  ],
-  [
-    "dxcps",
-    "Service_Plan_T"
-  ],
-  [
-    "dxcps",
-    "Service_T"
-  ],
-  [
-    "dxcps",
-    "User_T"
-  ],
-  [
-    "entyDev",
-    "Entities"
-  ],
-  [
-    "erp",
-    "ClientGLEntrySummary"
-  ],
-  [
-    "erp",
-    "ClientGLEntrySummaryAudit"
-  ],
-  [
-    "erp",
-    "ClientUsageSummary"
-  ],
-  [
-    "erp",
-    "ClientUsageSummaryAudit"
-  ],
-  [
-    "erp",
-    "ClientUsageSummary_20250128Backup"
-  ],
-  [
-    "erp",
-    "ClientUsageSummary_TEST"
-  ],
-  [
-    "erp",
-    "ERPAccountLookup"
-  ],
-  [
-    "erp",
-    "ERPAccountLookupAudit"
-  ],
-  [
-    "erp",
-    "ERPItemFeatureNameLookup"
-  ],
-  [
-    "erp",
-    "ERPItemFeatureNameLookupAudit"
-  ],
-  [
-    "erp",
-    "ERPItemLookup"
-  ],
-  [
-    "erp",
-    "ERPItemLookupAudit"
-  ],
-  [
-    "erp",
-    "ERPItemMasterItemLookup"
-  ],
-  [
-    "erp",
-    "ERPMasterItemLookup"
-  ],
-  [
-    "erp",
-    "ERPRecordTypeLookup"
-  ],
-  [
-    "erp",
-    "ERPRecordTypeLookupAudit"
-  ],
-  [
-    "erp",
-    "ERPSubsidiaryLookup"
-  ],
-  [
-    "erp",
-    "ERPSubsidiaryLookupAudit"
-  ],
-  [
-    "erpDev",
-    "ClientGLEntrySummary"
-  ],
-  [
-    "erpDev",
-    "ClientUsageSummary"
-  ],
-  [
-    "erpDev",
-    "ERPItemLookup"
-  ],
-  [
-    "erpDev",
-    "ERPItemMasterItemLookup"
-  ],
-  [
-    "erpDev",
-    "ERPMasterItemLookup"
-  ],
-  [
-    "erpDev",
-    "ERPRecordTypeLookup"
-  ],
-  [
-    "erpDev",
-    "ERPSubsidiaryLookup"
-  ],
-  [
-    "ext_raw_ec",
-    "dataconnectionpool"
-  ],
-  [
-    "ext_raw_ec",
-    "eligibilitydata"
-  ],
-  [
-    "ext_raw_ec",
-    "eligibilityschedule"
-  ],
-  [
-    "ext_raw_ec",
-    "errortype"
-  ],
-  [
-    "ext_raw_ec",
-    "payerproperty"
-  ],
-  [
-    "lkr",
-    "LR$LQ07M1755241406650_realtime_dci_transactions_outbound_vw"
-  ],
-  [
-    "lkr",
-    "LR$LQ7391755234095634_clearinghouse_claim_statuses"
-  ],
-  [
-    "lkr",
-    "LR$LQCDP1755266433236_dci_claim_statuses"
-  ],
-  [
-    "lkr",
-    "LR$LQPAC1755293594531_clearinghouse_enrollment_errors"
-  ],
-  [
-    "lkr",
-    "LR$LQPAC1755300938467_clearinghouse_enrollment_errors"
-  ],
-  [
-    "lkr",
-    "LR$LQRMC1755242563835_realtime_dci_transactions_inbound_vw"
-  ],
-  [
-    "master",
-    "Appointments"
-  ],
-  [
-    "master",
-    "ClearinghouseClaims"
-  ],
-  [
-    "master",
-    "DCIClaimFLATClaimsLifeCycles"
-  ],
-  [
-    "master",
-    "DCIClaimFLATClaimsLifeCyclesArchive"
-  ],
-  [
-    "master",
-    "DEAAttachmentFLATAttachmentsLifeCycles"
-  ],
-  [
-    "master",
-    "rptCLCtClaimDETClaimStatusDetailXDaysAged"
-  ],
-  [
-    "master",
-    "rptDCIClaimDETClaimsEnteredDetails"
-  ],
-  [
-    "master",
-    "rptDCIClaimDETUserResolvedClaimsDetail"
-  ],
-  [
-    "merchant",
-    "RTServiceAudit"
-  ],
-  [
-    "ns",
-    "Charge_copy"
-  ],
-  [
-    "ns",
-    "Customer_copy"
-  ],
-  [
-    "ns",
-    "Item_copy"
-  ],
-  [
-    "ns",
-    "TransactionLine_copy"
-  ],
-  [
-    "ns",
-    "Transaction_copy"
-  ],
-  [
-    "ntf",
-    "SAServiceAudit"
-  ],
-  [
-    "ntf",
-    "ServiceDowntime"
-  ],
-  [
-    "ntf",
-    "ServiceHostConfiguration"
-  ],
-  [
-    "ntf",
-    "ServiceProperty"
-  ],
-  [
-    "ntf",
-    "ServicePropertyAudit"
-  ],
-  [
-    "pfs",
-    "ApplicationDigest"
-  ],
-  [
-    "pfs",
-    "AuthorizationRequest"
-  ],
-  [
-    "pfs",
-    "AuthorizationRequestHistory"
-  ],
-  [
-    "pfs",
-    "AuthorizationResponse"
-  ],
-  [
-    "pfs",
-    "CreditApplication"
-  ],
-  [
-    "pfs",
-    "CreditApplicationHistory"
-  ],
-  [
-    "pfs",
-    "CreditOffer"
-  ],
-  [
-    "pfs",
-    "CreditPartner"
-  ],
-  [
-    "pfs",
-    "CreditReport"
-  ],
-  [
-    "pfs",
-    "PFSGroup"
-  ],
-  [
-    "pfs",
-    "PFSGroupHistory"
-  ],
-  [
-    "pfs",
-    "PartnerCreditPlan"
-  ],
-  [
-    "pfs",
-    "PartnerError"
-  ],
-  [
-    "pfs",
-    "RTServiceAudit"
-  ],
-  [
-    "pfs",
-    "SAServiceAudit"
-  ],
-  [
-    "pfs",
-    "ServiceProperty"
-  ],
-  [
-    "pfs",
-    "ServicePropertyAudit"
-  ],
-  [
-    "pfs",
-    "Settlement"
-  ],
-  [
-    "pfs",
-    "SettlementHistory"
-  ],
-  [
-    "pnt",
-    "PntGroup"
-  ],
-  [
-    "pnt",
-    "PntGroupHistory"
-  ],
-  [
-    "pnt",
-    "RTServiceAudit"
-  ],
-  [
-    "pnt",
-    "SAServiceAudit"
-  ],
-  [
-    "pnt",
-    "ServiceDowntime"
-  ],
-  [
-    "pnt",
-    "ServiceHostConfiguration"
-  ],
-  [
-    "pnt",
-    "ServiceProperty"
-  ],
-  [
-    "pnt",
-    "ServicePropertyAudit"
-  ],
-  [
-    "pnt",
-    "Statement"
-  ],
-  [
-    "pnt",
-    "StatementFile"
-  ],
-  [
-    "pnt",
-    "StatementFileAudit"
-  ],
-  [
-    "pnt",
-    "StatementFileNote"
-  ],
-  [
-    "pnt",
-    "StatementHistory"
-  ],
-  [
-    "pnt",
-    "StatementPageCount"
-  ],
-  [
-    "pnt",
-    "StatementReminder"
-  ],
-  [
-    "ptp",
-    "ProviderPayment"
-  ],
-  [
-    "reports",
-    "Billing_StatementActivityLog"
-  ],
-  [
-    "reports",
-    "ClaimConnectClaimDeliveryFacts"
-  ],
-  [
-    "reports",
-    "Claims_status40"
-  ],
-  [
-    "reports",
-    "CommissionRates"
-  ],
-  [
-    "reports",
-    "CommissionSplitTemp"
-  ],
-  [
-    "reports",
-    "CredReports"
-  ],
-  [
-    "reports",
-    "DSSCommissionAuditbyTin"
-  ],
-  [
-    "reports",
-    "DssCommissionEarnedPoints"
-  ],
-  [
-    "reports",
-    "DssCommissionEarnedPoints2"
-  ],
-  [
-    "reports",
-    "DssCommissionEarnedPointsDetail"
-  ],
-  [
-    "reports",
-    "DssCommissionEarnedPointsDetail0218"
-  ],
-  [
-    "reports",
-    "DssCommissionEarnedPointsDetail2"
-  ],
-  [
-    "reports",
-    "DssCommissionEarnedPointsDetailbkup"
-  ],
-  [
-    "reports",
-    "DssFDResidualReport"
-  ],
-  [
-    "reports",
-    "DssFirstDataResidual"
-  ],
-  [
-    "reports",
-    "DssFonalitySupportSum"
-  ],
-  [
-    "reports",
-    "DssGroup"
-  ],
-  [
-    "reports",
-    "DssGroupCommissionCalc"
-  ],
-  [
-    "reports",
-    "DssGroupCommissionCalcDaily"
-  ],
-  [
-    "reports",
-    "DssSalesCommission"
-  ],
-  [
-    "reports",
-    "DssSalesCommission032018"
-  ],
-  [
-    "reports",
-    "DssSalesCommissionDetail"
-  ],
-  [
-    "reports",
-    "DssSalesCommissionDetail012018"
-  ],
-  [
-    "reports",
-    "DssSalesCommissionDetail0218"
-  ],
-  [
-    "reports",
-    "DssSalesCommissionTempA"
-  ],
-  [
-    "reports",
-    "DssSalesCommissionTempB"
-  ],
-  [
-    "reports",
-    "DssStatementItemSummary"
-  ],
-  [
-    "reports",
-    "DssSupportUserProfile"
-  ],
-  [
-    "reports",
-    "DssVIP"
-  ],
-  [
-    "reports",
-    "EncountersClaims"
-  ],
-  [
-    "reports",
-    "GEDCclaims"
-  ],
-  [
-    "reports",
-    "GEDFileSummary"
-  ],
-  [
-    "reports",
-    "GPMissingItems"
-  ],
-  [
-    "reports",
-    "GroupActivity"
-  ],
-  [
-    "reports",
-    "GroupTransSummaryType"
-  ],
-  [
-    "reports",
-    "MacroReport"
-  ],
-  [
-    "reports",
-    "March 2021A"
-  ],
-  [
-    "reports",
-    "NEASubscriptionAggregation"
-  ],
-  [
-    "reports",
-    "OldClaims"
-  ],
-  [
-    "reports",
-    "PartnerStatementItemAdjustment08162022"
-  ],
-  [
-    "reports",
-    "RTServiceAudit"
-  ],
-  [
-    "reports",
-    "RTServiceReports"
-  ],
-  [
-    "reports",
-    "RTTrans"
-  ],
-  [
-    "reports",
-    "Residual_New"
-  ],
-  [
-    "reports",
-    "Residual_New06202016_newcolumn "
-  ],
-  [
-    "reports",
-    "Residual_New_10212015"
-  ],
-  [
-    "reports",
-    "Residual_New_Audit"
-  ],
-  [
-    "reports",
-    "Residual_New_Audit02172017"
-  ],
-  [
-    "reports",
-    "Residual_New_old"
-  ],
-  [
-    "reports",
-    "Residual_backup_012115"
-  ],
-  [
-    "reports",
-    "Residual_backup_022315"
-  ],
-  [
-    "reports",
-    "SAServiceAudit"
-  ],
-  [
-    "reports",
-    "ServiceDowntime"
-  ],
-  [
-    "reports",
-    "ServiceFailure"
-  ],
-  [
-    "reports",
-    "ServiceHostConfiguration"
-  ],
-  [
-    "reports",
-    "ServiceProperty"
-  ],
-  [
-    "reports",
-    "ServicePropertyAudit"
-  ],
-  [
-    "reports",
-    "StatementItemSummary"
-  ],
-  [
-    "reports",
-    "SupportACD"
-  ],
-  [
-    "reports",
-    "SupportCDR"
-  ],
-  [
-    "reports",
-    "TEST_DssSalesCommission"
-  ],
-  [
-    "reports",
-    "TempDenticonUsers"
-  ],
-  [
-    "reports",
-    "commreport"
-  ],
-  [
-    "reports",
-    "dfcgroups"
-  ],
-  [
-    "reports",
-    "residual"
-  ],
-  [
-    "reports",
-    "residual_old"
-  ],
-  [
-    "reports",
-    "rpt_AvgRTtrans"
-  ],
-  [
-    "reports",
-    "rpt_GHI_Activity"
-  ],
-  [
-    "reports",
-    "rpt_NewActivity"
-  ],
-  [
-    "reports",
-    "rpt_PartnerBillingIntegrity"
-  ],
-  [
-    "reports",
-    "supportFonalityCDRTmp"
-  ],
-  [
-    "reports",
-    "temp_DSO_Claims"
-  ],
-  [
-    "reports",
-    "temp_DSO_Claims_TransactionEvents"
-  ],
-  [
-    "reports",
-    "temp_DSO_Cred"
-  ],
-  [
-    "reports",
-    "temp_DSO_ERA"
-  ],
-  [
-    "reports",
-    "temp_DSO_PatStmt"
-  ],
-  [
-    "reports",
-    "temp_DSO_RTClaims"
-  ],
-  [
-    "reports",
-    "temp_DSO_RTCount"
-  ],
-  [
-    "reports",
-    "temp_DSO_Subscription_ClientSubscriptionEvents"
-  ],
-  [
-    "reports",
-    "temptom"
-  ],
-  [
-    "reports",
-    "tomdcp20110404load"
-  ],
-  [
-    "reports",
-    "tomtemp28"
-  ],
-  [
-    "rpt",
-    "SSISDistributionClients"
-  ],
-  [
-    "rpt",
-    "SSISDistributionClientsAudit"
-  ],
-  [
-    "rpt",
-    "SSISDistributionClientsEmails"
-  ],
-  [
-    "rpt",
-    "SSISDistributionClientsEmailsAudit"
-  ],
-  [
-    "rpt",
-    "SSISDistributionClientsFTPDistributions"
-  ],
-  [
-    "rpt",
-    "SSISDistributionClientsFTPDistributionsAudit"
-  ],
-  [
-    "rpt",
-    "SSISGrandfatheredReportsMap"
-  ],
-  [
-    "rpt",
-    "SSISReportClientTypes"
-  ],
-  [
-    "rpt",
-    "SSISTemplateReportFeatureNames"
-  ],
-  [
-    "rpt",
-    "SSISTemplateReports"
-  ],
-  [
-    "sch",
-    "ProcedureSchedules"
-  ],
-  [
-    "sch",
-    "ProcedureSchedulesAudit"
-  ],
-  [
-    "schDev",
-    "ProcedureSchedules"
-  ],
-  [
-    "trx",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trx",
-    "ClientTransactions"
-  ],
-  [
-    "trx",
-    "TransactionDimensions"
-  ],
-  [
-    "trx",
-    "TransactionEvents"
-  ],
-  [
-    "trxBrch",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxBrch",
-    "ClientTransactions"
-  ],
-  [
-    "trxBrch",
-    "TransactionEvents"
-  ],
-  [
-    "trxDev",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxDev",
-    "ClientTransactions"
-  ],
-  [
-    "trxDev",
-    "TransactionDimensions"
-  ],
-  [
-    "trxDev",
-    "TransactionEvents"
-  ],
-  [
-    "trxQA",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxQA",
-    "ClientTransactions"
-  ],
-  [
-    "trxQA",
-    "TransactionDimensions"
-  ],
-  [
-    "trxQA",
-    "TransactionEventClientUsage"
-  ],
-  [
-    "trxQA",
-    "TransactionEvents"
-  ],
-  [
-    "trxTest",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxTest",
-    "ClientTransactions"
-  ],
-  [
-    "trxTest",
-    "TransactionEvents"
-  ],
-  [
-    "trxWsdm",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxWsdm",
-    "ClientTransactions"
-  ],
-  [
-    "trxWsdm",
-    "TransactionDimensions"
-  ],
-  [
-    "trxWsdm",
-    "TransactionEventClientUsage"
-  ],
-  [
-    "trxWsdm",
-    "TransactionEvents"
-  ]
+  {
+    "schema": "dbo",
+    "database": "bdd",
+    "table": "ClaimConnectClaimDeliveryFacts"
+  },
+  {
+    "schema": "dbo",
+    "database": "bireports",
+    "table": "AccountRevenueDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "bireports",
+    "table": "IdleAccount"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPayment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentClaimItem"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentRegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentRegistrationHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimStatusTracing_Contractors"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "DBA"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaFileNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerMessageRoutingExclude"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerMessageRoutingExcludeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPartnerCodeBillingConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerStatementItemAdjustment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerStatementItemAdjustmentAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerTranSubTypePayerNameTranslation"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerTranSubTypePayerNameTranslationAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ServiceProperty"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ServicePropertyAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "AlertSAServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "BenefitSearchUpgrade_Aetna06062024"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ClientRevenueDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "CommissionStatement"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ContactUs"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ContactUsNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "DebugAlert"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "DmdFileUploadImage"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "DmdFileUploadImageAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "DmdPmsGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ERARegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ERARegistrationAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ERARoutingSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Entity"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "EntityAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "EntityDescriptor"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "EntityGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "EntityGroupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupCommission"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupMerchant"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupPayer"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupPayerAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupSupportUser"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupUserSecurity"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupUserSecurityAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Groups"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupsAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupsUsers"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupsUsersAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Groups_Test"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MerchantApplication"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MerchantMigration"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MerchantMigrationLink"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MerchantMigrationSchedule"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MerchantMigrationServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MerchantServiceAudit_Arc"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalConversationAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalConversationModelAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalMessage"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalParticipants"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NotificationMessage"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesDocumentMeta"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Packages_added"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Packages_deleted"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerSecurity"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerSecurityAccess"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerSecurityTokenConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Payer"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerAddressAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerDocType"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerEnrollment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatchGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatchGroupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatchStandardAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatchStandardAddressAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMemberEnrollment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Pms"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PmsGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PmsGroupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PricingPolicy"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductGroupPackage"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductGroupPackage10062024_DB2225"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductPackageSetOverride"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductPartnerPackage"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryAppsetNoteAlert"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerDocument"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryPayerNoteHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderPayerEnrollment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderPayerEnrollmentAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "RecurringBills"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ReleaseGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ReleaseGroupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ReleaseGroupType"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ReleaseGroupTypeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Reseller"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ResellerAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Roles"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SalesLeadNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SalesUserAccessAssignment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ScheduledEvent"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceClient"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceClientAccess"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceClientPMS"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceClientUser"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceDowntime"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceFee"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceHostConfiguration"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceProperty"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServicePropertyAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceServiceCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceStatus"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ServiceType"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SimpleFileTransferAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "StatementActivityLog"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "StatementItem"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "StatementItemSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "StatementItemSummaryTemp1"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportDataSourceRequest"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportEventOps"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportFunction"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportGroupFunction"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportGroupUser"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportPayerSetGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportRole"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportRole_Bak2"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportServiceCodePayerSet"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportTaskUser"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportTeam"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportTeamUser"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUser"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUserAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUserCommission"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUserCommission_0318"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUserConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUserLoginAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUserLoginChangeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUserPasswordHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Ticket"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "TicketAppointment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "TicketAttachment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "TicketNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "TicketNotification"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "TicketStatusHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "TicketSubCategoryTypeHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "TicketSubcategory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "TicketSubcategoryHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "TicketUserAssignment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UserAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UserAddressAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UserAlias"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UserAliasAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UserLoginChangeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Users"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UsersAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "VIP"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "pmsgroup_test"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "providerdirectoryold"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "supportrole_backup1115_1102AM"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "supportrole_bak"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSet"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetDocument"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetDocumentMeta"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetSupportUserHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "NPDBServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "OutreachPayerConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "OutreachPayerConfigAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "OutreachStaffGroupMembers"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "OutreachStaffGroupMembersAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerChecklistAnswer"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerEmailConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerTagValueConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PrimaryDataSourceConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PrimaryDataSourceLookupResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderGroupDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "BenefitSearchUpgrade"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "Claim"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimArchive"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimExtension"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimFileUpload"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimFileUploadAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimFileUploadNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimItem"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPayer"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPayment"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentClaimItem"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentReport"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentReportClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "OfficeResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "OfficeResponseAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "OpsAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "PartnerClaimDeliveryOps"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "PartnerClaimDeliveryRegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "PayerService"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "PayerServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "Procedure"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ProcedureAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ProviderRegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "RTBAWidgetUpdate"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "SAServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ServiceClientProperty"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ServiceCredential"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ServiceInfo"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ServiceProperty"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ServicePropertyAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ServiceTypeProcedure"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "SummaryAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "XmlEdiErrorCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_Claim_RTServiceAuditID_Delete_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_Claim_RTServiceAuditID_Delete_ListClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_Claim_SAServiceAuditID_Delete_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_Claim_SAServiceAuditID_Delete_ListClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_RTServiceAuditID_Archive_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "arc_SAServiceAuditID_Archive_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeProfile"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeProfileAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeService"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "PracticeServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ddir",
+    "table": "Service"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "Attachment"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "AttachmentHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "AttachmentService"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "AttachmentServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "SAServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "ServiceDowntime"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "ServiceHostConfiguration"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "ServiceProperty"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "ServicePropertyAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "arc_Attachment_RTServiceAuditID_Delete_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "arc_Attachment_SAServiceAuditID_Delete_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "OfficeServiceClient"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "chs_MetaClaim_Since2023"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "cred_billingactivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "dci_billingactivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "dci_claim_6mos"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "dci_rtserviceaudit_6mos"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "dea_attachments_6mos"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "pnt_billingactivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_dxc",
+    "table": "DssCommissionEarnedPointsDetail_aud"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_dxc",
+    "table": "DssSalesCommissionDetail_aud"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_dxc",
+    "table": "DssSalesCommission_aud"
+  },
+  {
+    "schema": "bwyllie",
+    "database": "dw_dxc_dev",
+    "table": "smilebrands_claim_status_report__dbt_tmp"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "FD_GlobalBIN"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Payment_Type_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Processor_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Service_Plan_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Service_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "User_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "entyDev",
+    "table": "Entities"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientGLEntrySummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientGLEntrySummaryAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientUsageSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientUsageSummaryAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientUsageSummary_20250128Backup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientUsageSummary_TEST"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPAccountLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPAccountLookupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPItemFeatureNameLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPItemFeatureNameLookupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPItemLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPItemLookupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPItemMasterItemLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPMasterItemLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPRecordTypeLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPRecordTypeLookupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPSubsidiaryLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPSubsidiaryLookupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ClientGLEntrySummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ClientUsageSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ERPItemLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ERPItemMasterItemLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ERPMasterItemLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ERPRecordTypeLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ERPSubsidiaryLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "dataconnectionpool"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "eligibilitydata"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "eligibilityschedule"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "errortype"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "payerproperty"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQ07M1755241406650_realtime_dci_transactions_outbound_vw"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQCDP1755266433236_dci_claim_statuses"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQRMC1755242563835_realtime_dci_transactions_inbound_vw"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "DCIClaimFLATClaimsLifeCycles"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "DCIClaimFLATClaimsLifeCyclesArchive"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "DEAAttachmentFLATAttachmentsLifeCycles"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "rptCLCtClaimDETClaimStatusDetailXDaysAged"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "rptDCIClaimDETClaimsEnteredDetails"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "rptDCIClaimDETUserResolvedClaimsDetail"
+  },
+  {
+    "schema": "entity",
+    "database": "master",
+    "table": "Appointments"
+  },
+  {
+    "schema": "payerportal",
+    "database": "master",
+    "table": "ClearinghouseClaims"
+  },
+  {
+    "schema": "dbo",
+    "database": "merchant",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Charge_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Customer_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Item_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "TransactionLine_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Transaction_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ntf",
+    "table": "SAServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ntf",
+    "table": "ServiceDowntime"
+  },
+  {
+    "schema": "dbo",
+    "database": "ntf",
+    "table": "ServiceHostConfiguration"
+  },
+  {
+    "schema": "dbo",
+    "database": "ntf",
+    "table": "ServiceProperty"
+  },
+  {
+    "schema": "dbo",
+    "database": "ntf",
+    "table": "ServicePropertyAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "ApplicationDigest"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "AuthorizationRequest"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "AuthorizationRequestHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "AuthorizationResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "CreditApplication"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "CreditApplicationHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "CreditOffer"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "CreditPartner"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "CreditReport"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "PFSGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "PFSGroupHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "PartnerCreditPlan"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "PartnerError"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "SAServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "ServiceProperty"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "ServicePropertyAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "Settlement"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "SettlementHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "PntGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "PntGroupHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "SAServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "ServiceDowntime"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "ServiceHostConfiguration"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "ServiceProperty"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "ServicePropertyAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "Statement"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "StatementFile"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "StatementFileAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "StatementFileNote"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "StatementHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "StatementPageCount"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "StatementReminder"
+  },
+  {
+    "schema": "dbo",
+    "database": "ptp",
+    "table": "ProviderPayment"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Billing_StatementActivityLog"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ClaimConnectClaimDeliveryFacts"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Claims_status40"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "CommissionRates"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "CommissionSplitTemp"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "CredReports"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DSSCommissionAuditbyTin"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssCommissionEarnedPoints"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssCommissionEarnedPoints2"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssCommissionEarnedPointsDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssCommissionEarnedPointsDetail0218"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssCommissionEarnedPointsDetail2"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssCommissionEarnedPointsDetailbkup"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssFDResidualReport"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssFirstDataResidual"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssFonalitySupportSum"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssGroupCommissionCalc"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssGroupCommissionCalcDaily"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssSalesCommission"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssSalesCommission032018"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssSalesCommissionDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssSalesCommissionDetail012018"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssSalesCommissionDetail0218"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssSalesCommissionTempA"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssSalesCommissionTempB"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssStatementItemSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssSupportUserProfile"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "EncountersClaims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GPMissingItems"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GroupActivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GroupTransSummaryType"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "MacroReport"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "March 2021A"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "NEASubscriptionAggregation"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "OldClaims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PartnerStatementItemAdjustment08162022"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "RTServiceReports"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "RTTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New06202016_newcolumn "
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New_10212015"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New_Audit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New_Audit02172017"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_backup_012115"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_backup_022315"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "SAServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ServiceDowntime"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ServiceFailure"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ServiceHostConfiguration"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ServiceProperty"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ServicePropertyAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "SupportACD"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "SupportCDR"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "TEST_DssSalesCommission"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "commreport"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "residual"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "residual_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_AvgRTtrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_GHI_Activity"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_NewActivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_PartnerBillingIntegrity"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "supportFonalityCDRTmp"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Claims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Claims_TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Cred"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_ERA"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_PatStmt"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_RTClaims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_RTCount"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Subscription_ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temptom"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "tomtemp28"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "DssVIP"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "GEDCclaims"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "GEDFileSummary"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "StatementItemSummary"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "TempDenticonUsers"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "dfcgroups"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "tomdcp20110404load"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISDistributionClients"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISDistributionClientsAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISDistributionClientsEmails"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISDistributionClientsEmailsAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISDistributionClientsFTPDistributions"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISDistributionClientsFTPDistributionsAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISGrandfatheredReportsMap"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISReportClientTypes"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISTemplateReportFeatureNames"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "SSISTemplateReports"
+  },
+  {
+    "schema": "dbo",
+    "database": "sch",
+    "table": "ProcedureSchedules"
+  },
+  {
+    "schema": "dbo",
+    "database": "sch",
+    "table": "ProcedureSchedulesAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "schDev",
+    "table": "ProcedureSchedules"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "TransactionDimensions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "TransactionDimensions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "TransactionDimensions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "TransactionEventClientUsage"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "TransactionDimensions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "TransactionEventClientUsage"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "TransactionEvents"
+  }
 ]

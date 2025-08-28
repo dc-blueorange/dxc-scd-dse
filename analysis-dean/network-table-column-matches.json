@@ -1,1286 +1,1612 @@
 [
-  [
-    "chs",
-    "ClaimDigest"
-  ],
-  [
-    "chs",
-    "ClaimEraDigest"
-  ],
-  [
-    "chs",
-    "ClaimPayment"
-  ],
-  [
-    "chs",
-    "ClaimPaymentDigest"
-  ],
-  [
-    "chs",
-    "ClaimPaymentRegistration"
-  ],
-  [
-    "chs",
-    "ClaimPaymentRegistrationHistory"
-  ],
-  [
-    "chs",
-    "ClaimStatusTracing"
-  ],
-  [
-    "chs",
-    "ClaimStatusTracingAudit"
-  ],
-  [
-    "chs",
-    "ClaimStatusTracing_Facility"
-  ],
-  [
-    "chs",
-    "DBA"
-  ],
-  [
-    "chs",
-    "FileDocumentMap"
-  ],
-  [
-    "chs",
-    "MetaAck"
-  ],
-  [
-    "chs",
-    "MetaAppAdvice"
-  ],
-  [
-    "chs",
-    "MetaAttachment"
-  ],
-  [
-    "chs",
-    "MetaBankPayment"
-  ],
-  [
-    "chs",
-    "MetaClaim"
-  ],
-  [
-    "chs",
-    "MetaClaimPayment"
-  ],
-  [
-    "chs",
-    "MetaClaimStatus"
-  ],
-  [
-    "chs",
-    "MetaClaimStatusRequest"
-  ],
-  [
-    "chs",
-    "MetaEligRequest"
-  ],
-  [
-    "chs",
-    "MetaEligResponse"
-  ],
-  [
-    "chs",
-    "MetaEnrollment"
-  ],
-  [
-    "chs",
-    "MetaFile"
-  ],
-  [
-    "chs",
-    "MetaFileAudit"
-  ],
-  [
-    "chs",
-    "MetaImplAck"
-  ],
-  [
-    "chs",
-    "MetaOfficeResponse"
-  ],
-  [
-    "chs",
-    "MetaTransportAudit"
-  ],
-  [
-    "chs",
-    "NonCompliantFile"
-  ],
-  [
-    "chs",
-    "PartnerAdjustmentProcessType"
-  ],
-  [
-    "chs",
-    "PartnerBankAccount"
-  ],
-  [
-    "chs",
-    "PartnerBillingActivity"
-  ],
-  [
-    "chs",
-    "PartnerBillingActivity_old"
-  ],
-  [
-    "chs",
-    "PartnerClaimResubmit"
-  ],
-  [
-    "chs",
-    "PartnerCode"
-  ],
-  [
-    "chs",
-    "PartnerConfigType"
-  ],
-  [
-    "chs",
-    "PartnerDestinationResponseConfig"
-  ],
-  [
-    "chs",
-    "PartnerDowntime"
-  ],
-  [
-    "chs",
-    "PartnerLineCtrlConfig"
-  ],
-  [
-    "chs",
-    "PartnerMessageRoutingExclude"
-  ],
-  [
-    "chs",
-    "PartnerMessageRoutingExcludeAudit"
-  ],
-  [
-    "chs",
-    "PartnerMessageRoutingExcludeInfo"
-  ],
-  [
-    "chs",
-    "PartnerPartnerCode"
-  ],
-  [
-    "chs",
-    "PartnerPartnerCodeAudit"
-  ],
-  [
-    "chs",
-    "PartnerPartnerCodeBillingConfig"
-  ],
-  [
-    "chs",
-    "PartnerPayerDestUpgradeConfig"
-  ],
-  [
-    "chs",
-    "PartnerPayerMatchUpgrade"
-  ],
-  [
-    "chs",
-    "PartnerPayerSet"
-  ],
-  [
-    "chs",
-    "PartnerPayerSetAudit"
-  ],
-  [
-    "chs",
-    "PartnerPrice"
-  ],
-  [
-    "chs",
-    "PartnerPriceAudit"
-  ],
-  [
-    "chs",
-    "PartnerStatementItem"
-  ],
-  [
-    "chs",
-    "PartnerStatementItemAdjustment"
-  ],
-  [
-    "chs",
-    "PartnerStatementItemAdjustmentAudit"
-  ],
-  [
-    "chs",
-    "PartnerStatementItemAudit"
-  ],
-  [
-    "chs",
-    "PartnerStatementItemSummary"
-  ],
-  [
-    "chs",
-    "PartnerSubAccount"
-  ],
-  [
-    "chs",
-    "PartnerTranSubType"
-  ],
-  [
-    "chs",
-    "PartnerTranSubTypeConfigType"
-  ],
-  [
-    "chs",
-    "PartnerTranSubTypeConfiguration"
-  ],
-  [
-    "chs",
-    "PartnerTranSubTypePayerNameTranslation"
-  ],
-  [
-    "chs",
-    "PartnerTranSubTypePayerNameTranslationAudit"
-  ],
-  [
-    "chs",
-    "PartnerTranSubTypeStatus"
-  ],
-  [
-    "chs",
-    "PartnerTranType"
-  ],
-  [
-    "chs",
-    "PartnerWidgetDeliveryOps"
-  ],
-  [
-    "chs",
-    "PartnerWidgetDeliveryRegistration"
-  ],
-  [
-    "chs",
-    "PayerClaimPrice"
-  ],
-  [
-    "chs",
-    "PayerClaimPriceAudit"
-  ],
-  [
-    "chs",
-    "PayerPartnerCode"
-  ],
-  [
-    "chs",
-    "PayerPartnerCodeAudit"
-  ],
-  [
-    "chs",
-    "ProcessInfo"
-  ],
-  [
-    "chs",
-    "ProviderPartnerMap"
-  ],
-  [
-    "chs",
-    "RuleConfig"
-  ],
-  [
-    "chs",
-    "SourceDestConfig"
-  ],
-  [
-    "chs",
-    "TxIDGenerator"
-  ],
-  [
-    "common",
-    "AppAlert"
-  ],
-  [
-    "common",
-    "EHGGroupKeyToPID"
-  ],
-  [
-    "common",
-    "EHGGroupKeyToPID_DXE"
-  ],
-  [
-    "common",
-    "ERARegistration"
-  ],
-  [
-    "common",
-    "ERARegistrationAudit"
-  ],
-  [
-    "common",
-    "ERARoutingDetail"
-  ],
-  [
-    "common",
-    "ERARoutingInformation"
-  ],
-  [
-    "common",
-    "ERARoutingSummary"
-  ],
-  [
-    "common",
-    "ERASegmentDefault"
-  ],
-  [
-    "common",
-    "GroupPartnerDisplay"
-  ],
-  [
-    "common",
-    "GroupRegTierSelection"
-  ],
-  [
-    "common",
-    "MessagePortalConversationAudit"
-  ],
-  [
-    "common",
-    "MessagePortalConversationModelAudit"
-  ],
-  [
-    "common",
-    "Messages"
-  ],
-  [
-    "common",
-    "Partner"
-  ],
-  [
-    "common",
-    "PartnerCaseConfig"
-  ],
-  [
-    "common",
-    "PartnerConfigType"
-  ],
-  [
-    "common",
-    "PartnerLoginConfig"
-  ],
-  [
-    "common",
-    "PartnerRegistrationCode"
-  ],
-  [
-    "common",
-    "PartnerSecurity"
-  ],
-  [
-    "common",
-    "PartnerSecurityAccess"
-  ],
-  [
-    "common",
-    "PartnerSecurityTokenConfig"
-  ],
-  [
-    "common",
-    "PartnerTranSubType"
-  ],
-  [
-    "common",
-    "PartnerTranSubTypeConfigType"
-  ],
-  [
-    "common",
-    "PartnerTranSubTypeConfiguration"
-  ],
-  [
-    "common",
-    "PartnerTranType"
-  ],
-  [
-    "common",
-    "ProductCombination"
-  ],
-  [
-    "common",
-    "ProductFeaturePromoOffer"
-  ],
-  [
-    "common",
-    "ProductGroupPackage"
-  ],
-  [
-    "common",
-    "ProductGroupPackage10062024_DB2225"
-  ],
-  [
-    "common",
-    "ProductPackageFeatures"
-  ],
-  [
-    "common",
-    "ProductPartnerPackage"
-  ],
-  [
-    "common",
-    "ProductPartnerRegistration"
-  ],
-  [
-    "common",
-    "ProductPartnerRegistrationFeature"
-  ],
-  [
-    "common",
-    "ProviderDirectoryLocation"
-  ],
-  [
-    "common",
-    "ProviderDirectoryLocationCompare"
-  ],
-  [
-    "common",
-    "ProviderPayerEnrollment"
-  ],
-  [
-    "common",
-    "ProviderPayerEnrollmentAudit"
-  ],
-  [
-    "common",
-    "SalesCampaign"
-  ],
-  [
-    "common",
-    "SupportUser"
-  ],
-  [
-    "common",
-    "SupportUserAudit"
-  ],
-  [
-    "common",
-    "UserLoginAudit"
-  ],
-  [
-    "common",
-    "Users"
-  ],
-  [
-    "common",
-    "UsersAudit"
-  ],
-  [
-    "cred",
-    "PayerConfig"
-  ],
-  [
-    "cred",
-    "PayerCredDashboardConfig"
-  ],
-  [
-    "cred",
-    "PayerForm"
-  ],
-  [
-    "cred",
-    "ProviderDetail"
-  ],
-  [
-    "cred",
-    "ProviderSiteDetail"
-  ],
-  [
-    "dci",
-    "Claim"
-  ],
-  [
-    "dci",
-    "ClaimFileUpload"
-  ],
-  [
-    "dci",
-    "ClaimFileUploadAudit"
-  ],
-  [
-    "dci",
-    "ClaimPayment"
-  ],
-  [
-    "dci",
-    "ClaimPaymentReport"
-  ],
-  [
-    "dci",
-    "ClaimStatusUpgrade"
-  ],
-  [
-    "dci",
-    "PartnerBillingActivity"
-  ],
-  [
-    "dci",
-    "PartnerBillingActivity_old"
-  ],
-  [
-    "dci",
-    "PartnerERAAdjustment"
-  ],
-  [
-    "dci",
-    "PartnerStatusCategory"
-  ],
-  [
-    "dci",
-    "RTServiceAudit"
-  ],
-  [
-    "dea",
-    "Attachment"
-  ],
-  [
-    "dea",
-    "AttachmentHistory"
-  ],
-  [
-    "dw",
-    "Subscriptions_Snapshot"
-  ],
-  [
-    "dw_atm_dxc",
-    "chs_MetaClaim_Since2023"
-  ],
-  [
-    "dw_atm_dxc",
-    "cred_billingactivity"
-  ],
-  [
-    "dw_atm_dxc",
-    "dci_billingactivity"
-  ],
-  [
-    "dw_atm_dxc",
-    "dci_rtserviceaudit_6mos"
-  ],
-  [
-    "dw_atm_dxc",
-    "dea_attachments_6mos"
-  ],
-  [
-    "dw_atm_dxc",
-    "pnt_billingactivity"
-  ],
-  [
-    "dxcps",
-    "FD_GlobalBIN"
-  ],
-  [
-    "erp",
-    "ClientGLEntrySummary"
-  ],
-  [
-    "erp",
-    "ClientGLEntrySummaryAudit"
-  ],
-  [
-    "erp",
-    "ClientUsageSummary"
-  ],
-  [
-    "erp",
-    "ClientUsageSummaryAudit"
-  ],
-  [
-    "erp",
-    "ClientUsageSummary_20250128Backup"
-  ],
-  [
-    "erp",
-    "ClientUsageSummary_TEST"
-  ],
-  [
-    "erp",
-    "ERPItemLookup"
-  ],
-  [
-    "erp",
-    "ERPItemLookupAudit"
-  ],
-  [
-    "erpDev",
-    "ClientGLEntrySummary"
-  ],
-  [
-    "erpDev",
-    "ClientUsageSummary"
-  ],
-  [
-    "erpDev",
-    "ERPItemLookup"
-  ],
-  [
-    "ext_raw",
-    "FiservJan24$"
-  ],
-  [
-    "ext_raw_ec",
-    "payerbenefit"
-  ],
-  [
-    "ext_raw_ec",
-    "payerbenefitmanualentry"
-  ],
-  [
-    "ext_raw_pc",
-    "cardpaymentmethods"
-  ],
-  [
-    "lkr",
-    "LR$LQ7391755234095634_clearinghouse_claim_statuses"
-  ],
-  [
-    "lkr",
-    "LR$LQPAC1755293594531_clearinghouse_enrollment_errors"
-  ],
-  [
-    "lkr",
-    "LR$LQPAC1755300938467_clearinghouse_enrollment_errors"
-  ],
-  [
-    "master",
-    "Claims"
-  ],
-  [
-    "master",
-    "ClearinghouseClaims"
-  ],
-  [
-    "master",
-    "DCIClaimPaymentFLATClaimPaymentsLifeCycles"
-  ],
-  [
-    "master",
-    "DEAAttachmentFLATAttachmentsLifeCycles"
-  ],
-  [
-    "master",
-    "DataloadSQL3_Payers_Table"
-  ],
-  [
-    "master",
-    "Payers"
-  ],
-  [
-    "master",
-    "PayersAudit"
-  ],
-  [
-    "master",
-    "TEMP_DLS3"
-  ],
-  [
-    "ns",
-    "Customer_copy"
-  ],
-  [
-    "ns",
-    "Entity_copy"
-  ],
-  [
-    "ns",
-    "Item_copy"
-  ],
-  [
-    "ns",
-    "SalesInvoiced_copy"
-  ],
-  [
-    "ns",
-    "Transaction_copy"
-  ],
-  [
-    "ns",
-    "ZABSubscriptionItem_copy"
-  ],
-  [
-    "partcredDM",
-    "PayerPartnerOutreach"
-  ],
-  [
-    "pfs",
-    "PartnerCreditPlan"
-  ],
-  [
-    "pfs",
-    "Settlement"
-  ],
-  [
-    "pfs",
-    "SettlementHistory"
-  ],
-  [
-    "pnt",
-    "RTServiceAudit"
-  ],
-  [
-    "reports",
-    "BancTecClaimRejection"
-  ],
-  [
-    "reports",
-    "Billing_GPManualBillItems"
-  ],
-  [
-    "reports",
-    "Billing_NEAStatementItems"
-  ],
-  [
-    "reports",
-    "Billing_PartnerPartnerCodeDualProcessing"
-  ],
-  [
-    "reports",
-    "Billing_PartnerStatementItem"
-  ],
-  [
-    "reports",
-    "Billing_PartnerStatementItemCredits"
-  ],
-  [
-    "reports",
-    "Billing_PartnerTranSubTypePayerNameTranslation"
-  ],
-  [
-    "reports",
-    "Billing_PayerPartnerTrans"
-  ],
-  [
-    "reports",
-    "CSRequest_Practice"
-  ],
-  [
-    "reports",
-    "ClaimPaymentRegistrationRemoval"
-  ],
-  [
-    "reports",
-    "DASplay"
-  ],
-  [
-    "reports",
-    "DSSWebPortal"
-  ],
-  [
-    "reports",
-    "DataBillTemp"
-  ],
-  [
-    "reports",
-    "DecemberPartnerMetaClaims"
-  ],
-  [
-    "reports",
-    "DeltaERAPaymentUtilization"
-  ],
-  [
-    "reports",
-    "DssChsClaimStatusTrack"
-  ],
-  [
-    "reports",
-    "DssChsFileSummary"
-  ],
-  [
-    "reports",
-    "DssChsRespProfile"
-  ],
-  [
-    "reports",
-    "DssChsRespProfileBkup"
-  ],
-  [
-    "reports",
-    "DssDimCHSPartnerCode"
-  ],
-  [
-    "reports",
-    "DssFDResidualReport"
-  ],
-  [
-    "reports",
-    "DssFileIO"
-  ],
-  [
-    "reports",
-    "DssFirstDataHeader"
-  ],
-  [
-    "reports",
-    "DssFirstDataResidual"
-  ],
-  [
-    "reports",
-    "DssNetRev_2010"
-  ],
-  [
-    "reports",
-    "DssNetRev_Current"
-  ],
-  [
-    "reports",
-    "DssStagingClaimPricing"
-  ],
-  [
-    "reports",
-    "DssStagingClaimPricingAudit"
-  ],
-  [
-    "reports",
-    "DssYearNetRev"
-  ],
-  [
-    "reports",
-    "ERAexceptions"
-  ],
-  [
-    "reports",
-    "GPManualBillItems"
-  ],
-  [
-    "reports",
-    "GPTransactionStage"
-  ],
-  [
-    "reports",
-    "GPTransactionStage_Test"
-  ],
-  [
-    "reports",
-    "GPTransactionStage_Test_New"
-  ],
-  [
-    "reports",
-    "GPTransactionStage_Test_Old"
-  ],
-  [
-    "reports",
-    "LibertyMatchBO"
-  ],
-  [
-    "reports",
-    "Match_Anthem_BO"
-  ],
-  [
-    "reports",
-    "Match_Anthem_BO_1"
-  ],
-  [
-    "reports",
-    "Matching_Anthem"
-  ],
-  [
-    "reports",
-    "Matching_Liberty"
-  ],
-  [
-    "reports",
-    "NEADataAll"
-  ],
-  [
-    "reports",
-    "NEAStatementItems"
-  ],
-  [
-    "reports",
-    "NetSuiteCustomers"
-  ],
-  [
-    "reports",
-    "NetSuiteCustomers-diff"
-  ],
-  [
-    "reports",
-    "NetSuiteCustomers_Prod"
-  ],
-  [
-    "reports",
-    "PartnerBillingGPStage1"
-  ],
-  [
-    "reports",
-    "PartnerBillingGPStage2"
-  ],
-  [
-    "reports",
-    "PartnerBillingGPStage3"
-  ],
-  [
-    "reports",
-    "PartnerBillingStaticItemNumber"
-  ],
-  [
-    "reports",
-    "PartnerBillingTranSubTypeToItemNumber"
-  ],
-  [
-    "reports",
-    "PartnerBillingTranTypeToItemNumber"
-  ],
-  [
-    "reports",
-    "PartnerBillingTranTypeToMasterItem"
-  ],
-  [
-    "reports",
-    "PartnerPortalMonthlyRpt"
-  ],
-  [
-    "reports",
-    "PartnerStatementItemAdjustment08162022"
-  ],
-  [
-    "reports",
-    "PartnerStatementItemCredits"
-  ],
-  [
-    "reports",
-    "PayerBillingGPStage"
-  ],
-  [
-    "reports",
-    "PayerBillingGPStage1"
-  ],
-  [
-    "reports",
-    "PayerBillingGPStage2"
-  ],
-  [
-    "reports",
-    "PayerBillingGPStageArchive"
-  ],
-  [
-    "reports",
-    "PayerBillingRoutingHistory"
-  ],
-  [
-    "reports",
-    "PayerCredPsv"
-  ],
-  [
-    "reports",
-    "PayerCredPsvStage"
-  ],
-  [
-    "reports",
-    "PayerPartnerTrans"
-  ],
-  [
-    "reports",
-    "PayerPartnerTrans_Temp"
-  ],
-  [
-    "reports",
-    "PayerProviderTrans"
-  ],
-  [
-    "reports",
-    "PayerTrans"
-  ],
-  [
-    "reports",
-    "ProviderPayerTrans"
-  ],
-  [
-    "reports",
-    "RIITemp"
-  ],
-  [
-    "reports",
-    "RTTrans"
-  ],
-  [
-    "reports",
-    "Residual_New"
-  ],
-  [
-    "reports",
-    "Residual_New06202016_newcolumn "
-  ],
-  [
-    "reports",
-    "Residual_New_10212015"
-  ],
-  [
-    "reports",
-    "Residual_New_Audit"
-  ],
-  [
-    "reports",
-    "Residual_New_Audit02172017"
-  ],
-  [
-    "reports",
-    "Residual_New_old"
-  ],
-  [
-    "reports",
-    "Residual_backup_012115"
-  ],
-  [
-    "reports",
-    "Residual_backup_022315"
-  ],
-  [
-    "reports",
-    "SummaryTrans"
-  ],
-  [
-    "reports",
-    "TempDenticonUsers"
-  ],
-  [
-    "reports",
-    "Test_PartnerStatementItem"
-  ],
-  [
-    "reports",
-    "Test_PayerPartnerTrans"
-  ],
-  [
-    "reports",
-    "Test_PayerProviderTrans"
-  ],
-  [
-    "reports",
-    "VIPBillingGPStage1"
-  ],
-  [
-    "reports",
-    "VIPBillingGPStage1Arch"
-  ],
-  [
-    "reports",
-    "VIPBillingGPStageArchive"
-  ],
-  [
-    "reports",
-    "VipCredTemp"
-  ],
-  [
-    "reports",
-    "WesternUsers"
-  ],
-  [
-    "reports",
-    "alert_MultipleBuildingFiles"
-  ],
-  [
-    "reports",
-    "balclaims"
-  ],
-  [
-    "reports",
-    "bkwrpt"
-  ],
-  [
-    "reports",
-    "bkwtest"
-  ],
-  [
-    "reports",
-    "dsswebportal_20101202"
-  ],
-  [
-    "reports",
-    "load_databill"
-  ],
-  [
-    "reports",
-    "nea201206"
-  ],
-  [
-    "reports",
-    "residual"
-  ],
-  [
-    "reports",
-    "residual_old"
-  ],
-  [
-    "reports",
-    "routeERAexceptions"
-  ],
-  [
-    "reports",
-    "rpt_AnthemWebPortal"
-  ],
-  [
-    "reports",
-    "rpt_DSSStagingClaimPricing"
-  ],
-  [
-    "reports",
-    "rpt_MismatchDestinationPartner"
-  ],
-  [
-    "reports",
-    "rpt_MissingPartnerPartnerCode"
-  ],
-  [
-    "reports",
-    "rpt_MonthlyBilling_Incoming"
-  ],
-  [
-    "reports",
-    "rpt_MonthlyBilling_IncomingPayerBreakdown"
-  ],
-  [
-    "reports",
-    "rpt_MonthlyBilling_MetRTBreakdown"
-  ],
-  [
-    "reports",
-    "rpt_MonthlyBilling_Outgoing"
-  ],
-  [
-    "reports",
-    "rpt_MonthlyBilling_OutgoingPCSum"
-  ],
-  [
-    "reports",
-    "rpt_MonthlyBilling_RTTransactions"
-  ],
-  [
-    "reports",
-    "rpt_ValidationPassRate_Dest"
-  ],
-  [
-    "reports",
-    "rpt_ValidationPassRate_Source"
-  ],
-  [
-    "reports",
-    "temp_DSO_Claims"
-  ],
-  [
-    "reports",
-    "temp_DSO_Claims_TransactionEvents"
-  ],
-  [
-    "reports",
-    "temp_DSO_Cred"
-  ],
-  [
-    "reports",
-    "temp_DSO_ERA"
-  ],
-  [
-    "reports",
-    "temp_DSO_PatStmt"
-  ],
-  [
-    "reports",
-    "temp_DSO_RTClaims"
-  ],
-  [
-    "reports",
-    "temp_DSO_RTCount"
-  ],
-  [
-    "reports",
-    "temp_DSO_Subscription_ClientSubscriptionEvents"
-  ],
-  [
-    "reports",
-    "temptom"
-  ],
-  [
-    "reports",
-    "tomdcp20110404load"
-  ],
-  [
-    "reports",
-    "tomtemp28"
-  ],
-  [
-    "rpt",
-    "HSOneAprilMissingBillingClaimsCorrections"
-  ],
-  [
-    "rpt",
-    "HSOneMayMissingBillingClaimsCorrections"
-  ],
-  [
-    "trx",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trx",
-    "ClientTransactions"
-  ],
-  [
-    "trx",
-    "TransactionEvents"
-  ],
-  [
-    "trxBrch",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxBrch",
-    "ClientTransactions"
-  ],
-  [
-    "trxBrch",
-    "TransactionEvents"
-  ],
-  [
-    "trxDev",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxDev",
-    "ClientTransactions"
-  ],
-  [
-    "trxDev",
-    "TransactionEvents"
-  ],
-  [
-    "trxQA",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxQA",
-    "ClientTransactions"
-  ],
-  [
-    "trxQA",
-    "TransactionEvents"
-  ],
-  [
-    "trxTest",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxTest",
-    "ClientTransactions"
-  ],
-  [
-    "trxTest",
-    "TransactionEvents"
-  ],
-  [
-    "trxWsdm",
-    "ClientSubscriptionEvents"
-  ],
-  [
-    "trxWsdm",
-    "ClientTransactions"
-  ],
-  [
-    "trxWsdm",
-    "TransactionEvents"
-  ]
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimDigest"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimEraDigest"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPayment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentDigest"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentRegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimPaymentRegistrationHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimStatusTracing"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimStatusTracingAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimStatusTracing_Facility"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "DBA"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "FileDocumentMap"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaAck"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaAppAdvice"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaAttachment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaBankPayment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaimPayment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaimStatus"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaimStatusRequest"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaEligRequest"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaEligResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaEnrollment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaFile"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaFileAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaImplAck"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaOfficeResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaTransportAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "NonCompliantFile"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerAdjustmentProcessType"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerBankAccount"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerBillingActivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerBillingActivity_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerClaimResubmit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerConfigType"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerDestinationResponseConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerDowntime"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerLineCtrlConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerMessageRoutingExclude"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerMessageRoutingExcludeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerMessageRoutingExcludeInfo"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPartnerCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPartnerCodeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPartnerCodeBillingConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPayerDestUpgradeConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPayerMatchUpgrade"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPayerSet"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPayerSetAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPrice"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPriceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerStatementItem"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerStatementItemAdjustment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerStatementItemAdjustmentAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerStatementItemAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerStatementItemSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerSubAccount"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerTranSubType"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerTranSubTypeConfigType"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerTranSubTypeConfiguration"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerTranSubTypePayerNameTranslation"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerTranSubTypePayerNameTranslationAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerTranSubTypeStatus"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerTranType"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerWidgetDeliveryOps"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerWidgetDeliveryRegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PayerClaimPrice"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PayerClaimPriceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PayerPartnerCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PayerPartnerCodeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ProcessInfo"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ProviderPartnerMap"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "RuleConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "SourceDestConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "TxIDGenerator"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "AppAlert"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "EHGGroupKeyToPID"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "EHGGroupKeyToPID_DXE"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ERARegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ERARegistrationAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ERARoutingDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ERARoutingInformation"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ERARoutingSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ERASegmentDefault"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupPartnerDisplay"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupRegTierSelection"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalConversationAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MessagePortalConversationModelAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Messages"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Partner"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerCaseConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerConfigType"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerLoginConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerRegistrationCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerSecurity"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerSecurityAccess"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerSecurityTokenConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerTranSubType"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerTranSubTypeConfigType"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerTranSubTypeConfiguration"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PartnerTranType"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductCombination"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductFeaturePromoOffer"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductGroupPackage"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductGroupPackage10062024_DB2225"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductPackageFeatures"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductPartnerPackage"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductPartnerRegistration"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProductPartnerRegistrationFeature"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryLocation"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirectoryLocationCompare"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderPayerEnrollment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderPayerEnrollmentAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SalesCampaign"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUser"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SupportUserAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UserLoginAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Users"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UsersAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerCredDashboardConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "PayerForm"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderSiteDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "Claim"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimFileUpload"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimFileUploadAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPayment"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentReport"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimStatusUpgrade"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "PartnerBillingActivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "PartnerBillingActivity_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "PartnerERAAdjustment"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "PartnerStatusCategory"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "Attachment"
+  },
+  {
+    "schema": "dbo",
+    "database": "dea",
+    "table": "AttachmentHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw",
+    "table": "Subscriptions_Snapshot"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "chs_MetaClaim_Since2023"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "cred_billingactivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "dci_billingactivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "dci_rtserviceaudit_6mos"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "dea_attachments_6mos"
+  },
+  {
+    "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "pnt_billingactivity"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "FD_GlobalBIN"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientGLEntrySummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientGLEntrySummaryAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientUsageSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientUsageSummaryAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientUsageSummary_20250128Backup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ClientUsageSummary_TEST"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPItemLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "erp",
+    "table": "ERPItemLookupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ClientGLEntrySummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ClientUsageSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "erpDev",
+    "table": "ERPItemLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw",
+    "table": "FiservJan24$"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "payerbenefit"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "payerbenefitmanualentry"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_pc",
+    "table": "cardpaymentmethods"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQ7391755234095634_clearinghouse_claim_statuses"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQPAC1755293594531_clearinghouse_enrollment_errors"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQPAC1755300938467_clearinghouse_enrollment_errors"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "DCIClaimPaymentFLATClaimPaymentsLifeCycles"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "DEAAttachmentFLATAttachmentsLifeCycles"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "DataloadSQL3_Payers_Table"
+  },
+  {
+    "schema": "dbo",
+    "database": "master",
+    "table": "TEMP_DLS3"
+  },
+  {
+    "schema": "entity",
+    "database": "master",
+    "table": "Payers"
+  },
+  {
+    "schema": "entity",
+    "database": "master",
+    "table": "PayersAudit"
+  },
+  {
+    "schema": "payerportal",
+    "database": "master",
+    "table": "ClearinghouseClaims"
+  },
+  {
+    "schema": "temp",
+    "database": "master",
+    "table": "Claims"
+  },
+  {
+    "schema": "trans",
+    "database": "master",
+    "table": "Claims"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Customer_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Entity_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Item_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "SalesInvoiced_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "Transaction_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "ZABSubscriptionItem_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "partcredDM",
+    "table": "PayerPartnerOutreach"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "PartnerCreditPlan"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "Settlement"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "SettlementHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "pnt",
+    "table": "RTServiceAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "BancTecClaimRejection"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Billing_GPManualBillItems"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Billing_NEAStatementItems"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Billing_PartnerPartnerCodeDualProcessing"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Billing_PartnerStatementItem"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Billing_PartnerStatementItemCredits"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Billing_PartnerTranSubTypePayerNameTranslation"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Billing_PayerPartnerTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "CSRequest_Practice"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DASplay"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DSSWebPortal"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DataBillTemp"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DecemberPartnerMetaClaims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssChsClaimStatusTrack"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssChsFileSummary"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssChsRespProfile"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssChsRespProfileBkup"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssDimCHSPartnerCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssFDResidualReport"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssFileIO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssFirstDataHeader"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssFirstDataResidual"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssNetRev_2010"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssNetRev_Current"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssStagingClaimPricing"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssStagingClaimPricingAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "DssYearNetRev"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ERAexceptions"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GPTransactionStage"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GPTransactionStage_Test"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GPTransactionStage_Test_New"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GPTransactionStage_Test_Old"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "LibertyMatchBO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Match_Anthem_BO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Match_Anthem_BO_1"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Matching_Anthem"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Matching_Liberty"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "NetSuiteCustomers"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "NetSuiteCustomers-diff"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "NetSuiteCustomers_Prod"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PartnerBillingGPStage1"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PartnerBillingGPStage2"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PartnerBillingGPStage3"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PartnerBillingStaticItemNumber"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PartnerBillingTranSubTypeToItemNumber"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PartnerBillingTranTypeToItemNumber"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PartnerBillingTranTypeToMasterItem"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PartnerStatementItemAdjustment08162022"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerBillingGPStage"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerBillingGPStage1"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerBillingGPStage2"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerBillingGPStageArchive"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerBillingRoutingHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerCredPsv"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerCredPsvStage"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerPartnerTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerPartnerTrans_Temp"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerProviderTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ProviderPayerTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "RIITemp"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "RTTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New06202016_newcolumn "
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New_10212015"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New_Audit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New_Audit02172017"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_New_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_backup_012115"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Residual_backup_022315"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "SummaryTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Test_PartnerStatementItem"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Test_PayerPartnerTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Test_PayerProviderTrans"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "VIPBillingGPStage1"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "VIPBillingGPStage1Arch"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "VIPBillingGPStageArchive"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "VipCredTemp"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "alert_MultipleBuildingFiles"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "bkwrpt"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "bkwtest"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "dsswebportal_20101202"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "load_databill"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "residual"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "residual_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "routeERAexceptions"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_AnthemWebPortal"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_DSSStagingClaimPricing"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_MismatchDestinationPartner"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_MissingPartnerPartnerCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_MonthlyBilling_Incoming"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_MonthlyBilling_IncomingPayerBreakdown"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_MonthlyBilling_MetRTBreakdown"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_MonthlyBilling_Outgoing"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_MonthlyBilling_OutgoingPCSum"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_MonthlyBilling_RTTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_ValidationPassRate_Dest"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_ValidationPassRate_Source"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Claims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Claims_TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Cred"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_ERA"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_PatStmt"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_RTClaims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_RTCount"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temp_DSO_Subscription_ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "temptom"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "tomtemp28"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "ClaimPaymentRegistrationRemoval"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "DeltaERAPaymentUtilization"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "GPManualBillItems"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "NEADataAll"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "NEAStatementItems"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "PartnerPortalMonthlyRpt"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "PartnerStatementItemCredits"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "TempDenticonUsers"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "WesternUsers"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "balclaims"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "nea201206"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "tomdcp20110404load"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "HSOneAprilMissingBillingClaimsCorrections"
+  },
+  {
+    "schema": "dbo",
+    "database": "rpt",
+    "table": "HSOneMayMissingBillingClaimsCorrections"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trx",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxBrch",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxQA",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxTest",
+    "table": "TransactionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "ClientSubscriptionEvents"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxWsdm",
+    "table": "TransactionEvents"
+  }
 ]

@@ -1,5 +1,6 @@
 [
     {
+        "schema": "dbo",
         "database": "pnt",
         "table": "Statement",
         "column": "StatementPracticeID",
@@ -8,13 +9,15 @@
             {
                 "database": "pnt",
                 "constraint": "FK_Statement_StatementPractice_StatementPracticeID",
-                "ref_table": "StatementPractice",
-                "ref_column": "StatementPracticeID",
+                "fk_schema": "dbo",
+                "fk_table": "StatementPractice",
+                "fk_column": "StatementPracticeID",
                 "file": "Livesql3/pnt.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "GroupLocationAnswer",
         "column": "GroupLocationID",
@@ -23,13 +26,15 @@
             {
                 "database": "cred",
                 "constraint": "FK_GroupLocationAnswer_GroupLocation_GroupLocationID",
-                "ref_table": "GroupLocation",
-                "ref_column": "GroupLocationID",
+                "fk_schema": "dbo",
+                "fk_table": "GroupLocation",
+                "fk_column": "GroupLocationID",
                 "file": "Livesql3/cred.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "MetaOfficeResponseFile",
         "column": "MetaOfficeResponseID",
@@ -38,8 +43,9 @@
             {
                 "database": "chs",
                 "constraint": "FK_MetaOfficeResponseFile_MetaOfficeResponse_MetaOfficeResponseID",
-                "ref_table": "MetaOfficeResponse",
-                "ref_column": "MetaOfficeResponseID",
+                "fk_schema": "dbo",
+                "fk_table": "MetaOfficeResponse",
+                "fk_column": "MetaOfficeResponseID",
                 "file": "Livesql3/chs.sql"
             }
         ]

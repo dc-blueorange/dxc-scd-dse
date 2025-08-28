@@ -93,14 +93,15 @@ def main():
         if source_db and source_table and source_column:
             for fk in fk_data:
                 fk_db = fk.get("database")
-                fk_table = fk.get("fk_table")
+                table = fk.get("table")
                 fk_key = fk.get("fk_key")
-                if fk_db == source_db and fk_table == source_table and fk_key == source_column:
+                if fk_db == source_db and table == source_table and fk_key == source_column:
                     references.append({
                         "database": fk_db,
                         "constraint": fk.get("constraint"),
-                        "ref_table": fk.get("ref_table"),
-                        "ref_column": fk.get("ref_column"),
+                        "fk_schema": fk.get("fk_schema"),
+                        "fk_table": fk.get("fk_table"),
+                        "fk_column": fk.get("fk_column"),
                         "file": fk.get("file")
                     })
             logging.debug("Found references for database '%s', table '%s', column '%s': %s", source_db, source_table, source_column, references)

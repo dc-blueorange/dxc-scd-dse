@@ -1,1259 +1,1469 @@
 [
     {
+        "schema": "dbo",
         "database": "dw_atm_dxc",
         "table": "dci_rtserviceaudit_6mos",
         "column": "service",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "demandSourceType",
         "column": "dSo",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "ItemDemandSource",
         "column": "dSo",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemBillingRate",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemCorrelateditem",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemItemAccountingBookDetail",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemItemVendor",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemPresentationItem",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemPrice",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemQuantity",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemSiteCategory",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemSubsidiaryMap",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemTaskTemplate",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceItemTranslation",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "servicePurchaseItemItemAccountingBookDetail",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "servicePurchaseItemItemVendor",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "servicePurchaseItemSubsidiaryMap",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "servicePurchaseItemTranslation",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemBillingRate",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemCorrelateditem",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemItemAccountingBookDetail",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemItemVendor",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemPresentationItem",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemPrice",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemQuantity",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemSiteCategory",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemSubsidiaryMap",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemTaskTemplate",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceResaleItemTranslation",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemBillingRate",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemCorrelateditem",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemItemAccountingBookDetail",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemPresentationItem",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemPrice",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemQuantity",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemSiteCategory",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemSubsidiaryMap",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemTaskTemplate",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "nsDev",
         "table": "serviceSaleItemTranslation",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "demandSourceType",
         "column": "dSo",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "ItemDemandSource",
         "column": "dSo",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemBillingRate",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemCorrelateditem",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemItemAccountingBookDetail",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemItemVendor",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemPresentationItem",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemPrice",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemQuantity",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemSiteCategory",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemSubsidiaryMap",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemTaskTemplate",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceItemTranslation",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "servicePurchaseItemItemAccountingBookDetail",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "servicePurchaseItemItemVendor",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "servicePurchaseItemSubsidiaryMap",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "servicePurchaseItemTranslation",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemBillingRate",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemCorrelateditem",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemItemAccountingBookDetail",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemItemVendor",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemPresentationItem",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemPrice",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemQuantity",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemSiteCategory",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemSubsidiaryMap",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemTaskTemplate",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceResaleItemTranslation",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemBillingRate",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemCorrelateditem",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemItemAccountingBookDetail",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemPresentationItem",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemPrice",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemQuantity",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemSiteCategory",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemSubsidiaryMap",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemTaskTemplate",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "ns",
         "table": "serviceSaleItemTranslation",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "schema": "dbo",
         "database": "merchant",
         "table": "RTServiceAudit",
         "column": "Service",
         "file": "Livesql3/merchant.sql"
     },
     {
+        "schema": "dbo",
         "database": "pnt",
         "table": "DataBill_Support_Temp",
         "column": "Support",
         "file": "Livesql3/pnt.sql"
     },
     {
+        "schema": "dbo",
         "database": "pnt",
         "table": "RTServiceAudit",
         "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
+        "schema": "dbo",
         "database": "pnt",
         "table": "SAServiceAudit",
         "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
+        "schema": "dbo",
         "database": "pnt",
         "table": "ServiceDowntime",
         "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
+        "schema": "dbo",
         "database": "pnt",
         "table": "ServiceHostConfiguration",
         "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
+        "schema": "dbo",
         "database": "pnt",
         "table": "ServiceProperty",
         "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
+        "schema": "dbo",
         "database": "pnt",
         "table": "ServicePropertyAudit",
         "column": "Service",
         "file": "Livesql3/pnt.sql"
     },
     {
+        "schema": "dbo",
         "database": "dhmo",
         "table": "OfficeServiceClient",
         "column": "Service",
         "file": "Livesql3/dhmo.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "GroupSupportUser",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportUser",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "AlertSAServiceAudit",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "MerchantMigrationServiceAudit",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "MerchantServiceAudit_Arc",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "RTServiceAudit",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceClient",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceClientAccess",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceClientPMS",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceClientUser",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceCode",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceDowntime",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceFee",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceHostConfiguration",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceProperty",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServicePropertyAudit",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceServiceCode",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceServiceCode",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceStatus",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ServiceType",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportDataSourceRequest",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportDataSourceResponse",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportEventOps",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportFunction",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportGroup",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportGroupFunction",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportGroupUser",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportMessage",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportNote",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportPayerSet",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportPayerSetGroup",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportRequest",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportRole",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "supportrole_backup1115_1102AM",
         "column": "support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "supportrole_bak",
         "column": "support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportRole_Bak2",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportServiceCodePayerSet",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportServiceCodePayerSet",
         "column": "Service",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportTask",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportTaskUser",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportTeam",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportTeamUser",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportUserAudit",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportUserCommission",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportUserCommission_0318",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportUserConfig",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportUserLoginAudit",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportUserLoginChangeAudit",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "SupportUserPasswordHistory",
         "column": "Support",
         "file": "Livesql3/Common.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "RTServiceAudit",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "vRTServiceAudit",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "SAServiceAudit",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "vSAServiceAudit",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ServiceProperty",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ServiceConfiguration",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "arc_Claim_RTServiceAuditID_Delete_List",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "arc_Claim_RTServiceAuditID_Delete_ListClaim",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "arc_Claim_SAServiceAuditID_Delete_List",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "arc_Claim_SAServiceAuditID_Delete_ListClaim",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "arc_RTServiceAuditID_Archive_List",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "arc_SAServiceAuditID_Archive_List",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "DentalServiceType",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PayerService",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "PayerServiceAudit",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ServiceClientProperty",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ServiceCredential",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ServiceInfo",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ServicePropertyAudit",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ServiceTypeProcedure",
         "column": "Service",
         "file": "Livesql3/dci.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ApplicationSetSupportUserHistory",
         "column": "Support",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "NPDBServiceAudit",
         "column": "Service",
         "file": "Livesql3/cred.sql"
     },
     {
+        "schema": "dbo",
         "database": "ntf",
         "table": "SAServiceAudit",
         "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
+        "schema": "dbo",
         "database": "ntf",
         "table": "ServiceDowntime",
         "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
+        "schema": "dbo",
         "database": "ntf",
         "table": "ServiceHostConfiguration",
         "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
+        "schema": "dbo",
         "database": "ntf",
         "table": "ServiceProperty",
         "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
+        "schema": "dbo",
         "database": "ntf",
         "table": "ServicePropertyAudit",
         "column": "Service",
         "file": "Livesql3/ntf.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "RTServiceAudit",
         "column": "Service",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "ServiceProperty",
         "column": "Service",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "chs",
         "table": "ServicePropertyAudit",
         "column": "Service",
         "file": "Livesql3/chs.sql"
     },
     {
+        "schema": "dbo",
         "database": "pfs",
         "table": "ServiceProperty",
         "column": "Service",
         "file": "Livesql3/pfs.sql"
     },
     {
+        "schema": "dbo",
         "database": "pfs",
         "table": "RTServiceAudit",
         "column": "Service",
         "file": "Livesql3/pfs.sql"
     },
     {
+        "schema": "dbo",
         "database": "pfs",
         "table": "SAServiceAudit",
         "column": "Service",
         "file": "Livesql3/pfs.sql"
     },
     {
+        "schema": "dbo",
         "database": "pfs",
         "table": "ServicePropertyAudit",
         "column": "Service",
         "file": "Livesql3/pfs.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "DssSupportUserProfile",
         "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "DssFonalitySupportSum",
         "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "RTServiceAudit",
         "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "RTServiceReports",
         "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "SAServiceAudit",
         "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "ServiceDowntime",
         "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "ServiceFailure",
         "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "ServiceHostConfiguration",
         "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "ServiceProperty",
         "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "ServicePropertyAudit",
         "column": "Service",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "SupportACD",
         "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "supportacdbkp",
         "column": "support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "SupportCDR",
         "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "SupportCDR2",
         "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "supportcdrbkp",
         "column": "support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "supportFonalityCDRTmp",
         "column": "support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "SupportTicketSLA",
         "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_Claims",
         "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_Claims_TransactionEvents",
         "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_Cred",
         "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_ERA",
         "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_PatStmt",
         "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_RTClaims",
         "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_RTCount",
         "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
         "column": "DSO",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "reports",
         "table": "TicketSupportPass",
         "column": "Support",
         "file": "Livesql3/reportst.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "arc_Attachment_RTServiceAuditID_Delete_List",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "arc_Attachment_SAServiceAuditID_Delete_List",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "AttachmentService",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "AttachmentServiceAudit",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "RTServiceAudit",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "SAServiceAudit",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "ServiceDowntime",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "ServiceHostConfiguration",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "ServiceProperty",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dea",
         "table": "ServicePropertyAudit",
         "column": "Service",
         "file": "Livesql3/dea.sql"
     },
     {
+        "schema": "dbo",
         "database": "dxcps",
         "table": "Service_Plan_T",
         "column": "Service",
         "file": "Livesql3/dxcps.sql"
     },
     {
+        "schema": "dbo",
         "database": "dxcps",
         "table": "Service_T",
         "column": "Service",
         "file": "Livesql3/dxcps.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeService",
         "column": "Service",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "PracticeServiceAudit",
         "column": "Service",
         "file": "Livesql3/ddir.sql"
     },
     {
+        "schema": "dbo",
         "database": "ddir",
         "table": "Service",
         "column": "Service",

@@ -38,21 +38,25 @@ def scan_sql_file(filepath, mode, columns=True):
     logger.warning(f"Database determined: {database} file={filepath}")
     if mode == 'foreignkeys':
         fk_regex = re.compile(r"""
-                ALTER\s+TABLE\s+\[\s*dbo\s*\]\.\[\s*(?P<fk_table>[^\]]+)\s*\]\s+WITH\s+CHECK\s+ADD\s+CONSTRAINT\s+\[\s*(?P<constraint>[^\]]+)\s*\]\s+FOREIGN\s+KEY\s*\(\s*\[\s*(?P<fk_key>[^\]]+)\s*\]\s*\)\s+REFERENCES\s+\[\s*dbo\s*\]\.\[\s*(?P<ref_table>[^\]]+)\s*\]\s*\(\s*\[\s*(?P<ref_column>[^\]]+)\s*\]\s*\)
+                ALTER\s+TABLE\s+\[\s*(?P<schema>[^\]]+)\s*\]\.\[\s*(?P<table>[^\]]+)\s*\]\s+WITH\s+CHECK\s+ADD\s+CONSTRAINT\s+\[\s*(?P<constraint>[^\]]+)\s*\]\s+FOREIGN\s+KEY\s*\(\s*\[\s*(?P<fk_key>[^\]]+)\s*\]\s*\)\s+REFERENCES\s+\[\s*(?P<fk_schema>[^\]]+)\s*\]\.\[\s*(?P<fk_table>[^\]]+)\s*\]\s*\(\s*\[\s*(?P<fk_column>[^\]]+)\s*\]\s*\)
             """, re.IGNORECASE | re.DOTALL | re.VERBOSE)
         for fk_match in fk_regex.finditer(content):
-            fk_table = fk_match.group("fk_table")
+            schema = fk_match.group("schema")
+            table = fk_match.group("table")
             constraint = fk_match.group("constraint")
             fk_key = fk_match.group("fk_key")
-            ref_table = fk_match.group("ref_table")
-            ref_column = fk_match.group("ref_column")
+            fk_schema = fk_match.group("fk_schema")
+            fk_table = fk_match.group("fk_table")
+            fk_column = fk_match.group("fk_column")
             results.append({
                 'database': database,
-                'fk_table': f"{fk_table}",
+                'schema': schema,
+                'table': f"{table}",
                 'fk_key': f"{fk_key}",
                 'constraint': f"{constraint}",
-                'ref_table': f"{ref_table}",
-                'ref_column': f"{ref_column}",
+                'fk_schema': f"{fk_schema}",
+                'fk_table': f"{fk_table}",
+                'fk_column': f"{fk_column}",
                 'file': filepath
             })
         return results
@@ -68,6 +72,7 @@ def scan_sql_file(filepath, mode, columns=True):
         re.IGNORECASE | re.VERBOSE | re.DOTALL | re.MULTILINE
     )
     for table_match in table_regex.finditer(content):
+        schema = table_match.group(2)
         table_name = table_match.group(3)
         columns_section = table_match.group(4)
         logger.debug(f"Found table: {table_name} with column defs: {columns_section}")
@@ -89,6 +94,7 @@ def scan_sql_file(filepath, mode, columns=True):
                     match = match_found.group(1)
                     logger.warning(f"Found table (matched column name filter): {table_name} with column match: {match}")
                     results.append({
+                        'schema': schema,
                         'database': database,
                         'table': table_name,
                         'column': match,
@@ -109,6 +115,7 @@ def scan_sql_file(filepath, mode, columns=True):
                     match = match_found.group(0)
                     logger.warning(f"Found table (matched table name filter): {table_name} with match: {match}")
                     results.append({
+                        'schema': schema,
                         'database': database,
                         'table': table_name,
                         'column': match,
@@ -136,13 +143,13 @@ def scan_directories(paths, mode, table_names):
 def print_report(results, mode):
     writer = csv.writer(sys.stdout)
     if mode == 'foreignkeys':
-        writer.writerow(["Database", "Source Table", "Source Key Column", "Target Table", "Target Column", "File"])
+        writer.writerow(["Database", "Schema", "Source Table", "Source Key Column", "Target Table", "Target Column", "File"])
         for result in results:
-            writer.writerow([result["database"], result["fk_table"], result["fk_key"], result["constraint"], result["ref_table"], result["ref_column"], result["file"]])
+            writer.writerow([result["database"], result["schema"], result["table"], result["fk_key"], result["constraint"], result["fk_table"], result["fk_column"], result["file"]])
     else:
-        writer.writerow(["Database", "Table", "Matched", "File"])
+        writer.writerow(["Database", "Schema", "Table", "Matched", "File"])
         for result in results:
-            writer.writerow([result["database"], result["table"], result["column"], result["file"]])
+            writer.writerow([result["database"], result["schema"], result["table"], result["column"], result["file"]])
 
 def print_json_report(results):
     print(json.dumps(results, indent=4))

@@ -1,5 +1,57 @@
 [
     {
+        "schema": "ddsenroll",
+        "database": "master",
+        "table": "CREDProviderDETLocationsProviderProfileAnswers",
+        "column": "ProviderProfileID",
+        "file": "DTT-ANA-PRD/ent.sql",
+        "references": [
+            {
+                "database": "master",
+                "constraint": "FK_LocationsProviderProfileAnswers_ProviderProfileID",
+                "fk_schema": "ddsenroll",
+                "fk_table": "CREDProviderDETProviderProfiles",
+                "fk_column": "ProviderProfileID",
+                "file": "DTT-ANA-PRD/ent.sql"
+            }
+        ]
+    },
+    {
+        "schema": "ddsenroll",
+        "database": "master",
+        "table": "CREDProviderDETMinReqdProviderProfileAnswers",
+        "column": "ProviderProfileID",
+        "file": "DTT-ANA-PRD/ent.sql",
+        "references": [
+            {
+                "database": "master",
+                "constraint": "FK_MinReqdProviderProfileAnswers_ProviderProfileID",
+                "fk_schema": "ddsenroll",
+                "fk_table": "CREDProviderDETProviderProfiles",
+                "fk_column": "ProviderProfileID",
+                "file": "DTT-ANA-PRD/ent.sql"
+            }
+        ]
+    },
+    {
+        "schema": "ddsenroll",
+        "database": "master",
+        "table": "CREDProviderDETUnpivotedUserAnswers",
+        "column": "ProviderProfileID",
+        "file": "DTT-ANA-PRD/ent.sql",
+        "references": [
+            {
+                "database": "master",
+                "constraint": "FK_CREDProviderDETUnpivotedUserAnswers_ProviderProfileID",
+                "fk_schema": "ddsenroll",
+                "fk_table": "CREDProviderDETProviderProfiles",
+                "fk_column": "ProviderProfileID",
+                "file": "DTT-ANA-PRD/ent.sql"
+            }
+        ]
+    },
+    {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryLocation",
         "column": "ProviderDirectoryPayerID",
@@ -8,13 +60,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProviderDirectoryLocation_ProviderDirectoryPayer_ProviderDirectoryPayerID",
-                "ref_table": "ProviderDirectoryPayer",
-                "ref_column": "ProviderDirectoryPayerID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderDirectoryPayer",
+                "fk_column": "ProviderDirectoryPayerID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryPayer",
         "column": "ProviderDirectoryID",
@@ -23,13 +77,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProviderDirectoryPayer_ProviderDirectory_ProviderDirectoryID",
-                "ref_table": "ProviderDirectory",
-                "ref_column": "ProviderDirectoryID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderDirectory",
+                "fk_column": "ProviderDirectoryID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryPayerDocument",
         "column": "ProviderDirectoryPayerID",
@@ -38,13 +94,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProviderDirectoryPayerDocument_ProviderDirectoryPayer_ProviderDirectoryPayerID",
-                "ref_table": "ProviderDirectoryPayer",
-                "ref_column": "ProviderDirectoryPayerID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderDirectoryPayer",
+                "fk_column": "ProviderDirectoryPayerID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryPayerNote",
         "column": "ProviderDirectoryPayerID",
@@ -53,13 +111,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProviderDirectoryPayerNote_ProviderDirectoryPayer_ProviderDirectoryPayerID",
-                "ref_table": "ProviderDirectoryPayer",
-                "ref_column": "ProviderDirectoryPayerID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderDirectoryPayer",
+                "fk_column": "ProviderDirectoryPayerID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryPayerPlan",
         "column": "ProviderDirectoryPayerID",
@@ -68,13 +128,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProviderDirectoryPayerPlan_ProviderDirectoryPayer_ProviderDirectoryPayerID",
-                "ref_table": "ProviderDirectoryPayer",
-                "ref_column": "ProviderDirectoryPayerID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderDirectoryPayer",
+                "fk_column": "ProviderDirectoryPayerID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryPayerTag",
         "column": "ProviderDirectoryPayerID",
@@ -83,13 +145,15 @@
             {
                 "database": "common",
                 "constraint": "FK_ProviderDirectoryPayerTag_ProviderDirectoryPayer_ProviderDirectoryPayerID",
-                "ref_table": "ProviderDirectoryPayer",
-                "ref_column": "ProviderDirectoryPayerID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderDirectoryPayer",
+                "fk_column": "ProviderDirectoryPayerID",
                 "file": "Livesql3/Common.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ClaimItemProviderCredential",
         "column": "ClaimItemProviderID",
@@ -98,13 +162,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_ClaimItemProviderCredential_ClaimItemProvider_ClaimItemProviderID",
-                "ref_table": "ClaimItemProvider",
-                "ref_column": "ClaimItemProviderID",
+                "fk_schema": "dbo",
+                "fk_table": "ClaimItemProvider",
+                "fk_column": "ClaimItemProviderID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ClaimProviderAddress",
         "column": "ClaimProviderID",
@@ -113,13 +179,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_ClaimProviderAddress_ClaimProvider_ClaimProviderID",
-                "ref_table": "ClaimProvider",
-                "ref_column": "ClaimProviderID",
+                "fk_schema": "dbo",
+                "fk_table": "ClaimProvider",
+                "fk_column": "ClaimProviderID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "dci",
         "table": "ProviderCredential",
         "column": "ClaimProviderID",
@@ -128,13 +196,15 @@
             {
                 "database": "dci",
                 "constraint": "FK_ProviderCredential_ClaimProvider_ClaimProviderID",
-                "ref_table": "ClaimProvider",
-                "ref_column": "ClaimProviderID",
+                "fk_schema": "dbo",
+                "fk_table": "ClaimProvider",
+                "fk_column": "ClaimProviderID",
                 "file": "Livesql3/dci.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ProviderFormAnswer",
         "column": "ProviderFormID",
@@ -143,13 +213,15 @@
             {
                 "database": "cred",
                 "constraint": "FK_ProviderFormAnswer_ProviderForm_ProviderFormID",
-                "ref_table": "ProviderForm",
-                "ref_column": "ProviderFormID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderForm",
+                "fk_column": "ProviderFormID",
                 "file": "Livesql3/cred.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ProviderFormDocumentMeta",
         "column": "ProviderDocumentMetaID",
@@ -158,13 +230,15 @@
             {
                 "database": "cred",
                 "constraint": "FK_ProviderFormDocumentMeta_ProviderDocumentMeta_ProviderDocumentMetaID",
-                "ref_table": "ProviderDocumentMeta",
-                "ref_column": "ProviderDocumentMetaID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderDocumentMeta",
+                "fk_column": "ProviderDocumentMetaID",
                 "file": "Livesql3/cred.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ProviderFormNote",
         "column": "ProviderFormID",
@@ -173,13 +247,15 @@
             {
                 "database": "cred",
                 "constraint": "FK_ProviderFormNote_ProviderForm_ProviderFormID",
-                "ref_table": "ProviderForm",
-                "ref_column": "ProviderFormID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderForm",
+                "fk_column": "ProviderFormID",
                 "file": "Livesql3/cred.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ProviderStateFormAnswer",
         "column": "ProviderStateFormID",
@@ -188,13 +264,15 @@
             {
                 "database": "cred",
                 "constraint": "FK_ProviderStateFormAnswer_ProviderStateForm_ProviderStateFormID",
-                "ref_table": "ProviderStateForm",
-                "ref_column": "ProviderStateFormID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderStateForm",
+                "fk_column": "ProviderStateFormID",
                 "file": "Livesql3/cred.sql"
             }
         ]
     },
     {
+        "schema": "dbo",
         "database": "cred",
         "table": "ProviderStateFormNote",
         "column": "ProviderStateFormID",
@@ -203,8 +281,9 @@
             {
                 "database": "cred",
                 "constraint": "FK_ProviderStateFormNote_ProviderStateForm_ProviderStateFormID",
-                "ref_table": "ProviderStateForm",
-                "ref_column": "ProviderStateFormID",
+                "fk_schema": "dbo",
+                "fk_table": "ProviderStateForm",
+                "fk_column": "ProviderStateFormID",
                 "file": "Livesql3/cred.sql"
             }
         ]
