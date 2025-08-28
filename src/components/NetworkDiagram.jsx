@@ -1,9 +1,18 @@
 import React, { useRef, useEffect, useState } from "react";
 import * as d3 from "d3";
 
-const NetworkDiagram = () => {
+const NetworkDiagram = ({ debug = false }) => {
   const svgRef = useRef(null);
   const [data, setData] = useState({ nodes: [], links: [] });
+  const simulationRef = useRef(null);
+
+  // Function to update dimensions based on current viewport.
+  const getDimensions = () => {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  };
 
   // Load all JSON files from the /analysis-dean directory (assumed to be served from public)
   useEffect(() => {
@@ -11,14 +20,16 @@ const NetworkDiagram = () => {
       fetch("/analysis-dean/dentist-references.json").then((res) => res.json()).catch(() => []),
       fetch("/analysis-dean/network-references.json").then((res) => res.json()).catch(() => []),
       fetch("/analysis-dean/dso-references.json").then((res) => res.json()).catch(() => []),
-    ]).then(([dentistRefs, networkRefs, dsoRefs]) => {
+      fetch("/analysis-dean/office-references.json").then((res) => res.json()).catch(() => [])
+    ]).then(([dentistRefs, networkRefs, dsoRefs, officeRefs]) => {
       // Tag nodes according to origin.
       dentistRefs.forEach((node) => (node.type = "dentist"));
       networkRefs.forEach((node) => (node.type = "network"));
       dsoRefs.forEach((node) => (node.type = "dso"));
+      officeRefs.forEach((node) => (node.type = "office"));
 
       // Merge the nodes.
-      let allNodes = [...dentistRefs, ...networkRefs, ...dsoRefs];
+      let allNodes = [...dentistRefs, ...networkRefs, ...dsoRefs, ...officeRefs];
       // Use a Map to deduplicate nodes based on composite key.
       const nodeMap = new Map();
       allNodes.forEach((n) => {
@@ -56,13 +67,12 @@ const NetworkDiagram = () => {
   useEffect(() => {
     if (data.nodes.length === 0) return;
 
-    const width = 960;
-    const height = 600;
+    let { width, height } = getDimensions();
 
     // Color scale based on node type.
     const colorScale = d3.scaleOrdinal()
-      .domain(["dentist", "network", "dso"])
-      .range(["steelblue", "green", "tomato"]);
+      .domain(["dentist", "network", "dso", "office"])
+      .range(["steelblue", "green", "tomato", "purple"]);
 
     const svg = d3.select(svgRef.current)
       .attr("width", width)
@@ -70,6 +80,20 @@ const NetworkDiagram = () => {
 
     // Clear previous content.
     svg.selectAll("*").remove();
+
+    // Define arrow marker for links (edges).
+    const defs = svg.append("defs");
+    defs.append("marker")
+      .attr("id", "arrowhead")
+      .attr("viewBox", "0 -5 10 10")
+      .attr("refX", 15)
+      .attr("refY", 0)
+      .attr("markerWidth", 6)
+      .attr("markerHeight", 6)
+      .attr("orient", "auto")
+      .append("path")
+      .attr("d", "M0,-5L10,0L0,5")
+      .attr("fill", "red");
 
     // Create a tooltip div if it doesn't exist.
     let tooltip = d3.select("body").select(".tooltip");
@@ -86,18 +110,23 @@ const NetworkDiagram = () => {
         .style("opacity", 0);
     }
 
+    // Create simulation with current dimensions.
     const simulation = d3.forceSimulation(data.nodes)
       .force("link", d3.forceLink(data.links).id((d) => d.id).distance(150))
       .force("charge", d3.forceManyBody().strength(-300))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
+    // Save simulation to reference for later resize updates.
+    simulationRef.current = simulation;
+
     const link = svg.append("g")
-      .attr("stroke", "#999")
+      .attr("stroke", "red")
       .attr("stroke-opacity", 0.6)
       .selectAll("line")
       .data(data.links)
       .enter().append("line")
-      .attr("stroke-width", 1.5);
+      .attr("stroke-width", 1.5)
+      .attr("marker-end", "url(#arrowhead)");
 
     const node = svg.append("g")
       .attr("stroke", "#fff")
@@ -111,7 +140,6 @@ const NetworkDiagram = () => {
 
     // Tooltip events:
     node.on("mouseover", (event, d) => {
-          // Determine title label based on the node type.
           let titleLabel = "";
           if (d.type === "dentist") {
             titleLabel = "Dentist";
@@ -119,6 +147,8 @@ const NetworkDiagram = () => {
             titleLabel = "Provider Network";
           } else if (d.type === "dso") {
             titleLabel = "DSO";
+          } else if (d.type === "office") {
+            titleLabel = "Office";
           } else {
             titleLabel = "Unknown";
           }
@@ -144,7 +174,13 @@ const NetworkDiagram = () => {
     node.append("title")
       .text((d) => `${d.database} : ${d.table} : ${d.column}`);
 
+    let tickCount = 0;
     simulation.on("tick", () => {
+      tickCount++;
+      // Log node positions every 10 ticks if debug is enabled.
+      if (debug && tickCount % 10 === 0) {
+        console.debug("Tick", tickCount, simulation.nodes().map(n => ({ id: n.id, x: n.x, y: n.y })));
+      }
       link.attr("x1", (d) => d.source.x)
           .attr("y1", (d) => d.source.y)
           .attr("x2", (d) => d.target.x)
@@ -178,11 +214,21 @@ const NetworkDiagram = () => {
         .on("end", dragended);
     }
 
+    // Add window resize listener to update SVG dimensions and simulation center
+    const handleResize = () => {
+      let { width, height } = getDimensions();
+      svg.attr("width", width).attr("height", height);
+      simulation.force("center", d3.forceCenter(width / 2, height / 2)).alpha(0.5).restart();
+    };
+
+    window.addEventListener("resize", handleResize);
+
     return () => {
       simulation.stop();
       tooltip.remove();
+      window.removeEventListener("resize", handleResize);
     };
-  }, [data]);
+  }, [data, debug]);
 
   return <svg ref={svgRef}></svg>;
 };
