@@ -45,7 +45,7 @@ const ForeignKeysDiagram = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  // Build a collapsible force-directed diagram
+  // Build a collapsible force-directed diagram with collapse/uncollapse of connected nodes on click
   useEffect(() => {
     if (data.nodes.length === 0) return;
 
@@ -109,8 +109,14 @@ const ForeignKeysDiagram = () => {
       .enter()
       .append("g")
       .on("click", (event, d) => {
-        // Toggle collapsed state.
+        // Toggle collapsed state on the clicked node.
         d.collapsed = !d.collapsed;
+        // Propagate collapse: for each link where this node is the source, set the target's hidden flag
+        data.links.forEach(link => {
+          if (link.source.id === d.id) {
+            link.target.hidden = d.collapsed;
+          }
+        });
         update();
       });
 
@@ -118,18 +124,23 @@ const ForeignKeysDiagram = () => {
     node.append("circle")
       .attr("r", 10)
       .attr("fill", d => d.type === "source" ? "steelblue" : "tomato");
-    
+
     node.append("text")
       .attr("x", 12)
       .attr("y", 4)
       .text(d => d.label);
 
-    // Update function: collapse links from nodes that are collapsed.
+    // Update function: set display style for links and connected nodes based on collapse state.
     function update() {
-      link.style("display", d => {
-        // If the source node is collapsed, hide its outgoing links.
-        const sourceNode = data.nodes.find(n => n.id === d.source.id);
-        return sourceNode && sourceNode.collapsed ? "none" : "block";
+      // For links: hide if source is collapsed.
+      link.style("display", d => d.source.collapsed ? "none" : "block");
+      // For nodes: if any incoming link has source collapsed or if this node is hidden, hide it.
+      node.style("display", d => {
+        // If node has no incoming links, always show.
+        const incomingLinks = data.links.filter(l => l.target.id === d.id);
+        if (incomingLinks.length === 0) return "block";
+        // If any incoming link has a collapsed source, hide this node.
+        return incomingLinks.some(l => l.source.collapsed) ? "none" : "block";
       });
     }
 
@@ -195,7 +206,6 @@ const ForeignKeysDiagram = () => {
       tooltip.transition().duration(500).style("opacity", 0);
     });
 
-    // Cleanup on unmount.
     return () => {
       simulation.stop();
       tooltip.remove();
