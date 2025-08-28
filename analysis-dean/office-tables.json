@@ -120,6 +120,12 @@
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
+        "database": "pnt",
+        "table": "StatementPractice",
+        "column": "Practice",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
         "database": "dhmo",
         "table": "DCPOffice_20110815",
         "column": "Office",
@@ -277,6 +283,12 @@
     },
     {
         "database": "reports",
+        "table": "CSRequest_Practice",
+        "column": "Practice",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
         "table": "PayConnectLocationNumber",
         "column": "Location",
         "file": "Livesql3/reportst.sql"
@@ -286,5 +298,107 @@
         "table": "bndofficemcna",
         "column": "office",
         "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "Practice",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeAssociation",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeAssociationAudit",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeAudit",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeDentalProduct",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeDentalProductAudit",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeHours",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeHoursAudit",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeLanguage",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeLanguageAudit",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeOffer",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeOfferAudit",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeOfferOld",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeProfile",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeProfileAudit",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeService",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeServiceAudit",
+        "column": "Practice",
+        "file": "Livesql3/ddir.sql"
     }
 ]

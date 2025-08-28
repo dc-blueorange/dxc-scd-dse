@@ -1,5 +1,20 @@
 [
     {
+        "database": "pnt",
+        "table": "Statement",
+        "column": "StatementPracticeID",
+        "file": "Livesql3/pnt.sql",
+        "references": [
+            {
+                "database": "pnt",
+                "constraint": "FK_Statement_StatementPractice_StatementPracticeID",
+                "ref_table": "StatementPractice",
+                "ref_column": "StatementPracticeID",
+                "file": "Livesql3/pnt.sql"
+            }
+        ]
+    },
+    {
         "database": "cred",
         "table": "GroupLocationAnswer",
         "column": "GroupLocationID",
