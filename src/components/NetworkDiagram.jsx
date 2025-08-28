@@ -138,6 +138,16 @@ const NetworkDiagram = ({ debug = false }) => {
       .attr("fill", (d) => colorScale(d.type))
       .call(drag(simulation));
 
+    // Append text labels with navy blue color.
+    const labels = svg.append("g")
+      .selectAll("text")
+      .data(data.nodes)
+      .enter().append("text")
+      .attr("x", 12)
+      .attr("y", 4)
+      .style("fill", "navy")
+      .text(d => d.label);
+
     // Tooltip events:
     node.on("mouseover", (event, d) => {
           let titleLabel = "";
@@ -177,7 +187,6 @@ const NetworkDiagram = ({ debug = false }) => {
     let tickCount = 0;
     simulation.on("tick", () => {
       tickCount++;
-      // Log node positions every 10 ticks if debug is enabled.
       if (debug && tickCount % 10 === 0) {
         console.debug("Tick", tickCount, simulation.nodes().map(n => ({ id: n.id, x: n.x, y: n.y })));
       }
@@ -188,6 +197,10 @@ const NetworkDiagram = ({ debug = false }) => {
 
       node.attr("cx", (d) => d.x)
           .attr("cy", (d) => d.y);
+
+      // Update labels positions
+      labels.attr("x", d => d.x + 12)
+            .attr("y", d => d.y + 4);
     });
 
     function drag(simulation) {
@@ -214,7 +227,6 @@ const NetworkDiagram = ({ debug = false }) => {
         .on("end", dragended);
     }
 
-    // Add window resize listener to update SVG dimensions and simulation center
     const handleResize = () => {
       let { width, height } = getDimensions();
       svg.attr("width", width).attr("height", height);
