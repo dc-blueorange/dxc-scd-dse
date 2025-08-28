@@ -66,5 +66,6 @@ echo Office references: $(jq 'length' analysis-dean/office-references.json)
 echo Provider Network references: $(jq 'length' analysis-dean/network-references.json)
 echo DSO references: $(jq 'length' analysis-dean/dso-references.json)
 
+echo
 echo Counting all entity matches \(bag-of-words\)
 echo All word matches: $(cat analysis-dean/*-columns.csv | wc -l)
