@@ -1,6 +1,14 @@
 [
   [
     "chs",
+    "ClaimPaymentRegistration"
+  ],
+  [
+    "chs",
+    "ClaimPaymentRegistrationHistory"
+  ],
+  [
+    "chs",
     "MetaClaimStatus"
   ],
   [
@@ -45,7 +53,43 @@
   ],
   [
     "common",
+    "MessagePortalConversation"
+  ],
+  [
+    "common",
     "NppesDataSourceResponse"
+  ],
+  [
+    "common",
+    "NppesLookup"
+  ],
+  [
+    "common",
+    "NppesLookup_old"
+  ],
+  [
+    "common",
+    "NppesLookup_old1"
+  ],
+  [
+    "common",
+    "Pms"
+  ],
+  [
+    "common",
+    "PmsAudit"
+  ],
+  [
+    "common",
+    "ProviderDirectory"
+  ],
+  [
+    "common",
+    "ProviderDirectoryCompare"
+  ],
+  [
+    "common",
+    "ProviderDirectoryHistory"
   ],
   [
     "common",
@@ -54,6 +98,14 @@
   [
     "common",
     "ProviderDirectoryLocationCompare"
+  ],
+  [
+    "common",
+    "ProviderDirectoryPayer"
+  ],
+  [
+    "common",
+    "ProviderDirectoryPayerHistory"
   ],
   [
     "common",
@@ -70,6 +122,10 @@
   [
     "common",
     "SupportDataSourceResponse"
+  ],
+  [
+    "common",
+    "providerdirectoryold"
   ],
   [
     "cred",
@@ -121,6 +177,10 @@
   ],
   [
     "cred",
+    "ProviderGroupDetail"
+  ],
+  [
+    "cred",
     "ProviderSiteDetail"
   ],
   [
@@ -142,6 +202,54 @@
   [
     "dci",
     "arc_OfficeResponse_OfficeResponseID_Delete_List"
+  ],
+  [
+    "dci",
+    "reports"
+  ],
+  [
+    "ddir",
+    "Practice"
+  ],
+  [
+    "ddir",
+    "PracticeAssociationAudit"
+  ],
+  [
+    "ddir",
+    "PracticeAudit"
+  ],
+  [
+    "ddir",
+    "PracticeHoursAudit"
+  ],
+  [
+    "ddir",
+    "PracticeLanguageAudit"
+  ],
+  [
+    "ddir",
+    "PracticeOffer"
+  ],
+  [
+    "ddir",
+    "PracticeOfferAudit"
+  ],
+  [
+    "ddir",
+    "PracticeOfferOld"
+  ],
+  [
+    "ddir",
+    "PracticeProfile"
+  ],
+  [
+    "ddir",
+    "PracticeProfileAudit"
+  ],
+  [
+    "ddir",
+    "PracticeServiceAudit"
   ],
   [
     "dhmo",
@@ -273,7 +381,27 @@
   ],
   [
     "pnt",
+    "Statement"
+  ],
+  [
+    "pnt",
+    "StatementPractice"
+  ],
+  [
+    "pnt",
     "StatementReminder"
+  ],
+  [
+    "reports",
+    "All$"
+  ],
+  [
+    "reports",
+    "CSRequest_Practice"
+  ],
+  [
+    "reports",
+    "DASplay"
   ],
   [
     "reports",
@@ -282,6 +410,10 @@
   [
     "reports",
     "Matching_Liberty"
+  ],
+  [
+    "reports",
+    "NeaPre2012"
   ],
   [
     "reports",
@@ -321,6 +453,10 @@
   ],
   [
     "reports",
+    "rpt_NEA_Commission"
+  ],
+  [
+    "reports",
     "temp_DSO_Claims"
   ],
   [
@@ -350,6 +486,14 @@
   [
     "reports",
     "tmpEaglesLanding"
+  ],
+  [
+    "reports",
+    "tmpOrtho"
+  ],
+  [
+    "reports",
+    "tmpTDO"
   ],
   [
     "reports",

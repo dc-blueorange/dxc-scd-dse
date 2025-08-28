@@ -1,13 +1,20 @@
 Database,Table,Matched,File
+ext_raw_mp,DXC_ZentistParnershipRevenueTracker2,# Total Practices,DTT-ANA-PRD/ext_raw_mp.sql
 ext_raw_mp,DXC_ZentistParnershipRevenueTracker2,Number of locations,DTT-ANA-PRD/ext_raw_mp.sql
 ext_raw_mp,DXC_ZentistParnershipRevenueTracker2,Cumulative Number of locations,DTT-ANA-PRD/ext_raw_mp.sql
 ext_raw_mp,DXC_ZentistParnershipRevenueTracker2,Implementation Price Location,DTT-ANA-PRD/ext_raw_mp.sql
+ext_raw_mp,MPExtZentistNotionleadsexport,TotalPractices,DTT-ANA-PRD/ext_raw_mp.sql
 ext_raw_mp,MPExtZentistNotionleadsexport,HQLocation,DTT-ANA-PRD/ext_raw_mp.sql
 ext_raw_mp,MPExtZentistNotionleadsexport,ImplementationPriceLocation,DTT-ANA-PRD/ext_raw_mp.sql
+ext_raw_mp,MPExtZentistNotionleadsexport,TotalPracticestext,DTT-ANA-PRD/ext_raw_mp.sql
+ext_raw_mp,MPExtZentistNotionleadsexportAudit,TotalPractices,DTT-ANA-PRD/ext_raw_mp.sql
 ext_raw_mp,MPExtZentistNotionleadsexportAudit,HQLocation,DTT-ANA-PRD/ext_raw_mp.sql
 ext_raw_mp,MPExtZentistNotionleadsexportAudit,ImplementationPriceLocation,DTT-ANA-PRD/ext_raw_mp.sql
+ext_raw_mp,MPExtZentistNotionleadsexportAudit,TotalPracticestext,DTT-ANA-PRD/ext_raw_mp.sql
+ext_raw_mp,MPExtZentistNotionleadsexporttemp,TotalPractices,DTT-ANA-PRD/ext_raw_mp.sql
 ext_raw_mp,MPExtZentistNotionleadsexporttemp,HQLocation,DTT-ANA-PRD/ext_raw_mp.sql
 ext_raw_mp,MPExtZentistNotionleadsexporttemp,ImplementationPriceLocation,DTT-ANA-PRD/ext_raw_mp.sql
+ext_raw_mp,MPExtZentistNotionleadsexporttemp,TotalPracticestext,DTT-ANA-PRD/ext_raw_mp.sql
 rpt,SSISDistributionClientsFTPDistributions,PackageVariable_sftpLocation,DTT-ANA-PRD/rpt.sql
 rpt,SSISDistributionClientsFTPDistributionsAudit,PackageVariable_sftpLocation,DTT-ANA-PRD/rpt.sql
 ext_raw_pc,backofficeusers,_airbyte_backofficeusers_hashid,DTT-ANA-PRD/ext_raw_pc.sql
@@ -67,6 +74,9 @@ trxBrch,ClientSubscriptionEvents,MultilocationEntityID,DTT-TRX-PRD/trxBrch.sql
 trxBrch,ClientSubscriptionEvents,MultilocationEntityName,DTT-TRX-PRD/trxBrch.sql
 trxBrch,ClientTransactions,MultilocationEntityID,DTT-TRX-PRD/trxBrch.sql
 trxBrch,ClientTransactions,MultilocationEntityName,DTT-TRX-PRD/trxBrch.sql
+pnt,Statement,StatementPracticeID,Livesql3/pnt.sql
+pnt,StatementPractice,StatementPracticeID,Livesql3/pnt.sql
+pnt,StatementPractice,PracticeAccount,Livesql3/pnt.sql
 pnt,StatementReminder,Location,Livesql3/pnt.sql
 dhmo,Aetna_xml_Data,OfficeTIN,Livesql3/dhmo.sql
 dhmo,Aetna_xml_Data,OfficeNumber,Livesql3/dhmo.sql
@@ -90,15 +100,67 @@ common,DownloadConfig_old,Location,Livesql3/Common.sql
 common,FrontOfficeBilling,FrontOfficeBillingID,Livesql3/Common.sql
 common,HawaiiDentalLicenseLookup,LicenseOfficeNumber,Livesql3/Common.sql
 common,HawaiiDentalLicenseLookup,EmployerLicenseOfficeNumber,Livesql3/Common.sql
+common,MessagePortalConversation,PracticeParticipantsCount,Livesql3/Common.sql
+common,MessagePortalConversation,PracticeMessageCount,Livesql3/Common.sql
 common,NppesDataSourceResponse,Location,Livesql3/Common.sql
+common,NppesLookup,ProviderFirstLineBusinessPracticeLocAddress,Livesql3/Common.sql
+common,NppesLookup,ProviderSecondLineBusinessPracticeLocAddress,Livesql3/Common.sql
+common,NppesLookup,ProviderBusinessPracticeLocAddressCityName,Livesql3/Common.sql
+common,NppesLookup,ProviderBusinessPracticeLocAddressStateName,Livesql3/Common.sql
+common,NppesLookup,ProviderBusinessPracticeLocAddressPostalCode,Livesql3/Common.sql
+common,NppesLookup,ProviderBusinessPracticeLocAddressCountryCode,Livesql3/Common.sql
+common,NppesLookup,ProviderBusinessPracticeLocAddressTelephoneNumber,Livesql3/Common.sql
+common,NppesLookup_old,ProviderFirstLineBusinessPracticeLocAddress,Livesql3/Common.sql
+common,NppesLookup_old,ProviderSecondLineBusinessPracticeLocAddress,Livesql3/Common.sql
+common,NppesLookup_old,ProviderBusinessPracticeLocAddressCityName,Livesql3/Common.sql
+common,NppesLookup_old,ProviderBusinessPracticeLocAddressStateName,Livesql3/Common.sql
+common,NppesLookup_old,ProviderBusinessPracticeLocAddressPostalCode,Livesql3/Common.sql
+common,NppesLookup_old,ProviderBusinessPracticeLocAddressCountryCode,Livesql3/Common.sql
+common,NppesLookup_old,ProviderBusinessPracticeLocAddressTelephoneNumber,Livesql3/Common.sql
+common,NppesLookup_old1,ProviderFirstLineBusinessPracticeLocAddress,Livesql3/Common.sql
+common,NppesLookup_old1,ProviderSecondLineBusinessPracticeLocAddress,Livesql3/Common.sql
+common,NppesLookup_old1,ProviderBusinessPracticeLocAddressCityName,Livesql3/Common.sql
+common,NppesLookup_old1,ProviderBusinessPracticeLocAddressStateName,Livesql3/Common.sql
+common,NppesLookup_old1,ProviderBusinessPracticeLocAddressPostalCode,Livesql3/Common.sql
+common,NppesLookup_old1,ProviderBusinessPracticeLocAddressCountryCode,Livesql3/Common.sql
+common,NppesLookup_old1,ProviderBusinessPracticeLocAddressTelephoneNumber,Livesql3/Common.sql
+common,Pms,GroupPracticePMS,Livesql3/Common.sql
+common,PmsAudit,GroupPracticePMS,Livesql3/Common.sql
+common,ProviderDirectory,MalpracticeCarrier,Livesql3/Common.sql
+common,ProviderDirectory,MalpracticePolicy,Livesql3/Common.sql
+common,ProviderDirectory,MalpracticeEffectiveDate,Livesql3/Common.sql
+common,ProviderDirectory,MalpracticeExpiryDate,Livesql3/Common.sql
+common,ProviderDirectory,MalpracticeOccuranceLimit,Livesql3/Common.sql
+common,ProviderDirectory,MalpracticeAggregateLimit,Livesql3/Common.sql
+common,ProviderDirectoryCompare,MalpracticeCarrier,Livesql3/Common.sql
+common,ProviderDirectoryCompare,MalpracticePolicy,Livesql3/Common.sql
+common,ProviderDirectoryCompare,MalpracticeEffectiveDate,Livesql3/Common.sql
+common,ProviderDirectoryCompare,MalpracticeExpiryDate,Livesql3/Common.sql
+common,ProviderDirectoryCompare,MalpracticeOccuranceLimit,Livesql3/Common.sql
+common,ProviderDirectoryCompare,MalpracticeAggregateLimit,Livesql3/Common.sql
+common,ProviderDirectoryHistory,MalpracticeCarrier,Livesql3/Common.sql
+common,ProviderDirectoryHistory,MalpracticePolicy,Livesql3/Common.sql
+common,ProviderDirectoryHistory,MalpracticeEffectiveDate,Livesql3/Common.sql
+common,ProviderDirectoryHistory,MalpracticeExpiryDate,Livesql3/Common.sql
+common,ProviderDirectoryHistory,MalpracticeOccuranceLimit,Livesql3/Common.sql
+common,ProviderDirectoryHistory,MalpracticeAggregateLimit,Livesql3/Common.sql
 common,ProviderDirectoryLocation,ProviderDirectoryLocationID,Livesql3/Common.sql
 common,ProviderDirectoryLocation,StandardOfficeHours,Livesql3/Common.sql
 common,ProviderDirectoryLocation,LocationID,Livesql3/Common.sql
 common,ProviderDirectoryLocationCompare,ProviderDirectoryLocationCompareID,Livesql3/Common.sql
 common,ProviderDirectoryLocationCompare,LocationID,Livesql3/Common.sql
 common,ProviderDirectoryLocationCompare,ProviderDirectoryLocationID,Livesql3/Common.sql
+common,ProviderDirectoryLocationCompare,PracticeName,Livesql3/Common.sql
 common,ProviderDirectoryLocationCompare,StandardOfficeHours,Livesql3/Common.sql
 common,ProviderDirectoryLocationCompare,LocationRank,Livesql3/Common.sql
+common,providerdirectoryold,MalpracticeCarrier,Livesql3/Common.sql
+common,providerdirectoryold,MalpracticePolicy,Livesql3/Common.sql
+common,providerdirectoryold,MalpracticeEffectiveDate,Livesql3/Common.sql
+common,providerdirectoryold,MalpracticeExpiryDate,Livesql3/Common.sql
+common,providerdirectoryold,MalpracticeOccuranceLimit,Livesql3/Common.sql
+common,providerdirectoryold,MalpracticeAggregateLimit,Livesql3/Common.sql
+common,ProviderDirectoryPayer,MalpracticeActive,Livesql3/Common.sql
+common,ProviderDirectoryPayerHistory,MalpracticeActive,Livesql3/Common.sql
 common,ProviderDirectoryPayerLocationPlan,LocationPlanID,Livesql3/Common.sql
 common,ProviderDirectoryPayerLocationPlan,ProviderDirectoryLocationID,Livesql3/Common.sql
 common,ProviderPayerEnrollment,LocationNumber,Livesql3/Common.sql
@@ -109,6 +171,8 @@ dci,arc_OfficeResponse_Archive_List,OfficeResponseID,Livesql3/dci.sql
 dci,arc_OfficeResponse_OfficeResponseID_Delete_List,OfficeResponseID,Livesql3/dci.sql
 dci,OfficeResponseAudit,OfficeResponseAuditID,Livesql3/dci.sql
 dci,OfficeResponseAudit,OfficeResponseID,Livesql3/dci.sql
+dci,reports,PracticeConnect,Livesql3/dci.sql
+dci,reports,PracticeWorksZPW,Livesql3/dci.sql
 cred,LocationQuestion,LocationQuestionID,Livesql3/cred.sql
 cred,LocationQuestion,LocationQuestionSortOrder,Livesql3/cred.sql
 cred,GroupLocation,GroupLocationID,Livesql3/cred.sql
@@ -129,19 +193,39 @@ cred,ProviderApplicationStatusLocation,ApplicationStatusLocationID,Livesql3/cred
 cred,ProviderApplicationStatusLocation,LocationName,Livesql3/cred.sql
 cred,ProviderApplicationStatusLocation,LocationSourceID,Livesql3/cred.sql
 cred,ProviderApplicationStatusLocation,LocationSource,Livesql3/cred.sql
+cred,ProviderGroupDetail,GroupPracticeId,Livesql3/cred.sql
 cred,ProviderSiteDetail,OfficeId,Livesql3/cred.sql
 cred,ProviderSiteDetail,OfficeLanguages,Livesql3/cred.sql
 cred,UserLocation,UserLocationID,Livesql3/cred.sql
 cred,UserLocation,LocationID,Livesql3/cred.sql
+chs,ClaimPaymentRegistration,PracticeName,Livesql3/chs.sql
+chs,ClaimPaymentRegistration,PracticeAddr1,Livesql3/chs.sql
+chs,ClaimPaymentRegistration,PracticeAddr2,Livesql3/chs.sql
+chs,ClaimPaymentRegistration,PracticeCity,Livesql3/chs.sql
+chs,ClaimPaymentRegistration,PracticeState,Livesql3/chs.sql
+chs,ClaimPaymentRegistration,PracticeZip,Livesql3/chs.sql
+chs,ClaimPaymentRegistration,PracticePhone,Livesql3/chs.sql
+chs,ClaimPaymentRegistrationHistory,PracticeName,Livesql3/chs.sql
+chs,ClaimPaymentRegistrationHistory,PracticeAddr1,Livesql3/chs.sql
+chs,ClaimPaymentRegistrationHistory,PracticeAddr2,Livesql3/chs.sql
+chs,ClaimPaymentRegistrationHistory,PracticeCity,Livesql3/chs.sql
+chs,ClaimPaymentRegistrationHistory,PracticeState,Livesql3/chs.sql
+chs,ClaimPaymentRegistrationHistory,PracticeZip,Livesql3/chs.sql
+chs,ClaimPaymentRegistrationHistory,PracticePhone,Livesql3/chs.sql
 chs,MetaClaimStatus,MetaOfficeResponseID,Livesql3/chs.sql
 chs,MetaOfficeResponse,MetaOfficeResponseID,Livesql3/chs.sql
 chs,MetaOfficeResponseFile,MetaOfficeResponseFileID,Livesql3/chs.sql
 chs,MetaOfficeResponseFile,MetaOfficeResponseID,Livesql3/chs.sql
 chs,OfficeResponsePreAuth,OfficeResponsePreAuthID,Livesql3/chs.sql
 chs,OfficeResponsePreAuth,MetaOfficeResponseID,Livesql3/chs.sql
+reports,All$,Practice Name,Livesql3/reportst.sql
 reports,bkwrpt,officename,Livesql3/reportst.sql
 reports,bkwtest,officename,Livesql3/reportst.sql
+reports,CSRequest_Practice,Practice Name,Livesql3/reportst.sql
+reports,DASplay,Practice,Livesql3/reportst.sql
+reports,dhmo,Practice Name,Livesql3/reportst.sql
 reports,dhmo,Aetna Office ID,Livesql3/reportst.sql
+reports,dhmo_add_groups,Practice Name,Livesql3/reportst.sql
 reports,dhmo_add_groups,Aetna Office ID,Livesql3/reportst.sql
 reports,LibertyMatchBO,OfficeNumber,Livesql3/reportst.sql
 reports,LibertyMatchBO,OfficeName,Livesql3/reportst.sql
@@ -159,8 +243,10 @@ reports,Matching_Liberty,OfficeState,Livesql3/reportst.sql
 reports,Matching_Liberty,OfficeZip,Livesql3/reportst.sql
 reports,Matching_Liberty,OfficeCounty,Livesql3/reportst.sql
 reports,Matching_Liberty,OfficeContactPhone,Livesql3/reportst.sql
+reports,NeaPre2012,PracticeName,Livesql3/reportst.sql
 reports,PayConnectLocationNumber,Office Name,Livesql3/reportst.sql
 reports,PayConnectLocationNumber,Location Number,Livesql3/reportst.sql
+reports,rpt_NEA_Commission,PracticeName,Livesql3/reportst.sql
 reports,temp_DSO_Claims,MultilocationEntityID,Livesql3/reportst.sql
 reports,temp_DSO_Claims,MultilocationEntityName,Livesql3/reportst.sql
 reports,temp_DSO_Cred,MultilocationEntityID,Livesql3/reportst.sql
@@ -175,7 +261,10 @@ reports,temp_DSO_RTCount,MultilocationEntityID,Livesql3/reportst.sql
 reports,temp_DSO_RTCount,MultilocationEntityName,Livesql3/reportst.sql
 reports,temp_DSO_Subscription_ClientSubscriptionEvents,MultilocationEntityID,Livesql3/reportst.sql
 reports,temp_DSO_Subscription_ClientSubscriptionEvents,MultilocationEntityName,Livesql3/reportst.sql
+reports,tmpOrtho,Practice Name,Livesql3/reportst.sql
+reports,tmpTDO,Practice Name,Livesql3/reportst.sql
 reports,UCCI,Office Name,Livesql3/reportst.sql
+reports,UCCI,Group Practice,Livesql3/reportst.sql
 reports,VendorDashAggr,officecnt,Livesql3/reportst.sql
 reports,bndofficemcna,officename,Livesql3/reportst.sql
 reports,dfcProvs,Location,Livesql3/reportst.sql
@@ -184,3 +273,16 @@ reports,tmpEaglesLanding,Office Name,Livesql3/reportst.sql
 reports,tmpeagleslandingitems,Office,Livesql3/reportst.sql
 reports,tmpeagleslandingitems,Office Name,Livesql3/reportst.sql
 dxcps,Vital_T,Location_Number_CH,Livesql3/dxcps.sql
+ddir,Practice,UsePracticePhone,Livesql3/ddir.sql
+ddir,PracticeAssociationAudit,PracticeAssociationAudit,Livesql3/ddir.sql
+ddir,PracticeAudit,PracticeAudit,Livesql3/ddir.sql
+ddir,PracticeAudit,UsePracticePhone,Livesql3/ddir.sql
+ddir,PracticeHoursAudit,PracticeHoursAuditID,Livesql3/ddir.sql
+ddir,PracticeLanguageAudit,PracticeLanguageAuditID,Livesql3/ddir.sql
+ddir,PracticeOffer,PracticeOfferID,Livesql3/ddir.sql
+ddir,PracticeOfferAudit,PracticeOfferID,Livesql3/ddir.sql
+ddir,PracticeOfferOld,PracticeOfferID,Livesql3/ddir.sql
+ddir,PracticeProfile,PublishPracticeHours,Livesql3/ddir.sql
+ddir,PracticeProfileAudit,PracticeProfileAuditID,Livesql3/ddir.sql
+ddir,PracticeProfileAudit,PublishPracticeHours,Livesql3/ddir.sql
+ddir,PracticeServiceAudit,PracticeServiceAuditID,Livesql3/ddir.sql

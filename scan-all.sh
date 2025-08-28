@@ -46,13 +46,13 @@ echo
 echo
 echo "Counting table and column names that match dentists, offices, networks and DSOs...and synonyms."
 echo Dentist table name matches: $(jq 'length' analysis-dean/dentist-tables.json)
-echo Dentist column name matchs: $(jq 'length' analysis-dean/dentist-columns.json)
+echo Dentist column name matches: $(jq 'length' analysis-dean/dentist-columns.json)
 echo Office table name matches: $(jq 'length' analysis-dean/office-tables.json)
-echo Office column name matchs: $(jq 'length' analysis-dean/office-columns.json)
+echo Office column name matches: $(jq 'length' analysis-dean/office-columns.json)
 echo Provider Networks table name matches: $(jq 'length' analysis-dean/network-tables.json)
-echo Provider Network column name matchs: $(jq 'length' analysis-dean/network-columns.json)
+echo Provider Network column name matches: $(jq 'length' analysis-dean/network-columns.json)
 echo DSO table name matches: $(jq 'length' analysis-dean/dso-tables.json)
-echo DSO column name matchs: $(jq 'length' analysis-dean/dso-columns.json)
+echo DSO column name matches: $(jq 'length' analysis-dean/dso-columns.json)
 echo
 echo "Counting unique dentists, offices, networks and DSOs with column hits..."
 echo Dentists with Column Hits: $(wc -l analysis-dean/dentist-unique-table-column-matches.csv)

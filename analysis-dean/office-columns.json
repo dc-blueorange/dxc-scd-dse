@@ -2,6 +2,12 @@
     {
         "database": "ext_raw_mp",
         "table": "DXC_ZentistParnershipRevenueTracker2",
+        "column": "# Total Practices",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "DXC_ZentistParnershipRevenueTracker2",
         "column": "Number of locations",
         "file": "DTT-ANA-PRD/ext_raw_mp.sql"
     },
@@ -20,6 +26,12 @@
     {
         "database": "ext_raw_mp",
         "table": "MPExtZentistNotionleadsexport",
+        "column": "TotalPractices",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexport",
         "column": "HQLocation",
         "file": "DTT-ANA-PRD/ext_raw_mp.sql"
     },
@@ -31,6 +43,18 @@
     },
     {
         "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexport",
+        "column": "TotalPracticestext",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexportAudit",
+        "column": "TotalPractices",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
         "table": "MPExtZentistNotionleadsexportAudit",
         "column": "HQLocation",
         "file": "DTT-ANA-PRD/ext_raw_mp.sql"
@@ -43,6 +67,18 @@
     },
     {
         "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexportAudit",
+        "column": "TotalPracticestext",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexporttemp",
+        "column": "TotalPractices",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
         "table": "MPExtZentistNotionleadsexporttemp",
         "column": "HQLocation",
         "file": "DTT-ANA-PRD/ext_raw_mp.sql"
@@ -51,6 +87,12 @@
         "database": "ext_raw_mp",
         "table": "MPExtZentistNotionleadsexporttemp",
         "column": "ImplementationPriceLocation",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexporttemp",
+        "column": "TotalPracticestext",
         "file": "DTT-ANA-PRD/ext_raw_mp.sql"
     },
     {
@@ -409,6 +451,24 @@
     },
     {
         "database": "pnt",
+        "table": "Statement",
+        "column": "StatementPracticeID",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "StatementPractice",
+        "column": "StatementPracticeID",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "StatementPractice",
+        "column": "PracticeAccount",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "database": "pnt",
         "table": "StatementReminder",
         "column": "Location",
         "file": "Livesql3/pnt.sql"
@@ -547,8 +607,266 @@
     },
     {
         "database": "common",
+        "table": "MessagePortalConversation",
+        "column": "PracticeParticipantsCount",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "MessagePortalConversation",
+        "column": "PracticeMessageCount",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
         "table": "NppesDataSourceResponse",
         "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderFirstLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderSecondLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessPracticeLocAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessPracticeLocAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessPracticeLocAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessPracticeLocAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessPracticeLocAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderFirstLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderSecondLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessPracticeLocAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessPracticeLocAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessPracticeLocAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessPracticeLocAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessPracticeLocAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderFirstLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderSecondLineBusinessPracticeLocAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessPracticeLocAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessPracticeLocAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessPracticeLocAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessPracticeLocAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessPracticeLocAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "Pms",
+        "column": "GroupPracticePMS",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "PmsAudit",
+        "column": "GroupPracticePMS",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectory",
+        "column": "MalpracticeCarrier",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectory",
+        "column": "MalpracticePolicy",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectory",
+        "column": "MalpracticeEffectiveDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectory",
+        "column": "MalpracticeExpiryDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectory",
+        "column": "MalpracticeOccuranceLimit",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectory",
+        "column": "MalpracticeAggregateLimit",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "column": "MalpracticeCarrier",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "column": "MalpracticePolicy",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "column": "MalpracticeEffectiveDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "column": "MalpracticeExpiryDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "column": "MalpracticeOccuranceLimit",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "column": "MalpracticeAggregateLimit",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "column": "MalpracticeCarrier",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "column": "MalpracticePolicy",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "column": "MalpracticeEffectiveDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "column": "MalpracticeExpiryDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "column": "MalpracticeOccuranceLimit",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "column": "MalpracticeAggregateLimit",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -590,6 +908,12 @@
     {
         "database": "common",
         "table": "ProviderDirectoryLocationCompare",
+        "column": "PracticeName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
         "column": "StandardOfficeHours",
         "file": "Livesql3/Common.sql"
     },
@@ -597,6 +921,54 @@
         "database": "common",
         "table": "ProviderDirectoryLocationCompare",
         "column": "LocationRank",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "providerdirectoryold",
+        "column": "MalpracticeCarrier",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "providerdirectoryold",
+        "column": "MalpracticePolicy",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "providerdirectoryold",
+        "column": "MalpracticeEffectiveDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "providerdirectoryold",
+        "column": "MalpracticeExpiryDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "providerdirectoryold",
+        "column": "MalpracticeOccuranceLimit",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "providerdirectoryold",
+        "column": "MalpracticeAggregateLimit",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayer",
+        "column": "MalpracticeActive",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerHistory",
+        "column": "MalpracticeActive",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -657,6 +1029,18 @@
         "database": "dci",
         "table": "OfficeResponseAudit",
         "column": "OfficeResponseID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "reports",
+        "column": "PracticeConnect",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "reports",
+        "column": "PracticeWorksZPW",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -781,6 +1165,12 @@
     },
     {
         "database": "cred",
+        "table": "ProviderGroupDetail",
+        "column": "GroupPracticeId",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
         "table": "ProviderSiteDetail",
         "column": "OfficeId",
         "file": "Livesql3/cred.sql"
@@ -802,6 +1192,90 @@
         "table": "UserLocation",
         "column": "LocationID",
         "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "column": "PracticeName",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "column": "PracticeAddr1",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "column": "PracticeAddr2",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "column": "PracticeCity",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "column": "PracticeState",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "column": "PracticeZip",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistration",
+        "column": "PracticePhone",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "column": "PracticeName",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "column": "PracticeAddr1",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "column": "PracticeAddr2",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "column": "PracticeCity",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "column": "PracticeState",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "column": "PracticeZip",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentRegistrationHistory",
+        "column": "PracticePhone",
+        "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
@@ -841,6 +1315,12 @@
     },
     {
         "database": "reports",
+        "table": "All$",
+        "column": "Practice Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
         "table": "bkwrpt",
         "column": "officename",
         "file": "Livesql3/reportst.sql"
@@ -853,8 +1333,32 @@
     },
     {
         "database": "reports",
+        "table": "CSRequest_Practice",
+        "column": "Practice Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "DASplay",
+        "column": "Practice",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dhmo",
+        "column": "Practice Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
         "table": "dhmo",
         "column": "Aetna Office ID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dhmo_add_groups",
+        "column": "Practice Name",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -961,6 +1465,12 @@
     },
     {
         "database": "reports",
+        "table": "NeaPre2012",
+        "column": "PracticeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
         "table": "PayConnectLocationNumber",
         "column": "Office Name",
         "file": "Livesql3/reportst.sql"
@@ -973,6 +1483,12 @@
     },
     {
         "database": "reports",
+        "table": "rpt_NEA_Commission",
+        "column": "PracticeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
         "table": "temp_DSO_Claims",
         "column": "MultilocationEntityID",
         "file": "Livesql3/reportst.sql"
@@ -1053,12 +1569,30 @@
         "database": "reports",
         "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
         "column": "MultilocationEntityName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpOrtho",
+        "column": "Practice Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpTDO",
+        "column": "Practice Name",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "UCCI",
         "column": "Office Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "UCCI",
+        "column": "Group Practice",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -1108,5 +1642,83 @@
         "table": "Vital_T",
         "column": "Location_Number_CH",
         "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "Practice",
+        "column": "UsePracticePhone",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeAssociationAudit",
+        "column": "PracticeAssociationAudit",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeAudit",
+        "column": "PracticeAudit",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeAudit",
+        "column": "UsePracticePhone",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeHoursAudit",
+        "column": "PracticeHoursAuditID",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeLanguageAudit",
+        "column": "PracticeLanguageAuditID",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeOffer",
+        "column": "PracticeOfferID",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeOfferAudit",
+        "column": "PracticeOfferID",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeOfferOld",
+        "column": "PracticeOfferID",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeProfile",
+        "column": "PublishPracticeHours",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeProfileAudit",
+        "column": "PracticeProfileAuditID",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeProfileAudit",
+        "column": "PublishPracticeHours",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "database": "ddir",
+        "table": "PracticeServiceAudit",
+        "column": "PracticeServiceAuditID",
+        "file": "Livesql3/ddir.sql"
     }
 ]

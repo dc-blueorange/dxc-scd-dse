@@ -21,8 +21,8 @@ logger = logging.getLogger(__name__)
 
 def scan_sql_file(filepath, mode, columns=True):
     results = []
-    regexDentistWords = r'(?:dentist|doctor|nurse|hygienist|provider|ortho)'
-    regexOfficeWords = r'(?:office|location)'
+    regexDentistWords = r'(?:dentist|practioner|doctor|nurse|hygienist|provider|ortho)'
+    regexOfficeWords = r'(?:office|location|practice)'
     regexNetworkWords = r'(?:dental partner network|partner network|dental network|partner|network)'
     regexDSOWords = r'(?:dental service organization|dental support organization|service org|support organization|support org|dso|service|support)'
     try:
