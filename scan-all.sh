@@ -44,21 +44,21 @@ python3 analysis-dean/column-references.py -sc analysis-dean/dso-columns.json -f
 
 echo
 echo
-echo "Counting dentists, offices, networks and DSOs..."
-echo Dentists: $(jq 'length' analysis-dean/dentist-tables.json)
-echo Dentist columns: $(jq 'length' analysis-dean/dentist-columns.json)
-echo Offices: $(jq 'length' analysis-dean/office-tables.json)
-echo Office columns: $(jq 'length' analysis-dean/office-columns.json)
-echo Provider Networks: $(jq 'length' analysis-dean/network-tables.json)
-echo Provider Network columns: $(jq 'length' analysis-dean/network-columns.json)
-echo DSOs: $(jq 'length' analysis-dean/dso-tables.json)
-echo DSO columns: $(jq 'length' analysis-dean/dso-columns.json)
+echo "Counting table and column names that match dentists, offices, networks and DSOs...and synonyms."
+echo Dentist table name matches: $(jq 'length' analysis-dean/dentist-tables.json)
+echo Dentist column name matchs: $(jq 'length' analysis-dean/dentist-columns.json)
+echo Office table name matches: $(jq 'length' analysis-dean/office-tables.json)
+echo Office column name matchs: $(jq 'length' analysis-dean/office-columns.json)
+echo Provider Networks table name matches: $(jq 'length' analysis-dean/network-tables.json)
+echo Provider Network column name matchs: $(jq 'length' analysis-dean/network-columns.json)
+echo DSO table name matches: $(jq 'length' analysis-dean/dso-tables.json)
+echo DSO column name matchs: $(jq 'length' analysis-dean/dso-columns.json)
 echo
 echo "Counting unique dentists, offices, networks and DSOs with column hits..."
-echo Dentists with Column Hits: $(wc -l analysis-dean/dentist-tables.csv)
-echo Offices with Column Hits: $(wc -l analysis-dean/office-tables.csv)
-echo Providers with Column Hitsetworks: $(wc -l analysis-dean/network-tables.csv)
-echo DSOs with Column Hits: $(wc -l analysis-dean/dso-tables.csv)
+echo Dentists with Column Hits: $(wc -l analysis-dean/dentist-unique-table-column-matches.csv)
+echo Offices with Column Hits: $(wc -l analysis-dean/office-unique-table-column-matches.csv)
+echo Providers with Column Hitsetworks: $(wc -l analysis-dean/network-unique-table-column-matches.csv)
+echo DSOs with Column Hits: $(wc -l analysis-dean/dso-unique-table-column-matches.csv)
 echo
 echo "Counting foreign key references to dentists, offices, networks and DSOs..."
 echo Dentist references: $(jq 'length' analysis-dean/dentist-references.json)
