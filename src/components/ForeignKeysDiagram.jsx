@@ -96,16 +96,18 @@ const ForeignKeysDiagram = () => {
       .attr("stroke-width", 1.5)
       .selectAll("line")
       .data(data.links)
-      .enter().append("line")
+      .enter()
+      .append("line")
       .attr("marker-end", "url(#arrowhead)");
 
-    // Draw nodes.
+    // Draw nodes as groups.
     const node = container.append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
       .selectAll("g")
       .data(data.nodes)
-      .enter().append("g")
+      .enter()
+      .append("g")
       .on("click", (event, d) => {
         // Toggle collapsed state.
         d.collapsed = !d.collapsed;
@@ -116,7 +118,7 @@ const ForeignKeysDiagram = () => {
     node.append("circle")
       .attr("r", 10)
       .attr("fill", d => d.type === "source" ? "steelblue" : "tomato");
-
+    
     node.append("text")
       .attr("x", 12)
       .attr("y", 4)
@@ -136,7 +138,7 @@ const ForeignKeysDiagram = () => {
           .attr("y1", d => d.source.y)
           .attr("x2", d => d.target.x)
           .attr("y2", d => d.target.y);
-
+      
       node.attr("transform", d => `translate(${d.x}, ${d.y})`);
     });
 
@@ -160,12 +162,44 @@ const ForeignKeysDiagram = () => {
         .on("drag", dragged)
         .on("end", dragended);
     }
-
+    
     node.call(drag(simulation));
+
+    // Add HTML hover popup tooltip for node data.
+    let tooltip = d3.select("body").select(".tooltip");
+    if (tooltip.empty()) {
+      tooltip = d3.select("body")
+        .append("div")
+        .attr("class", "tooltip")
+        .style("position", "absolute")
+        .style("background", "rgba(0, 0, 0, 0.7)")
+        .style("color", "#fff")
+        .style("padding", "8px")
+        .style("border-radius", "4px")
+        .style("pointer-events", "none")
+        .style("opacity", 0);
+    }
+
+    node.on("mouseover", (event, d) => {
+      tooltip.transition().duration(200).style("opacity", 0.9);
+      const htmlContent = `<strong>ID:</strong> ${d.id}<br/>
+                           <strong>Label:</strong> ${d.label}<br/>
+                           <strong>Type:</strong> ${d.type}<br/>
+                           <strong>Collapsed:</strong> ${d.collapsed}`;
+      tooltip.html(htmlContent);
+    })
+    .on("mousemove", (event) => {
+      tooltip.style("left", (event.pageX + 10) + "px")
+             .style("top", (event.pageY + 10) + "px");
+    })
+    .on("mouseout", () => {
+      tooltip.transition().duration(500).style("opacity", 0);
+    });
 
     // Cleanup on unmount.
     return () => {
       simulation.stop();
+      tooltip.remove();
     };
   }, [data]);
 
