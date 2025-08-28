@@ -26,6 +26,16 @@
             "console": "integratedTerminal"
         },
         {
+            "name": "Run schema-analyzer foreign-keys",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "${workspaceFolder}/analysis-dean/schema-analyzer.py",
+            "args": [
+                "--foreign-keys"
+            ],
+            "console": "integratedTerminal"
+        },
+        {
             "name": "Run schema-analyzer offices",
             "type": "debugpy",
             "request": "launch",
