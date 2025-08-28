@@ -17,10 +17,18 @@ const NetworkDiagram = ({ debug = false }) => {
   // Load all JSON files from the /analysis-dean directory (assumed to be served from public)
   useEffect(() => {
     Promise.all([
-      fetch("/analysis-dean/dentist-references.json").then((res) => res.json()).catch(() => []),
-      fetch("/analysis-dean/network-references.json").then((res) => res.json()).catch(() => []),
-      fetch("/analysis-dean/dso-references.json").then((res) => res.json()).catch(() => []),
-      fetch("/analysis-dean/office-references.json").then((res) => res.json()).catch(() => [])
+      fetch("/analysis-dean/dentist-references.json")
+        .then((res) => res.json())
+        .catch(() => []),
+      fetch("/analysis-dean/network-references.json")
+        .then((res) => res.json())
+        .catch(() => []),
+      fetch("/analysis-dean/dso-references.json")
+        .then((res) => res.json())
+        .catch(() => []),
+      fetch("/analysis-dean/office-references.json")
+        .then((res) => res.json())
+        .catch(() => [])
     ]).then(([dentistRefs, networkRefs, dsoRefs, officeRefs]) => {
       // Tag nodes according to origin.
       dentistRefs.forEach((node) => (node.type = "dentist"));
@@ -34,15 +42,13 @@ const NetworkDiagram = ({ debug = false }) => {
       const nodeMap = new Map();
       allNodes.forEach((n) => {
         const key = `${n.database}-${n.table}-${n.column}`;
-        // Only add a node if not already added.
         if (!nodeMap.has(key)) {
           nodeMap.set(key, { ...n, id: key });
         }
       });
       const nodes = Array.from(nodeMap.values());
 
-      // Build links: For each node, for each reference, calculate target key.
-      // The target key is built from the same database and the reference's ref_table and ref_column.
+      // Build links: for each node, for each reference, calculate target key.
       let links = [];
       nodes.forEach((n) => {
         if (n.references && Array.isArray(n.references)) {
@@ -52,13 +58,12 @@ const NetworkDiagram = ({ debug = false }) => {
               links.push({
                 source: n.id,
                 target: targetKey,
-                constraint: ref.constraint || "",
+                constraint: ref.constraint || ""
               });
             }
           });
         }
       });
-
       setData({ nodes, links });
     });
   }, []);
@@ -66,7 +71,6 @@ const NetworkDiagram = ({ debug = false }) => {
   // Draw the network using D3.js upon data change.
   useEffect(() => {
     if (data.nodes.length === 0) return;
-
     let { width, height } = getDimensions();
 
     // Color scale based on node type.
@@ -77,7 +81,7 @@ const NetworkDiagram = ({ debug = false }) => {
     const svg = d3.select(svgRef.current)
       .attr("width", width)
       .attr("height", height);
-
+    
     // Clear previous content.
     svg.selectAll("*").remove();
 
@@ -95,7 +99,7 @@ const NetworkDiagram = ({ debug = false }) => {
       .attr("d", "M0,-5L10,0L0,5")
       .attr("fill", "red");
 
-    // Create a tooltip div if it doesn't exist.
+    // Create tooltip: a hidden HTML div that will display node data on hover.
     let tooltip = d3.select("body").select(".tooltip");
     if (tooltip.empty()) {
       tooltip = d3.select("body")
@@ -103,7 +107,7 @@ const NetworkDiagram = ({ debug = false }) => {
         .attr("class", "tooltip")
         .style("position", "absolute")
         .style("padding", "8px")
-        .style("background", "rgba(0,0,0,0.7)")
+        .style("background", "rgba(0, 0, 0, 0.7)")
         .style("color", "#fff")
         .style("border-radius", "4px")
         .style("pointer-events", "none")
@@ -116,24 +120,27 @@ const NetworkDiagram = ({ debug = false }) => {
       .force("charge", d3.forceManyBody().strength(-300))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
-    // Save simulation to reference for later resize updates.
     simulationRef.current = simulation;
 
+    // Draw links with red stroke.
     const link = svg.append("g")
       .attr("stroke", "red")
       .attr("stroke-opacity", 0.6)
       .selectAll("line")
       .data(data.links)
-      .enter().append("line")
+      .enter()
+      .append("line")
       .attr("stroke-width", 1.5)
       .attr("marker-end", "url(#arrowhead)");
 
+    // Draw nodes.
     const node = svg.append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
       .selectAll("circle")
       .data(data.nodes)
-      .enter().append("circle")
+      .enter()
+      .append("circle")
       .attr("r", 8)
       .attr("fill", (d) => colorScale(d.type))
       .call(drag(simulation));
@@ -142,13 +149,14 @@ const NetworkDiagram = ({ debug = false }) => {
     const labels = svg.append("g")
       .selectAll("text")
       .data(data.nodes)
-      .enter().append("text")
+      .enter()
+      .append("text")
       .attr("x", 12)
       .attr("y", 4)
       .style("fill", "navy")
       .text(d => d.label);
 
-    // Tooltip events:
+    // Tooltip events: show HTML popup with node data on hover.
     node.on("mouseover", (event, d) => {
           let titleLabel = "";
           if (d.type === "dentist") {
@@ -164,7 +172,7 @@ const NetworkDiagram = ({ debug = false }) => {
           }
           tooltip.transition().duration(200).style("opacity", 0.9);
           tooltip.html(
-            `<h3 style="margin:0;padding:0 0 4px 0;">${titleLabel}</h3>
+            `<h3 style="margin:0; padding:0 0 4px 0;">${titleLabel}</h3>
              <strong>Database:</strong> ${d.database}<br/>
              <strong>Table:</strong> ${d.table}<br/>
              <strong>Column:</strong> ${d.column}<br/>
@@ -180,7 +188,7 @@ const NetworkDiagram = ({ debug = false }) => {
           tooltip.transition().duration(500).style("opacity", 0);
         });
 
-    // Append title for basic accessibility as well.
+    // Append title attribute for accessibility.
     node.append("title")
       .text((d) => `${d.database} : ${d.table} : ${d.column}`);
 
@@ -198,9 +206,8 @@ const NetworkDiagram = ({ debug = false }) => {
       node.attr("cx", (d) => d.x)
           .attr("cy", (d) => d.y);
 
-      // Update labels positions
-      labels.attr("x", d => d.x + 12)
-            .attr("y", d => d.y + 4);
+      labels.attr("x", (d) => d.x + 12)
+            .attr("y", (d) => d.y + 4);
     });
 
     function drag(simulation) {
@@ -209,18 +216,15 @@ const NetworkDiagram = ({ debug = false }) => {
         d.fx = d.x;
         d.fy = d.y;
       }
-      
       function dragged(event, d) {
         d.fx = event.x;
         d.fy = event.y;
       }
-      
       function dragended(event, d) {
         if (!event.active) simulation.alphaTarget(0);
         d.fx = null;
         d.fy = null;
       }
-      
       return d3.drag()
         .on("start", dragstarted)
         .on("drag", dragged)
@@ -230,7 +234,9 @@ const NetworkDiagram = ({ debug = false }) => {
     const handleResize = () => {
       let { width, height } = getDimensions();
       svg.attr("width", width).attr("height", height);
-      simulation.force("center", d3.forceCenter(width / 2, height / 2)).alpha(0.5).restart();
+      simulation.force("center", d3.forceCenter(width / 2, height / 2))
+                .alpha(0.5)
+                .restart();
     };
 
     window.addEventListener("resize", handleResize);
