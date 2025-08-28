@@ -1,290 +1,1112 @@
 [
     {
-        "database": "ext_raw_pc",
-        "table": "_airbyte_raw_BackOfficeUsers",
-        "column": "Office",
-        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+        "database": "ext_raw_mp",
+        "table": "DXC_ZentistParnershipRevenueTracker2",
+        "column": "Number of locations",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
     },
     {
-        "database": "ext_raw_pc",
-        "table": "_airbyte_raw_BackOfficeUserTokens",
-        "column": "Office",
-        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+        "database": "ext_raw_mp",
+        "table": "DXC_ZentistParnershipRevenueTracker2",
+        "column": "Cumulative Number of locations",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "DXC_ZentistParnershipRevenueTracker2",
+        "column": "Implementation Price Location",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexport",
+        "column": "HQLocation",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexport",
+        "column": "ImplementationPriceLocation",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexportAudit",
+        "column": "HQLocation",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexportAudit",
+        "column": "ImplementationPriceLocation",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexporttemp",
+        "column": "HQLocation",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "ext_raw_mp",
+        "table": "MPExtZentistNotionleadsexporttemp",
+        "column": "ImplementationPriceLocation",
+        "file": "DTT-ANA-PRD/ext_raw_mp.sql"
+    },
+    {
+        "database": "rpt",
+        "table": "SSISDistributionClientsFTPDistributions",
+        "column": "PackageVariable_sftpLocation",
+        "file": "DTT-ANA-PRD/rpt.sql"
+    },
+    {
+        "database": "rpt",
+        "table": "SSISDistributionClientsFTPDistributionsAudit",
+        "column": "PackageVariable_sftpLocation",
+        "file": "DTT-ANA-PRD/rpt.sql"
     },
     {
         "database": "ext_raw_pc",
         "table": "backofficeusers",
-        "column": "office",
+        "column": "_airbyte_backofficeusers_hashid",
         "file": "DTT-ANA-PRD/ext_raw_pc.sql"
     },
     {
         "database": "ext_raw_pc",
         "table": "backofficeusertokens",
-        "column": "office",
+        "column": "_airbyte_backofficeusertokens_hashid",
         "file": "DTT-ANA-PRD/ext_raw_pc.sql"
     },
     {
         "database": "master",
+        "table": "rptDCIClaimAGGPendingClaimStatusAgedSnapshot",
+        "column": "MultilocationID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "rptDCIClaimDETUserResolvedClaimsDetail",
+        "column": "MultilocationID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
         "table": "CREDApplicationSetDETApprovedAppsPayerApprovedLocations",
-        "column": "Location",
+        "column": "PayerApprovedLocationID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDApplicationSetDETApprovedAppsPayerApprovedLocations",
+        "column": "MaxAllowedAddLocations",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "CREDApplicationSetDETApprovedAppsPayerApprovedLocations",
+        "column": "LocationType",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "database": "master",
         "table": "CREDProviderDETLocationsProviderProfileAnswers",
-        "column": "Location",
+        "column": "ProviderProfileLocationAnswerID",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
-        "database": "nsDev",
-        "table": "aggregateItemLocation",
-        "column": "Location",
-        "file": "DTT-TRX-PRD/nsDev.sql"
+        "database": "master",
+        "table": "CREDProviderDETLocationsProviderProfileAnswers",
+        "column": "PrimaryLocation",
+        "file": "DTT-ANA-PRD/ent.sql"
     },
     {
-        "database": "nsDev",
-        "table": "AllocationMethod",
+        "database": "master",
+        "table": "CREDProviderDETLocationsProviderProfileAnswers",
+        "column": "DisplayLocationsAnswerContent",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "master",
+        "table": "Appointments",
+        "column": "BillingProviderLocationName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "trxQA",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Charge_copy",
         "column": "location",
-        "file": "DTT-TRX-PRD/nsDev.sql"
-    },
-    {
-        "database": "nsDev",
-        "table": "assemblyItemLocations",
-        "column": "Location",
-        "file": "DTT-TRX-PRD/nsDev.sql"
-    },
-    {
-        "database": "nsDev",
-        "table": "LocationMainAddress",
-        "column": "Location",
-        "file": "DTT-TRX-PRD/nsDev.sql"
-    },
-    {
-        "database": "nsDev",
-        "table": "LocationReturnAddress",
-        "column": "Location",
-        "file": "DTT-TRX-PRD/nsDev.sql"
-    },
-    {
-        "database": "nsDev",
-        "table": "LocationType",
-        "column": "Location",
-        "file": "DTT-TRX-PRD/nsDev.sql"
-    },
-    {
-        "database": "nsDev",
-        "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
-        "column": "location",
-        "file": "DTT-TRX-PRD/nsDev.sql"
-    },
-    {
-        "database": "ns",
-        "table": "aggregateItemLocation",
-        "column": "Location",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
-        "table": "AllocationMethod",
+        "table": "Customer_copy",
+        "column": "defaultallocationstrategy",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Item_copy",
         "column": "location",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
-        "table": "assemblyItemLocations",
-        "column": "Location",
+        "table": "Item_copy",
+        "column": "preferredlocation",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
-        "table": "LocationMainAddress",
-        "column": "Location",
+        "table": "Item_copy",
+        "column": "revenueallocationgroup",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "database": "ns",
-        "table": "LocationReturnAddress",
-        "column": "Location",
-        "file": "DTT-TRX-PRD/erpQA.sql"
-    },
-    {
-        "database": "ns",
-        "table": "LocationType",
-        "column": "Location",
-        "file": "DTT-TRX-PRD/erpQA.sql"
-    },
-    {
-        "database": "ns",
-        "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
+        "table": "SalesInvoiced_copy",
         "column": "location",
         "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Subscription_copy",
+        "column": "location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "transferlocation",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "allocationalert",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "fxvsoeallocation",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "inventorylocation",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "inventoryreportinglocation",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "isallocation",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "isfreezefirmallocation",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "orderallocationstrategy",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "targetlocation",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "vsoeallocation",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "Vendor_copy",
+        "column": "manufacturinglocations",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "ZABSubscription_copy",
+        "column": "custrecordzab_s_location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "ns",
+        "table": "ZABSubscriptionItem_copy",
+        "column": "custrecordzab_si_location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientSubscriptionEvents",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityID",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "MultilocationEntityName",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "database": "pnt",
+        "table": "StatementReminder",
+        "column": "Location",
+        "file": "Livesql3/pnt.sql"
     },
     {
         "database": "dhmo",
-        "table": "DCPOffice_20110815",
-        "column": "Office",
+        "table": "Aetna_xml_Data",
+        "column": "OfficeTIN",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "Aetna_xml_Data",
+        "column": "OfficeNumber",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "Capitation",
+        "column": "SuperOfficeID",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "CapXRef",
+        "column": "OfficeCode",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "CapXRef",
+        "column": "SuperOfficeID",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "Member",
+        "column": "OfficeCode",
         "file": "Livesql3/dhmo.sql"
     },
     {
         "database": "dhmo",
         "table": "OfficeServiceClient",
-        "column": "Office",
+        "column": "OfficeCode",
         "file": "Livesql3/dhmo.sql"
     },
     {
         "database": "dhmo",
-        "table": "SPDOOffice",
-        "column": "Office",
+        "table": "PayerGroup",
+        "column": "OfficeCode",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "PayerGroupAudit",
+        "column": "OfficeCode",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "PayerGroupPlan",
+        "column": "OfficeCode",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "Plan",
+        "column": "OfficeCopay",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "database": "dhmo",
+        "table": "PlanItem",
+        "column": "OfficeVisitAmt",
         "file": "Livesql3/dhmo.sql"
     },
     {
         "database": "common",
+        "table": "ChatConversation",
+        "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ContactUs",
+        "column": "LocationCount",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
         "table": "DenticalLocationInfo",
+        "column": "DenticalLocationInfoID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "DenticalLocationInfo",
+        "column": "IncomingLocationId",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "DenticalLocationInfo",
+        "column": "EnrollmentLocationId",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "DownloadConfig",
+        "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "DownloadConfig_old",
         "column": "Location",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "FrontOfficeBilling",
-        "column": "Office",
+        "column": "FrontOfficeBillingID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "LicenseOfficeNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "EmployerLicenseOfficeNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "NppesDataSourceResponse",
+        "column": "Location",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryLocation",
-        "column": "Location",
+        "column": "ProviderDirectoryLocationID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocation",
+        "column": "StandardOfficeHours",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocation",
+        "column": "LocationID",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryLocationCompare",
-        "column": "Location",
+        "column": "ProviderDirectoryLocationCompareID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "column": "LocationID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "column": "ProviderDirectoryLocationID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "column": "StandardOfficeHours",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "column": "LocationRank",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "common",
         "table": "ProviderDirectoryPayerLocationPlan",
+        "column": "LocationPlanID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderDirectoryPayerLocationPlan",
+        "column": "ProviderDirectoryLocationID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollment",
+        "column": "LocationNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "ProviderPayerEnrollmentAudit",
+        "column": "LocationNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "database": "common",
+        "table": "SupportDataSourceResponse",
         "column": "Location",
         "file": "Livesql3/Common.sql"
     },
     {
         "database": "dci",
         "table": "OfficeResponse",
-        "column": "Office",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "vOfficeResponse",
-        "column": "Office",
+        "column": "OfficeResponseID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_OfficeResponse_Archive_List",
-        "column": "Office",
+        "column": "OfficeResponseID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "arc_OfficeResponse_OfficeResponseID_Delete_List",
-        "column": "Office",
-        "file": "Livesql3/dci.sql"
-    },
-    {
-        "database": "dci",
-        "table": "arc_OfficeResponse_OfficeResponseID_Delete_List",
-        "column": "Office",
+        "column": "OfficeResponseID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "dci",
         "table": "OfficeResponseAudit",
-        "column": "Office",
+        "column": "OfficeResponseAuditID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "database": "dci",
+        "table": "OfficeResponseAudit",
+        "column": "OfficeResponseID",
         "file": "Livesql3/dci.sql"
     },
     {
         "database": "cred",
         "table": "LocationQuestion",
-        "column": "Location",
+        "column": "LocationQuestionID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
-        "table": "AdditionalLocationQuestionView",
-        "column": "Location",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ApplicationSetLocationView",
-        "column": "Location",
-        "file": "Livesql3/cred.sql"
-    },
-    {
-        "database": "cred",
-        "table": "ProviderProfileLocationView",
-        "column": "Location",
+        "table": "LocationQuestion",
+        "column": "LocationQuestionSortOrder",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "GroupLocation",
-        "column": "Location",
+        "column": "GroupLocationID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "GroupLocationAnswer",
-        "column": "Location",
+        "column": "GroupLocationAnswerId",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "GroupLocationAnswer",
+        "column": "GroupLocationID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ApplicationSetLocation",
+        "column": "ApplicationSetLocationID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetLocation",
+        "column": "LocationName",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ApplicationSetLocation",
+        "column": "GroupLocationID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "LicenseOfficeNumber",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "EmployerLicenseOfficeNumber",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "NPDBServiceAudit",
+        "column": "ResponseLocation",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerConfig",
+        "column": "PlanAtLocation",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerDataChangeDetail",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerDataCompareConfig",
+        "column": "Location",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PayerDataTagMapping",
+        "column": "LocationNumber",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "PrimaryDataSourceResponse",
         "column": "Location",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "ProviderApplicationStatusLocation",
-        "column": "Location",
+        "column": "ApplicationStatusLocationID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderApplicationStatusLocation",
+        "column": "LocationName",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderApplicationStatusLocation",
+        "column": "LocationSourceID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderApplicationStatusLocation",
+        "column": "LocationSource",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "column": "OfficeId",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "column": "OfficeLanguages",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "cred",
         "table": "UserLocation",
-        "column": "Location",
+        "column": "UserLocationID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "database": "cred",
+        "table": "UserLocation",
+        "column": "LocationID",
         "file": "Livesql3/cred.sql"
     },
     {
         "database": "chs",
+        "table": "MetaClaimStatus",
+        "column": "MetaOfficeResponseID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
         "table": "MetaOfficeResponse",
-        "column": "Office",
+        "column": "MetaOfficeResponseID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "MetaOfficeResponseFile",
-        "column": "Office",
+        "column": "MetaOfficeResponseFileID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "MetaOfficeResponseFile",
+        "column": "MetaOfficeResponseID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "chs",
         "table": "OfficeResponsePreAuth",
-        "column": "Office",
+        "column": "OfficeResponsePreAuthID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "database": "chs",
+        "table": "OfficeResponsePreAuth",
+        "column": "MetaOfficeResponseID",
         "file": "Livesql3/chs.sql"
     },
     {
         "database": "reports",
+        "table": "bkwrpt",
+        "column": "officename",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "bkwtest",
+        "column": "officename",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dhmo",
+        "column": "Aetna Office ID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dhmo_add_groups",
+        "column": "Aetna Office ID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "OfficeNumber",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "OfficeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "OfficeAddress1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "OfficeCity",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "OfficeState",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "OfficeZip",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "OfficeCounty",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "OfficeContactPhone",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "OfficeNumber",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "OfficeName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "OfficeAddress1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "OfficeCity",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "OfficeState",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "OfficeZip",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "OfficeCounty",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "OfficeContactPhone",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
         "table": "PayConnectLocationNumber",
-        "column": "Location",
+        "column": "Office Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "PayConnectLocationNumber",
+        "column": "Location Number",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "MultilocationEntityID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "MultilocationEntityName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "MultilocationEntityID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "MultilocationEntityName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "MultilocationEntityID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "MultilocationEntityName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "MultilocationEntityID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "MultilocationEntityName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "MultilocationEntityID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "MultilocationEntityName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "MultilocationEntityID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "MultilocationEntityName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
+        "column": "MultilocationEntityID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
+        "column": "MultilocationEntityName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "UCCI",
+        "column": "Office Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "VendorDashAggr",
+        "column": "officecnt",
         "file": "Livesql3/reportst.sql"
     },
     {
         "database": "reports",
         "table": "bndofficemcna",
-        "column": "office",
+        "column": "officename",
         "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "dfcProvs",
+        "column": "Location",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpEaglesLanding",
+        "column": "Office",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpEaglesLanding",
+        "column": "Office Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpeagleslandingitems",
+        "column": "Office",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "reports",
+        "table": "tmpeagleslandingitems",
+        "column": "Office Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "database": "dxcps",
+        "table": "Vital_T",
+        "column": "Location_Number_CH",
+        "file": "Livesql3/dxcps.sql"
     }
 ]

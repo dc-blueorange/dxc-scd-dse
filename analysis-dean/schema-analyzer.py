@@ -87,7 +87,7 @@ def scan_sql_file(filepath, mode, columns=True):
                 tablenames_regex = re.compile(pattern, flags=re.IGNORECASE | re.DOTALL)
                 for match_found in tablenames_regex.finditer(columns_section):
                     match = match_found.group(1)
-                    logger.warning(f"Found table (matched table name filter): {table_name} with match: {match}")
+                    logger.warning(f"Found table (matched column name filter): {table_name} with column match: {match}")
                     results.append({
                         'database': database,
                         'table': table_name,
@@ -116,25 +116,24 @@ def scan_sql_file(filepath, mode, columns=True):
                     })
     return results
 
-def scan_directories(paths, mode, no_columns):
+def scan_directories(paths, mode, table_names):
     all_results = []
     for path in paths:
         if os.path.isfile(path):
-            file_results = scan_sql_file(path, mode, not no_columns)
+            file_results = scan_sql_file(path, mode, table_names)
             all_results.extend(file_results)
         elif os.path.isdir(path):
             for root, dirs, files in os.walk(path):
                 for file in files:
                     if file.lower().endswith('.sql'):
                         full_path = os.path.join(root, file)
-                        file_results = scan_sql_file(full_path, mode, not no_columns)
+                        file_results = scan_sql_file(full_path, mode, table_names)
                         all_results.extend(file_results)
         else:
             logger.error(f"Path {path} is neither a file nor a directory")
     return all_results
 
-def print_report(results, header, mode):
-    # print(header)
+def print_report(results, mode):
     writer = csv.writer(sys.stdout)
     if mode == 'foreignkeys':
         writer.writerow(["Database", "Source Table", "Source Key Column", "Target Table", "Target Column", "File"])
@@ -145,7 +144,7 @@ def print_report(results, header, mode):
         for result in results:
             writer.writerow([result["database"], result["table"], result["column"], result["file"]])
 
-def print_json_report(results, header):
+def print_json_report(results):
     print(json.dumps(results, indent=4))
 
 if __name__ == "__main__":
@@ -155,7 +154,8 @@ if __name__ == "__main__":
     parser.add_argument('--networks', action='store_true', help="Scan for networks")
     parser.add_argument('--dsos', action='store_true', help="Scan for DSO-related items")
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
-    parser.add_argument('--no-columns', '-nc', action='store_true', help="Only show tables (ignoring column definitions)")
+    parser.add_argument('--table-names', '-tn', action='store_true', help="Only show tables on column matches")
+    parser.add_argument('--no-columns', '-nc', action='store_true', help="Scan table names for entity words(ignoring column definitions)")
     parser.add_argument('--foreign-keys', '-fc', action='store_true', help="Extract all foreign key definitions")
     parser.add_argument('paths', nargs='*', help="Directories and/or SQL file paths to process")
     args = parser.parse_args()
@@ -180,12 +180,12 @@ if __name__ == "__main__":
         paths = ["DTT-ANA-PRD", "DTT-TRX-PRD", "Livesql3"]
 
     for mode in modes:
-        results = scan_directories(paths, mode, args.no_columns)
+        results = scan_directories(paths, mode, args.table_names)
         if args.foreign_keys:
-            header = f"--- Report for {mode.capitalize()} Mode ({'Tables Only' if args.no_columns else 'Sources and Targets'}) ---"
+            header = f"--- Report for {mode.capitalize()} Mode ({'Table Name matches Only' if args.table_names else 'Sources and Targets'}) ---"
         else:
-            header = f"--- Report for {mode.capitalize()} Mode ({'Tables Only' if args.no_columns else 'Tables and Columns'}) ---"
+            header = f"--- Report for {mode.capitalize()} Mode ({'Table Name matchess Only' if args.table_names else 'Tables and Columns'}) ---"
         if args.json:
-            print_json_report(results, header)
+            print_json_report(results)
         else:
-            print_report(results, header, mode)
+            print_report(results, mode)
