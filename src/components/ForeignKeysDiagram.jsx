@@ -184,8 +184,7 @@ const ForeignKeysDiagram = () => {
       tooltip.transition().duration(200).style("opacity", 0.9);
       const htmlContent = `<strong>ID:</strong> ${d.id}<br/>
                            <strong>Label:</strong> ${d.label}<br/>
-                           <strong>Type:</strong> ${d.type}<br/>
-                           <strong>Collapsed:</strong> ${d.collapsed}`;
+                           <strong>Type:</strong> ${d.type}`;
       tooltip.html(htmlContent);
     })
     .on("mousemove", (event) => {
