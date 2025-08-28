@@ -1,1 +1,1097 @@
-[]
+[
+    {
+        "database": "common",
+        "table": "ERARegistration",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ERARegistration_ServiceCode_SourcePartnerCode",
+                "ref_table": "ServiceCode",
+                "ref_column": "ServiceCode",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "ERARegistration",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ERARegistration_ServiceCode_DestPartnerCode",
+                "ref_table": "ServiceCode",
+                "ref_column": "ServiceCode",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "ERARegistration",
+        "column": "SecondaryDestPartnerCode",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ERARegistration_ServiceCode_SecondaryDestPartnerCode",
+                "ref_table": "ServiceCode",
+                "ref_column": "ServiceCode",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "GroupPartnerDisplay",
+        "column": "PartnerID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_GroupPartnerDisplay_ServiceCode_PartnerID",
+                "ref_table": "ServiceCode",
+                "ref_column": "ServiceCode",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "GroupRegTierSelection",
+        "column": "PartnerRegistrationID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_GroupRegTierSelection_ProductPartnerRegistration_PartnerRegistrationID",
+                "ref_table": "ProductPartnerRegistration",
+                "ref_column": "PartnerRegistrationID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "Partner",
+        "column": "OverridePartnerID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_Partner_Partner_OverridePartnerID",
+                "ref_table": "Partner",
+                "ref_column": "PartnerID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "PartnerLoginConfig",
+        "column": "PartnerID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_PartnerLoginConfig_Partner_PartnerID",
+                "ref_table": "Partner",
+                "ref_column": "PartnerID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "PartnerTranSubType",
+        "column": "PartnerTranTypeID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_PartnerTranSubType_PartnerTranType_PartnerTranTypeID",
+                "ref_table": "PartnerTranType",
+                "ref_column": "PartnerTranTypeID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_PartnerTranSubTypeConfigType_PartnerTranSubType_PartnerTranSubTypeID",
+                "ref_table": "PartnerTranSubType",
+                "ref_column": "PartnerTranSubTypeID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerConfigTypeID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_PartnerTranSubTypeConfigType_PartnerConfigType_PartnerConfigTypeID",
+                "ref_table": "PartnerConfigType",
+                "ref_column": "PartnerConfigTypeID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_PartnerTranSubTypeConfiguration_PartnerTranSubType_PartnerTranSubTypeID",
+                "ref_table": "PartnerTranSubType",
+                "ref_column": "PartnerTranSubTypeID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "common",
+        "table": "ProductFeaturePromoOffer",
+        "column": "PartnerID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_ProductFeaturePromoOffer_Partner_PartnerID",
+                "ref_table": "Partner",
+                "ref_column": "PartnerID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCode",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerPartnerCode_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPartnerCode",
+        "column": "PartnerPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerPartnerCode_PartnerCode_PartnerPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItem",
+        "column": "InvoicedPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerStatementItem_PartnerCode_InvoicedPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItem",
+        "column": "PartnerPriceID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerStatementItem_PartnerPrice_PartnerPriceID",
+                "ref_table": "PartnerPrice",
+                "ref_column": "PartnerPriceID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaFile",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaFile_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaClaim_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaClaim_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "ClaimPaymentDigest",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_ClaimPaymentDigest_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "FileDocumentMap",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_FileDocumentMap_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaAck",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaAck_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaAck",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaAck_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaAppAdvice",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaAppAdvice_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaAppAdvice",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaAppAdvice_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaAttachment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaAttachment_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaAttachment",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaAttachment_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaBankPayment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaBankPayment_PartnerCode_sourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaBankPayment",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaBankPayment_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimPayment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaClaimPayment_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimPayment",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaClaimPayment_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimStatus",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaClaimStatus_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimStatus",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaClaimStatus_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimStatusRequest",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaClaimStatusRequest_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaClaimStatusRequest",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaClaimStatusRequest_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligRequest",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaEligRequest_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligRequest",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaEligRequest_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligResponse",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaEligResponse_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaEligResponse",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaEligResponse_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaEnrollment",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaEnrollment_PartnerCode_sourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaEnrollment",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaEnrollment_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaImplAck",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaImplAck_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaImplAck",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaImplAck_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaOfficeResponse",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaOfficeResponse_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaOfficeResponse",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaOfficeResponse_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaTransportAudit",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaTransportAudit_PartnerCode_SourcePartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "MetaTransportAudit",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_MetaTransportAudit_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "NonCompliantFile",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_NonCompliantFile_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerBankAccount",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerBankAccount_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerDowntime",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerDowntime_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPayerSet",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerPayerSet_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerPrice",
+        "column": "PartnerPayerSetID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerPrice_PartnerPayerSet_PartnerPayerSetID",
+                "ref_table": "PartnerPayerSet",
+                "ref_column": "PartnerPayerSetID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustment",
+        "column": "PartnerStatementItemAdjustmentID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerStatementItemAdjustment_PartnerStatementItemAdjustment_PartnerStatementItemAdjustmentID",
+                "ref_table": "PartnerStatementItemAdjustment",
+                "ref_column": "PartnerStatementItemAdjustmentID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerSubAccount",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerSubAccount_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubType",
+        "column": "PartnerTranTypeID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerTranSubType_PartnerTranType_PartnerTranTypeID",
+                "ref_table": "PartnerTranType",
+                "ref_column": "PartnerTranTypeID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerTranSubTypeConfigType_PartnerTranSubType_PartnerTranSubTypeID",
+                "ref_table": "PartnerTranSubType",
+                "ref_column": "PartnerTranSubTypeID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfigType",
+        "column": "PartnerConfigTypeID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerTranSubTypeConfigType_PartnerConfigType_PartnerConfigTypeID",
+                "ref_table": "PartnerConfigType",
+                "ref_column": "PartnerConfigTypeID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerTranSubTypeConfiguration_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerTranSubTypeConfiguration_PartnerTranSubType_PartnerTranSubTypeID",
+                "ref_table": "PartnerTranSubType",
+                "ref_column": "PartnerTranSubTypeID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "InboundPartnerTranSubTypeConfigTypeID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerTranSubTypeConfiguration_PartnerTranSubTypeConfigType_InboundPartnerTranSubTypeConfigTypeID",
+                "ref_table": "PartnerTranSubTypeConfigType",
+                "ref_column": "PartnerTranSubTypeConfigTypeID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypeConfiguration",
+        "column": "OutboundPartnerTranSubTypeConfigTypeID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerTranSubTypeConfiguration_PartnerTranSubTypeConfigType_OutboundPartnerTranSubTypeConfigTypeID",
+                "ref_table": "PartnerTranSubTypeConfigType",
+                "ref_column": "PartnerTranSubTypeConfigTypeID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypePayerNameTranslation",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerTranSubTypePayerNameTranslation_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PartnerTranSubTypePayerNameTranslation",
+        "column": "PartnerTranSubTypeID",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PartnerTranSubTypePayerNameTranslation_PartnerTranSubType_PartnerTranSubTypeID",
+                "ref_table": "PartnerTranSubType",
+                "ref_column": "PartnerTranSubTypeID",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PayerPartnerCode",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PayerPartnerCode_PartnerCode_DestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "PayerPartnerCode",
+        "column": "AlternateDestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_PayerPartnerCode_PartnerCode_AlternateDestPartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "ProcessInfo",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_ProcessInfo_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "ProviderPartnerMap",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_ProviderPartnerMap_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "RuleConfig",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_RuleConfig_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "SourceDestConfig",
+        "column": "SourcePartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_SourceDestConfig_SourceDestConfig",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "SourceDestConfig",
+        "column": "DestPartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_SourceDestConfig_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "chs",
+        "table": "TxIDGenerator",
+        "column": "PartnerCode",
+        "file": "Livesql3/chs.sql",
+        "references": [
+            {
+                "database": "chs",
+                "constraint": "FK_TxIDGenerator_PartnerCode_PartnerCode",
+                "ref_table": "PartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/chs.sql"
+            }
+        ]
+    },
+    {
+        "database": "reports",
+        "table": "DssNetRev_Current",
+        "column": "PartnerCode",
+        "file": "Livesql3/reportst.sql",
+        "references": [
+            {
+                "database": "reports",
+                "constraint": "FK_DssNetRev_Current_DssDimCHSPartnerCode_PartnerCode",
+                "ref_table": "DssDimCHSPartnerCode",
+                "ref_column": "PartnerCode",
+                "file": "Livesql3/reportst.sql"
+            }
+        ]
+    },
+    {
+        "database": "reports",
+        "table": "Billing_PartnerStatementItem",
+        "column": "PartnerStatementItemID",
+        "file": "Livesql3/reportst.sql",
+        "references": [
+            {
+                "database": "reports",
+                "constraint": "FK_Billing_PartnerStatementItem_Billing_PartnerStatementItem_PartnerStatementItemID",
+                "ref_table": "Billing_PartnerStatementItem",
+                "ref_column": "PartnerStatementItemID",
+                "file": "Livesql3/reportst.sql"
+            }
+        ]
+    }
+]

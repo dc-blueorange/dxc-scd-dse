@@ -120,14 +120,14 @@ def scan_directories(paths, mode, table_names):
     all_results = []
     for path in paths:
         if os.path.isfile(path):
-            file_results = scan_sql_file(path, mode, table_names)
+            file_results = scan_sql_file(path, mode, not table_names)
             all_results.extend(file_results)
         elif os.path.isdir(path):
             for root, dirs, files in os.walk(path):
                 for file in files:
                     if file.lower().endswith('.sql'):
                         full_path = os.path.join(root, file)
-                        file_results = scan_sql_file(full_path, mode, table_names)
+                        file_results = scan_sql_file(full_path, mode, not table_names)
                         all_results.extend(file_results)
         else:
             logger.error(f"Path {path} is neither a file nor a directory")

@@ -6,16 +6,46 @@
     "common"
   ],
   [
+    "cred"
+  ],
+  [
     "dci"
   ],
   [
-    "dw_dxc"
+    "dea"
+  ],
+  [
+    "dw"
+  ],
+  [
+    "dw_atm_dxc"
+  ],
+  [
+    "dxcps"
+  ],
+  [
+    "erp"
+  ],
+  [
+    "erpDev"
+  ],
+  [
+    "ext_raw"
+  ],
+  [
+    "ext_raw_ec"
+  ],
+  [
+    "ext_raw_pc"
+  ],
+  [
+    "lkr"
+  ],
+  [
+    "master"
   ],
   [
     "ns"
-  ],
-  [
-    "nsDev"
   ],
   [
     "partcredDM"
@@ -24,6 +54,30 @@
     "pfs"
   ],
   [
+    "pnt"
+  ],
+  [
     "reports"
+  ],
+  [
+    "rpt"
+  ],
+  [
+    "trx"
+  ],
+  [
+    "trxBrch"
+  ],
+  [
+    "trxDev"
+  ],
+  [
+    "trxQA"
+  ],
+  [
+    "trxTest"
+  ],
+  [
+    "trxWsdm"
   ]
 ]

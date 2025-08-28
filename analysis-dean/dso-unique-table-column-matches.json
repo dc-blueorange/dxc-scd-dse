@@ -1,5 +1,11 @@
 [
   [
+    "bdd"
+  ],
+  [
+    "bireports"
+  ],
+  [
     "chs"
   ],
   [
@@ -24,16 +30,37 @@
     "dw_atm_dxc"
   ],
   [
+    "dw_dxc"
+  ],
+  [
+    "dw_dxc_dev"
+  ],
+  [
     "dxcps"
+  ],
+  [
+    "entyDev"
+  ],
+  [
+    "erp"
+  ],
+  [
+    "erpDev"
+  ],
+  [
+    "ext_raw_ec"
+  ],
+  [
+    "lkr"
+  ],
+  [
+    "master"
   ],
   [
     "merchant"
   ],
   [
     "ns"
-  ],
-  [
-    "nsDev"
   ],
   [
     "ntf"
@@ -45,6 +72,36 @@
     "pnt"
   ],
   [
+    "ptp"
+  ],
+  [
     "reports"
+  ],
+  [
+    "rpt"
+  ],
+  [
+    "sch"
+  ],
+  [
+    "schDev"
+  ],
+  [
+    "trx"
+  ],
+  [
+    "trxBrch"
+  ],
+  [
+    "trxDev"
+  ],
+  [
+    "trxQA"
+  ],
+  [
+    "trxTest"
+  ],
+  [
+    "trxWsdm"
   ]
 ]

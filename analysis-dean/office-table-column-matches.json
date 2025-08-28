@@ -1,6 +1,10 @@
 [
   [
     "chs",
+    "MetaClaimStatus"
+  ],
+  [
+    "chs",
     "MetaOfficeResponse"
   ],
   [
@@ -13,11 +17,35 @@
   ],
   [
     "common",
+    "ChatConversation"
+  ],
+  [
+    "common",
+    "ContactUs"
+  ],
+  [
+    "common",
     "DenticalLocationInfo"
   ],
   [
     "common",
+    "DownloadConfig"
+  ],
+  [
+    "common",
+    "DownloadConfig_old"
+  ],
+  [
+    "common",
     "FrontOfficeBilling"
+  ],
+  [
+    "common",
+    "HawaiiDentalLicenseLookup"
+  ],
+  [
+    "common",
+    "NppesDataSourceResponse"
   ],
   [
     "common",
@@ -32,16 +60,20 @@
     "ProviderDirectoryPayerLocationPlan"
   ],
   [
-    "cred",
-    "AdditionalLocationQuestionView"
+    "common",
+    "ProviderPayerEnrollment"
+  ],
+  [
+    "common",
+    "ProviderPayerEnrollmentAudit"
+  ],
+  [
+    "common",
+    "SupportDataSourceResponse"
   ],
   [
     "cred",
     "ApplicationSetLocation"
-  ],
-  [
-    "cred",
-    "ApplicationSetLocationView"
   ],
   [
     "cred",
@@ -53,7 +85,35 @@
   ],
   [
     "cred",
+    "HawaiiDentalLicenseLookup"
+  ],
+  [
+    "cred",
     "LocationQuestion"
+  ],
+  [
+    "cred",
+    "NPDBServiceAudit"
+  ],
+  [
+    "cred",
+    "PayerConfig"
+  ],
+  [
+    "cred",
+    "PayerDataChangeDetail"
+  ],
+  [
+    "cred",
+    "PayerDataCompareConfig"
+  ],
+  [
+    "cred",
+    "PayerDataTagMapping"
+  ],
+  [
+    "cred",
+    "PrimaryDataSourceResponse"
   ],
   [
     "cred",
@@ -61,7 +121,7 @@
   ],
   [
     "cred",
-    "ProviderProfileLocationView"
+    "ProviderSiteDetail"
   ],
   [
     "cred",
@@ -84,12 +144,20 @@
     "arc_OfficeResponse_OfficeResponseID_Delete_List"
   ],
   [
-    "dci",
-    "vOfficeResponse"
+    "dhmo",
+    "Aetna_xml_Data"
   ],
   [
     "dhmo",
-    "DCPOffice_20110815"
+    "CapXRef"
+  ],
+  [
+    "dhmo",
+    "Capitation"
+  ],
+  [
+    "dhmo",
+    "Member"
   ],
   [
     "dhmo",
@@ -97,15 +165,43 @@
   ],
   [
     "dhmo",
-    "SPDOOffice"
+    "PayerGroup"
   ],
   [
-    "ext_raw_pc",
-    "_airbyte_raw_BackOfficeUserTokens"
+    "dhmo",
+    "PayerGroupAudit"
   ],
   [
-    "ext_raw_pc",
-    "_airbyte_raw_BackOfficeUsers"
+    "dhmo",
+    "PayerGroupPlan"
+  ],
+  [
+    "dhmo",
+    "Plan"
+  ],
+  [
+    "dhmo",
+    "PlanItem"
+  ],
+  [
+    "dxcps",
+    "Vital_T"
+  ],
+  [
+    "ext_raw_mp",
+    "DXC_ZentistParnershipRevenueTracker2"
+  ],
+  [
+    "ext_raw_mp",
+    "MPExtZentistNotionleadsexport"
+  ],
+  [
+    "ext_raw_mp",
+    "MPExtZentistNotionleadsexportAudit"
+  ],
+  [
+    "ext_raw_mp",
+    "MPExtZentistNotionleadsexporttemp"
   ],
   [
     "ext_raw_pc",
@@ -117,6 +213,10 @@
   ],
   [
     "master",
+    "Appointments"
+  ],
+  [
+    "master",
     "CREDApplicationSetDETApprovedAppsPayerApprovedLocations"
   ],
   [
@@ -124,60 +224,64 @@
     "CREDProviderDETLocationsProviderProfileAnswers"
   ],
   [
-    "ns",
-    "AllocationMethod"
+    "master",
+    "rptDCIClaimAGGPendingClaimStatusAgedSnapshot"
+  ],
+  [
+    "master",
+    "rptDCIClaimDETUserResolvedClaimsDetail"
   ],
   [
     "ns",
-    "LocationMainAddress"
+    "Charge_copy"
   ],
   [
     "ns",
-    "LocationReturnAddress"
+    "Customer_copy"
   ],
   [
     "ns",
-    "LocationType"
+    "Item_copy"
   ],
   [
     "ns",
-    "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist"
+    "SalesInvoiced_copy"
   ],
   [
     "ns",
-    "aggregateItemLocation"
+    "Subscription_copy"
   ],
   [
     "ns",
-    "assemblyItemLocations"
+    "TransactionLine_copy"
   ],
   [
-    "nsDev",
-    "AllocationMethod"
+    "ns",
+    "Transaction_copy"
   ],
   [
-    "nsDev",
-    "LocationMainAddress"
+    "ns",
+    "Vendor_copy"
   ],
   [
-    "nsDev",
-    "LocationReturnAddress"
+    "ns",
+    "ZABSubscriptionItem_copy"
   ],
   [
-    "nsDev",
-    "LocationType"
+    "ns",
+    "ZABSubscription_copy"
   ],
   [
-    "nsDev",
-    "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist"
+    "pnt",
+    "StatementReminder"
   ],
   [
-    "nsDev",
-    "aggregateItemLocation"
+    "reports",
+    "LibertyMatchBO"
   ],
   [
-    "nsDev",
-    "assemblyItemLocations"
+    "reports",
+    "Matching_Liberty"
   ],
   [
     "reports",
@@ -185,6 +289,126 @@
   ],
   [
     "reports",
+    "UCCI"
+  ],
+  [
+    "reports",
+    "VendorDashAggr"
+  ],
+  [
+    "reports",
+    "bkwrpt"
+  ],
+  [
+    "reports",
+    "bkwtest"
+  ],
+  [
+    "reports",
     "bndofficemcna"
+  ],
+  [
+    "reports",
+    "dfcProvs"
+  ],
+  [
+    "reports",
+    "dhmo"
+  ],
+  [
+    "reports",
+    "dhmo_add_groups"
+  ],
+  [
+    "reports",
+    "temp_DSO_Claims"
+  ],
+  [
+    "reports",
+    "temp_DSO_Cred"
+  ],
+  [
+    "reports",
+    "temp_DSO_ERA"
+  ],
+  [
+    "reports",
+    "temp_DSO_PatStmt"
+  ],
+  [
+    "reports",
+    "temp_DSO_RTClaims"
+  ],
+  [
+    "reports",
+    "temp_DSO_RTCount"
+  ],
+  [
+    "reports",
+    "temp_DSO_Subscription_ClientSubscriptionEvents"
+  ],
+  [
+    "reports",
+    "tmpEaglesLanding"
+  ],
+  [
+    "reports",
+    "tmpeagleslandingitems"
+  ],
+  [
+    "rpt",
+    "SSISDistributionClientsFTPDistributions"
+  ],
+  [
+    "rpt",
+    "SSISDistributionClientsFTPDistributionsAudit"
+  ],
+  [
+    "trx",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trx",
+    "ClientTransactions"
+  ],
+  [
+    "trxBrch",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxBrch",
+    "ClientTransactions"
+  ],
+  [
+    "trxDev",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxDev",
+    "ClientTransactions"
+  ],
+  [
+    "trxQA",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxQA",
+    "ClientTransactions"
+  ],
+  [
+    "trxTest",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxTest",
+    "ClientTransactions"
+  ],
+  [
+    "trxWsdm",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxWsdm",
+    "ClientTransactions"
   ]
 ]

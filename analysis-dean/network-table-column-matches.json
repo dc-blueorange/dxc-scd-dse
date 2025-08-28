@@ -1,6 +1,118 @@
 [
   [
     "chs",
+    "ClaimDigest"
+  ],
+  [
+    "chs",
+    "ClaimEraDigest"
+  ],
+  [
+    "chs",
+    "ClaimPayment"
+  ],
+  [
+    "chs",
+    "ClaimPaymentDigest"
+  ],
+  [
+    "chs",
+    "ClaimPaymentRegistration"
+  ],
+  [
+    "chs",
+    "ClaimPaymentRegistrationHistory"
+  ],
+  [
+    "chs",
+    "ClaimStatusTracing"
+  ],
+  [
+    "chs",
+    "ClaimStatusTracingAudit"
+  ],
+  [
+    "chs",
+    "ClaimStatusTracing_Facility"
+  ],
+  [
+    "chs",
+    "DBA"
+  ],
+  [
+    "chs",
+    "FileDocumentMap"
+  ],
+  [
+    "chs",
+    "MetaAck"
+  ],
+  [
+    "chs",
+    "MetaAppAdvice"
+  ],
+  [
+    "chs",
+    "MetaAttachment"
+  ],
+  [
+    "chs",
+    "MetaBankPayment"
+  ],
+  [
+    "chs",
+    "MetaClaim"
+  ],
+  [
+    "chs",
+    "MetaClaimPayment"
+  ],
+  [
+    "chs",
+    "MetaClaimStatus"
+  ],
+  [
+    "chs",
+    "MetaClaimStatusRequest"
+  ],
+  [
+    "chs",
+    "MetaEligRequest"
+  ],
+  [
+    "chs",
+    "MetaEligResponse"
+  ],
+  [
+    "chs",
+    "MetaEnrollment"
+  ],
+  [
+    "chs",
+    "MetaFile"
+  ],
+  [
+    "chs",
+    "MetaFileAudit"
+  ],
+  [
+    "chs",
+    "MetaImplAck"
+  ],
+  [
+    "chs",
+    "MetaOfficeResponse"
+  ],
+  [
+    "chs",
+    "MetaTransportAudit"
+  ],
+  [
+    "chs",
+    "NonCompliantFile"
+  ],
+  [
+    "chs",
     "PartnerAdjustmentProcessType"
   ],
   [
@@ -10,14 +122,6 @@
   [
     "chs",
     "PartnerBillingActivity"
-  ],
-  [
-    "chs",
-    "PartnerBillingActivityClaimSummaryView"
-  ],
-  [
-    "chs",
-    "PartnerBillingActivitySummaryView"
   ],
   [
     "chs",
@@ -117,26 +221,6 @@
   ],
   [
     "chs",
-    "PartnerStatementTotalView"
-  ],
-  [
-    "chs",
-    "PartnerStatementTotalView2"
-  ],
-  [
-    "chs",
-    "PartnerStatementTotalView3"
-  ],
-  [
-    "chs",
-    "PartnerStatementTotalViewGP"
-  ],
-  [
-    "chs",
-    "PartnerStatementTotalViewGP1"
-  ],
-  [
-    "chs",
     "PartnerSubAccount"
   ],
   [
@@ -177,6 +261,14 @@
   ],
   [
     "chs",
+    "PayerClaimPrice"
+  ],
+  [
+    "chs",
+    "PayerClaimPriceAudit"
+  ],
+  [
+    "chs",
     "PayerPartnerCode"
   ],
   [
@@ -185,11 +277,79 @@
   ],
   [
     "chs",
+    "ProcessInfo"
+  ],
+  [
+    "chs",
     "ProviderPartnerMap"
+  ],
+  [
+    "chs",
+    "RuleConfig"
+  ],
+  [
+    "chs",
+    "SourceDestConfig"
+  ],
+  [
+    "chs",
+    "TxIDGenerator"
+  ],
+  [
+    "common",
+    "AppAlert"
+  ],
+  [
+    "common",
+    "EHGGroupKeyToPID"
+  ],
+  [
+    "common",
+    "EHGGroupKeyToPID_DXE"
+  ],
+  [
+    "common",
+    "ERARegistration"
+  ],
+  [
+    "common",
+    "ERARegistrationAudit"
+  ],
+  [
+    "common",
+    "ERARoutingDetail"
+  ],
+  [
+    "common",
+    "ERARoutingInformation"
+  ],
+  [
+    "common",
+    "ERARoutingSummary"
+  ],
+  [
+    "common",
+    "ERASegmentDefault"
   ],
   [
     "common",
     "GroupPartnerDisplay"
+  ],
+  [
+    "common",
+    "GroupRegTierSelection"
+  ],
+  [
+    "common",
+    "MessagePortalConversationAudit"
+  ],
+  [
+    "common",
+    "MessagePortalConversationModelAudit"
+  ],
+  [
+    "common",
+    "Messages"
   ],
   [
     "common",
@@ -241,6 +401,26 @@
   ],
   [
     "common",
+    "ProductCombination"
+  ],
+  [
+    "common",
+    "ProductFeaturePromoOffer"
+  ],
+  [
+    "common",
+    "ProductGroupPackage"
+  ],
+  [
+    "common",
+    "ProductGroupPackage10062024_DB2225"
+  ],
+  [
+    "common",
+    "ProductPackageFeatures"
+  ],
+  [
+    "common",
     "ProductPartnerPackage"
   ],
   [
@@ -252,24 +432,96 @@
     "ProductPartnerRegistrationFeature"
   ],
   [
+    "common",
+    "ProviderDirectoryLocation"
+  ],
+  [
+    "common",
+    "ProviderDirectoryLocationCompare"
+  ],
+  [
+    "common",
+    "ProviderPayerEnrollment"
+  ],
+  [
+    "common",
+    "ProviderPayerEnrollmentAudit"
+  ],
+  [
+    "common",
+    "SalesCampaign"
+  ],
+  [
+    "common",
+    "SupportUser"
+  ],
+  [
+    "common",
+    "SupportUserAudit"
+  ],
+  [
+    "common",
+    "UserLoginAudit"
+  ],
+  [
+    "common",
+    "Users"
+  ],
+  [
+    "common",
+    "UsersAudit"
+  ],
+  [
+    "cred",
+    "PayerConfig"
+  ],
+  [
+    "cred",
+    "PayerCredDashboardConfig"
+  ],
+  [
+    "cred",
+    "PayerForm"
+  ],
+  [
+    "cred",
+    "ProviderDetail"
+  ],
+  [
+    "cred",
+    "ProviderSiteDetail"
+  ],
+  [
+    "dci",
+    "Claim"
+  ],
+  [
+    "dci",
+    "ClaimFileUpload"
+  ],
+  [
+    "dci",
+    "ClaimFileUploadAudit"
+  ],
+  [
+    "dci",
+    "ClaimPayment"
+  ],
+  [
+    "dci",
+    "ClaimPaymentReport"
+  ],
+  [
+    "dci",
+    "ClaimStatusUpgrade"
+  ],
+  [
     "dci",
     "PartnerBillingActivity"
   ],
   [
     "dci",
-    "PartnerBillingActivitySummaryView"
-  ],
-  [
-    "dci",
     "PartnerBillingActivity_old"
-  ],
-  [
-    "dci",
-    "PartnerClaimDeliveryOps"
-  ],
-  [
-    "dci",
-    "PartnerClaimDeliveryRegistration"
   ],
   [
     "dci",
@@ -280,68 +532,176 @@
     "PartnerStatusCategory"
   ],
   [
-    "dw_dxc",
-    "historicalpartnerpayerset"
+    "dci",
+    "RTServiceAudit"
+  ],
+  [
+    "dea",
+    "Attachment"
+  ],
+  [
+    "dea",
+    "AttachmentHistory"
+  ],
+  [
+    "dw",
+    "Subscriptions_Snapshot"
+  ],
+  [
+    "dw_atm_dxc",
+    "chs_MetaClaim_Since2023"
+  ],
+  [
+    "dw_atm_dxc",
+    "cred_billingactivity"
+  ],
+  [
+    "dw_atm_dxc",
+    "dci_billingactivity"
+  ],
+  [
+    "dw_atm_dxc",
+    "dci_rtserviceaudit_6mos"
+  ],
+  [
+    "dw_atm_dxc",
+    "dea_attachments_6mos"
+  ],
+  [
+    "dw_atm_dxc",
+    "pnt_billingactivity"
+  ],
+  [
+    "dxcps",
+    "FD_GlobalBIN"
+  ],
+  [
+    "erp",
+    "ClientGLEntrySummary"
+  ],
+  [
+    "erp",
+    "ClientGLEntrySummaryAudit"
+  ],
+  [
+    "erp",
+    "ClientUsageSummary"
+  ],
+  [
+    "erp",
+    "ClientUsageSummaryAudit"
+  ],
+  [
+    "erp",
+    "ClientUsageSummary_20250128Backup"
+  ],
+  [
+    "erp",
+    "ClientUsageSummary_TEST"
+  ],
+  [
+    "erp",
+    "ERPItemLookup"
+  ],
+  [
+    "erp",
+    "ERPItemLookupAudit"
+  ],
+  [
+    "erpDev",
+    "ClientGLEntrySummary"
+  ],
+  [
+    "erpDev",
+    "ClientUsageSummary"
+  ],
+  [
+    "erpDev",
+    "ERPItemLookup"
+  ],
+  [
+    "ext_raw",
+    "FiservJan24$"
+  ],
+  [
+    "ext_raw_ec",
+    "payerbenefit"
+  ],
+  [
+    "ext_raw_ec",
+    "payerbenefitmanualentry"
+  ],
+  [
+    "ext_raw_pc",
+    "cardpaymentmethods"
+  ],
+  [
+    "lkr",
+    "LR$LQ7391755234095634_clearinghouse_claim_statuses"
+  ],
+  [
+    "lkr",
+    "LR$LQPAC1755293594531_clearinghouse_enrollment_errors"
+  ],
+  [
+    "lkr",
+    "LR$LQPAC1755300938467_clearinghouse_enrollment_errors"
+  ],
+  [
+    "master",
+    "Claims"
+  ],
+  [
+    "master",
+    "ClearinghouseClaims"
+  ],
+  [
+    "master",
+    "DCIClaimPaymentFLATClaimPaymentsLifeCycles"
+  ],
+  [
+    "master",
+    "DEAAttachmentFLATAttachmentsLifeCycles"
+  ],
+  [
+    "master",
+    "DataloadSQL3_Payers_Table"
+  ],
+  [
+    "master",
+    "Payers"
+  ],
+  [
+    "master",
+    "PayersAudit"
+  ],
+  [
+    "master",
+    "TEMP_DLS3"
   ],
   [
     "ns",
-    "CustomerPartner"
+    "Customer_copy"
   ],
   [
     "ns",
-    "InvoicePartner"
+    "Entity_copy"
   ],
   [
     "ns",
-    "PartnerAddressbookEntityAddress"
+    "Item_copy"
   ],
   [
     "ns",
-    "PartnerSystem"
+    "SalesInvoiced_copy"
   ],
   [
     "ns",
-    "PresCategorySiteAudienceSiteAudiencePartner"
+    "Transaction_copy"
   ],
   [
     "ns",
-    "creditMemoPartner"
-  ],
-  [
-    "ns",
-    "salesOrderPartner"
-  ],
-  [
-    "ns",
-    "transactionPartner"
-  ],
-  [
-    "nsDev",
-    "CustomerPartner"
-  ],
-  [
-    "nsDev",
-    "InvoicePartner"
-  ],
-  [
-    "nsDev",
-    "PartnerAddressbookEntityAddress"
-  ],
-  [
-    "nsDev",
-    "PartnerSystem"
-  ],
-  [
-    "nsDev",
-    "PresCategorySiteAudienceSiteAudiencePartner"
-  ],
-  [
-    "nsDev",
-    "salesOrderPartner"
-  ],
-  [
-    "nsDev",
-    "transactionPartner"
+    "ZABSubscriptionItem_copy"
   ],
   [
     "partcredDM",
@@ -349,19 +709,31 @@
   ],
   [
     "pfs",
-    "CreditPartner"
-  ],
-  [
-    "pfs",
     "PartnerCreditPlan"
   ],
   [
     "pfs",
-    "PartnerError"
+    "Settlement"
+  ],
+  [
+    "pfs",
+    "SettlementHistory"
+  ],
+  [
+    "pnt",
+    "RTServiceAudit"
   ],
   [
     "reports",
-    "AttachmentPartnerNumbers"
+    "BancTecClaimRejection"
+  ],
+  [
+    "reports",
+    "Billing_GPManualBillItems"
+  ],
+  [
+    "reports",
+    "Billing_NEAStatementItems"
   ],
   [
     "reports",
@@ -385,7 +757,23 @@
   ],
   [
     "reports",
-    "DSSPartnerBillingView"
+    "CSRequest_Practice"
+  ],
+  [
+    "reports",
+    "ClaimPaymentRegistrationRemoval"
+  ],
+  [
+    "reports",
+    "DASplay"
+  ],
+  [
+    "reports",
+    "DSSWebPortal"
+  ],
+  [
+    "reports",
+    "DataBillTemp"
   ],
   [
     "reports",
@@ -393,11 +781,127 @@
   ],
   [
     "reports",
+    "DeltaERAPaymentUtilization"
+  ],
+  [
+    "reports",
+    "DssChsClaimStatusTrack"
+  ],
+  [
+    "reports",
+    "DssChsFileSummary"
+  ],
+  [
+    "reports",
+    "DssChsRespProfile"
+  ],
+  [
+    "reports",
+    "DssChsRespProfileBkup"
+  ],
+  [
+    "reports",
     "DssDimCHSPartnerCode"
   ],
   [
     "reports",
-    "PartnerBillingDirectionToItemNumber"
+    "DssFDResidualReport"
+  ],
+  [
+    "reports",
+    "DssFileIO"
+  ],
+  [
+    "reports",
+    "DssFirstDataHeader"
+  ],
+  [
+    "reports",
+    "DssFirstDataResidual"
+  ],
+  [
+    "reports",
+    "DssNetRev_2010"
+  ],
+  [
+    "reports",
+    "DssNetRev_Current"
+  ],
+  [
+    "reports",
+    "DssStagingClaimPricing"
+  ],
+  [
+    "reports",
+    "DssStagingClaimPricingAudit"
+  ],
+  [
+    "reports",
+    "DssYearNetRev"
+  ],
+  [
+    "reports",
+    "ERAexceptions"
+  ],
+  [
+    "reports",
+    "GPManualBillItems"
+  ],
+  [
+    "reports",
+    "GPTransactionStage"
+  ],
+  [
+    "reports",
+    "GPTransactionStage_Test"
+  ],
+  [
+    "reports",
+    "GPTransactionStage_Test_New"
+  ],
+  [
+    "reports",
+    "GPTransactionStage_Test_Old"
+  ],
+  [
+    "reports",
+    "LibertyMatchBO"
+  ],
+  [
+    "reports",
+    "Match_Anthem_BO"
+  ],
+  [
+    "reports",
+    "Match_Anthem_BO_1"
+  ],
+  [
+    "reports",
+    "Matching_Anthem"
+  ],
+  [
+    "reports",
+    "Matching_Liberty"
+  ],
+  [
+    "reports",
+    "NEADataAll"
+  ],
+  [
+    "reports",
+    "NEAStatementItems"
+  ],
+  [
+    "reports",
+    "NetSuiteCustomers"
+  ],
+  [
+    "reports",
+    "NetSuiteCustomers-diff"
+  ],
+  [
+    "reports",
+    "NetSuiteCustomers_Prod"
   ],
   [
     "reports",
@@ -410,54 +914,6 @@
   [
     "reports",
     "PartnerBillingGPStage3"
-  ],
-  [
-    "reports",
-    "PartnerBillingGPStageTotalView"
-  ],
-  [
-    "reports",
-    "PartnerBillingGPStageTranSubTypeTotalView"
-  ],
-  [
-    "reports",
-    "PartnerBillingHostingFeeView"
-  ],
-  [
-    "reports",
-    "PartnerBillingInBoundConfigAndStatusView"
-  ],
-  [
-    "reports",
-    "PartnerBillingInBoundConfigAudit"
-  ],
-  [
-    "reports",
-    "PartnerBillingInBoundPayerSetTierPricingView"
-  ],
-  [
-    "reports",
-    "PartnerBillingMaintenanceFeeView"
-  ],
-  [
-    "reports",
-    "PartnerBillingMonthlyMinimumFeeView"
-  ],
-  [
-    "reports",
-    "PartnerBillingOutBoundConfigAndStatusView"
-  ],
-  [
-    "reports",
-    "PartnerBillingOutBoundConfigAudit"
-  ],
-  [
-    "reports",
-    "PartnerBillingOutBoundPayerSetTierPricingView"
-  ],
-  [
-    "reports",
-    "PartnerBillingPayerSetToItemNumber"
   ],
   [
     "reports",
@@ -477,14 +933,6 @@
   ],
   [
     "reports",
-    "PartnerContractFees"
-  ],
-  [
-    "reports",
-    "PartnerContractGroups"
-  ],
-  [
-    "reports",
     "PartnerPortalMonthlyRpt"
   ],
   [
@@ -497,43 +945,31 @@
   ],
   [
     "reports",
-    "PartnerStatementTotalViewGP"
+    "PayerBillingGPStage"
   ],
   [
     "reports",
-    "PartnerStatementTotalViewGPNew"
+    "PayerBillingGPStage1"
   ],
   [
     "reports",
-    "PartnerStatementTotalViewGPNew1"
+    "PayerBillingGPStage2"
   ],
   [
     "reports",
-    "PartnerStatementTotalViewGPNew1EBU"
+    "PayerBillingGPStageArchive"
   ],
   [
     "reports",
-    "PartnerStatementTotalViewGPNew1EBU1"
+    "PayerBillingRoutingHistory"
   ],
   [
     "reports",
-    "PartnerStatementTotalViewGPNew1EBU1_Test"
+    "PayerCredPsv"
   ],
   [
     "reports",
-    "PartnerStatementTotalViewGPNew2"
-  ],
-  [
-    "reports",
-    "PartnerStatementTotalViewGPNewLive"
-  ],
-  [
-    "reports",
-    "PayerPartnerFirstTrans"
-  ],
-  [
-    "reports",
-    "PayerPartnerFirstTransAggregator"
+    "PayerCredPsvStage"
   ],
   [
     "reports",
@@ -545,11 +981,143 @@
   ],
   [
     "reports",
+    "PayerProviderTrans"
+  ],
+  [
+    "reports",
+    "PayerTrans"
+  ],
+  [
+    "reports",
+    "ProviderPayerTrans"
+  ],
+  [
+    "reports",
+    "RIITemp"
+  ],
+  [
+    "reports",
+    "RTTrans"
+  ],
+  [
+    "reports",
+    "Residual_New"
+  ],
+  [
+    "reports",
+    "Residual_New06202016_newcolumn "
+  ],
+  [
+    "reports",
+    "Residual_New_10212015"
+  ],
+  [
+    "reports",
+    "Residual_New_Audit"
+  ],
+  [
+    "reports",
+    "Residual_New_Audit02172017"
+  ],
+  [
+    "reports",
+    "Residual_New_old"
+  ],
+  [
+    "reports",
+    "Residual_backup_012115"
+  ],
+  [
+    "reports",
+    "Residual_backup_022315"
+  ],
+  [
+    "reports",
+    "SummaryTrans"
+  ],
+  [
+    "reports",
+    "TempDenticonUsers"
+  ],
+  [
+    "reports",
     "Test_PartnerStatementItem"
   ],
   [
     "reports",
     "Test_PayerPartnerTrans"
+  ],
+  [
+    "reports",
+    "Test_PayerProviderTrans"
+  ],
+  [
+    "reports",
+    "VIPBillingGPStage1"
+  ],
+  [
+    "reports",
+    "VIPBillingGPStage1Arch"
+  ],
+  [
+    "reports",
+    "VIPBillingGPStageArchive"
+  ],
+  [
+    "reports",
+    "VipCredTemp"
+  ],
+  [
+    "reports",
+    "WesternUsers"
+  ],
+  [
+    "reports",
+    "alert_MultipleBuildingFiles"
+  ],
+  [
+    "reports",
+    "balclaims"
+  ],
+  [
+    "reports",
+    "bkwrpt"
+  ],
+  [
+    "reports",
+    "bkwtest"
+  ],
+  [
+    "reports",
+    "dsswebportal_20101202"
+  ],
+  [
+    "reports",
+    "load_databill"
+  ],
+  [
+    "reports",
+    "nea201206"
+  ],
+  [
+    "reports",
+    "residual"
+  ],
+  [
+    "reports",
+    "residual_old"
+  ],
+  [
+    "reports",
+    "routeERAexceptions"
+  ],
+  [
+    "reports",
+    "rpt_AnthemWebPortal"
+  ],
+  [
+    "reports",
+    "rpt_DSSStagingClaimPricing"
   ],
   [
     "reports",
@@ -561,6 +1129,158 @@
   ],
   [
     "reports",
-    "rpt_PartnerBillingIntegrity"
+    "rpt_MonthlyBilling_Incoming"
+  ],
+  [
+    "reports",
+    "rpt_MonthlyBilling_IncomingPayerBreakdown"
+  ],
+  [
+    "reports",
+    "rpt_MonthlyBilling_MetRTBreakdown"
+  ],
+  [
+    "reports",
+    "rpt_MonthlyBilling_Outgoing"
+  ],
+  [
+    "reports",
+    "rpt_MonthlyBilling_OutgoingPCSum"
+  ],
+  [
+    "reports",
+    "rpt_MonthlyBilling_RTTransactions"
+  ],
+  [
+    "reports",
+    "rpt_ValidationPassRate_Dest"
+  ],
+  [
+    "reports",
+    "rpt_ValidationPassRate_Source"
+  ],
+  [
+    "reports",
+    "temp_DSO_Claims"
+  ],
+  [
+    "reports",
+    "temp_DSO_Claims_TransactionEvents"
+  ],
+  [
+    "reports",
+    "temp_DSO_Cred"
+  ],
+  [
+    "reports",
+    "temp_DSO_ERA"
+  ],
+  [
+    "reports",
+    "temp_DSO_PatStmt"
+  ],
+  [
+    "reports",
+    "temp_DSO_RTClaims"
+  ],
+  [
+    "reports",
+    "temp_DSO_RTCount"
+  ],
+  [
+    "reports",
+    "temp_DSO_Subscription_ClientSubscriptionEvents"
+  ],
+  [
+    "reports",
+    "temptom"
+  ],
+  [
+    "reports",
+    "tomdcp20110404load"
+  ],
+  [
+    "reports",
+    "tomtemp28"
+  ],
+  [
+    "rpt",
+    "HSOneAprilMissingBillingClaimsCorrections"
+  ],
+  [
+    "rpt",
+    "HSOneMayMissingBillingClaimsCorrections"
+  ],
+  [
+    "trx",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trx",
+    "ClientTransactions"
+  ],
+  [
+    "trx",
+    "TransactionEvents"
+  ],
+  [
+    "trxBrch",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxBrch",
+    "ClientTransactions"
+  ],
+  [
+    "trxBrch",
+    "TransactionEvents"
+  ],
+  [
+    "trxDev",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxDev",
+    "ClientTransactions"
+  ],
+  [
+    "trxDev",
+    "TransactionEvents"
+  ],
+  [
+    "trxQA",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxQA",
+    "ClientTransactions"
+  ],
+  [
+    "trxQA",
+    "TransactionEvents"
+  ],
+  [
+    "trxTest",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxTest",
+    "ClientTransactions"
+  ],
+  [
+    "trxTest",
+    "TransactionEvents"
+  ],
+  [
+    "trxWsdm",
+    "ClientSubscriptionEvents"
+  ],
+  [
+    "trxWsdm",
+    "ClientTransactions"
+  ],
+  [
+    "trxWsdm",
+    "TransactionEvents"
   ]
 ]

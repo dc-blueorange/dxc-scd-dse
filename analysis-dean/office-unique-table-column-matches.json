@@ -15,6 +15,12 @@
     "dhmo"
   ],
   [
+    "dxcps"
+  ],
+  [
+    "ext_raw_mp"
+  ],
+  [
     "ext_raw_pc"
   ],
   [
@@ -24,9 +30,30 @@
     "ns"
   ],
   [
-    "nsDev"
+    "pnt"
   ],
   [
     "reports"
+  ],
+  [
+    "rpt"
+  ],
+  [
+    "trx"
+  ],
+  [
+    "trxBrch"
+  ],
+  [
+    "trxDev"
+  ],
+  [
+    "trxQA"
+  ],
+  [
+    "trxTest"
+  ],
+  [
+    "trxWsdm"
   ]
 ]
