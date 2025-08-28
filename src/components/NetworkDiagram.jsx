@@ -43,7 +43,8 @@ const NetworkDiagram = ({ debug = false }) => {
       allNodes.forEach((n) => {
         const key = `${n.database}-${n.table}-${n.column}`;
         if (!nodeMap.has(key)) {
-          nodeMap.set(key, { ...n, id: key });
+          // Save n with a default label: if a label property is missing, use the key.
+          nodeMap.set(key, { ...n, id: key, label: n.label || key });
         }
       });
       const nodes = Array.from(nodeMap.values());
@@ -120,6 +121,7 @@ const NetworkDiagram = ({ debug = false }) => {
       .force("charge", d3.forceManyBody().strength(-300))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
+    // Save simulation to reference for later resize updates.
     simulationRef.current = simulation;
 
     // Draw links with red stroke.
@@ -133,7 +135,7 @@ const NetworkDiagram = ({ debug = false }) => {
       .attr("stroke-width", 1.5)
       .attr("marker-end", "url(#arrowhead)");
 
-    // Draw nodes.
+    // Draw nodes as circles.
     const node = svg.append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
@@ -155,6 +157,7 @@ const NetworkDiagram = ({ debug = false }) => {
       .attr("y", 4)
       .style("fill", "black")
       .style("font-size", "16px")
+      .style("font-weight", "bold")
       .text(d => d.label);
 
     // Tooltip events: show HTML popup with node data on hover.
