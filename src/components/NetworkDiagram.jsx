@@ -156,7 +156,7 @@ const NetworkDiagram = ({ debug = false }) => {
       .attr("x", 12)
       .attr("y", 4)
       .style("fill", "black")
-      .style("font-size", "16px")
+      .style("font-size", "20px")
       .style("font-weight", "bold")
       .text(d => d.label);
 
