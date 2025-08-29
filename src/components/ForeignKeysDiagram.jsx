@@ -128,6 +128,7 @@ const ForeignKeysDiagram = () => {
     node.append("text")
       .attr("x", 12)
       .attr("y", 4)
+      .attr("fill", "navy") // Changed to navy blue
       .text(d => d.label);
 
     // Update function: set display style for links and connected nodes based on collapse state.
