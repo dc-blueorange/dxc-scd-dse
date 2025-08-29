@@ -201,7 +201,7 @@ const ForeignKeysDiagram = () => {
 
     node.on("mouseover", (event, d) => {
       tooltip.transition().duration(200).style("opacity", 0.9);
-      const htmlContent = `<strong>ID:</strong> ${d.id}<br/>
+      const htmlContent = `<strong>DB-Owner-Table:</strong> ${d.id}<br/>
                            <strong>Label:</strong> ${d.label}<br/>
                            <strong>Type:</strong> ${d.type}`;
       tooltip.html(htmlContent);
