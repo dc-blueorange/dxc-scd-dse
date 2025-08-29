@@ -5,6 +5,14 @@ const ForeignKeysDiagram = () => {
   const svgRef = useRef(null);
   const [data, setData] = useState({ nodes: [], links: [] });
 
+  // Function to update dimensions based on current viewport.
+  const getDimensions = () => {
+    return {
+      width: window.innerWidth,
+      height: window.innerHeight
+    };
+  };
+
   // Load foreign keys JSON from public/analysis-dean/foreign-keys.json
   useEffect(() => {
     fetch("/analysis-dean/foreign-keys.json")
@@ -49,8 +57,7 @@ const ForeignKeysDiagram = () => {
   useEffect(() => {
     if (data.nodes.length === 0) return;
 
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+    let { width, height } = getDimensions(); // Use getDimensions for initial size
 
     const svg = d3.select(svgRef.current)
       .attr("width", width)
@@ -128,7 +135,7 @@ const ForeignKeysDiagram = () => {
     node.append("text")
       .attr("x", 12)
       .attr("y", 4)
-      .attr("fill", "navy") // Changed to navy blue
+      .attr("fill", "navy")
       .text(d => d.label);
 
     // Update function: set display style for links and connected nodes based on collapse state.
@@ -207,8 +214,20 @@ const ForeignKeysDiagram = () => {
       tooltip.transition().duration(500).style("opacity", 0);
     });
 
+    // Handle window resize
+    const handleResize = () => {
+      let { width, height } = getDimensions();
+      svg.attr("width", width).attr("height", height);
+      simulation.force("center", d3.forceCenter(width / 2, height / 2))
+                .alpha(0.5) // Briefly increase alpha to re-center more quickly
+                .restart();
+    };
+
+    window.addEventListener("resize", handleResize);
+
     return () => {
       simulation.stop();
+      window.removeEventListener("resize", handleResize); // Clean up resize listener
       tooltip.remove();
     };
   }, [data]);
