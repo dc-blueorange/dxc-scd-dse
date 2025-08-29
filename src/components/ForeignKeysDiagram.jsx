@@ -19,13 +19,13 @@ const ForeignKeysDiagram = () => {
       .then((res) => res.json())
       .then((fkeys) => {
         // Build unique nodes for source and target.
-        // Source node: represents "database-fk_table"
-        // Target node: represents "ref_table-ref_column"
+        // Source node: represents "database-table"
+        // Target node: represents "fk_table-fk_column"
         const nodesMap = new Map();
         const links = [];
         fkeys.forEach((d) => {
-          const sourceId = `${d.database}-${d.fk_table}`;
-          const targetId = `${d.ref_table}-${d.ref_column}`;
+          const sourceId = `${d.database}-${d.schema}-${d.table}`;
+          const targetId = `${d.ref_table}-${d.fk_column}`;
           if (!nodesMap.has(sourceId)) {
             nodesMap.set(sourceId, {
               id: sourceId,
