@@ -154,10 +154,11 @@ const NetworkDiagram = ({ debug = false }) => {
       .enter()
       .append("text")
       .attr("x", 12)
-      .attr("y", 4)
+      .attr("y", 6) // Adjusted y for better vertical alignment
       .style("fill", "black")
-      .style("font-size", "40px") // Shrinked font size by 33% (from 60px to 40px)
+      .style("font-size", "36px") // Increased font size for readability
       .style("font-weight", "bold")
+      .style("pointer-events", "none") // Prevent text from interfering with mouse events
       .text(d => d.label);
 
     // Tooltip events: show HTML popup with node data on hover.

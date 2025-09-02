@@ -134,9 +134,10 @@ const ForeignKeysDiagram = () => {
 
     node.append("text")
       .attr("x", 12)
-      .attr("y", 4)
+      .attr("y", 5) // Adjusted y for better vertical alignment
       .attr("fill", "navy")
-      .style("font-size", "19px") // Changed font size to 60% of 32px (19.2px rounded to 19px)
+      .style("font-size", "28px") // Increased font size for readability
+      .style("pointer-events", "none") // Prevent text from interfering with mouse events
       .text(d => d.label);
 
     // Update function: set display style for links and connected nodes based on collapse state.
