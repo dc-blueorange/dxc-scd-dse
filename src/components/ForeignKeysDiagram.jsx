@@ -136,7 +136,7 @@ const ForeignKeysDiagram = () => {
       .attr("x", 12)
       .attr("y", 4)
       .attr("fill", "navy")
-      .style("font-size", "48px") // Increased font size by 300% (from assumed 16px default)
+      .style("font-size", "32px") // Shrinked font size by 33% (from 48px to 32px)
       .text(d => d.label);
 
     // Update function: set display style for links and connected nodes based on collapse state.
