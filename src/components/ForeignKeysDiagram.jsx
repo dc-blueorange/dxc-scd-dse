@@ -136,7 +136,7 @@ const ForeignKeysDiagram = () => {
       .attr("x", 12)
       .attr("y", 4)
       .attr("fill", "navy")
-      .style("font-size", "32px") // Shrinked font size by 33% (from 48px to 32px)
+      .style("font-size", "19px") // Changed font size to 60% of 32px (19.2px rounded to 19px)
       .text(d => d.label);
 
     // Update function: set display style for links and connected nodes based on collapse state.
@@ -183,7 +183,8 @@ const ForeignKeysDiagram = () => {
         .on("end", dragended);
     }
     
-    node.call(drag(simulation));
+    // Apply drag behavior only to the circles within each node group.
+    node.select("circle").call(drag(simulation));
 
     // Add HTML hover popup tooltip for node data.
     let tooltip = d3.select("body").select(".tooltip");
