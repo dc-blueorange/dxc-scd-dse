@@ -96,6 +96,30 @@ const ForeignKeysDiagram = () => {
       .force("charge", d3.forceManyBody().strength(-50))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
+    // Helper function to find all descendants of a node (recursive traversal)
+    const findAllDescendants = (startNodeId, allNodes, allLinks) => {
+      const descendants = new Set();
+      const queue = [startNodeId];
+      const visited = new Set();
+
+      while (queue.length > 0) {
+        const currentId = queue.shift();
+        if (visited.has(currentId)) continue;
+        visited.add(currentId);
+
+        // Find all nodes that 'currentId' links to
+        const outgoingLinks = allLinks.filter(link => link.source.id === currentId);
+        outgoingLinks.forEach(link => {
+          const targetNode = allNodes.find(n => n.id === link.target.id);
+          if (targetNode && !descendants.has(targetNode.id)) {
+            descendants.add(targetNode.id);
+            queue.push(targetNode.id);
+          }
+        });
+      }
+      return Array.from(descendants);
+    };
+
     // Draw links (edges).
     const link = container.append("g")
       .attr("stroke", "gray")
@@ -106,7 +130,7 @@ const ForeignKeysDiagram = () => {
       .append("line")
       .attr("marker-end", "url(#arrowhead)")
       .style("display", l => {
-        // Hide link if its source is collapsed OR its target is hidden
+        // Hide link if its source is collapsed OR its target is hidden (recursively)
         return (l.source.collapsed || l.target.hidden) ? "none" : "block";
       });
 
@@ -128,23 +152,27 @@ const ForeignKeysDiagram = () => {
         event.stopPropagation();
 
         // 1. Toggle the 'collapsed' state of the clicked node.
-        const newNodes = data.nodes.map(n =>
+        let updatedNodes = data.nodes.map(n =>
           n.id === clickedNode.id ? { ...n, collapsed: !n.collapsed } : n
         );
 
-        // 2. Recalculate 'hidden' state for ALL nodes based on the new 'collapsed' states.
-        const nodesWithUpdatedVisibility = newNodes.map(node => {
-          // A node is hidden if any of its incoming links have a collapsed source.
-          const incomingLinks = data.links.filter(l => l.target.id === node.id);
-          const isHiddenByCollapsedSource = incomingLinks.some(l => {
-            const sourceNode = newNodes.find(n => n.id === l.source.id);
-            return sourceNode && sourceNode.collapsed;
+        // 2. Determine which nodes should be hidden based on the new 'collapsed' states.
+        // First, reset all hidden states to false for all nodes.
+        updatedNodes = updatedNodes.map(n => ({ ...n, hidden: false }));
+
+        // Then, identify all descendants of currently collapsed nodes and mark them as hidden.
+        const collapsedNodes = updatedNodes.filter(n => n.collapsed);
+        collapsedNodes.forEach(cNode => {
+          const descendants = findAllDescendants(cNode.id, updatedNodes, data.links);
+          descendants.forEach(descId => {
+            updatedNodes = updatedNodes.map(n =>
+              n.id === descId ? { ...n, hidden: true } : n
+            );
           });
-          return { ...node, hidden: isHiddenByCollapsedSource };
         });
 
         // 3. Update the state to trigger a re-render of the D3 diagram.
-        setData({ nodes: nodesWithUpdatedVisibility, links: data.links });
+        setData({ nodes: updatedNodes, links: data.links });
       });
 
     node.append("text")
