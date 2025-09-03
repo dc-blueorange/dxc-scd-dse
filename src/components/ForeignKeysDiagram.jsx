@@ -132,11 +132,11 @@ const ForeignKeysDiagram = () => {
       .force("center", d3.forceCenter(width / 2, height / 2));
 
     // Draw links (edges) using .join() for efficient updates.
-    const link = container.append("g")
+    let link = container.append("g")
       .attr("stroke", "gray")
       .attr("stroke-width", 1.5)
       .selectAll("line")
-      .data(visibleLinks, d => `${d.source}-${d.target}`) // FIX: Use d.source and d.target directly as they are string IDs here
+      .data(visibleLinks, d => `${d.source}-${d.target}`)
       .join(
         enter => enter.append("line")
                       .attr("marker-end", "url(#arrowhead)"),
@@ -145,15 +145,15 @@ const ForeignKeysDiagram = () => {
       );
 
     // Draw nodes as groups using .join() for efficient updates.
-    const node = container.append("g")
+    let node = container.append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
-      .selectAll("g")
-      .data(visibleNodes, d => d.id) // Use visibleNodes, add key for object constancy
+      .selectAll("g.node-group") // Select by class for specificity
+      .data(visibleNodes, d => d.id)
       .join(
         enter => {
-          const nodeEnter = enter.append("g");
-
+          const nodeEnter = enter.append("g")
+                                 .attr("class", "node-group"); // Add class
           nodeEnter.append("circle")
             .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5) // Adjust radius based on collapsed state
             .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato")) // Adjust color based on collapsed state
