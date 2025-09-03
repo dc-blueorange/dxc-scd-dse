@@ -86,8 +86,19 @@ const NetworkDiagram = ({ debug = false }) => {
     // Clear previous content.
     svg.selectAll("*").remove();
 
+    // Add zoom container.
+    const container = svg.append("g");
+
+    // Create zoom handler.
+    const zoom = d3.zoom()
+      .scaleExtent([0.2, 4])
+      .on("zoom", (event) => {
+        container.attr("transform", event.transform);
+      });
+    svg.call(zoom);
+
     // Define arrow marker for links (edges).
-    const defs = svg.append("defs");
+    const defs = svg.append("defs"); // Defs can stay on SVG directly as they are global.
     defs.append("marker")
       .attr("id", "arrowhead")
       .attr("viewBox", "0 -5 10 10")
@@ -125,7 +136,7 @@ const NetworkDiagram = ({ debug = false }) => {
     simulationRef.current = simulation;
 
     // Draw links with red stroke.
-    const link = svg.append("g")
+    const link = container.append("g") // Append to container
       .attr("stroke", "red")
       .attr("stroke-opacity", 0.6)
       .selectAll("line")
@@ -136,7 +147,7 @@ const NetworkDiagram = ({ debug = false }) => {
       .attr("marker-end", "url(#arrowhead)");
 
     // Draw nodes as circles.
-    const node = svg.append("g")
+    const node = container.append("g") // Append to container
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
       .selectAll("circle")
@@ -148,7 +159,7 @@ const NetworkDiagram = ({ debug = false }) => {
       .call(drag(simulation));
 
     // Append text labels with larger font size and darker color.
-    const labels = svg.append("g")
+    const labels = container.append("g") // Append to container
       .selectAll("text")
       .data(data.nodes)
       .enter()
