@@ -154,7 +154,7 @@ const NetworkDiagram = ({ debug = false }) => {
       .data(data.nodes)
       .enter()
       .append("circle")
-      .attr("r", 8)
+      .attr("r", 14) // Increased radius by 1.75 times (8 * 1.75 = 14)
       .attr("fill", (d) => colorScale(d.type))
       .call(drag(simulation));
 
@@ -193,7 +193,7 @@ const NetworkDiagram = ({ debug = false }) => {
              <strong>Table:</strong> ${d.table}<br/>
              <strong>Column:</strong> ${d.column}<br/>
              <strong>File:</strong> ${d.file || "N/A"}<br/>
-             <strong>Type:</strong> ${d.type}`
+             <strong>Type:</b> ${d.type}`
           );
         })
         .on("mousemove", (event) => {

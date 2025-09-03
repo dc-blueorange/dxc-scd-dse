@@ -129,7 +129,7 @@ const ForeignKeysDiagram = () => {
 
     // Append circle and text to each node.
     node.append("circle")
-      .attr("r", 10)
+      .attr("r", 17.5) // Increased radius by 1.75 times (10 * 1.75 = 17.5)
       .attr("fill", d => d.type === "source" ? "steelblue" : "tomato");
 
     node.append("text")
