@@ -129,7 +129,7 @@ const NetworkDiagram = ({ debug = false }) => {
     // Create simulation with current dimensions.
     const simulation = d3.forceSimulation(data.nodes)
       .force("link", d3.forceLink(data.links).id((d) => d.id).distance(150))
-      .force("charge", d3.forceManyBody().strength(-300))
+      .force("charge", d3.forceManyBody().strength(-150)) // Adjusted strength for closer nodes
       .force("center", d3.forceCenter(width / 2, height / 2));
 
     // Save simulation to reference for later resize updates.
