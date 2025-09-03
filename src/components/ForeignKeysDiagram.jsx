@@ -96,30 +96,6 @@ const ForeignKeysDiagram = () => {
       .force("charge", d3.forceManyBody().strength(-50))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
-    // Helper function to find all descendants of a node (recursive traversal)
-    const findAllDescendants = (startNodeId, allNodes, allLinks) => {
-      const descendants = new Set();
-      const queue = [startNodeId];
-      const visited = new Set();
-
-      while (queue.length > 0) {
-        const currentId = queue.shift();
-        if (visited.has(currentId)) continue;
-        visited.add(currentId);
-
-        // Find all nodes that 'currentId' links to
-        const outgoingLinks = allLinks.filter(link => link.source.id === currentId);
-        outgoingLinks.forEach(link => {
-          const targetNode = allNodes.find(n => n.id === link.target.id);
-          if (targetNode && !descendants.has(targetNode.id)) {
-            descendants.add(targetNode.id);
-            queue.push(targetNode.id);
-          }
-        });
-      }
-      return Array.from(descendants);
-    };
-
     // Draw links (edges).
     const link = container.append("g")
       .attr("stroke", "gray")
@@ -130,7 +106,7 @@ const ForeignKeysDiagram = () => {
       .append("line")
       .attr("marker-end", "url(#arrowhead)")
       .style("display", l => {
-        // Hide link if its source is collapsed OR its target is hidden (recursively)
+        // Hide link if its source is collapsed OR its target is hidden
         return (l.source.collapsed || l.source.hidden || l.target.hidden || l.target.collapsed) ? "none" : "block";
       });
 
@@ -156,20 +132,24 @@ const ForeignKeysDiagram = () => {
           n.id === clickedNode.id ? { ...n, collapsed: !n.collapsed } : n
         );
 
-        // 2. Determine which nodes should be hidden based on the new 'collapsed' states.
+        // 2. Determine which nodes should be hidden based on the new 'collapsed' states (1-layer deep).
         // First, reset all hidden states to false for all nodes.
         updatedNodes = updatedNodes.map(n => ({ ...n, hidden: false }));
 
-        // Then, identify all descendants of currently collapsed nodes and mark them as hidden.
-        const collapsedNodes = updatedNodes.filter(n => n.collapsed);
-        collapsedNodes.forEach(cNode => {
-          const descendants = findAllDescendants(cNode.id, updatedNodes, data.links);
-          descendants.forEach(descId => {
-            updatedNodes = updatedNodes.map(n =>
-              n.id === descId ? { ...n, hidden: true } : n
-            );
-          });
+        // Identify direct children of currently collapsed nodes and mark them as hidden.
+        const nodesToHide = new Set();
+        updatedNodes.forEach(node => {
+          if (node.collapsed) {
+            // Find all direct children of this collapsed node
+            data.links.filter(link => link.source.id === node.id)
+                      .forEach(link => nodesToHide.add(link.target.id));
+          }
         });
+
+        // Apply the hidden state to direct children
+        updatedNodes = updatedNodes.map(node =>
+          nodesToHide.has(node.id) ? { ...node, hidden: true } : node
+        );
 
         // 3. Update the state to trigger a re-render of the D3 diagram.
         setData({ nodes: updatedNodes, links: data.links });
