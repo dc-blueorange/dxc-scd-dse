@@ -24,8 +24,8 @@ const ForeignKeysDiagram = () => {
         const nodesMap = new Map();
         const links = [];
         fkeys.forEach((d) => {
-          const sourceId = `${d.database}-${d.schema}-${d.table}`;
-          const targetId = `${d.ref_table}-${d.fk_column}`;
+          const sourceId = `${d.database || ""}-${d.schema || ""} ${d.table}`;
+          const targetId = `${d.fk_table}: ${d.fk_column}`;
           if (!nodesMap.has(sourceId)) {
             nodesMap.set(sourceId, {
               id: sourceId,
@@ -204,8 +204,8 @@ const ForeignKeysDiagram = () => {
 
     node.on("mouseover", (event, d) => {
       tooltip.transition().duration(200).style("opacity", 0.9);
-      const htmlContent = `<strong>DB-Owner-Table:</strong> ${d.id}<br/>
-                           <strong>Label:</strong> ${d.label}<br/>
+      const htmlContent = `<strong>Source:</strong> ${d.id}<br/>
+                           <strong>Target:</strong> ${d.label}<br/>
                            <strong>Type:</strong> ${d.type}`;
       tooltip.html(htmlContent);
     })
