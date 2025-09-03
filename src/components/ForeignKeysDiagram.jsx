@@ -131,7 +131,7 @@ const ForeignKeysDiagram = () => {
       .attr("marker-end", "url(#arrowhead)")
       .style("display", l => {
         // Hide link if its source is collapsed OR its target is hidden (recursively)
-        return (l.source.collapsed || l.target.hidden) ? "none" : "block";
+        return (l.source.collapsed || l.source.hidden || l.target.hidden || l.target.collapsed) ? "none" : "block";
       });
 
     // Draw nodes as groups.
