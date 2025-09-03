@@ -105,9 +105,9 @@ const ForeignKeysDiagram = () => {
       .enter()
       .append("line")
       .attr("marker-end", "url(#arrowhead)")
-      .style("display", l => { // Set initial display based on source's collapsed state
-        // l.source is the node object itself due to .id((d) => d.id)
-        return l.source.collapsed ? "none" : "block";
+      .style("display", l => {
+        // Hide link if its source is collapsed OR its target is hidden
+        return (l.source.collapsed || l.target.hidden) ? "none" : "block";
       });
 
     // Draw nodes as groups.
