@@ -98,8 +98,9 @@ const ForeignKeysDiagram = () => {
         // Find all direct children of this collapsed node
         // Iterate through original links (before D3 mutates them to objects)
         data.links.forEach(link => {
-          const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
-          const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+          // At this point, link.source and link.target are still string IDs from the initial data load.
+          const sourceId = link.source;
+          const targetId = link.target;
           if (sourceId === node.id) {
             nodesToHideIds.add(targetId);
           }
@@ -114,8 +115,9 @@ const ForeignKeysDiagram = () => {
     // Filter links: only include links where both source and target are visible,
     // and the source node is not collapsed.
     const visibleLinks = data.links.filter(l => {
-      const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
-      const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+      // At this point, l.source and l.target are still string IDs from the initial data load.
+      const sourceId = l.source;
+      const targetId = l.target;
       const sourceNode = allNodesMap.get(sourceId); // Get actual node object for collapsed state
 
       return visibleNodeIds.has(sourceId) &&
@@ -134,7 +136,7 @@ const ForeignKeysDiagram = () => {
       .attr("stroke", "gray")
       .attr("stroke-width", 1.5)
       .selectAll("line")
-      .data(visibleLinks, d => `${d.source.id}-${d.target.id}`) // Use visibleLinks, add key for object constancy
+      .data(visibleLinks, d => `${d.source}-${d.target}`) // FIX: Use d.source and d.target directly as they are string IDs here
       .join(
         enter => enter.append("line")
                       .attr("marker-end", "url(#arrowhead)"),
