@@ -29,7 +29,6 @@ const ForeignKeysDiagram = () => {
               label: sourceId,
               type: "source",
               collapsed: false, // Initial state: not collapsed
-              hidden: false     // Initial state: not hidden
             });
           }
           if (!nodesMap.has(targetId)) {
@@ -38,7 +37,6 @@ const ForeignKeysDiagram = () => {
               label: targetId,
               type: "target",
               collapsed: false, // Initial state: not collapsed
-              hidden: false     // Initial state: not hidden
             });
           }
           links.push({
@@ -90,78 +88,108 @@ const ForeignKeysDiagram = () => {
       .attr("d", "M0,-5L10,0L0,5")
       .attr("fill", "gray");
 
-    // Initialize force simulation.
-    const simulation = d3.forceSimulation(data.nodes)
-      .force("link", d3.forceLink(data.links).id((d) => d.id).distance(150))
+    // Create a map of all nodes for quick lookup
+    const allNodesMap = new Map(data.nodes.map(node => [node.id, node]));
+
+    // Determine which nodes are hidden (direct children of collapsed nodes)
+    const nodesToHideIds = new Set(); // Stores IDs of nodes that should be hidden
+    data.nodes.forEach(node => {
+      if (node.collapsed) {
+        // Find all direct children of this collapsed node
+        // Iterate through original links (before D3 mutates them to objects)
+        data.links.forEach(link => {
+          const sourceId = typeof link.source === 'object' ? link.source.id : link.source;
+          const targetId = typeof link.target === 'object' ? link.target.id : link.target;
+          if (sourceId === node.id) {
+            nodesToHideIds.add(targetId);
+          }
+        });
+      }
+    });
+
+    // Filter nodes: only include nodes that are not marked as hidden
+    const visibleNodes = data.nodes.filter(d => !nodesToHideIds.has(d.id));
+    const visibleNodeIds = new Set(visibleNodes.map(n => n.id)); // For quick lookup
+
+    // Filter links: only include links where both source and target are visible,
+    // and the source node is not collapsed.
+    const visibleLinks = data.links.filter(l => {
+      const sourceId = typeof l.source === 'object' ? l.source.id : l.source;
+      const targetId = typeof l.target === 'object' ? l.target.id : l.target;
+      const sourceNode = allNodesMap.get(sourceId); // Get actual node object for collapsed state
+
+      return visibleNodeIds.has(sourceId) &&
+             visibleNodeIds.has(targetId) &&
+             sourceNode && !sourceNode.collapsed; // Ensure sourceNode exists and is not collapsed
+    });
+
+    // Initialize force simulation with visible nodes and links.
+    const simulation = d3.forceSimulation(visibleNodes)
+      .force("link", d3.forceLink(visibleLinks).id((d) => d.id).distance(150))
       .force("charge", d3.forceManyBody().strength(-50))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
-    // Draw links (edges).
+    // Draw links (edges) using .join() for efficient updates.
     const link = container.append("g")
       .attr("stroke", "gray")
       .attr("stroke-width", 1.5)
       .selectAll("line")
-      .data(data.links)
-      .enter()
-      .append("line")
-      .attr("marker-end", "url(#arrowhead)")
-      .style("display", l => {
-        // Hide link if its source is collapsed OR its target is hidden
-        return (l.source.collapsed || l.source.hidden || l.target.hidden || l.target.collapsed) ? "none" : "block";
-      });
+      .data(visibleLinks, d => `${d.source.id}-${d.target.id}`) // Use visibleLinks, add key for object constancy
+      .join(
+        enter => enter.append("line")
+                      .attr("marker-end", "url(#arrowhead)"),
+        update => update,
+        exit => exit.remove()
+      );
 
-    // Draw nodes as groups.
+    // Draw nodes as groups using .join() for efficient updates.
     const node = container.append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
       .selectAll("g")
-      .data(data.nodes)
-      .enter()
-      .append("g")
-      .style("display", d => d.hidden ? "none" : "block"); // Set initial display based on node's hidden state
+      .data(visibleNodes, d => d.id) // Use visibleNodes, add key for object constancy
+      .join(
+        enter => {
+          const nodeEnter = enter.append("g");
 
-    // Append circle and text to each node.
-    const circle = node.append("circle")
-      .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5) // Adjust radius based on collapsed state
-      .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato")) // Adjust color based on collapsed state
-      .on("click", (event, clickedNode) => {
-        event.stopPropagation();
+          nodeEnter.append("circle")
+            .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5) // Adjust radius based on collapsed state
+            .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato")) // Adjust color based on collapsed state
+            .on("click", (event, clickedNode) => {
+              event.stopPropagation();
 
-        // 1. Toggle the 'collapsed' state of the clicked node.
-        let updatedNodes = data.nodes.map(n =>
-          n.id === clickedNode.id ? { ...n, collapsed: !n.collapsed } : n
-        );
+              // 1. Toggle the 'collapsed' state of the clicked node.
+              const newNodesState = data.nodes.map(n =>
+                n.id === clickedNode.id ? { ...n, collapsed: !n.collapsed } : n
+              );
 
-        // 2. Determine which nodes should be hidden based on the new 'collapsed' states (1-layer deep).
-        // First, reset all hidden states to false for all nodes.
-        updatedNodes = updatedNodes.map(n => ({ ...n, hidden: false }));
+              // 2. Update the state to trigger a re-render of the D3 diagram.
+              // The useEffect will now filter based on 'collapsed' states.
+              setData({ nodes: newNodesState, links: data.links });
+            });
 
-        // Identify direct children of currently collapsed nodes and mark them as hidden.
-        const nodesToHide = new Set();
-        updatedNodes.forEach(node => {
-          if (node.collapsed) {
-            // Find all direct children of this collapsed node
-            data.links.filter(link => link.source.id === node.id)
-                      .forEach(link => nodesToHide.add(link.target.id));
-          }
-        });
+          nodeEnter.append("text")
+            .attr("x", 12)
+            .attr("y", 5)
+            .attr("fill", "navy")
+            .style("font-size", "28px")
+            .style("pointer-events", "none")
+            .text(d => d.label);
+          return nodeEnter;
+        },
+        update => {
+          update.select("circle")
+            .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5)
+            .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato"));
+          update.select("text")
+            .text(d => d.label); // Update text in case label changes (though unlikely here)
+          return update;
+        },
+        exit => exit.remove()
+      );
 
-        // Apply the hidden state to direct children
-        updatedNodes = updatedNodes.map(node =>
-          nodesToHide.has(node.id) ? { ...node, hidden: true } : node
-        );
-
-        // 3. Update the state to trigger a re-render of the D3 diagram.
-        setData({ nodes: updatedNodes, links: data.links });
-      });
-
-    node.append("text")
-      .attr("x", 12)
-      .attr("y", 5)
-      .attr("fill", "navy")
-      .style("font-size", "28px")
-      .style("pointer-events", "none")
-      .text(d => d.label);
+    // Re-apply drag behavior to new/updated circles
+    node.select("circle").call(drag(simulation));
 
     simulation.on("tick", () => {
       link.attr("x1", d => d.source.x)
@@ -193,8 +221,6 @@ const ForeignKeysDiagram = () => {
         .on("end", dragended);
     }
     
-    circle.call(drag(simulation));
-
     let tooltip = d3.select("body").select(".tooltip");
     if (tooltip.empty()) {
       tooltip = d3.select("body")
@@ -209,7 +235,7 @@ const ForeignKeysDiagram = () => {
         .style("opacity", 0);
     }
 
-    circle.on("mouseover", (event, d) => {
+    node.select("circle").on("mouseover", (event, d) => { // Attach mouseover to circles within the 'node' selection
       tooltip.transition().duration(200).style("opacity", 0.9);
       const htmlContent = `<strong>Source:</strong> ${d.id}<br/>
                            <strong>Target:</strong> ${d.label}<br/>
