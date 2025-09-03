@@ -114,8 +114,13 @@ const ForeignKeysDiagram = () => {
       .selectAll("g")
       .data(data.nodes)
       .enter()
-      .append("g")
-      .on("click", (event, d) => {
+      .append("g");
+
+    // Append circle and text to each node.
+    const circle = node.append("circle") // Store circle in a variable for interaction handlers
+      .attr("r", 17.5) // Increased radius by 1.75 times (10 * 1.75 = 17.5)
+      .attr("fill", d => d.type === "source" ? "steelblue" : "tomato")
+      .on("click", (event, d) => { // Moved click handler to the circle
         // Toggle collapsed state on the clicked node.
         d.collapsed = !d.collapsed;
         // Propagate collapse: for each link where this node is the source, set the target's hidden flag
@@ -126,11 +131,6 @@ const ForeignKeysDiagram = () => {
         });
         update();
       });
-
-    // Append circle and text to each node.
-    node.append("circle")
-      .attr("r", 17.5) // Increased radius by 1.75 times (10 * 1.75 = 17.5)
-      .attr("fill", d => d.type === "source" ? "steelblue" : "tomato");
 
     node.append("text")
       .attr("x", 12)
@@ -185,7 +185,7 @@ const ForeignKeysDiagram = () => {
     }
     
     // Apply drag behavior only to the circles within each node group.
-    node.select("circle").call(drag(simulation));
+    circle.call(drag(simulation)); // Apply drag to the circle
 
     // Add HTML hover popup tooltip for node data.
     let tooltip = d3.select("body").select(".tooltip");
@@ -202,7 +202,8 @@ const ForeignKeysDiagram = () => {
         .style("opacity", 0);
     }
 
-    node.on("mouseover", (event, d) => {
+    // Moved tooltip events to the circle for consistent interaction
+    circle.on("mouseover", (event, d) => {
       tooltip.transition().duration(200).style("opacity", 0.9);
       const htmlContent = `<strong>Source:</strong> ${d.id}<br/>
                            <strong>Target:</strong> ${d.label}<br/>
