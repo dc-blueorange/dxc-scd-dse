@@ -122,8 +122,8 @@ const ForeignKeysDiagram = () => {
 
     // Append circle and text to each node.
     const circle = node.append("circle")
-      .attr("r", 17.5)
-      .attr("fill", d => d.type === "source" ? "steelblue" : "tomato")
+      .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5) // Adjust radius based on collapsed state
+      .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato")) // Adjust color based on collapsed state
       .on("click", (event, clickedNode) => {
         event.stopPropagation();
 
