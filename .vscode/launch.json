@@ -61,7 +61,7 @@
             "console": "integratedTerminal"
         },
         {
-            "name": "Debug NetworkDiagram",
+            "name": "Debug D3JS Diagrams",
             "type": "node",
             "request": "launch",
             "runtimeExecutable": "npx",

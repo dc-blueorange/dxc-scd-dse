@@ -163,7 +163,7 @@ if __name__ == "__main__":
     parser.add_argument('--json', '-js', action='store_true', help="Output in JSON format")
     parser.add_argument('--table-names', '-tn', action='store_true', help="Only show tables on column matches")
     parser.add_argument('--no-columns', '-nc', action='store_true', help="Scan table names for entity words(ignoring column definitions)")
-    parser.add_argument('--foreign-keys', '-fc', action='store_true', help="Extract all foreign key definitions")
+    parser.add_argument('--foreign-keys', '-fk', action='store_true', help="Extract all foreign key definitions")
     parser.add_argument('paths', nargs='*', help="Directories and/or SQL file paths to process")
     args = parser.parse_args()
 
