@@ -2,12 +2,32 @@
   {
     "schema": "dbo",
     "database": "chs",
+    "table": "ClaimPaymentAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
     "table": "ClaimPaymentRegistration"
   },
   {
     "schema": "dbo",
     "database": "chs",
     "table": "ClaimPaymentRegistrationHistory"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "ClaimStatusTracing_Facility"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaimPayerAddressUpgrade"
   },
   {
     "schema": "dbo",
@@ -31,8 +51,33 @@
   },
   {
     "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPartnerCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPartnerCodeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPartnerCodeBillingConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Active_CDA"
+  },
+  {
+    "schema": "dbo",
     "database": "common",
     "table": "ChatConversation"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Contact"
   },
   {
     "schema": "dbo",
@@ -47,6 +92,11 @@
   {
     "schema": "dbo",
     "database": "common",
+    "table": "DownloadAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
     "table": "DownloadConfig"
   },
   {
@@ -57,7 +107,42 @@
   {
     "schema": "dbo",
     "database": "common",
+    "table": "Enrollment"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Entity"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "EntityAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
     "table": "FrontOfficeBilling"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupBillingInfoSkip"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupMember"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "GroupMemberPayer"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Groups"
   },
   {
     "schema": "dbo",
@@ -67,7 +152,27 @@
   {
     "schema": "dbo",
     "database": "common",
+    "table": "HipaaAgreement"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "HipaaBAA"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MerchantMigration"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
     "table": "MessagePortalConversation"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MetProviderDir"
   },
   {
     "schema": "dbo",
@@ -92,12 +197,87 @@
   {
     "schema": "dbo",
     "database": "common",
+    "table": "PPEInserts"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Payer"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerAddressAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerEligMemberRecord"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatch"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatchAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatchGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatchGroupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatchStandardAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "PayerMatchStandardAddressAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
     "table": "Pms"
   },
   {
     "schema": "dbo",
     "database": "common",
     "table": "PmsAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDir"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDirAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ProviderDir_new"
   },
   {
     "schema": "dbo",
@@ -152,7 +332,67 @@
   {
     "schema": "dbo",
     "database": "common",
+    "table": "Reseller"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "ResellerAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Results"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "RohidIslandTemp"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "RohidIslandTempNew"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "SalesLead"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
     "table": "SupportDataSourceResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UserAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UserAddressAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UserSignatureVerification"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "Users"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "UsersAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "VIP"
   },
   {
     "schema": "dbo",
@@ -160,9 +400,19 @@
     "table": "providerdirectoryold"
   },
   {
+    "schema": "tmort",
+    "database": "common",
+    "table": "tempcpa1"
+  },
+  {
     "schema": "dbo",
     "database": "cred",
     "table": "ApplicationSetLocation"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ApplicationSetPayerEmail"
   },
   {
     "schema": "dbo",
@@ -183,6 +433,11 @@
     "schema": "dbo",
     "database": "cred",
     "table": "LocationQuestion"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "MedicarePreclusionLookup"
   },
   {
     "schema": "dbo",
@@ -212,6 +467,11 @@
   {
     "schema": "dbo",
     "database": "cred",
+    "table": "PayerEmailConfig"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
     "table": "PrimaryDataSourceResponse"
   },
   {
@@ -233,6 +493,46 @@
     "schema": "dbo",
     "database": "cred",
     "table": "UserLocation"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimMember"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPayer"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPayerAddressUpgrade"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimPaymentAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimProvider"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "ClaimProviderAddress"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "Member"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "MemberHistory"
   },
   {
     "schema": "dbo",
@@ -316,6 +616,11 @@
   },
   {
     "schema": "dbo",
+    "database": "dea",
+    "table": "DEAPayer"
+  },
+  {
+    "schema": "dbo",
     "database": "dhmo",
     "table": "Aetna_xml_Data"
   },
@@ -366,8 +671,63 @@
   },
   {
     "schema": "dbo",
+    "database": "dw_atm_dxc",
+    "table": "chs_MetaClaim_Since2023"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Address_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Bank_Info_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Business_Info_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Check_Info_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Check_Info_T_Orig"
+  },
+  {
+    "schema": "dbo",
+    "database": "dxcps",
+    "table": "Contacts_T"
+  },
+  {
+    "schema": "dbo",
     "database": "dxcps",
     "table": "Vital_T"
+  },
+  {
+    "schema": "dbo",
+    "database": "entyDev",
+    "table": "Entities"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "Member"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "payer"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec",
+    "table": "usereulaagreement"
   },
   {
     "schema": "dbo",
@@ -401,6 +761,26 @@
   },
   {
     "schema": "dbo",
+    "database": "ext_raw_pc",
+    "table": "merchants"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_pc",
+    "table": "patients"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_pc",
+    "table": "users"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr",
+    "table": "LR$LQCDP1755266433236_dci_claim_statuses"
+  },
+  {
+    "schema": "dbo",
     "database": "master",
     "table": "rptDCIClaimAGGPendingClaimStatusAgedSnapshot"
   },
@@ -426,8 +806,28 @@
   },
   {
     "schema": "dbo",
+    "database": "merchant",
+    "table": "Payment"
+  },
+  {
+    "schema": "dbo",
+    "database": "merchant",
+    "table": "PaymentAudit"
+  },
+  {
+    "schema": "dbo",
     "database": "ns",
     "table": "Charge_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "CustomerAddressBookEntityAddress_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
+    "table": "CustomerAddressBook_copy"
   },
   {
     "schema": "dbo",
@@ -476,6 +876,16 @@
   },
   {
     "schema": "dbo",
+    "database": "pfs",
+    "table": "CreditApplication"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs",
+    "table": "CreditReport"
+  },
+  {
+    "schema": "dbo",
     "database": "pnt",
     "table": "Statement"
   },
@@ -497,7 +907,22 @@
   {
     "schema": "dbo",
     "database": "reports",
+    "table": "Billing_GPManualBillGroups"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "CDA_North_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
     "table": "CSRequest_Practice"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "CaliforniaMatching"
   },
   {
     "schema": "dbo",
@@ -507,7 +932,62 @@
   {
     "schema": "dbo",
     "database": "reports",
+    "table": "GPTransactionStage"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GPTransactionStage_Test"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GPTransactionStage_Test_New"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GPTransactionStage_Test_Old"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GPtest"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "GroupMatching"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
     "table": "LibertyMatchBO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Match_Anthem_1"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Match_Anthem_BO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Match_Anthem_BO_1"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Matching_Anthem"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Matching_HMWG"
   },
   {
     "schema": "dbo",
@@ -523,6 +1003,41 @@
     "schema": "dbo",
     "database": "reports",
     "table": "PayConnectLocationNumber"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "PayerMatchReport"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "ProviderMatching"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Registration_Process_Claims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Registration_Process_No_Claims"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Registration_Process_Users_Groups_No_CC"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Registration_Process_Users_No_Groups"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "SoCal_Data"
   },
   {
     "schema": "dbo",
@@ -553,6 +1068,71 @@
     "schema": "dbo",
     "database": "reports",
     "table": "dhmo_add_groups"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_ADPAliasChanges"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_ADPProviderAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_ADPProviderCredentialAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_BNDAliasChanges"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_BNDProviderAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_BNDProviderCredentialAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_GEDCAliasChanges"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_GEDCProviderAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_GEDCProviderCredentialAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_GHI_Activity"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_LuminaAliasChanges"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_LuminaProviderAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "rpt_LuminaProviderCredentialAudit"
   },
   {
     "schema": "dbo",
@@ -597,12 +1177,52 @@
   {
     "schema": "dbo",
     "database": "reports",
+    "table": "temptom"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
     "table": "tmpOrtho"
   },
   {
     "schema": "dbo",
     "database": "reports",
     "table": "tmpTDO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "tomtemp28"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "xls_DeltaCA"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "GPManualBillGroups"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "GroupBillingInforSkip2018"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "TempDenticonUsers"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "TempGedcClaims"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "WesternUsers"
   },
   {
     "schema": "tmort",
@@ -623,6 +1243,11 @@
     "schema": "tmort",
     "database": "reports",
     "table": "tmpeagleslandingitems"
+  },
+  {
+    "schema": "tmort",
+    "database": "reports",
+    "table": "tomdcp20110404load"
   },
   {
     "schema": "dbo",
@@ -663,6 +1288,16 @@
     "schema": "dbo",
     "database": "trxDev",
     "table": "ClientTransactions"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "HipaaSpace"
+  },
+  {
+    "schema": "dbo",
+    "database": "trxDev",
+    "table": "HipaaSpaceold"
   },
   {
     "schema": "dbo",

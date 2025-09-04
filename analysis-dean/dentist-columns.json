@@ -29,6 +29,13 @@
     },
     {
         "schema": "dbo",
+        "database": "rpt",
+        "table": "ReportColumn",
+        "column": "Distinct",
+        "file": "DTT-ANA-PRD/rpt.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "partcredDM",
         "table": "Credential",
         "column": "ProviderID",
@@ -163,6 +170,34 @@
     {
         "schema": "dbo",
         "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "column": "MemberNo",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "column": "BillingProvNPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "column": "RenderingProvNPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "column": "DestinationUpgradeReasonID",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_atm_dxc",
         "table": "dci_claim_6mos",
         "column": "OrthoDate",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
@@ -204,6 +239,62 @@
     },
     {
         "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "dci_rtserviceaudit_6mos",
+        "column": "NPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "dea_attachments_6mos",
+        "column": "BillingNPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "dea_attachments_6mos",
+        "column": "RenderingNPI",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "achpaymentmethods",
+        "column": "routingnumber",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "usermerchantsettingoverrides",
+        "column": "settingsid",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "usermerchantsettingoverrides",
+        "column": "_airbyte_usermerchantsettingoverrides_hashid",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "usermerchantsettings",
+        "column": "_airbyte_usermerchantsettings_hashid",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "appointmentinsurancemapping",
+        "column": "_airbyte_appointmentinsurancemapping_hashid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "ext_raw_ec",
         "table": "appointmentprovidermapping",
         "column": "providerid",
@@ -240,8 +331,71 @@
     {
         "schema": "dbo",
         "database": "ext_raw_ec",
+        "table": "groupsetting",
+        "column": "_airbyte_groupsetting_hashid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "insurance",
+        "column": "memberid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "insurancepatientmapping",
+        "column": "patientmemberid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "Member",
+        "column": "_airbyte_member_hashid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "memberalias",
+        "column": "member",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "memberalias",
+        "column": "_airbyte_memberalias_hashid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "patientproperty",
+        "column": "memberid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
         "table": "payercredential",
         "column": "providerid",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "payerportal",
+        "column": "mfatimeoutinseconds",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "provider",
+        "column": "npi",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
@@ -255,8 +409,22 @@
         "schema": "dbo",
         "database": "ext_raw_ec",
         "table": "provider",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "provider",
         "column": "_airbyte_provider_hashid",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "pdt",
+        "database": "lkr",
+        "table": "LR$LQ2XV1755273788089_eligibility_ai_transactions",
+        "column": "patient_member_id",
+        "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "schema": "pdt",
@@ -598,6 +766,20 @@
         "schema": "cycle",
         "database": "master",
         "table": "Claims",
+        "column": "ReportingStatusCategory",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "cycle",
+        "database": "master",
+        "table": "Claims",
+        "column": "ReportingGlobalCategory",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "cycle",
+        "database": "master",
+        "table": "Claims",
         "column": "ProviderMatch",
         "file": "DTT-ANA-PRD/ent.sql"
     },
@@ -702,6 +884,20 @@
     {
         "schema": "dbo",
         "database": "master",
+        "table": "DCIClaimPaymentFLATClaimPaymentsLifeCycles",
+        "column": "NPI",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "master",
+        "table": "DEAAttachmentFLATAttachmentsLifeCycles",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "master",
         "table": "LDP0AI-COH",
         "column": "ProviderClaimID",
         "file": "DTT-ANA-PRD/ent.sql"
@@ -739,6 +935,20 @@
         "database": "master",
         "table": "rptDCIClaimDETUserResolvedClaimsDetail",
         "column": "ProviderFirstName",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "master",
+        "table": "TEMP_DLS3",
+        "column": "ReportingStatusCategory",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "master",
+        "table": "TEMP_DLS3",
+        "column": "ReportingGlobalCategory",
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
@@ -836,6 +1046,13 @@
         "schema": "ddsenroll",
         "database": "master",
         "table": "CREDProviderDETUnpivotedUserAnswers",
+        "column": "UnpivotedUserAnswerID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "ddsenroll",
+        "database": "master",
+        "table": "CREDProviderDETUnpivotedUserAnswers",
         "column": "ProviderProfileID",
         "file": "DTT-ANA-PRD/ent.sql"
     },
@@ -899,6 +1116,20 @@
         "schema": "payerportal",
         "database": "master",
         "table": "ClearinghouseClaims",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "payerportal",
+        "database": "master",
+        "table": "ClearinghouseClaims",
+        "column": "MemberID",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "payerportal",
+        "database": "master",
+        "table": "ClearinghouseClaims",
         "column": "BillingProviderFullName",
         "file": "DTT-ANA-PRD/ent.sql"
     },
@@ -933,6 +1164,41 @@
     {
         "schema": "dbo",
         "database": "trxWsdm",
+        "table": "ClientSubscriptionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxWsdm",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxWsdm",
         "table": "ClientTransactions",
         "column": "BillingProviderTaxID",
         "file": "DTT-TRX-PRD/trxWsdm.sql"
@@ -946,6 +1212,48 @@
     },
     {
         "schema": "dbo",
+        "database": "trxWsdm",
+        "table": "TransactionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxWsdm.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxTest",
+        "table": "ClientSubscriptionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxTest",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "trxTest",
         "table": "ClientTransactions",
         "column": "BillingProviderTaxID",
@@ -967,6 +1275,48 @@
     },
     {
         "schema": "dbo",
+        "database": "trxTest",
+        "table": "TransactionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxTest.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trx",
+        "table": "ClientSubscriptionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trx",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "trx",
         "table": "ClientTransactions",
         "column": "BillingProviderTaxID",
@@ -978,6 +1328,41 @@
         "table": "ClientTransactions",
         "column": "RenderingProviderNPI",
         "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trx",
+        "table": "TransactionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trx.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxQA",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxQA.sql"
     },
     {
         "schema": "dbo",
@@ -1002,6 +1387,265 @@
     },
     {
         "schema": "dbo",
+        "database": "trxQA",
+        "table": "TransactionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxQA",
+        "table": "ClientSubscriptionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Customer_copy",
+        "column": "custentity_reporting_client_type",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Customer_copy",
+        "column": "isautogeneratedrepresentingentity",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Customer_copy",
+        "column": "representingsubsidiary",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CustomerAddressBookEntityAddress_copy",
+        "column": "custrecord_ava_customergstin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Item_copy",
+        "column": "contingentrevenuehandling",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Item_copy",
+        "column": "costingmethod",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Item_copy",
+        "column": "costingmethoddisplay",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Item_copy",
+        "column": "custitemzab_default_rating_bill_in_arr",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Item_copy",
+        "column": "custitemzab_default_rating_charge_schd",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Item_copy",
+        "column": "directrevenueposting",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "SalesInvoiced_copy",
+        "column": "postingperiod",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "custbody_ava_customergstin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "manufacturingrouting",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "posting",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "postingperiod",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "revcommittingstatus",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "accountinglinetype",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "commitinventory",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "custcol_ava_customergstin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "fulfillmentinstruction",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "inventoryreportinglocation",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "isinventoryaffecting",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "kitmemberof",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "revcommittingtransaction",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionLine_copy",
+        "column": "undeferredaccountinglinetype",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Vendor_copy",
+        "column": "isautogeneratedrepresentingentity",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Vendor_copy",
+        "column": "representingsubsidiary",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscriptionItem_copy",
+        "column": "custrecordzab_si_rating_bill_in_arrears",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscriptionItem_copy",
+        "column": "custrecordzab_si_rating_charge_schedule",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscriptionItem_copy",
+        "column": "custrecordzab_si_rating_priority",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "ClientSubscriptionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "trxDev",
         "table": "ClientTransactions",
         "column": "BillingProviderTaxID",
@@ -1016,6 +1660,209 @@
     },
     {
         "schema": "dbo",
+        "database": "trxDev",
+        "table": "TransactionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "rptDev",
+        "table": "ClientInvoiceDetail",
+        "column": "ClientInvoiceDetailID",
+        "file": "DTT-TRX-PRD/rptDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientGLEntrySummary",
+        "column": "ChildClientInformation",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientGLEntrySummary",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientGLEntrySummaryAudit",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ERPItemLookup",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ERPItemLookupAudit",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "rpt",
+        "table": "ClientInvoiceDetail",
+        "column": "ClientInvoiceDetailID",
+        "file": "DTT-TRX-PRD/rpt.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxBrch",
+        "table": "ClientSubscriptionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "DestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerCode",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxBrch",
+        "table": "ClientTransactions",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "trxBrch",
         "table": "ClientTransactions",
         "column": "BillingProviderTaxID",
@@ -1027,6 +1874,118 @@
         "table": "ClientTransactions",
         "column": "RenderingProviderNPI",
         "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxBrch",
+        "table": "TransactionEvents",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "sch",
+        "table": "ProcedureSchedules",
+        "column": "ProcessName",
+        "file": "DTT-TRX-PRD/sch.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "sch",
+        "table": "ProcedureSchedulesAudit",
+        "column": "ProcessName",
+        "file": "DTT-TRX-PRD/sch.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "schDev",
+        "table": "ProcedureSchedules",
+        "column": "ProcessName",
+        "file": "DTT-TRX-PRD/schDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erpDev",
+        "table": "ClientGLEntrySummary",
+        "column": "ChildClientInformation",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erpDev",
+        "table": "ClientGLEntrySummary",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "DestinationPartnerCode",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "DestinationPartnerName",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erpDev",
+        "table": "ERPItemLookup",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "entyDev",
+        "table": "Entities",
+        "column": "ReportingClientType",
+        "file": "DTT-TRX-PRD/entyDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pnt",
+        "table": "Statement",
+        "column": "EstInsPayment",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pnt",
+        "table": "StatementItem",
+        "column": "EstInsPayment",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pnt",
+        "table": "StatementPageCount",
+        "column": "LaserPrintingFee",
+        "file": "Livesql3/pnt.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pnt",
+        "table": "StatementPageCount",
+        "column": "InsertingFeePerSheet",
+        "file": "Livesql3/pnt.sql"
     },
     {
         "schema": "dbo",
@@ -1039,7 +1998,49 @@
         "schema": "dbo",
         "database": "dhmo",
         "table": "Aetna_xml_Data",
+        "column": "OfficeTIN",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Aetna_xml_Data",
         "column": "Provider",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Aetna_xml_Data",
+        "column": "TotalMemberCount",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Member",
+        "column": "MemberID",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Member",
+        "column": "MemberNo",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Member",
+        "column": "MemberLevelCopay",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Member",
+        "column": "InsuranceMemberID",
         "file": "Livesql3/dhmo.sql"
     },
     {
@@ -1054,6 +2055,34 @@
         "database": "common",
         "table": "Groups",
         "column": "AutoAddProvider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Groups",
+        "column": "RegistrationPID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Users",
+        "column": "BillingNPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Users",
+        "column": "RenderingNPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Users",
+        "column": "SSN",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1087,6 +2116,34 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "DmdPmsGroup",
+        "column": "ReviewTimeoutInDays",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "EHGGroupKeyToPID",
+        "column": "TIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "EHGGroupKeyToPID_DXE",
+        "column": "TIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Enrollment",
+        "column": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "Enrollment",
         "column": "PayerProviderId",
         "file": "Livesql3/Common.sql"
@@ -1094,8 +2151,148 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "ERARegistration",
+        "column": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARegistrationAudit",
+        "column": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "RoutingDetailID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "RoutingSummaryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "EraDestination",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "EraSecondaryDestination",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "EnrollmentIncludePartner",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "RoutingSource",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "RoutingDestination",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "RoutingSecondaryDestination",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingInformation",
+        "column": "ERARoutingInfoID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingSummary",
+        "column": "RoutingSummaryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMember",
+        "column": "GroupMemberID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMember",
+        "column": "MemberNo",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMember",
+        "column": "SubscriberGroupMemberID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMemberPayer",
+        "column": "GroupMemberID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupsAudit",
+        "column": "RegistrationPID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "HawaiiDentalLicenseLookup",
         "column": "ProviderName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MarketingSource",
+        "column": "MarketingSourceID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MarketingSourceType",
+        "column": "MarketingSourceTypeID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MarketingSourceType",
+        "column": "ClassName",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1122,6 +2319,13 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "MessagePortalExternalUser",
+        "column": "OptIn",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "MetProviderDir",
         "column": "MetProviderID",
         "file": "Livesql3/Common.sql"
@@ -1129,6 +2333,41 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "MetProviderDir",
+        "column": "TINTypeCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MetProviderDir",
+        "column": "TIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MetProviderDir",
+        "column": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MetProviderDir",
+        "column": "NPI2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "NppesLookup",
         "column": "ProviderOrgName",
         "file": "Livesql3/Common.sql"
@@ -1333,6 +2572,27 @@
         "schema": "dbo",
         "database": "common",
         "table": "NppesLookup",
+        "column": "NPIDeactivationReasonCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "NPIDeactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "NPIReactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
         "column": "ProviderGenderCode",
         "file": "Livesql3/Common.sql"
     },
@@ -1355,6 +2615,13 @@
         "database": "common",
         "table": "NppesLookup",
         "column": "ProviderLicenseNumberStateCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "NPI",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1564,6 +2831,27 @@
         "schema": "dbo",
         "database": "common",
         "table": "NppesLookup_old",
+        "column": "NPIDeactivationReasonCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "NPIDeactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "NPIReactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
         "column": "ProviderGenderCode",
         "file": "Livesql3/Common.sql"
     },
@@ -1586,6 +2874,13 @@
         "database": "common",
         "table": "NppesLookup_old",
         "column": "ProviderLicenseNumberStateCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "NPI",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1795,6 +3090,27 @@
         "schema": "dbo",
         "database": "common",
         "table": "NppesLookup_old1",
+        "column": "NPIDeactivationReasonCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "NPIDeactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "NPIReactivationDate",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
         "column": "ProviderGenderCode",
         "file": "Livesql3/Common.sql"
     },
@@ -1817,6 +3133,13 @@
         "database": "common",
         "table": "NppesLookup_old1",
         "column": "ProviderLicenseNumberStateCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PartnerLoginConfig",
+        "column": "CanContinue",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1824,6 +3147,13 @@
         "database": "common",
         "table": "Payer",
         "column": "ValidateRepOrtho",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Payer",
+        "column": "TestingMode",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1845,6 +3175,13 @@
         "database": "common",
         "table": "PayerAudit",
         "column": "ValidateRepOrtho",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAudit",
+        "column": "TestingMode",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1871,6 +3208,69 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "PayerEligMemberRecord",
+        "column": "MemberNo",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerEligMemberRecord",
+        "column": "SSN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerEnrollment",
+        "column": "ContactInfo",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerHandler",
+        "column": "ClassName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMemberEnrollment",
+        "column": "PayerMemberEnrollmentID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMemberEnrollment",
+        "column": "MemberNo",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMemberEnrollment",
+        "column": "SSN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PPEInserts",
+        "column": "TIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PPEInserts",
+        "column": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "ProviderDir",
         "column": "ProviderID",
         "file": "Livesql3/Common.sql"
@@ -1878,8 +3278,50 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "ProviderDir",
+        "column": "TINTypeCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDir",
+        "column": "TIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDir",
+        "column": "NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "ProviderDir_new",
         "column": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDir_new",
+        "column": "TINTypeCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDir_new",
+        "column": "TIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDir_new",
+        "column": "NPI",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1899,8 +3341,36 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "ProviderDirAudit",
+        "column": "TINTypeCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirAudit",
+        "column": "TIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "ProviderDirectory",
         "column": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirectory",
+        "column": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirectory",
+        "column": "SSN",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1955,6 +3425,20 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "column": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirectoryCompare",
+        "column": "SSN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "ProviderDirectoryHistory",
         "column": "ProviderDirectoryHistoryID",
         "file": "Livesql3/Common.sql"
@@ -1969,6 +3453,20 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "column": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirectoryHistory",
+        "column": "SSN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "ProviderDirectoryLocation",
         "column": "ProviderDirectoryLocationID",
         "file": "Livesql3/Common.sql"
@@ -1978,6 +3476,13 @@
         "database": "common",
         "table": "ProviderDirectoryLocation",
         "column": "ProviderDirectoryPayerID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirectoryLocation",
+        "column": "Npi",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -2011,8 +3516,36 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "column": "BusinessName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "column": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "providerdirectoryold",
         "column": "ProviderDirectoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "providerdirectoryold",
+        "column": "Npi",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "providerdirectoryold",
+        "column": "SSN",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -2292,7 +3825,63 @@
         "schema": "dbo",
         "database": "common",
         "table": "Results",
+        "column": "TINTypeCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Results",
+        "column": "TIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Results",
         "column": "ProviderID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "RohidIslandTemp",
+        "column": "Organizational_NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "RohidIslandTemp",
+        "column": "Individual_NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "RohidIslandTempNew",
+        "column": "Organizational_NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "RohidIslandTempNew",
+        "column": "Individual_NPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "SalesLead",
+        "column": "TINTypeCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "SalesLead",
+        "column": "TIN",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -2312,8 +3901,64 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "SupportRequest",
+        "column": "SubmitterTin",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "SupportUserCommission",
+        "column": "CalculationClassName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "SupportUserCommission_0318",
+        "column": "CalculationClassName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UsersAudit",
+        "column": "BillingNPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UsersAudit",
+        "column": "RenderingNPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UsersAudit",
+        "column": "SSN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "UsersAudit",
         "column": "ProviderRuleOnly",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "common",
+        "table": "tempcpa1",
+        "column": "icNPI",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "common",
+        "table": "tempcpa1",
+        "column": "ContactInfo",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -2321,6 +3966,13 @@
         "database": "dci",
         "table": "RTServiceAudit",
         "column": "ProviderTIN",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "RTServiceAudit",
+        "column": "NPI",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -2369,7 +4021,21 @@
         "schema": "dbo",
         "database": "dci",
         "table": "ClaimPayer",
+        "column": "ClaimMemberID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPayer",
         "column": "ValidateRepOrtho",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "arc_Claim_ClaimMemberID_List",
+        "column": "ClaimMemberID",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -2452,6 +4118,62 @@
     {
         "schema": "dbo",
         "database": "dci",
+        "table": "ClaimMember",
+        "column": "ClaimMemberID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimMember",
+        "column": "MemberNo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimMember",
+        "column": "MemberType",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimMember",
+        "column": "MemberTypeQualifier",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimMember",
+        "column": "PayerMemberNo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimMember",
+        "column": "GroupMemberID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPayment",
+        "column": "Npi",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPaymentAddress",
+        "column": "ContactInfo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
         "table": "ClaimPaymentAdjustment",
         "column": "ProviderID",
         "file": "Livesql3/dci.sql"
@@ -2466,8 +4188,36 @@
     {
         "schema": "dbo",
         "database": "dci",
+        "table": "ClaimPaymentClaim",
+        "column": "MemberNo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPaymentClaim",
+        "column": "ReportIndex",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
         "table": "ClaimPaymentReportClaim",
         "column": "ProviderClaimID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPaymentReportClaim",
+        "column": "MemberNo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPaymentReportClaim",
+        "column": "ReportIndex",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -2482,6 +4232,27 @@
         "database": "dci",
         "table": "ClaimProvider",
         "column": "ProviderType",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimProvider",
+        "column": "BillingNPI",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimProvider",
+        "column": "RenderingNPI",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimProvider",
+        "column": "SSN",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -2523,7 +4294,56 @@
         "schema": "dbo",
         "database": "dci",
         "table": "DciPms",
+        "column": "ResetInfo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "DciPms",
         "column": "AutoAddProvider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "Member",
+        "column": "MemberID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "Member",
+        "column": "MemberNo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "Member",
+        "column": "MemberType",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "MemberHistory",
+        "column": "MemberID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "MemberHistory",
+        "column": "MemberNo",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "MemberHistory",
+        "column": "MemberType",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -2580,6 +4400,27 @@
         "database": "dci",
         "table": "reports",
         "column": "DentalBenefitProvidersTrans",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "reports",
+        "column": "TINsToday",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "reports",
+        "column": "TINsMTD",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "reports",
+        "column": "TINsYTD",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -2648,6 +4489,13 @@
     {
         "schema": "dbo",
         "database": "cred",
+        "table": "ApplicationsetCreateAudit",
+        "column": "CallingClassName",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
         "table": "ApplicationSetEnrollmentTicket",
         "column": "ProviderPayerEnrollmentID",
         "file": "Livesql3/cred.sql"
@@ -2657,6 +4505,20 @@
         "database": "cred",
         "table": "ApplicationSetHistory",
         "column": "ProviderDirectoryID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ApplicationSetLocation",
+        "column": "TIN",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ApplicationSetLocation",
+        "column": "NPI",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -2683,6 +4545,20 @@
     {
         "schema": "dbo",
         "database": "cred",
+        "table": "MedicarePreclusionLookup",
+        "column": "BusinessName",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "MedicarePreclusionLookup",
+        "column": "Npi",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
         "table": "OutreachCycle",
         "column": "ProviderDirectoryPayerID",
         "file": "Livesql3/cred.sql"
@@ -2692,6 +4568,34 @@
         "database": "cred",
         "table": "OutreachCycleAudit",
         "column": "ProviderDirectoryPayerID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "OutreachStaffGroupMembers",
+        "column": "OutreachStaffGroupMemberID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "OutreachStaffGroupMembersAudit",
+        "column": "OutreachStaffGroupMemberAuditID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "OutreachStaffGroupMembersAudit",
+        "column": "OutreachStaffGroupMemberID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "PayerConfig",
+        "column": "AppSubmitInfo",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -2746,6 +4650,20 @@
     {
         "schema": "dbo",
         "database": "cred",
+        "table": "ProviderApplicationStatusLocation",
+        "column": "TIN",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderApplicationStatusLocation",
+        "column": "NPI",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
         "table": "ProviderDetail",
         "column": "ProviderDetailID",
         "file": "Livesql3/cred.sql"
@@ -2761,7 +4679,49 @@
         "schema": "dbo",
         "database": "cred",
         "table": "ProviderDetail",
+        "column": "SSN",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderDetail",
+        "column": "MaxMediCalMembers",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderDetail",
+        "column": "MediCalMembersCount",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderDetail",
+        "column": "BoardCertIndicator",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderDetail",
         "column": "ProviderSiteDetailID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderDetail",
+        "column": "AffiliatedNpi",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderDetail",
+        "column": "AddlAffiliatedNpis",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -2893,6 +4853,13 @@
     {
         "schema": "dbo",
         "database": "cred",
+        "table": "ProviderGroupDetail",
+        "column": "Npi",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
         "table": "ProviderProfileSection",
         "column": "ProviderID",
         "file": "Livesql3/cred.sql"
@@ -2916,6 +4883,27 @@
         "database": "cred",
         "table": "ProviderSiteDetail",
         "column": "ProviderSiteDetailID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "column": "Npi",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "column": "MaxMediCalMembers",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "column": "SafetyNetIndicator",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -2970,6 +4958,83 @@
     {
         "schema": "dbo",
         "database": "chs",
+        "table": "PartnerStatementItem",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerStatementItem",
+        "column": "PostingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "MemberNo",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "BillingProvNPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "RenderingProvNPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "DestinationUpgradeReasonID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimStatusTracing_Facility",
+        "column": "TIN",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimStatusTracing_Facility",
+        "column": "NPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimEraDigest",
+        "column": "MemberNo",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimPayment",
+        "column": "Npi",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimPaymentAddress",
+        "column": "ContactInfo",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
         "table": "ClaimPaymentAdjustment",
         "column": "ProviderID",
         "file": "Livesql3/chs.sql"
@@ -2984,6 +5049,20 @@
     {
         "schema": "dbo",
         "database": "chs",
+        "table": "ClaimPaymentClaim",
+        "column": "MemberNo",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimPaymentClaim",
+        "column": "ReportIndex",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
         "table": "ClaimPaymentRegistration",
         "column": "ProviderPrimaryID",
         "file": "Livesql3/chs.sql"
@@ -3035,6 +5114,76 @@
         "database": "chs",
         "table": "ClaimPaymentRegistrationHistory",
         "column": "ProviderLastName",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "DBA",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "DBA",
+        "column": "PostingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "DestinationUpgradeReason",
+        "column": "DestinationUpgradeReasonID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaBankPayment",
+        "column": "PostingDate",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaBankPayment",
+        "column": "RoutingNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaimPayment",
+        "column": "Npi",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaEligRequest",
+        "column": "BillingProvNPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaEligResponse",
+        "column": "BillingProvNPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaEnrollment",
+        "column": "Npi",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ObjectInfo",
+        "column": "ObjectInfoID",
         "file": "Livesql3/chs.sql"
     },
     {
@@ -3053,6 +5202,167 @@
     },
     {
         "schema": "dbo",
+        "database": "chs",
+        "table": "OfficeResponsePreAuth",
+        "column": "MemberID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerBankAccount",
+        "column": "RoutingNumber",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerDestinationResponseConfig",
+        "column": "PartnerDestinationResponseConfigID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerMessageRoutingExcludeAudit",
+        "column": "PartnerMessageRoutingExcludeAuditID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerMessageRoutingExcludeInfo",
+        "column": "RoutingExcludedID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerPayerDestUpgradeConfig",
+        "column": "UpgraderClassName",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustment",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustment",
+        "column": "PostingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustmentAudit",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerStatementItemAdjustmentAudit",
+        "column": "PostingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerStatementItemAudit",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerStatementItemAudit",
+        "column": "PostingCompany",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerWidgetDeliveryRegistration",
+        "column": "MemberNo",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerWidgetDeliveryRegistration",
+        "column": "NPI",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "CreditApplication",
+        "column": "SSN",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "CreditApplication",
+        "column": "MonthlyNetIncome",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "CreditReport",
+        "column": "SSN",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "PFSGroup",
+        "column": "ABARoutingNumber",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "PFSGroup",
+        "column": "CreditRouting",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "PFSGroup",
+        "column": "TulMemberCode",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "PFSGroupHistory",
+        "column": "ABARoutingNumber",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "PFSGroupHistory",
+        "column": "CreditRouting",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "PFSGroupHistory",
+        "column": "TulMemberCode",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "pfs",
         "table": "Settlement",
         "column": "ProviderNetAmount",
@@ -3061,9 +5371,72 @@
     {
         "schema": "dbo",
         "database": "pfs",
+        "table": "Settlement",
+        "column": "ABARoutingNumber",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
         "table": "SettlementHistory",
         "column": "ProviderNetAmount",
         "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "SettlementHistory",
+        "column": "ABARoutingNumber",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DssNetRev_Current",
+        "column": "DssNetRevID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DssNetRev_2010",
+        "column": "DssNetRevID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "residual",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "residual",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "residual",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Billing_PartnerStatementItem",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Billing_PartnerStatementItem",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
     },
     {
         "schema": "dbo",
@@ -3089,6 +5462,125 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "PartnerBillingGPStage2",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingGPStage2",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingGPStage2",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "amextrans",
+        "column": "Member",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "AR_PAYER_STAGE",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "AR_PAYER_STAGE",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "AR_PAYER_STAGE",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "AR_PAYER_STAGE3",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "AR_PAYER_STAGE3",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "AR_PAYER_STAGE3",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "AR_PAYER_STAGE4",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "AR_PAYER_STAGE4",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "AR_PAYER_STAGE4",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ArchivedTINsBTD",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ArchivedTINsYTD",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "CommissionRates",
+        "column": "CalculationClassName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "CSRequest_Practice",
+        "column": "Organizational NPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "DataBillRpt",
         "column": "ProviderRev",
         "file": "Livesql3/reportst.sql"
@@ -3096,6 +5588,13 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "DecemberPartnerMetaClaims",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "dhmo",
         "column": "Provider First",
         "file": "Livesql3/reportst.sql"
@@ -3110,6 +5609,13 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "dhmo",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "dhmo_add_groups",
         "column": "Provider First",
         "file": "Livesql3/reportst.sql"
@@ -3119,6 +5625,55 @@
         "database": "reports",
         "table": "dhmo_add_groups",
         "column": "Provider Last",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "dhmo_add_groups",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DSSCommissionAuditbyTin",
+        "column": "tinssn",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DssFirstDataResidual",
+        "column": "MR_Fee_Invalid_TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DssFirstDataResidual",
+        "column": "MR_Fee_Storage_TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DssFirstDataResidual",
+        "column": "Invalid_TIN_Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "dssmonthfee",
+        "column": "DssNetRevID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "dssmonthfeert",
+        "column": "DssNetRevID",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3139,6 +5694,13 @@
         "schema": "dbo",
         "database": "reports",
         "table": "DSSWebPortal",
+        "column": "BProvTin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DSSWebPortal",
         "column": "Provider",
         "file": "Livesql3/reportst.sql"
     },
@@ -3146,7 +5708,119 @@
         "schema": "dbo",
         "database": "reports",
         "table": "dsswebportal_20101202",
+        "column": "BProvTin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "dsswebportal_20101202",
         "column": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPtest",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test_New",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test_New",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test_New",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test_Old",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test_Old",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test_Old",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "hsRecords",
+        "column": "Destination",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_1",
+        "column": "TIN",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3160,7 +5834,21 @@
         "schema": "dbo",
         "database": "reports",
         "table": "Match_Anthem_BO_1",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_BO_1",
         "column": "BillingProvider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_HMWG",
+        "column": "NPI",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3173,8 +5861,253 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "origDssNetRevPST2010",
+        "column": "DssNetRevID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "papersub",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingGPStage1",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingGPStage1",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingGPStage1",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingGPStage1",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingGPStage3",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingGPStage3",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingGPStage3",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerStatementItemAdjustment08162022",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerStatementItemAdjustment08162022",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "PayerBillingGPStage",
         "column": "ProviderTin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage1",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage1",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage1",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage1",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage2",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage2",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage2",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStage2",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStageArchive",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStageArchive",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStageArchive",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingGPStageArchive",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerCredPsv",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerCredPsv",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerCredPsv",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerCredPsv",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerCredPsvStage",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerCredPsvStage",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerCredPsvStage",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerCredPsvStage",
+        "column": "DestinationPartner",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3187,8 +6120,22 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "ProviderMatching",
+        "column": "NPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "ProviderPayerTrans",
         "column": "ProviderPayerTransID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "column": "BProvTin",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3229,8 +6176,232 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "ProviderPayerTrans",
+        "column": "BProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ProviderPayerTrans",
+        "column": "RProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ReportCategory",
+        "column": "MarketingLinkUrl",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ReportCategory",
+        "column": "MarketingImageUrl",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_backup_012115",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_backup_012115",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_backup_012115",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_backup_022315",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_backup_022315",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_backup_022315",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_10212015",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_10212015",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_10212015",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_Audit",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_Audit",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_Audit",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_Audit02172017",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_Audit02172017",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_Audit02172017",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_old",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_old",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New_old",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New06202016_newcolumn ",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New06202016_newcolumn ",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Residual_New06202016_newcolumn ",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "residual_old",
+        "column": "MR Fee Invalid TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "residual_old",
+        "column": "MR Fee Storage TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "residual_old",
+        "column": "Invalid TIN Fee",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "rpt_ADPProviderCredentialAudit",
         "column": "ProviderType",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_AnthemWebPortal",
+        "column": "BProvTIN",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3243,8 +6414,29 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "rpt_BND_Deactivated",
+        "column": "DeactivatingUser",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "rpt_BNDProviderCredentialAudit",
         "column": "ProviderType",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDC_Deactivated",
+        "column": "DeactivatingUser",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDC_Inactive",
+        "column": "DeactivatingUser",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3257,6 +6449,13 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "rpt_GHI_Activity",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "rpt_LuminaProviderCredentialAudit",
         "column": "ProviderType",
         "file": "Livesql3/reportst.sql"
@@ -3264,6 +6463,76 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "rpt_MonthlyBilling_DeltaProvBreakdown",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_MWD_Deactivated",
+        "column": "DeactivatingUser",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_NewActivity",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_PADental_Deactivated",
+        "column": "DeactivatingUser",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_RefreshClaimsTotal",
+        "column": "AttachmentWaiting 2Days",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_RefreshClaimsTotal",
+        "column": "AttachmentWaiting +3Days",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Claims",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "temp_DSO_Claims",
         "column": "BillingProviderTaxID",
         "file": "Livesql3/reportst.sql"
@@ -3273,6 +6542,41 @@
         "database": "reports",
         "table": "temp_DSO_Claims",
         "column": "RenderingProviderNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Claims_TransactionEvents",
+        "column": "ReportingClientType",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Cred",
+        "column": "MasterDestinationPartnerDescription",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3293,6 +6597,34 @@
         "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_ERA",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_ERA",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_ERA",
         "column": "BillingProviderTaxID",
         "file": "Livesql3/reportst.sql"
     },
@@ -3307,6 +6639,34 @@
         "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_PatStmt",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_PatStmt",
         "column": "BillingProviderTaxID",
         "file": "Livesql3/reportst.sql"
     },
@@ -3321,6 +6681,34 @@
         "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_RTClaims",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_RTClaims",
         "column": "BillingProviderTaxID",
         "file": "Livesql3/reportst.sql"
     },
@@ -3335,6 +6723,34 @@
         "schema": "dbo",
         "database": "reports",
         "table": "temp_DSO_RTCount",
+        "column": "DestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "DestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "MasterDestinationPartnerCode",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
+        "column": "MasterDestinationPartnerDescription",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_RTCount",
         "column": "BillingProviderTaxID",
         "file": "Livesql3/reportst.sql"
     },
@@ -3343,6 +6759,13 @@
         "database": "reports",
         "table": "temp_DSO_RTCount",
         "column": "RenderingProviderNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
+        "column": "ReportingClientType",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3356,7 +6779,63 @@
         "schema": "dbo",
         "database": "reports",
         "table": "tempECEHG",
+        "column": "NPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tempECEHG",
         "column": "ProviderName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tempRefreshDaily",
+        "column": "AttachmentWaiting 2Days",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tempRefreshDaily",
+        "column": "AttachmentWaiting +3Days",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temptom",
+        "column": "MemberNo",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temptom",
+        "column": "BillingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temptom",
+        "column": "RenderingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Test_PartnerStatementItem",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Test_PartnerStatementItem",
+        "column": "PostingCompany",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3369,8 +6848,71 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "tin",
+        "column": "tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tinYTD",
+        "column": "tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "tmpOrtho",
         "column": "Name of Doctor and Staff",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tomtemp28",
+        "column": "MemberNo",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tomtemp28",
+        "column": "BillingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tomtemp28",
+        "column": "RenderingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Trans",
+        "column": "TINsToday",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Trans",
+        "column": "TINsMTD",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Trans",
+        "column": "TINsYTD",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Trans",
+        "column": "TINsBTD",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3383,8 +6925,169 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "UCCI",
+        "column": "NPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStage1",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStage1",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStage1",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStage1",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStage1Arch",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStage1Arch",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStage1Arch",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStage1Arch",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStageArchive",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStageArchive",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStageArchive",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VIPBillingGPStageArchive",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VipCredTemp",
+        "column": "ProcessName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VipCredTemp",
+        "column": "OriginatingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VipCredTemp",
+        "column": "PostingCompany",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "VipCredTemp",
+        "column": "DestinationPartner",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "xls_DeltaCA",
         "column": "PROVIDER",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "xls_DeltaCA",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "ls_user",
+        "database": "reports",
+        "table": "tempRefreshDaily",
+        "column": "AttachmentWaiting 2Days",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "ls_user",
+        "database": "reports",
+        "table": "tempRefreshDaily",
+        "column": "AttachmentWaiting +3Days",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "balclaims",
+        "column": "billingprovnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "balclaims",
+        "column": "renderingprovnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "CdaReport",
+        "column": "GroupTin",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3404,8 +7107,120 @@
     {
         "schema": "tmort",
         "database": "reports",
+        "table": "dfcgroups",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "dfcgroups",
+        "column": "BillNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "dfcProvs",
+        "column": "renderingNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "GEDCclaims",
+        "column": "billingnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "GEDCclaims",
+        "column": "renderingnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "GEDCclaims",
+        "column": "submemberno",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "GEDCclaims",
+        "column": "patmemberno",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "GEDFileSummary",
+        "column": "billingnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "GEDFileSummary",
+        "column": "renderingnpi",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "GEDFileSummary",
+        "column": "submemberno",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "GEDFileSummary",
+        "column": "patmemberno",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "TempDenticonUsers",
+        "column": "BillingNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "TempDenticonUsers",
+        "column": "RenderingNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "TempDenticonUsers",
+        "column": "SSN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
         "table": "TempDenticonUsers",
         "column": "ProviderRuleOnly",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "tempKatsur",
+        "column": "bptin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "tempKatsur",
+        "column": "rptin",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -3419,8 +7234,71 @@
         "schema": "tmort",
         "database": "reports",
         "table": "tmpeagleslandingitems",
+        "column": "SSN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "tmpeagleslandingitems",
         "column": "Provider Name",
         "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "tomdcp20110404load",
+        "column": "MemberNo",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "tomdcp20110404load",
+        "column": "BillingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "tomdcp20110404load",
+        "column": "RenderingProvNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "WesternUsers",
+        "column": "BillingNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "WesternUsers",
+        "column": "RenderingNPI",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "WesternUsers",
+        "column": "SSN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dea",
+        "table": "Attachment",
+        "column": "BillingNPI",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dea",
+        "table": "Attachment",
+        "column": "RenderingNPI",
+        "file": "Livesql3/dea.sql"
     },
     {
         "schema": "dbo",
@@ -3428,6 +7306,69 @@
         "table": "ProviderPayment",
         "column": "ProviderPaymentID",
         "file": "Livesql3/ptp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "AppSetting_T",
+        "column": "AppSetting_Key",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "AppSetting_T",
+        "column": "AppSetting_Value",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "AppSetting_T_Orig",
+        "column": "AppSetting_Key",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "AppSetting_T_Orig",
+        "column": "AppSetting_Value",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Bank_Info_T",
+        "column": "Routing_Number_VC",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "FD_GlobalBIN",
+        "column": "VisaLargeTicketIndicator",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "FD_GlobalBIN",
+        "column": "OCMTIndicator",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "FD_GlobalBIN",
+        "column": "OCTIndicator",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ddir",
+        "table": "MarketingSourceAudit",
+        "column": "MarketingSourceAuditID",
+        "file": "Livesql3/ddir.sql"
     },
     {
         "schema": "dbo",
