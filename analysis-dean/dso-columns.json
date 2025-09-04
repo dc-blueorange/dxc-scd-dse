@@ -318,6 +318,13 @@
         "schema": "dbo",
         "database": "dw_atm_dxc",
         "table": "dci_claim_6mos",
+        "column": "SourceIndicator",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "dci_claim_6mos",
         "column": "ServiceAuditID",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
@@ -389,6 +396,13 @@
         "database": "dw_atm_dxc",
         "table": "dea_attachments_6mos",
         "column": "RTServiceAuditID",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "dea_attachments_6mos",
+        "column": "SourceIndicator",
         "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
     },
     {
@@ -786,6 +800,13 @@
     {
         "schema": "dbo",
         "database": "ns",
+        "table": "Currency_copy",
+        "column": "includeinfxrateupdates",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
         "table": "Customer_copy",
         "column": "custentity_exclude_from_inv_support",
         "file": "DTT-TRX-PRD/erpQA.sql"
@@ -814,8 +835,29 @@
     {
         "schema": "dbo",
         "database": "ns",
+        "table": "Item_copy",
+        "column": "rateincludingtax",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Item_copy",
+        "column": "rescheduleindays",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
         "table": "Transaction_copy",
         "column": "custbody_support_file",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "includeinforecast",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
@@ -899,7 +941,21 @@
         "schema": "dbo",
         "database": "erp",
         "table": "ClientUsageSummary",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary",
         "column": "RecordModifySupportUserID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "UsageInteralID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
@@ -927,6 +983,13 @@
         "schema": "dbo",
         "database": "erp",
         "table": "ClientUsageSummary_20250128Backup",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_20250128Backup",
         "column": "RecordModifySupportUserID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
@@ -948,7 +1011,21 @@
         "schema": "dbo",
         "database": "erp",
         "table": "ClientUsageSummary_TEST",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
         "column": "RecordModifySupportUserID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "UsageInteralID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
@@ -969,7 +1046,21 @@
         "schema": "dbo",
         "database": "erp",
         "table": "ClientUsageSummaryAudit",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
         "column": "RecordModifySupportUserID",
+        "file": "DTT-TRX-PRD/erp.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummaryAudit",
+        "column": "UsageInteralID",
         "file": "DTT-TRX-PRD/erp.sql"
     },
     {
@@ -1158,7 +1249,21 @@
         "schema": "dbo",
         "database": "erpDev",
         "table": "ClientUsageSummary",
+        "column": "PartnerPartnerIncludeInBilling",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
         "column": "RecordModifySupportUserID",
+        "file": "DTT-TRX-PRD/erpDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "erpDev",
+        "table": "ClientUsageSummary",
+        "column": "UsageInteralID",
         "file": "DTT-TRX-PRD/erpDev.sql"
     },
     {
@@ -1479,6 +1584,13 @@
     {
         "schema": "dbo",
         "database": "dhmo",
+        "table": "Member",
+        "column": "CoverageIndicator",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
         "table": "OfficeServiceClient",
         "column": "ServiceCode",
         "file": "Livesql3/dhmo.sql"
@@ -1605,6 +1717,13 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "AttachmentInfo",
+        "column": "PPEInfo",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "BenefitSearchUpgrade_Aetna06062024",
         "column": "ServiceCode",
         "file": "Livesql3/Common.sql"
@@ -1649,6 +1768,13 @@
         "database": "common",
         "table": "DebugAlert",
         "column": "ServiceType",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "DenticalLocationInfo",
+        "column": "DenticalLocationInfoID",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1850,6 +1976,20 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "MerchantDeviceGroup",
+        "column": "DeviceInventoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MerchantDeviceInventory",
+        "column": "DeviceInventoryID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "MerchantMigration",
         "column": "SupportUserID",
         "file": "Livesql3/Common.sql"
@@ -1955,6 +2095,27 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "NppesLookup",
+        "column": "EIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "EIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "EIN",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "Packages_added",
         "column": "PackageSupportUserName",
         "file": "Livesql3/Common.sql"
@@ -1992,6 +2153,13 @@
         "database": "common",
         "table": "PartnerSecurityTokenConfig",
         "column": "SupportUserID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Payer",
+        "column": "MaxAllowedTotalImagesSizeInMB",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -3062,6 +3230,13 @@
         "schema": "dbo",
         "database": "dci",
         "table": "Claim",
+        "column": "SourceIndicator",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "Claim",
         "column": "ServiceAuditID",
         "file": "Livesql3/dci.sql"
     },
@@ -3132,6 +3307,13 @@
         "schema": "dbo",
         "database": "dci",
         "table": "ClaimArchive",
+        "column": "sourceindicator",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimArchive",
         "column": "serviceauditid",
         "file": "Livesql3/dci.sql"
     },
@@ -3168,6 +3350,13 @@
         "database": "dci",
         "table": "ClaimFileUploadNote",
         "column": "SupportUserID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimMember",
+        "column": "CoverageIndicator",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -3257,6 +3446,34 @@
     {
         "schema": "dbo",
         "database": "dci",
+        "table": "DciGroup",
+        "column": "ClaimDenticalNoaUpgrade",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "DciGroupAudit",
+        "column": "ClaimDenticalNoaUpgrade",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "Member",
+        "column": "CoverageIndicator",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "MemberHistory",
+        "column": "CoverageIndicator",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
         "table": "OfficeResponseAudit",
         "column": "ModifySupportUserID",
         "file": "Livesql3/dci.sql"
@@ -3335,7 +3552,21 @@
         "schema": "dbo",
         "database": "dci",
         "table": "Procedure",
+        "column": "SurfaceIndex",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "Procedure",
         "column": "SupportUserID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ProcedureAudit",
+        "column": "SurfaceIndex",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -3467,6 +3698,13 @@
     {
         "schema": "dbo",
         "database": "dci",
+        "table": "SurfaceToothMap",
+        "column": "SurfaceIndex",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
         "table": "XmlEdiErrorCode",
         "column": "ServiceCode",
         "file": "Livesql3/dci.sql"
@@ -3518,6 +3756,20 @@
         "database": "cred",
         "table": "ApplicationSetSupportUserHistory",
         "column": "SupportUserID",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "MedicarePreclusionLookup",
+        "column": "Ein",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "MedicarePreclusionLookup",
+        "column": "ReinstateDate",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -3635,6 +3887,13 @@
     {
         "schema": "dbo",
         "database": "cred",
+        "table": "ProviderDetail",
+        "column": "MiddleInitial",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
         "table": "ProviderGroupDetail",
         "column": "SAServiceAuditID",
         "file": "Livesql3/cred.sql"
@@ -3644,6 +3903,13 @@
         "database": "cred",
         "table": "ProviderGroupDetail",
         "column": "ServiceCode",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "column": "PatientAcceptanceIndicator",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -3761,6 +4027,13 @@
     {
         "schema": "dbo",
         "database": "chs",
+        "table": "PartnerPartnerCode",
+        "column": "IncludeInBilling",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
         "table": "MetaClaim",
         "column": "DateOfService",
         "file": "Livesql3/chs.sql"
@@ -3852,6 +4125,27 @@
     {
         "schema": "dbo",
         "database": "chs",
+        "table": "MetaBankPayment",
+        "column": "Ein",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaimStatus",
+        "column": "SourceIndicator",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaimStatusRequest",
+        "column": "SourceIndicator",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
         "table": "MetaFileNote",
         "column": "SupportUserID",
         "file": "Livesql3/chs.sql"
@@ -3868,6 +4162,20 @@
         "database": "chs",
         "table": "PartnerMessageRoutingExcludeAudit",
         "column": "SupportUserId",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerPartnerCodeAudit",
+        "column": "IncludeInBilling",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerPartnerCodeBillingConfig",
+        "column": "IncludeInBilling",
         "file": "Livesql3/chs.sql"
     },
     {
@@ -4489,6 +4797,13 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "DssCommissionClass",
+        "column": "NoOfFeatureInClass",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "DssCommissionEarnedPoints2",
         "column": "SupportUserID",
         "file": "Livesql3/reportst.sql"
@@ -4713,6 +5028,20 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "CorporationEIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "LibertyMatchBO",
+        "column": "SourceIndicator",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "MacroReport",
         "column": "SupportUserid",
         "file": "Livesql3/reportst.sql"
@@ -4722,6 +5051,41 @@
         "database": "reports",
         "table": "March 2021A",
         "column": "Service",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_BO",
+        "column": "SourceIndicator",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_BO_1",
+        "column": "SourceIndicator",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_Anthem",
+        "column": "SourceIndicator",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "CorporationEIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_Liberty",
+        "column": "SourceIndicator",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -5422,6 +5786,13 @@
         "database": "dea",
         "table": "Attachment",
         "column": "RTServiceAuditID",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dea",
+        "table": "Attachment",
+        "column": "SourceIndicator",
         "file": "Livesql3/dea.sql"
     },
     {

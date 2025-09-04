@@ -127,6 +127,20 @@
     },
     {
         "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "column": "PayerAddress1",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_atm_dxc",
+        "table": "chs_MetaClaim_Since2023",
+        "column": "PayerAddress2",
+        "file": "DTT-ANA-PRD/dw_atm_dxc.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "ext_raw_pc",
         "table": "backofficeusers",
         "column": "_airbyte_backofficeusers_hashid",
@@ -138,6 +152,90 @@
         "table": "backofficeusertokens",
         "column": "_airbyte_backofficeusertokens_hashid",
         "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "merchants",
+        "column": "address",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "merchants",
+        "column": "address2",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "patients",
+        "column": "streetaddress1",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "patients",
+        "column": "streetaddress2",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "users",
+        "column": "originipaddress",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "Member",
+        "column": "address2",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "Member",
+        "column": "address1",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "payer",
+        "column": "address2",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "payer",
+        "column": "address1",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "usereulaagreement",
+        "column": "ipaddress",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "pdt",
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "column": "Billing_Provider_Address",
+        "file": "DTT-ANA-PRD/lkr.sql"
+    },
+    {
+        "schema": "pdt",
+        "database": "lkr",
+        "table": "LR$LQCDP1755266433236_dci_claim_statuses",
+        "column": "Rendering_Provider_Address",
+        "file": "DTT-ANA-PRD/lkr.sql"
     },
     {
         "schema": "dbo",
@@ -331,6 +429,34 @@
     {
         "schema": "dbo",
         "database": "ns",
+        "table": "Customer_copy",
+        "column": "defaultbillingaddress",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Customer_copy",
+        "column": "defaultshippingaddress",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CustomerAddressBook_copy",
+        "column": "addressbookaddress",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CustomerAddressBookEntityAddress_copy",
+        "column": "addressee",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
         "table": "Item_copy",
         "column": "location",
         "file": "DTT-TRX-PRD/erpQA.sql"
@@ -367,7 +493,35 @@
         "schema": "dbo",
         "database": "ns",
         "table": "Transaction_copy",
+        "column": "billingaddress",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "custbody_ava_sendimportaddress",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "custbody_ava_usebilltoaddress",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
         "column": "location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Transaction_copy",
+        "column": "shippingaddress",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
@@ -451,7 +605,35 @@
         "schema": "dbo",
         "database": "ns",
         "table": "Vendor_copy",
+        "column": "defaultbillingaddress",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Vendor_copy",
+        "column": "defaultshippingaddress",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "Vendor_copy",
         "column": "manufacturinglocations",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscription_copy",
+        "column": "custrecordzab_s_billing_address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscription_copy",
+        "column": "custrecordzab_s_billing_address_altent",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
@@ -464,8 +646,50 @@
     {
         "schema": "dbo",
         "database": "ns",
+        "table": "ZABSubscription_copy",
+        "column": "custrecordzab_s_shipping_address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscription_copy",
+        "column": "custrecordzab_s_shipping_address_altent",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscriptionItem_copy",
+        "column": "custrecordzab_si_billing_address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscriptionItem_copy",
+        "column": "custrecordzab_si_billing_address_altent",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
         "table": "ZABSubscriptionItem_copy",
         "column": "custrecordzab_si_location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscriptionItem_copy",
+        "column": "custrecordzab_si_shipping_address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ZABSubscriptionItem_copy",
+        "column": "custrecordzab_si_shipping_address_altent",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
@@ -498,6 +722,90 @@
     },
     {
         "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpace",
+        "column": "BusinessAddressPhone",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpace",
+        "column": "BusinessAddressStreet1",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpace",
+        "column": "BusinessAddressStreet2",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpace",
+        "column": "BusinessAddressCity",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpace",
+        "column": "BusinessAddressState",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpace",
+        "column": "BusinessAddressZip",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpaceold",
+        "column": "BusinessAddressPhone",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpaceold",
+        "column": "BusinessAddressStreet1",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpaceold",
+        "column": "BusinessAddressStreet2",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpaceold",
+        "column": "BusinessAddressCity",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpaceold",
+        "column": "BusinessAddressState",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "trxDev",
+        "table": "HipaaSpaceold",
+        "column": "BusinessAddressZip",
+        "file": "DTT-TRX-PRD/trxDev.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "trxBrch",
         "table": "ClientSubscriptionEvents",
         "column": "MultilocationEntityID",
@@ -523,6 +831,34 @@
         "table": "ClientTransactions",
         "column": "MultilocationEntityName",
         "file": "DTT-TRX-PRD/trxBrch.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "entyDev",
+        "table": "Entities",
+        "column": "AddressLine1",
+        "file": "DTT-TRX-PRD/entyDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "entyDev",
+        "table": "Entities",
+        "column": "AddressLine2",
+        "file": "DTT-TRX-PRD/entyDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "merchant",
+        "table": "Payment",
+        "column": "Address",
+        "file": "Livesql3/merchant.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "merchant",
+        "table": "PaymentAudit",
+        "column": "Address",
+        "file": "Livesql3/merchant.sql"
     },
     {
         "schema": "dbo",
@@ -563,6 +899,20 @@
         "schema": "dbo",
         "database": "dhmo",
         "table": "Aetna_xml_Data",
+        "column": "Address1",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Aetna_xml_Data",
+        "column": "Address2",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Aetna_xml_Data",
         "column": "OfficeNumber",
         "file": "Livesql3/dhmo.sql"
     },
@@ -592,6 +942,20 @@
         "database": "dhmo",
         "table": "Member",
         "column": "OfficeCode",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Member",
+        "column": "Address1",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Member",
+        "column": "Address2",
         "file": "Livesql3/dhmo.sql"
     },
     {
@@ -639,8 +1003,113 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "Groups",
+        "column": "addressValidated",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Users",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Users",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UserAddress",
+        "column": "AddressType",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UserAddress",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UserAddress",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Reseller",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Active_CDA",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Active_CDA",
+        "column": "Mailing Address Line 2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Active_CDA",
+        "column": "Mailing Address City",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Active_CDA",
+        "column": "Mailing Address State",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ChatConversation",
+        "column": "IPAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "ChatConversation",
         "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Contact",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Contact",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ContactUs",
+        "column": "IPAddress",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -674,6 +1143,13 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "DownloadAudit",
+        "column": "RemoteAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "DownloadConfig",
         "column": "Location",
         "file": "Livesql3/Common.sql"
@@ -688,8 +1164,85 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "Enrollment",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Enrollment",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Entity",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Entity",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "EntityAudit",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "EntityAudit",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "FrontOfficeBilling",
         "column": "FrontOfficeBillingID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupBillingInfoSkip",
+        "column": "GPCustAddressID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMember",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMember",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMemberPayer",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMemberPayer",
+        "column": "Address2",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -709,6 +1262,62 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "BusinessAddress1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "BusinessAddress2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "PublicAddress1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "PublicAddress2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "HipaaAgreement",
+        "column": "IPAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "HipaaBAA",
+        "column": "IPAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MerchantMigration",
+        "column": "LegacyAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MerchantMigration",
+        "column": "NewAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "MessagePortalConversation",
         "column": "PracticeParticipantsCount",
         "file": "Livesql3/Common.sql"
@@ -723,6 +1332,34 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "MetProviderDir",
+        "column": "RenderingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MetProviderDir",
+        "column": "RenderingAddress2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MetProviderDir",
+        "column": "LookupAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MetProviderDir",
+        "column": "LookupAddressStripped",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "NppesDataSourceResponse",
         "column": "Location",
         "file": "Livesql3/Common.sql"
@@ -731,6 +1368,55 @@
         "schema": "dbo",
         "database": "common",
         "table": "NppesLookup",
+        "column": "ProviderFirstLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderSecondLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessMailingAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessMailingAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessMailingAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessMailingAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
+        "column": "ProviderBusinessMailingAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup",
         "column": "ProviderFirstLineBusinessPracticeLocAddress",
         "file": "Livesql3/Common.sql"
     },
@@ -780,6 +1466,55 @@
         "schema": "dbo",
         "database": "common",
         "table": "NppesLookup_old",
+        "column": "ProviderFirstLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderSecondLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessMailingAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessMailingAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessMailingAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessMailingAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
+        "column": "ProviderBusinessMailingAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old",
         "column": "ProviderFirstLineBusinessPracticeLocAddress",
         "file": "Livesql3/Common.sql"
     },
@@ -829,6 +1564,55 @@
         "schema": "dbo",
         "database": "common",
         "table": "NppesLookup_old1",
+        "column": "ProviderFirstLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderSecondLineBusinessMailingAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessMailingAddressCityName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessMailingAddressStateName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessMailingAddressPostalCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessMailingAddressCountryCode",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
+        "column": "ProviderBusinessMailingAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "NppesLookup_old1",
         "column": "ProviderFirstLineBusinessPracticeLocAddress",
         "file": "Livesql3/Common.sql"
     },
@@ -872,6 +1656,209 @@
         "database": "common",
         "table": "NppesLookup_old1",
         "column": "ProviderBusinessPracticeLocAddressTelephoneNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Payer",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Payer",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAddress",
+        "column": "PayerAddressID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAddress",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAddress",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAddressAudit",
+        "column": "PayerAddressAudit",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAddressAudit",
+        "column": "PayerAddressID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAddressAudit",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAddressAudit",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAudit",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAudit",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerEligMemberRecord",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerEligMemberRecord",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatch",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatch",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatch",
+        "column": "PayerMatchStandardAddressID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchAudit",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchAudit",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchGroup",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchGroup",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchGroupAudit",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchGroupAudit",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchStandardAddress",
+        "column": "PayerMatchStandardAddressID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchStandardAddress",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchStandardAddress",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchStandardAddressAudit",
+        "column": "PayerMatchStandardAddressAuditID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchStandardAddressAudit",
+        "column": "PayerMatchStandardAddressID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchStandardAddressAudit",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchStandardAddressAudit",
+        "column": "Address2",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -886,6 +1873,62 @@
         "database": "common",
         "table": "PmsAudit",
         "column": "GroupPracticePMS",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PPEInserts",
+        "column": "address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PPEInserts",
+        "column": "address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDir",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDir",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDir_new",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDir_new",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirAudit",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirAudit",
+        "column": "Address2",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1019,6 +2062,13 @@
         "database": "common",
         "table": "ProviderDirectoryLocation",
         "column": "ProviderDirectoryLocationID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirectoryLocation",
+        "column": "AddressLine2",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1061,6 +2111,20 @@
         "database": "common",
         "table": "ProviderDirectoryLocationCompare",
         "column": "PracticeName",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderDirectoryLocationCompare",
+        "column": "Address2",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1151,7 +2215,35 @@
         "schema": "dbo",
         "database": "common",
         "table": "ProviderPayerEnrollment",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderPayerEnrollment",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderPayerEnrollment",
         "column": "LocationNumber",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderPayerEnrollmentAudit",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ProviderPayerEnrollmentAudit",
+        "column": "Address2",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1164,8 +2256,155 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "ResellerAudit",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Results",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "Results",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "RohidIslandTemp",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "RohidIslandTemp",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "RohidIslandTempNew",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "RohidIslandTempNew",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "SalesLead",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "SalesLead",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "SupportDataSourceResponse",
         "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UserAddressAudit",
+        "column": "AddressType",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UserAddressAudit",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UserAddressAudit",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UsersAudit",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UsersAudit",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UserSignatureVerification",
+        "column": "ReceiverAddress",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "VIP",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "VIP",
+        "column": "Address2",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "common",
+        "table": "tempcpa1",
+        "column": "ClaimPaymentAddressID",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "common",
+        "table": "tempcpa1",
+        "column": "AddressType",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "common",
+        "table": "tempcpa1",
+        "column": "Address1",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "common",
+        "table": "tempcpa1",
+        "column": "Address2",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1173,6 +2412,27 @@
         "database": "dci",
         "table": "OfficeResponse",
         "column": "OfficeResponseID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPayer",
+        "column": "Address1",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPayer",
+        "column": "Address2",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPayer",
+        "column": "PayerAddressID",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -1187,6 +2447,125 @@
         "database": "dci",
         "table": "arc_OfficeResponse_OfficeResponseID_Delete_List",
         "column": "OfficeResponseID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimMember",
+        "column": "Address1",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimMember",
+        "column": "Address2",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPayerAddressUpgrade",
+        "column": "Address1",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPayerAddressUpgrade",
+        "column": "Address2",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPaymentAddress",
+        "column": "ClaimPaymentAddressID",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPaymentAddress",
+        "column": "AddressType",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPaymentAddress",
+        "column": "Address1",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPaymentAddress",
+        "column": "Address2",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimProvider",
+        "column": "Address1",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimProvider",
+        "column": "Address2",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimProviderAddress",
+        "column": "AddressType",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimProviderAddress",
+        "column": "Address1",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimProviderAddress",
+        "column": "Address2",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "Member",
+        "column": "Address1",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "Member",
+        "column": "Address2",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "MemberHistory",
+        "column": "Address1",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "MemberHistory",
+        "column": "Address2",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -1276,6 +2655,13 @@
     {
         "schema": "dbo",
         "database": "cred",
+        "table": "ApplicationSetPayerEmail",
+        "column": "FromAddress",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
         "table": "HawaiiDentalLicenseLookup",
         "column": "LicenseOfficeNumber",
         "file": "Livesql3/cred.sql"
@@ -1285,6 +2671,48 @@
         "database": "cred",
         "table": "HawaiiDentalLicenseLookup",
         "column": "EmployerLicenseOfficeNumber",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "BusinessAddress1",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "BusinessAddress2",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "PublicAddress1",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "HawaiiDentalLicenseLookup",
+        "column": "PublicAddress2",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "MedicarePreclusionLookup",
+        "column": "Address1",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "MedicarePreclusionLookup",
+        "column": "Address2",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -1320,6 +2748,13 @@
         "database": "cred",
         "table": "PayerDataTagMapping",
         "column": "LocationNumber",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "PayerEmailConfig",
+        "column": "EmailAddress",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -1381,6 +2816,20 @@
     {
         "schema": "dbo",
         "database": "cred",
+        "table": "ProviderSiteDetail",
+        "column": "Address1",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "ProviderSiteDetail",
+        "column": "Address2",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
         "table": "UserLocation",
         "column": "UserLocationID",
         "file": "Livesql3/cred.sql"
@@ -1395,6 +2844,76 @@
     {
         "schema": "dbo",
         "database": "chs",
+        "table": "PartnerPartnerCode",
+        "column": "GPPartnerAddressID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "PayerAddress1",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "PayerAddress2",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaim",
+        "column": "BillProvAddress1",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimStatusTracing_Facility",
+        "column": "Address",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimStatusTracing_Facility",
+        "column": "BillingAddress",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimPaymentAddress",
+        "column": "ClaimPaymentAddressID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimPaymentAddress",
+        "column": "AddressType",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimPaymentAddress",
+        "column": "Address1",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ClaimPaymentAddress",
+        "column": "Address2",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
         "table": "ClaimPaymentRegistration",
         "column": "PracticeName",
         "file": "Livesql3/chs.sql"
@@ -1488,6 +3007,20 @@
         "database": "chs",
         "table": "ClaimPaymentRegistrationHistory",
         "column": "PracticePhone",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaimPayerAddressUpgrade",
+        "column": "Address1",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaimPayerAddressUpgrade",
+        "column": "Address2",
         "file": "Livesql3/chs.sql"
     },
     {
@@ -1534,9 +3067,58 @@
     },
     {
         "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerPartnerCodeAudit",
+        "column": "GPPartnerAddressID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerPartnerCodeBillingConfig",
+        "column": "GPPartnerAddressID",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "CreditApplication",
+        "column": "Address",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "CreditReport",
+        "column": "Address1",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "pfs",
+        "table": "CreditReport",
+        "column": "Address2",
+        "file": "Livesql3/pfs.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "reports",
         "table": "All$",
         "column": "Practice Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "All$",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Billing_GPManualBillGroups",
+        "column": "GPCustAddressID",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -1556,8 +3138,50 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "CaliforniaMatching",
+        "column": "address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "CDA_North_List",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "CDA_North_List",
+        "column": "Mailing Address Line 2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "CDA_North_List",
+        "column": "Mailing Address City",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "CSRequest_Practice",
         "column": "Practice Name",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "CSRequest_Practice",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "CSRequest_Practice",
+        "column": "BillingAddress",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -1578,6 +3202,13 @@
         "schema": "dbo",
         "database": "reports",
         "table": "dhmo",
+        "column": "Street Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "dhmo",
         "column": "Aetna Office ID",
         "file": "Livesql3/reportst.sql"
     },
@@ -1592,7 +3223,63 @@
         "schema": "dbo",
         "database": "reports",
         "table": "dhmo_add_groups",
+        "column": "Street Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "dhmo_add_groups",
         "column": "Aetna Office ID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPtest",
+        "column": "RMAddressID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage",
+        "column": "RMAddressID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test",
+        "column": "RMAddressID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test_New",
+        "column": "RMAddressID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GPTransactionStage_Test_Old",
+        "column": "RMAddressID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GroupMatching",
+        "column": "ADDRESS",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "GroupMatching",
+        "column": "ADDRESS2",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -1649,6 +3336,118 @@
         "database": "reports",
         "table": "LibertyMatchBO",
         "column": "OfficeContactPhone",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_1",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_1",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_1",
+        "column": "Address3",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_BO",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_BO",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_BO",
+        "column": "Address3",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_BO_1",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_BO_1",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Match_Anthem_BO_1",
+        "column": "Address3",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_Anthem",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_Anthem",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_Anthem",
+        "column": "Address3",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_HMWG",
+        "column": "AddressGroupName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_HMWG",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_HMWG",
+        "column": "AddressCSZ",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Matching_HMWG",
+        "column": "AddressType",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -1717,6 +3516,20 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "NeaPre2012",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "NeaPre2012",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "PayConnectLocationNumber",
         "column": "Office Name",
         "file": "Livesql3/reportst.sql"
@@ -1731,6 +3544,384 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "PayerMatchReport",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerMatchReport",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ProviderMatching",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ProviderMatching",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Registration_Process_Claims",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Registration_Process_No_Claims",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Registration_Process_Users_Groups_No_CC",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "Registration_Process_Users_No_Groups",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPAliasChanges",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPAliasChanges",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPAliasChanges",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPProviderAudit",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPProviderAudit",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPProviderAudit",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPProviderAudit",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPProviderAudit",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPProviderCredentialAudit",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPProviderCredentialAudit",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_ADPProviderCredentialAudit",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDAliasChanges",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDAliasChanges",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDAliasChanges",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDProviderAudit",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDProviderAudit",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDProviderAudit",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDProviderAudit",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDProviderAudit",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDProviderCredentialAudit",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDProviderCredentialAudit",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_BNDProviderCredentialAudit",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCAliasChanges",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCAliasChanges",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCAliasChanges",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCProviderAudit",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCProviderAudit",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCProviderAudit",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCProviderAudit",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCProviderAudit",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCProviderCredentialAudit",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCProviderCredentialAudit",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GEDCProviderCredentialAudit",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GHI_Activity",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_GHI_Activity",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaAliasChanges",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaAliasChanges",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaAliasChanges",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaProviderAudit",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaProviderAudit",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaProviderAudit",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaProviderAudit",
+        "column": "Address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaProviderAudit",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaProviderCredentialAudit",
+        "column": "GroupAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaProviderCredentialAudit",
+        "column": "ProvAddress",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "rpt_LuminaProviderCredentialAudit",
+        "column": "ProvAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "rpt_NEA_Commission",
         "column": "PracticeName",
         "file": "Livesql3/reportst.sql"
@@ -1738,6 +3929,20 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "SoCal_Data",
+        "column": "Mailing Address City",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "SoCal_Data",
+        "column": "Mailing Address State",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "temp_DSO_Claims",
         "column": "MultilocationEntityID",
         "file": "Livesql3/reportst.sql"
@@ -1831,6 +4036,20 @@
         "database": "reports",
         "table": "temp_DSO_Subscription_ClientSubscriptionEvents",
         "column": "MultilocationEntityName",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temptom",
+        "column": "PayerAddress1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "temptom",
+        "column": "PayerAddress2",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -1850,6 +4069,20 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "tomtemp28",
+        "column": "PayerAddress1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tomtemp28",
+        "column": "PayerAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "UCCI",
         "column": "Office Name",
         "file": "Livesql3/reportst.sql"
@@ -1864,8 +4097,22 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "UCCI",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "VendorDashAggr",
         "column": "officecnt",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "xls_DeltaCA",
+        "column": "ADDRESS",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -1885,6 +4132,41 @@
     {
         "schema": "tmort",
         "database": "reports",
+        "table": "GPManualBillGroups",
+        "column": "GPCustAddressID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "GroupBillingInforSkip2018",
+        "column": "GPCustAddressID",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "TempDenticonUsers",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "TempDenticonUsers",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "TempGedcClaims",
+        "column": "address1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
         "table": "tmpEaglesLanding",
         "column": "Office",
         "file": "Livesql3/reportst.sql"
@@ -1909,6 +4191,48 @@
         "table": "tmpeagleslandingitems",
         "column": "Office Name",
         "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "tomdcp20110404load",
+        "column": "PayerAddress1",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "tomdcp20110404load",
+        "column": "PayerAddress2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "WesternUsers",
+        "column": "Address",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "tmort",
+        "database": "reports",
+        "table": "WesternUsers",
+        "column": "Address2",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dea",
+        "table": "DEAPayer",
+        "column": "AddressRequired",
+        "file": "Livesql3/dea.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dea",
+        "table": "DEAPayer",
+        "column": "AddressUpgradeType",
+        "file": "Livesql3/dea.sql"
     },
     {
         "schema": "dbo",
@@ -1916,6 +4240,90 @@
         "table": "Vital_T",
         "column": "Location_Number_CH",
         "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Contacts_T",
+        "column": "Bill_Address_Key",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Contacts_T",
+        "column": "Ship_Address_Key",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Address_T",
+        "column": "Address_Key",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Address_T",
+        "column": "Street_Address_1_VC",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Address_T",
+        "column": "Street_Address_2_VC",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Address_T",
+        "column": "Street_Address_3_VC",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Business_Info_T",
+        "column": "Address_Key",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Check_Info_T",
+        "column": "Address_Key",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Bank_Info_T",
+        "column": "Address_Key",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Check_Info_T_Orig",
+        "column": "Address_Key",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ddir",
+        "table": "Practice",
+        "column": "AddressLine1",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ddir",
+        "table": "Practice",
+        "column": "AddressLine2",
+        "file": "Livesql3/ddir.sql"
     },
     {
         "schema": "dbo",
@@ -1936,6 +4344,20 @@
         "database": "ddir",
         "table": "PracticeAudit",
         "column": "PracticeAudit",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ddir",
+        "table": "PracticeAudit",
+        "column": "AddressLine1",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ddir",
+        "table": "PracticeAudit",
+        "column": "AddressLine2",
         "file": "Livesql3/ddir.sql"
     },
     {

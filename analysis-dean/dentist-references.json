@@ -52,6 +52,74 @@
     },
     {
         "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erp.sql",
+        "references": [
+            {
+                "database": "erp",
+                "constraint": "FK_ClientUsageSummary_NSAccountInternalID",
+                "fk_schema": "dbo",
+                "fk_table": "ERPAccountLookup",
+                "fk_column": "NSInternalID",
+                "file": "DTT-TRX-PRD/erp.sql"
+            }
+        ]
+    },
+    {
+        "schema": "dbo",
+        "database": "erp",
+        "table": "ClientUsageSummary_TEST",
+        "column": "NSAccountInternalID",
+        "file": "DTT-TRX-PRD/erp.sql",
+        "references": [
+            {
+                "database": "erp",
+                "constraint": "FK_ClientUsageSummary_TEST_NSAccountInternalID",
+                "fk_schema": "dbo",
+                "fk_table": "ERPAccountLookup",
+                "fk_column": "NSInternalID",
+                "file": "DTT-TRX-PRD/erp.sql"
+            }
+        ]
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMember",
+        "column": "SubscriberGroupMemberID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_GroupMember_GroupMember_SubscriberGroupMemberID",
+                "fk_schema": "dbo",
+                "fk_table": "GroupMember",
+                "fk_column": "GroupMemberID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMemberPayer",
+        "column": "GroupMemberID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_GroupMemberPayer_GroupMember_GroupMemberID",
+                "fk_schema": "dbo",
+                "fk_table": "GroupMember",
+                "fk_column": "GroupMemberID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "schema": "dbo",
         "database": "common",
         "table": "ProviderDirectoryLocation",
         "column": "ProviderDirectoryPayerID",
@@ -149,6 +217,23 @@
                 "fk_table": "ProviderDirectoryPayer",
                 "fk_column": "ProviderDirectoryPayerID",
                 "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPayer",
+        "column": "ClaimMemberID",
+        "file": "Livesql3/dci.sql",
+        "references": [
+            {
+                "database": "dci",
+                "constraint": "FK_ClaimPayer_ClaimMember_ClaimMemberID",
+                "fk_schema": "dbo",
+                "fk_table": "ClaimMember",
+                "fk_column": "ClaimMemberID",
+                "file": "Livesql3/dci.sql"
             }
         ]
     },

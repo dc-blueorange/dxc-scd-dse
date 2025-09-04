@@ -23,6 +23,13 @@
     {
         "schema": "dbo",
         "database": "nsDev",
+        "table": "priceBookLineInterval",
+        "column": "eIn",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
         "table": "serviceItemBillingRate",
         "column": "service",
         "file": "DTT-TRX-PRD/nsDev.sql"
@@ -270,6 +277,20 @@
         "database": "nsDev",
         "table": "serviceSaleItemTranslation",
         "column": "service",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "subscriptionPriceInterval",
+        "column": "eIn",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "ThreeDSECommerceIndicator",
+        "column": "eIn",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
@@ -289,6 +310,13 @@
     {
         "schema": "dbo",
         "database": "ns",
+        "table": "priceBookLineInterval",
+        "column": "eIn",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
         "table": "serviceItemBillingRate",
         "column": "service",
         "file": "DTT-TRX-PRD/erpQA.sql"
@@ -536,6 +564,20 @@
         "database": "ns",
         "table": "serviceSaleItemTranslation",
         "column": "service",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "subscriptionPriceInterval",
+        "column": "eIn",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ThreeDSECommerceIndicator",
+        "column": "eIn",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
@@ -625,6 +667,20 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "DenticalLocationInfo",
+        "column": "Dentical",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MerchantDeviceInventory",
+        "column": "eIn",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "MerchantMigrationServiceAudit",
         "column": "Service",
         "file": "Livesql3/Common.sql"
@@ -634,6 +690,13 @@
         "database": "common",
         "table": "MerchantServiceAudit_Arc",
         "column": "Service",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PPEInserts",
+        "column": "EIn",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -1132,6 +1195,13 @@
         "table": "ServicePropertyAudit",
         "column": "Service",
         "file": "Livesql3/ntf.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerMessageRoutingExcludeInfo",
+        "column": "eIn",
+        "file": "Livesql3/chs.sql"
     },
     {
         "schema": "dbo",
