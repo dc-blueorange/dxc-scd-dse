@@ -125,24 +125,31 @@ const ForeignKeysDiagram = () => {
              sourceNode && !sourceNode.collapsed; // Ensure sourceNode exists and is not collapsed
     });
 
-    // Initialize force simulation with visible nodes and links.
+    // Initialize force simulation with visible nodes.
+    // The link force will be added AFTER links are bound to elements.
     const simulation = d3.forceSimulation(visibleNodes)
-      .force("link", d3.forceLink(visibleLinks).id((d) => d.id).distance(150))
       .force("charge", d3.forceManyBody().strength(-50))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
     // Draw links (edges) using .join() for efficient updates.
+    // This must happen BEFORE the link force is applied to the simulation,
+    // because d3.forceLink mutates the source/target properties.
     let link = container.append("g")
       .attr("stroke", "gray")
       .attr("stroke-width", 1.5)
       .selectAll("line")
-      .data(visibleLinks, d => `${d.source}-${d.target}`)
+      .data(visibleLinks, d => `${d.source}-${d.target}`) // d.source and d.target are still string IDs here
       .join(
         enter => enter.append("line")
                       .attr("marker-end", "url(#arrowhead)"),
         update => update,
         exit => exit.remove()
       );
+
+    // Now, apply the link force to the simulation.
+    // The forceLink will mutate the 'source' and 'target' properties of the links in 'visibleLinks'
+    // from string IDs to node objects. This is fine because the .data() call already happened.
+    simulation.force("link", d3.forceLink(visibleLinks).id((d) => d.id).distance(150));
 
     // Draw nodes as groups using .join() for efficient updates.
     let node = container.append("g")
