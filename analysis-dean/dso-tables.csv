@@ -2,6 +2,7 @@ Database,Schema,Table,Matched,File
 dw_atm_dxc,dbo,dci_rtserviceaudit_6mos,service,DTT-ANA-PRD/dw_atm_dxc.sql
 nsDev,dbo,demandSourceType,dSo,DTT-TRX-PRD/nsDev.sql
 nsDev,dbo,ItemDemandSource,dSo,DTT-TRX-PRD/nsDev.sql
+nsDev,dbo,priceBookLineInterval,eIn,DTT-TRX-PRD/nsDev.sql
 nsDev,dbo,serviceItemBillingRate,service,DTT-TRX-PRD/nsDev.sql
 nsDev,dbo,serviceItemCorrelateditem,service,DTT-TRX-PRD/nsDev.sql
 nsDev,dbo,serviceItemItemAccountingBookDetail,service,DTT-TRX-PRD/nsDev.sql
@@ -38,8 +39,11 @@ nsDev,dbo,serviceSaleItemSiteCategory,service,DTT-TRX-PRD/nsDev.sql
 nsDev,dbo,serviceSaleItemSubsidiaryMap,service,DTT-TRX-PRD/nsDev.sql
 nsDev,dbo,serviceSaleItemTaskTemplate,service,DTT-TRX-PRD/nsDev.sql
 nsDev,dbo,serviceSaleItemTranslation,service,DTT-TRX-PRD/nsDev.sql
+nsDev,dbo,subscriptionPriceInterval,eIn,DTT-TRX-PRD/nsDev.sql
+nsDev,dbo,ThreeDSECommerceIndicator,eIn,DTT-TRX-PRD/nsDev.sql
 ns,dbo,demandSourceType,dSo,DTT-TRX-PRD/erpQA.sql
 ns,dbo,ItemDemandSource,dSo,DTT-TRX-PRD/erpQA.sql
+ns,dbo,priceBookLineInterval,eIn,DTT-TRX-PRD/erpQA.sql
 ns,dbo,serviceItemBillingRate,service,DTT-TRX-PRD/erpQA.sql
 ns,dbo,serviceItemCorrelateditem,service,DTT-TRX-PRD/erpQA.sql
 ns,dbo,serviceItemItemAccountingBookDetail,service,DTT-TRX-PRD/erpQA.sql
@@ -76,6 +80,8 @@ ns,dbo,serviceSaleItemSiteCategory,service,DTT-TRX-PRD/erpQA.sql
 ns,dbo,serviceSaleItemSubsidiaryMap,service,DTT-TRX-PRD/erpQA.sql
 ns,dbo,serviceSaleItemTaskTemplate,service,DTT-TRX-PRD/erpQA.sql
 ns,dbo,serviceSaleItemTranslation,service,DTT-TRX-PRD/erpQA.sql
+ns,dbo,subscriptionPriceInterval,eIn,DTT-TRX-PRD/erpQA.sql
+ns,dbo,ThreeDSECommerceIndicator,eIn,DTT-TRX-PRD/erpQA.sql
 merchant,dbo,RTServiceAudit,Service,Livesql3/merchant.sql
 pnt,dbo,DataBill_Support_Temp,Support,Livesql3/pnt.sql
 pnt,dbo,RTServiceAudit,Service,Livesql3/pnt.sql
@@ -88,8 +94,11 @@ dhmo,dbo,OfficeServiceClient,Service,Livesql3/dhmo.sql
 common,dbo,GroupSupportUser,Support,Livesql3/Common.sql
 common,dbo,SupportUser,Support,Livesql3/Common.sql
 common,dbo,AlertSAServiceAudit,Service,Livesql3/Common.sql
+common,dbo,DenticalLocationInfo,Dentical,Livesql3/Common.sql
+common,dbo,MerchantDeviceInventory,eIn,Livesql3/Common.sql
 common,dbo,MerchantMigrationServiceAudit,Service,Livesql3/Common.sql
 common,dbo,MerchantServiceAudit_Arc,Service,Livesql3/Common.sql
+common,dbo,PPEInserts,EIn,Livesql3/Common.sql
 common,dbo,RTServiceAudit,Service,Livesql3/Common.sql
 common,dbo,ServiceClient,Service,Livesql3/Common.sql
 common,dbo,ServiceClientAccess,Service,Livesql3/Common.sql
@@ -161,6 +170,7 @@ ntf,dbo,ServiceDowntime,Service,Livesql3/ntf.sql
 ntf,dbo,ServiceHostConfiguration,Service,Livesql3/ntf.sql
 ntf,dbo,ServiceProperty,Service,Livesql3/ntf.sql
 ntf,dbo,ServicePropertyAudit,Service,Livesql3/ntf.sql
+chs,dbo,PartnerMessageRoutingExcludeInfo,eIn,Livesql3/chs.sql
 chs,dbo,RTServiceAudit,Service,Livesql3/chs.sql
 chs,dbo,ServiceProperty,Service,Livesql3/chs.sql
 chs,dbo,ServicePropertyAudit,Service,Livesql3/chs.sql

@@ -52,7 +52,22 @@
   {
     "schema": "dbo",
     "database": "chs",
+    "table": "MetaBankPayment"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
     "table": "MetaClaim"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaimStatus"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "MetaClaimStatusRequest"
   },
   {
     "schema": "dbo",
@@ -68,6 +83,16 @@
     "schema": "dbo",
     "database": "chs",
     "table": "PartnerMessageRoutingExcludeAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPartnerCode"
+  },
+  {
+    "schema": "dbo",
+    "database": "chs",
+    "table": "PartnerPartnerCodeAudit"
   },
   {
     "schema": "dbo",
@@ -117,6 +142,11 @@
   {
     "schema": "dbo",
     "database": "common",
+    "table": "AttachmentInfo"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
     "table": "BenefitSearchUpgrade_Aetna06062024"
   },
   {
@@ -143,6 +173,11 @@
     "schema": "dbo",
     "database": "common",
     "table": "DebugAlert"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "DenticalLocationInfo"
   },
   {
     "schema": "dbo",
@@ -267,6 +302,16 @@
   {
     "schema": "dbo",
     "database": "common",
+    "table": "MerchantDeviceGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "MerchantDeviceInventory"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
     "table": "MerchantMigration"
   },
   {
@@ -318,6 +363,21 @@
     "schema": "dbo",
     "database": "common",
     "table": "NppesDocumentMeta"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesLookup_old"
+  },
+  {
+    "schema": "dbo",
+    "database": "common",
+    "table": "NppesLookup_old1"
   },
   {
     "schema": "dbo",
@@ -872,6 +932,11 @@
   {
     "schema": "dbo",
     "database": "cred",
+    "table": "MedicarePreclusionLookup"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
     "table": "NPDBServiceAudit"
   },
   {
@@ -927,7 +992,17 @@
   {
     "schema": "dbo",
     "database": "cred",
+    "table": "ProviderDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
     "table": "ProviderGroupDetail"
+  },
+  {
+    "schema": "dbo",
+    "database": "cred",
+    "table": "ProviderSiteDetail"
   },
   {
     "schema": "dbo",
@@ -977,6 +1052,11 @@
   {
     "schema": "dbo",
     "database": "dci",
+    "table": "ClaimMember"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
     "table": "ClaimPayer"
   },
   {
@@ -1013,6 +1093,26 @@
     "schema": "dbo",
     "database": "dci",
     "table": "ClaimResponse"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "DciGroup"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "DciGroupAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "Member"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "MemberHistory"
   },
   {
     "schema": "dbo",
@@ -1113,6 +1213,11 @@
     "schema": "dbo",
     "database": "dci",
     "table": "SummaryAudit"
+  },
+  {
+    "schema": "dbo",
+    "database": "dci",
+    "table": "SurfaceToothMap"
   },
   {
     "schema": "dbo",
@@ -1233,6 +1338,11 @@
     "schema": "dbo",
     "database": "dea",
     "table": "arc_Attachment_SAServiceAuditID_Delete_List"
+  },
+  {
+    "schema": "dbo",
+    "database": "dhmo",
+    "table": "Member"
   },
   {
     "schema": "dbo",
@@ -1562,6 +1672,11 @@
   {
     "schema": "dbo",
     "database": "ns",
+    "table": "Currency_copy"
+  },
+  {
+    "schema": "dbo",
+    "database": "ns",
     "table": "Customer_copy"
   },
   {
@@ -1817,6 +1932,11 @@
   {
     "schema": "dbo",
     "database": "reports",
+    "table": "DssCommissionClass"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
     "table": "DssCommissionEarnedPoints"
   },
   {
@@ -1942,12 +2062,37 @@
   {
     "schema": "dbo",
     "database": "reports",
+    "table": "LibertyMatchBO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
     "table": "MacroReport"
   },
   {
     "schema": "dbo",
     "database": "reports",
     "table": "March 2021A"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Match_Anthem_BO"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Match_Anthem_BO_1"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Matching_Anthem"
+  },
+  {
+    "schema": "dbo",
+    "database": "reports",
+    "table": "Matching_Liberty"
   },
   {
     "schema": "dbo",

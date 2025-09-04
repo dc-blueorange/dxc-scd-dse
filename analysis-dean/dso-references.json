@@ -240,6 +240,23 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "MerchantDeviceGroup",
+        "column": "DeviceInventoryID",
+        "file": "Livesql3/Common.sql",
+        "references": [
+            {
+                "database": "common",
+                "constraint": "FK_MerchantDeviceGroup_MerchantDeviceInventory_DeviceInventoryID",
+                "fk_schema": "dbo",
+                "fk_table": "MerchantDeviceInventory",
+                "fk_column": "DeviceInventoryID",
+                "file": "Livesql3/Common.sql"
+            }
+        ]
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "MerchantMigration",
         "column": "SupportUserID",
         "file": "Livesql3/Common.sql",

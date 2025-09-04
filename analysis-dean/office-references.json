@@ -49,5 +49,22 @@
                 "file": "Livesql3/chs.sql"
             }
         ]
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Check_Info_T",
+        "column": "Address_Key",
+        "file": "Livesql3/dxcps.sql",
+        "references": [
+            {
+                "database": "dxcps",
+                "constraint": "FK_Check_Info_T_Address_T_Address_Key",
+                "fk_schema": "dbo",
+                "fk_table": "Address_T",
+                "fk_column": "Address_Key",
+                "file": "Livesql3/dxcps.sql"
+            }
+        ]
     }
 ]

@@ -1,9 +1,23 @@
 [
     {
+        "schema": "elivant",
+        "database": "dw_dxc_dev",
+        "table": "era_routing_record_audit",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/dw_dxc_dev.sql"
+    },
+    {
         "schema": "dbo",
         "database": "dw_dxc",
         "table": "direct_logo_provider_statements",
         "column": "provider",
+        "file": "DTT-ANA-PRD/dw_dxc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw_dxc",
+        "table": "era_routing_record_audit",
+        "column": "tin",
         "file": "DTT-ANA-PRD/dw_dxc.sql"
     },
     {
@@ -22,9 +36,72 @@
     },
     {
         "schema": "dbo",
+        "database": "dw_dxc_pre",
+        "table": "era_routing_record_audit",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/dw_dxc_pre.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "_airbyte_raw_UserMerchantSettingOverrides",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "_airbyte_raw_UserMerchantSettings",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "usermerchantsettingoverrides",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_pc",
+        "table": "usermerchantsettings",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/ext_raw_pc.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "_airbyte_raw_AppointmentInsuranceMapping",
+        "column": "tIn",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "ext_raw_ec",
         "table": "_airbyte_raw_AppointmentProviderMapping",
         "column": "Provider",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "_airbyte_raw_GroupSetting",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "_airbyte_raw_Member",
+        "column": "Member",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "_airbyte_raw_MemberAlias",
+        "column": "Member",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
@@ -37,8 +114,36 @@
     {
         "schema": "dbo",
         "database": "ext_raw_ec",
+        "table": "appointmentinsurancemapping",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
         "table": "appointmentprovidermapping",
         "column": "provider",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "groupsetting",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "Member",
+        "column": "Member",
+        "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ext_raw_ec",
+        "table": "memberalias",
+        "column": "member",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
     },
     {
@@ -47,6 +152,20 @@
         "table": "provider",
         "column": "provider",
         "file": "DTT-ANA-PRD/ext_raw_ec.sql"
+    },
+    {
+        "schema": "bnd",
+        "database": "master",
+        "table": "DCIClaimAGGClaimsStatusSnapshot",
+        "column": "sSn",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "master",
+        "table": "DCIClaimAGGClaimsStatusSnapshot",
+        "column": "sSn",
+        "file": "DTT-ANA-PRD/ent.sql"
     },
     {
         "schema": "ddsenroll",
@@ -98,10 +217,626 @@
         "file": "DTT-ANA-PRD/ent.sql"
     },
     {
+        "schema": "ddsenroll",
+        "database": "master",
+        "table": "CREDProviderDETUnpivotedUserAnswers",
+        "column": "npi",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "temp",
+        "database": "master",
+        "table": "DCA051021Meeting",
+        "column": "tin",
+        "file": "DTT-ANA-PRD/ent.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dw",
+        "table": "Finance_Reporting_QA",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/dw.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "assemblyItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "assemblyItemMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CostingMethodType",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CUSTOMLIST_ESC_RATINGS",
+        "column": "TIN",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CUSTOMRECORD_BDW_FORM_PRINTING_TYPE",
+        "column": "TIN",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CUSTOMRECORD_SUBNAV_SETTINGS",
+        "column": "TIN",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "downloadItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "inventoryItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "itemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "itemGroupMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "itemMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "ItemSegmentIncludingSyntheticInclsynthitem",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "JobRequisitionPostingType",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "kitItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "kitItemMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "MemDocTransactionTemplateAccountingLine",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "nonInventoryItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "nonInventoryPurchaseItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "nonInventoryResaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "nonInventorySaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "otherChargeItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "otherChargePurchaseItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "otherChargeResaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "otherChargeSaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "paymentInitiator",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "paymentInstrumentStateType",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "paymentInstrumentType",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "PostingAccountActivity",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "reportingSection",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "serviceItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "servicePurchaseItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "serviceResaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "serviceSaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "subscriptionPlanMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "TransactionAccountingLine",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "TransactionAccountingLineType",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "assemblyItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "assemblyItemMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CostingMethodType",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CUSTOMLIST_ESC_RATINGS",
+        "column": "TIN",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CUSTOMRECORD_BDW_FORM_PRINTING_TYPE",
+        "column": "TIN",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CUSTOMRECORD_SUBNAV_SETTINGS",
+        "column": "TIN",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "downloadItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "inventoryItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "itemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "itemGroupMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "itemMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ItemSegmentIncludingSyntheticInclsynthitem",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "JobRequisitionPostingType",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "kitItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "kitItemMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "MemDocTransactionTemplateAccountingLine",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "nonInventoryItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "nonInventoryPurchaseItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "nonInventoryResaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "nonInventorySaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "otherChargeItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "otherChargePurchaseItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "otherChargeResaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "otherChargeSaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "paymentInitiator",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "paymentInstrumentStateType",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "paymentInstrumentType",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "PostingAccountActivity",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "reportingSection",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "serviceItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "servicePurchaseItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "serviceResaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "serviceSaleItemItemAccountingBookDetail",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "subscriptionPlanMember",
+        "column": "Member",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionAccountingLine",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "TransactionAccountingLineType",
+        "column": "tin",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "rptDev",
+        "table": "ClientInvoiceDetail",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/rptDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "rpt",
+        "table": "ClientInvoiceDetail",
+        "column": "tIn",
+        "file": "DTT-TRX-PRD/rpt.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dhmo",
+        "table": "Member",
+        "column": "Member",
+        "file": "Livesql3/dhmo.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "AttachmentInfo",
+        "column": "tIn",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingDetail",
+        "column": "tin",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingInformation",
+        "column": "tin",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "ERARoutingSummary",
+        "column": "tin",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMember",
+        "column": "Member",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "GroupMemberPayer",
+        "column": "Member",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MarketingSource",
+        "column": "tin",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "MarketingSourceType",
+        "column": "tin",
+        "file": "Livesql3/Common.sql"
+    },
+    {
         "schema": "dbo",
         "database": "common",
         "table": "MetProviderDir",
         "column": "Provider",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerEligMemberRecord",
+        "column": "Member",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMemberEnrollment",
+        "column": "Member",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -317,6 +1052,13 @@
     {
         "schema": "dbo",
         "database": "dci",
+        "table": "arc_Claim_ClaimMemberID_List",
+        "column": "Member",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
         "table": "arc_Claim_ClaimProviderID_List",
         "column": "Provider",
         "file": "Livesql3/dci.sql"
@@ -352,6 +1094,13 @@
     {
         "schema": "dbo",
         "database": "dci",
+        "table": "ClaimMember",
+        "column": "Member",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
         "table": "ClaimProvider",
         "column": "Provider",
         "file": "Livesql3/dci.sql"
@@ -368,6 +1117,20 @@
         "database": "dci",
         "table": "ERAProviderAdjustmentCode",
         "column": "Provider",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "Member",
+        "column": "Member",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "MemberHistory",
+        "column": "Member",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -431,6 +1194,27 @@
         "database": "cred",
         "table": "ProviderProfileLocationView",
         "column": "Provider",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "OutreachStaffGroupMembers",
+        "column": "Member",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "OutreachStaffGroupMembersAudit",
+        "column": "Member",
+        "file": "Livesql3/cred.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "cred",
+        "table": "PayerProcessNotificationConfig",
+        "column": "ssN",
         "file": "Livesql3/cred.sql"
     },
     {
@@ -569,6 +1353,48 @@
     {
         "schema": "dbo",
         "database": "chs",
+        "table": "DestinationUpgradeReason",
+        "column": "tin",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "ObjectInfo",
+        "column": "tIn",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerDestinationResponseConfig",
+        "column": "tin",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerMessageRoutingExclude",
+        "column": "tin",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerMessageRoutingExcludeAudit",
+        "column": "tin",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "PartnerMessageRoutingExcludeInfo",
+        "column": "tin",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
         "table": "ProviderPartnerMap",
         "column": "Provider",
         "file": "Livesql3/chs.sql"
@@ -576,8 +1402,106 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "DssNetRev_Current",
+        "column": "ssN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DssNetRev_2010",
+        "column": "ssN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "vDssNetRev_2010",
+        "column": "ssN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingRoutingView",
+        "column": "tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingRoutingMasterView",
+        "column": "tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DSSMultipleGroupsByTinView",
+        "column": "Tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PartnerBillingHostingFeeView",
+        "column": "tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ArchivedTINsBTD",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "ArchivedTINsYTD",
+        "column": "TIN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DSSCommissionAuditbyTin",
+        "column": "Tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "DssStagingMarketingPricing",
+        "column": "tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "enrollmentpayerprovider",
         "column": "provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "NEAexisting$",
+        "column": "tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "origDssNetRevPST2010",
+        "column": "ssN",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "PayerBillingRoutingHistory",
+        "column": "tin",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -660,8 +1584,29 @@
     {
         "schema": "dbo",
         "database": "reports",
+        "table": "rpt_MismatchDestinationPartner",
+        "column": "tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
         "table": "Test_PayerProviderTrans",
         "column": "Provider",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tin",
+        "column": "tin",
+        "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "reports",
+        "table": "tinYTD",
+        "column": "tin",
         "file": "Livesql3/reportst.sql"
     },
     {
@@ -680,9 +1625,37 @@
     },
     {
         "schema": "dbo",
+        "database": "dxcps",
+        "table": "MerchantInfo",
+        "column": "tIn",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "AppSetting_T",
+        "column": "tin",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "AppSetting_T_Orig",
+        "column": "tin",
+        "file": "Livesql3/dxcps.sql"
+    },
+    {
+        "schema": "dbo",
         "database": "ddir",
         "table": "Dentist",
         "column": "Dentist",
+        "file": "Livesql3/ddir.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ddir",
+        "table": "MarketingSourceAudit",
+        "column": "tin",
         "file": "Livesql3/ddir.sql"
     }
 ]

@@ -44,6 +44,20 @@
     {
         "schema": "dbo",
         "database": "nsDev",
+        "table": "AddressBook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "addressType",
+        "column": "address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
         "table": "aggregateItemLocation",
         "column": "Location",
         "file": "DTT-TRX-PRD/nsDev.sql"
@@ -65,6 +79,251 @@
     {
         "schema": "dbo",
         "database": "nsDev",
+        "table": "cashRefundBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "cashRefundShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CashSaleBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CashSaleItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CashSaleShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "checkPayeeAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CompanyAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CompanyAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "ContactAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "ContactAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "creditMemoBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CreditMemoItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "creditMemoShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "customerAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "customerAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "customerAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "customerRefundPayeeAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CUSTOMRECORD_AVAADDRESSVALIDATIONBATCH",
+        "column": "ADDRESS",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CUSTOMRECORD_VATADDRESSES",
+        "column": "ADDRESS",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "CUSTOMRECORD_VENDORVATADDRESSES",
+        "column": "ADDRESS",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "employeeAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "employeeAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "EntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "entityAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "estimateBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "estimateItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "estimateShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "intercompanyTransferOrderShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "InvoiceBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "InvoiceItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "InvoiceShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "itemFulfillmentReturnAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "itemFulfillmentShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "jobAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "jobAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
         "table": "LocationMainAddress",
         "column": "Location",
         "file": "DTT-TRX-PRD/nsDev.sql"
@@ -72,8 +331,22 @@
     {
         "schema": "dbo",
         "database": "nsDev",
+        "table": "LocationMainAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
         "table": "LocationReturnAddress",
         "column": "Location",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "LocationReturnAddress",
+        "column": "Address",
         "file": "DTT-TRX-PRD/nsDev.sql"
     },
     {
@@ -87,8 +360,400 @@
         "schema": "dbo",
         "database": "nsDev",
         "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
+        "column": "address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
         "column": "location",
         "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_subsidiaries",
+        "column": "address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "MfgProjectAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "MfgProjectAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "opportunityBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "opportunityShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "otherNameAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "otherNameAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "PartnerAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "PartnerAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "PurchaseOrderBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "PurchaseOrderShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "returnAuthorizationBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "returnAuthorizationShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "revenueCommitmentBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "revenueCommitmentReversalBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "revenueCommitmentReversalShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "revenueCommitmentShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "salesOrderBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "salesOrderItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "salesOrderShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "SubsidiaryMainAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "SubsidiaryReturnAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "SubsidiaryShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionAddressMapping",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionAddressMappingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionAddressMappingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionBillingAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionBillingAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionBillingAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionLineAddressMappingLineAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionLineAddressMappingLineAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionPayeeAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionPayeeAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionPayeeAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionReturnAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionReturnAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionReturnAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionShippingAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionShippingAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transactionShippingAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "transferOrderShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "vendorAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "vendorAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "vendorAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "vendorBillBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "VendorCreditBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "VendorPaymentPayeeAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "VendorPrepaymentPayeeAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "VendorReturnAuthorizationBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "nsDev",
+        "table": "WorkplaceMainAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/nsDev.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "AddressBook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "addressType",
+        "column": "address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
         "schema": "dbo",
@@ -114,6 +779,251 @@
     {
         "schema": "dbo",
         "database": "ns",
+        "table": "cashRefundBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "cashRefundShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CashSaleBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CashSaleItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CashSaleShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "checkPayeeAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CompanyAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CompanyAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ContactAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "ContactAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "creditMemoBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CreditMemoItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "creditMemoShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "customerAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "customerAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "customerAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "customerRefundPayeeAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CUSTOMRECORD_AVAADDRESSVALIDATIONBATCH",
+        "column": "ADDRESS",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CUSTOMRECORD_VATADDRESSES",
+        "column": "ADDRESS",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CUSTOMRECORD_VENDORVATADDRESSES",
+        "column": "ADDRESS",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "employeeAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "employeeAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "EntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "entityAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "estimateBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "estimateItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "estimateShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "intercompanyTransferOrderShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "InvoiceBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "InvoiceItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "InvoiceShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "itemFulfillmentReturnAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "itemFulfillmentShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "jobAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "jobAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
         "table": "LocationMainAddress",
         "column": "Location",
         "file": "DTT-TRX-PRD/erpQA.sql"
@@ -121,8 +1031,22 @@
     {
         "schema": "dbo",
         "database": "ns",
+        "table": "LocationMainAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
         "table": "LocationReturnAddress",
         "column": "Location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "LocationReturnAddress",
+        "column": "Address",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
@@ -136,7 +1060,406 @@
         "schema": "dbo",
         "database": "ns",
         "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
+        "column": "address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_locationlist",
         "column": "location",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "MAP_customrecord_avaaddressvalidationbatch_custrecord_ava_subsidiaries",
+        "column": "address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "MfgProjectAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "MfgProjectAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "opportunityBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "opportunityShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "otherNameAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "otherNameAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "PartnerAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "PartnerAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "PurchaseOrderBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "PurchaseOrderShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "returnAuthorizationBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "returnAuthorizationShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "revenueCommitmentBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "revenueCommitmentReversalBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "revenueCommitmentReversalShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "revenueCommitmentShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "salesOrderBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "salesOrderItemShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "salesOrderShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "SubsidiaryMainAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "SubsidiaryReturnAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "SubsidiaryShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionAddressMapping",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionAddressMappingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionAddressMappingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionBillingAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionBillingAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionBillingAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionLineAddressMappingLineAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionLineAddressMappingLineAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionPayeeAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionPayeeAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionPayeeAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionReturnAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionReturnAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionReturnAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionShippingAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionShippingAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transactionShippingAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "transferOrderShippingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "vendorAddressbook",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "vendorAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "vendorAddressbookEntityAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "vendorBillBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "VendorCreditBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "VendorPaymentPayeeAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "VendorPrepaymentPayeeAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "VendorReturnAuthorizationBillingAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "WorkplaceMainAddress",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CustomerAddressBook_copy",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CustomerAddressBookEntityAddress_copy",
+        "column": "Address",
+        "file": "DTT-TRX-PRD/erpQA.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "ns",
+        "table": "CustomerAddressBookEntityAddress_copy",
+        "column": "Address",
         "file": "DTT-TRX-PRD/erpQA.sql"
     },
     {
@@ -170,6 +1493,13 @@
     {
         "schema": "dbo",
         "database": "common",
+        "table": "UserAddress",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
         "table": "DenticalLocationInfo",
         "column": "Location",
         "file": "Livesql3/Common.sql"
@@ -179,6 +1509,34 @@
         "database": "common",
         "table": "FrontOfficeBilling",
         "column": "Office",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAddress",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerAddressAudit",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchStandardAddress",
+        "column": "Address",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "PayerMatchStandardAddressAudit",
+        "column": "Address",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -200,6 +1558,13 @@
         "database": "common",
         "table": "ProviderDirectoryPayerLocationPlan",
         "column": "Location",
+        "file": "Livesql3/Common.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "common",
+        "table": "UserAddressAudit",
+        "column": "Address",
         "file": "Livesql3/Common.sql"
     },
     {
@@ -235,6 +1600,27 @@
         "database": "dci",
         "table": "arc_OfficeResponse_OfficeResponseID_Delete_List",
         "column": "Office",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPayerAddressUpgrade",
+        "column": "Address",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimPaymentAddress",
+        "column": "Address",
+        "file": "Livesql3/dci.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dci",
+        "table": "ClaimProviderAddress",
+        "column": "Address",
         "file": "Livesql3/dci.sql"
     },
     {
@@ -310,6 +1696,20 @@
     {
         "schema": "dbo",
         "database": "chs",
+        "table": "ClaimPaymentAddress",
+        "column": "Address",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
+        "table": "MetaClaimPayerAddressUpgrade",
+        "column": "Address",
+        "file": "Livesql3/chs.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "chs",
         "table": "MetaOfficeResponse",
         "column": "Office",
         "file": "Livesql3/chs.sql"
@@ -348,6 +1748,13 @@
         "table": "bndofficemcna",
         "column": "office",
         "file": "Livesql3/reportst.sql"
+    },
+    {
+        "schema": "dbo",
+        "database": "dxcps",
+        "table": "Address_T",
+        "column": "Address",
+        "file": "Livesql3/dxcps.sql"
     },
     {
         "schema": "dbo",

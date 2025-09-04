@@ -8,6 +8,10 @@
     "database": "common"
   },
   {
+    "schema": "tmort",
+    "database": "common"
+  },
+  {
     "schema": "dbo",
     "database": "cred"
   },
@@ -21,11 +25,27 @@
   },
   {
     "schema": "dbo",
+    "database": "dea"
+  },
+  {
+    "schema": "dbo",
     "database": "dhmo"
   },
   {
     "schema": "dbo",
+    "database": "dw_atm_dxc"
+  },
+  {
+    "schema": "dbo",
     "database": "dxcps"
+  },
+  {
+    "schema": "dbo",
+    "database": "entyDev"
+  },
+  {
+    "schema": "dbo",
+    "database": "ext_raw_ec"
   },
   {
     "schema": "dbo",
@@ -34,6 +54,10 @@
   {
     "schema": "dbo",
     "database": "ext_raw_pc"
+  },
+  {
+    "schema": "pdt",
+    "database": "lkr"
   },
   {
     "schema": "dbo",
@@ -49,7 +73,15 @@
   },
   {
     "schema": "dbo",
+    "database": "merchant"
+  },
+  {
+    "schema": "dbo",
     "database": "ns"
+  },
+  {
+    "schema": "dbo",
+    "database": "pfs"
   },
   {
     "schema": "dbo",
