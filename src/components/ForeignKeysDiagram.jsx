@@ -54,6 +54,12 @@ const ForeignKeysDiagram = () => {
   useEffect(() => {
     if (data.nodes.length === 0) return;
 
+    // Create deep copies of the original nodes and links from state.
+    // This prevents D3's force simulation from mutating the React state directly,
+    // ensuring consistent data for filtering and key functions across renders.
+    const currentNodes = data.nodes.map(n => ({ ...n }));
+    const currentLinks = data.links.map(l => ({ ...l }));
+
     let { width, height } = getDimensions();
 
     const svg = d3.select(svgRef.current)
@@ -88,17 +94,15 @@ const ForeignKeysDiagram = () => {
       .attr("d", "M0,-5L10,0L0,5")
       .attr("fill", "gray");
 
-    // Create a map of all nodes for quick lookup
-    const allNodesMap = new Map(data.nodes.map(node => [node.id, node]));
+    // Create a map of all nodes for quick lookup (using the copied nodes)
+    const allNodesMap = new Map(currentNodes.map(node => [node.id, node]));
 
     // Determine which nodes are hidden (direct children of collapsed nodes)
     const nodesToHideIds = new Set(); // Stores IDs of nodes that should be hidden
-    data.nodes.forEach(node => {
+    currentNodes.forEach(node => { // Iterate through copied nodes to get collapsed state
       if (node.collapsed) {
         // Find all direct children of this collapsed node
-        // Iterate through original links (before D3 mutates them to objects)
-        data.links.forEach(link => {
-          // At this point, link.source and link.target are still string IDs from the initial data load.
+        currentLinks.forEach(link => { // Iterate through copied links
           const sourceId = link.source;
           const targetId = link.target;
           if (sourceId === node.id) {
@@ -109,20 +113,23 @@ const ForeignKeysDiagram = () => {
     });
 
     // Filter nodes: only include nodes that are not marked as hidden
-    const visibleNodes = data.nodes.filter(d => !nodesToHideIds.has(d.id));
+    const visibleNodes = currentNodes.filter(d => !nodesToHideIds.has(d.id));
     const visibleNodeIds = new Set(visibleNodes.map(n => n.id)); // For quick lookup
 
     // Filter links: only include links where both source and target are visible,
     // and the source node is not collapsed.
-    const visibleLinks = data.links.filter(l => {
-      // At this point, l.source and l.target are still string IDs from the initial data load.
+    const visibleLinks = currentLinks.filter(l => {
       const sourceId = l.source;
       const targetId = l.target;
-      const sourceNode = allNodesMap.get(sourceId); // Get actual node object for collapsed state
+      const sourceNode = allNodesMap.get(sourceId);
 
+      // A link is visible if:
+      // 1. Its source node is not hidden (i.e., not a direct child of a collapsed node)
+      // 2. Its target node is not hidden (i.e., not a direct child of a collapsed node)
+      // 3. Its source node is not itself collapsed (to hide outgoing links from the collapsed node)
       return visibleNodeIds.has(sourceId) &&
              visibleNodeIds.has(targetId) &&
-             sourceNode && !sourceNode.collapsed; // Ensure sourceNode exists and is not collapsed
+             sourceNode && !sourceNode.collapsed;
     });
 
     // Initialize force simulation with visible nodes.
@@ -133,7 +140,7 @@ const ForeignKeysDiagram = () => {
 
     // Draw links (edges) using .join() for efficient updates.
     // This must happen BEFORE the link force is applied to the simulation,
-    // because d3.forceLink mutates the source/target properties.
+    // because d3.forceLink mutates the source/target properties of the link objects it's given.
     let link = container.append("g")
       .attr("stroke", "gray")
       .attr("stroke-width", 1.5)
@@ -148,7 +155,8 @@ const ForeignKeysDiagram = () => {
 
     // Now, apply the link force to the simulation.
     // The forceLink will mutate the 'source' and 'target' properties of the links in 'visibleLinks'
-    // from string IDs to node objects. This is fine because the .data() call already happened.
+    // from string IDs to node objects. This is fine because the .data() call already happened
+    // and 'visibleLinks' is a copy, not the original state data.
     simulation.force("link", d3.forceLink(visibleLinks).id((d) => d.id).distance(150));
 
     // Draw nodes as groups using .join() for efficient updates.
@@ -168,12 +176,10 @@ const ForeignKeysDiagram = () => {
               event.stopPropagation();
 
               // 1. Toggle the 'collapsed' state of the clicked node.
+              // This updates the React state, triggering a re-render.
               const newNodesState = data.nodes.map(n =>
                 n.id === clickedNode.id ? { ...n, collapsed: !n.collapsed } : n
               );
-
-              // 2. Update the state to trigger a re-render of the D3 diagram.
-              // The useEffect will now filter based on 'collapsed' states.
               setData({ nodes: newNodesState, links: data.links });
             });
 
