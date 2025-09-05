@@ -29,6 +29,7 @@ const ForeignKeysDiagram = () => {
               label: sourceId,
               type: "source",
               collapsed: false, // Initial state: not collapsed
+              hidden: false, // Initial state: not hidden
             });
           }
           if (!nodesMap.has(targetId)) {
@@ -37,12 +38,14 @@ const ForeignKeysDiagram = () => {
               label: targetId,
               type: "target",
               collapsed: false, // Initial state: not collapsed
+              hidden: false, // Initial state: not hidden
             });
           }
           links.push({
             source: sourceId,
             target: targetId,
             constraint: d.constraint,
+            hidden: false, // Initial state: not hidden
           });
         });
         setData({ nodes: Array.from(nodesMap.values()), links: links });
@@ -57,6 +60,8 @@ const ForeignKeysDiagram = () => {
     // Create deep copies of the original nodes and links from state.
     // This prevents D3's force simulation from mutating the React state directly,
     // ensuring consistent data for filtering and key functions across renders.
+    // Note: The click handler now directly mutates the `data` state,
+    // so `currentNodes` and `currentLinks` here will reflect the latest state.
     const currentNodes = data.nodes.map((n) => ({ ...n }));
     const currentLinks = data.links.map((l) => ({ ...l }));
 
@@ -97,43 +102,11 @@ const ForeignKeysDiagram = () => {
       .attr("d", "M0,-5L10,0L0,5")
       .attr("fill", "gray");
 
-    // Build a directed graph from source to target.
-    const graph = {};
-    currentLinks.forEach((link) => {
-      if (!graph[link.source]) graph[link.source] = [];
-      graph[link.source].push(link.target);
-    });
-
-    // Compute hidden nodes: for each node that is collapsed,
-    // hide all its descendant nodes (but don't change their collapsed state).
-    const hiddenNodes = new Set();
-    currentNodes.forEach((n) => {
-      if (n.collapsed) {
-        const stack = [n.id];
-        while (stack.length > 0) {
-          const current = stack.pop();
-          (graph[current] || []).forEach((child) => {
-            if (!hiddenNodes.has(child)) {
-              hiddenNodes.add(child);
-              stack.push(child);
-            }
-          });
-        }
-      }
-    });
-
-    // A node is visible if it is either collapsed
-    // (so that the collapse indicator shows) or not hidden.
-    const visibleNodes = currentNodes.filter(
-      (n) => n.collapsed || !hiddenNodes.has(n.id)
-    );
-
+    // Filter visible nodes and links based on their 'hidden' property
+    const visibleNodes = currentNodes.filter((n) => !n.hidden);
     const visibleNodeIds = new Set(visibleNodes.map((n) => n.id));
-
-    // A link is visible if both its source and target nodes are visible.
     const visibleLinks = currentLinks.filter(
-      (link) =>
-        visibleNodeIds.has(link.source) && visibleNodeIds.has(link.target)
+      (link) => !link.hidden && visibleNodeIds.has(link.source) && visibleNodeIds.has(link.target)
     );
 
     // Initialize force simulation with visible nodes.
@@ -151,7 +124,7 @@ const ForeignKeysDiagram = () => {
       .attr("stroke", "gray")
       .attr("stroke-width", 1.5)
       .selectAll("line")
-      .data(visibleLinks, (d) => `${d.source}-${d.target}`) // d.source and d.target are still string IDs here
+      .data(visibleLinks, (d) => `${d.source.id || d.source}-${d.target.id || d.target}`) // d.source and d.target are still string IDs here initially, or node objects after forceLink
       .join(
         (enter) => enter.append("line").attr("marker-end", "url(#arrowhead)"),
         (update) => update,
@@ -193,65 +166,59 @@ const ForeignKeysDiagram = () => {
             .on("click", (event, clickedNode) => {
               event.stopPropagation();
               const targetState = !clickedNode.collapsed;
+
               // Build a graph mapping source to target nodes for descendant traversal.
+              // Use the current data.links for this.
               const graph = {};
-              // Determine descendant node ids for the clicked node
               data.links.forEach((link) => {
                 if (!graph[link.source]) graph[link.source] = [];
                 graph[link.source].push(link.target);
               });
+
               const descendantIds = new Set();
               {
                 const stack = [clickedNode.id];
                 while (stack.length > 0) {
                   const current = stack.pop();
                   (graph[current] || []).forEach((child) => {
-                    descendantIds.add(child);
-                    stack.push(child);
+                    if (!descendantIds.has(child)) { // Prevent infinite loops for cyclic graphs
+                      descendantIds.add(child);
+                      stack.push(child);
+                    }
                   });
                 }
               }
-              let newNodesState = data.nodes.map((n) => {
-                if (n.id === clickedNode.id) return { ...n, collapsed: targetState }
-                return descendantIds.has(n.id) ? { ...n, collapsed: targetState, hidden: targetState } : n
-              });
-              // // if (!targetState) 
-              //   {
-              //   // when uncollapsing, show all descendant nodes and links
-              //   const stack = [clickedNode.id];
-              //   const visited = new Set();
-              //   while (stack.length > 0) {
-              //     const current = stack.pop();
-              //     (graph[current] || []).forEach((child) => {
-              //       if (!visited.has(child)) {
-              //         visited.add(child);
-              //         newNodesState = newNodesState.map((n) =>
-              //           n.id === child ? { ...n, collapsed: targetState, hidden: targetState } : n
-              //         );
-              //         stack.push(child);
-              //       }
-              //     });
-              //   }
-              // }
-              // Update links: if a link's source or target is a descendant, set hidden property accordingly.
-              const newLinksState = data.links.map((link) => {
-                if (descendantIds.has(link.source) || descendantIds.has(link.target)) {
-                  return { ...link, hidden: targetState };
+
+              // Directly manipulate data.nodes
+              data.nodes.forEach(n => {
+                if (n.id === clickedNode.id) {
+                  n.collapsed = targetState;
                 }
-                return link;
+                if (descendantIds.has(n.id)) {
+                  n.collapsed = targetState;
+                  n.hidden = targetState;
+                }
               });
-              data.nodes.splice(0, data.nodes.length, ...newNodesState);
-              data.links.splice(0, data.links.length, ...newLinksState);
-              if (targetState) {
-                d3.select(event.target).attr("r", 30).attr("fill", "green");
-              } else {
-                d3.select(event.target)
-                  .attr("r", 17.5)
-                  .attr(
-                    "fill",
-                    clickedNode.type === "source" ? "steelblue" : "tomato"
-                  );
-              }
+
+              // Directly manipulate data.links
+              data.links.forEach(link => {
+                // Find the source and target nodes in the *mutated* data.nodes array
+                const sourceNode = data.nodes.find(node => node.id === link.source);
+                const targetNode = data.nodes.find(node => node.id === link.target);
+
+                if (sourceNode && targetNode) {
+                    // A link is hidden if either its source or target node is hidden.
+                    link.hidden = sourceNode.hidden || targetNode.hidden;
+                }
+              });
+
+              // Force a re-render by creating a new data object reference,
+              // even though its internal arrays were mutated.
+              setData({ ...data });
+
+              // Removed direct D3 manipulation of circle attributes here.
+              // The `useEffect` will re-run and the `node.join()` update selection
+              // will handle the visual changes based on the new `data` state.
             });
 
           nodeEnter
@@ -296,14 +263,16 @@ const ForeignKeysDiagram = () => {
 
     simulation.on("tick", () => {
       link
-        .attr("display", (d) => d.hidden ? "none" : null)
+        // The 'display' attribute is no longer needed here as filtering happens before data binding
+        // .attr("display", (d) => d.hidden ? "none" : null)
         .attr("x1", (d) => d.source.x)
         .attr("y1", (d) => d.source.y)
         .attr("x2", (d) => d.target.x)
         .attr("y2", (d) => d.target.y);
 
       node
-        .attr("display", (d) => d.hidden ? "none" : null)
+        // The 'display' attribute is no longer needed here as filtering happens before data binding
+        // .attr("display", (d) => d.hidden ? "none" : null)
         .attr("transform", (d) => `translate(${d.x}, ${d.y})`);
     });
 
@@ -352,7 +321,8 @@ const ForeignKeysDiagram = () => {
         const htmlContent = `<strong>Source:</strong> ${d.id}<br/>
                            <strong>Target:</strong> ${d.label}<br/>
                            <strong>Type:</strong> ${d.type}<br/>
-                           <strong>Collapsed:</strong> ${d.collapsed}
+                           <strong>Collapsed:</strong> ${d.collapsed}<br/>
+                           <strong>Hidden:</strong> ${d.hidden}
                            `;
         tooltip.html(htmlContent);
       })
