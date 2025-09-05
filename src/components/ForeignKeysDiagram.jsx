@@ -219,9 +219,15 @@ const ForeignKeysDiagram = () => {
               });
               data.nodes.splice(0, data.nodes.length, ...newNodesState);
               data.links.splice(0, data.links.length, ...newLinksState);
-              d3.select(event.target)
-                .attr("r", 30)
-                .attr("fill", "green");
+              if (targetState) {
+                d3.select(event.target)
+                  .attr("r", 30)
+                  .attr("fill", "green");
+              } else {
+                d3.select(event.target)
+                  .attr("r", 17.5)
+                  .attr("fill", clickedNode.type === "source" ? "steelblue" : "tomato");
+              }
             });
 
           nodeEnter.append("text")
