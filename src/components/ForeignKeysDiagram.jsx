@@ -280,7 +280,7 @@ const ForeignKeysDiagram = () => {
       tooltip.transition().duration(200).style("opacity", 0.9);
       const htmlContent = `<strong>Source:</strong> ${d.id}<br/>
                            <strong>Target:</strong> ${d.label}<br/>
-                           <strong>Type:</strong> ${d.type}
+                           <strong>Type:</strong> ${d.type}<br/>
                            <strong>Collapsed:</strong> ${d.collapsed}
                            `;
       tooltip.html(htmlContent);
