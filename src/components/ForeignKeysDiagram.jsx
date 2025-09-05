@@ -172,11 +172,32 @@ const ForeignKeysDiagram = () => {
             .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato")) // Adjust color based on collapsed state
             .on("click", (event, clickedNode) => {
               event.stopPropagation();
-              // Toggle only the clicked node's collapsed state.
               const targetState = !clickedNode.collapsed;
-              const newNodesState = data.nodes.map(n =>
+              let newNodesState = data.nodes.map(n =>
                 n.id === clickedNode.id ? { ...n, collapsed: targetState } : n
               );
+              // Build a graph mapping source to target nodes for descendant traversal.
+              const graph = {};
+              data.links.forEach(link => {
+                if (!graph[link.source]) graph[link.source] = [];
+                graph[link.source].push(link.target);
+              });
+              if (!targetState) { // when uncollapsing, show all descendant nodes and links
+                const stack = [clickedNode.id];
+                const visited = new Set();
+                while (stack.length > 0) {
+                  const current = stack.pop();
+                  (graph[current] || []).forEach(child => {
+                    if (!visited.has(child)) {
+                      visited.add(child);
+                      newNodesState = newNodesState.map(n =>
+                        n.id === child ? { ...n, collapsed: false } : n
+                      );
+                      stack.push(child);
+                    }
+                  });
+                }
+              }
               setData({ nodes: newNodesState, links: data.links });
             });
 
