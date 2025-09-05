@@ -217,7 +217,8 @@ const ForeignKeysDiagram = () => {
                 }
                 return link;
               });
-              setData({ nodes: newNodesState, links: newLinksState });
+              data.nodes.splice(0, data.nodes.length, ...newNodesState);
+              data.links.splice(0, data.links.length, ...newLinksState);
             });
 
           nodeEnter.append("text")
