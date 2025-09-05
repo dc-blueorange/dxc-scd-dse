@@ -94,42 +94,41 @@ const ForeignKeysDiagram = () => {
       .attr("d", "M0,-5L10,0L0,5")
       .attr("fill", "gray");
 
-    // Map target nodes to their source nodes to handle shared children correctly.
-    const targetToSourcesMap = new Map();
+    // Build a directed graph from source to target.
+    const graph = {};
     currentLinks.forEach(link => {
-      if (!targetToSourcesMap.has(link.target)) {
-        targetToSourcesMap.set(link.target, []);
-      }
-      targetToSourcesMap.get(link.target).push(link.source);
+      if (!graph[link.source]) graph[link.source] = [];
+      graph[link.source].push(link.target);
     });
 
-    // Get IDs of all currently collapsed nodes.
-    const collapsedNodeIds = new Set(
-      currentNodes.filter(n => n.collapsed).map(n => n.id)
-    );
-
-    // A node is visible if it's a source node, or if it's a target node
-    // where NOT ALL of its parents are collapsed.
-    const visibleNodes = currentNodes.filter(node => {
-      if (node.type === 'source') {
-        return true; // Source nodes are always visible to allow interaction.
+    // Compute hidden nodes: for each node that is collapsed,
+    // hide all its descendant nodes (but don't change their collapsed state).
+    const hiddenNodes = new Set();
+    currentNodes.forEach(n => {
+      if (n.collapsed) {
+        const stack = [n.id];
+        while (stack.length > 0) {
+          const current = stack.pop();
+          (graph[current] || []).forEach(child => {
+            if (!hiddenNodes.has(child)) {
+              hiddenNodes.add(child);
+              stack.push(child);
+            }
+          });
+        }
       }
-      const parentIds = targetToSourcesMap.get(node.id);
-      if (!parentIds || parentIds.length === 0) {
-        return true; // Node with no parents is visible.
-      }
-      // Hide target node if any of its parent source nodes are collapsed.
-      return parentIds.every(parentId => !collapsedNodeIds.has(parentId));
     });
+
+    // A node is visible if it is either collapsed
+    // (so that the collapse indicator shows) or not hidden.
+    const visibleNodes = currentNodes.filter(n => n.collapsed || !hiddenNodes.has(n.id));
 
     const visibleNodeIds = new Set(visibleNodes.map(n => n.id));
 
-    // A link is visible if its source is not collapsed and both its
-    // source and target nodes are currently visible.
-    const visibleLinks = currentLinks.filter(link => {
-      const sourceIsCollapsed = collapsedNodeIds.has(link.source);
-      return !sourceIsCollapsed && visibleNodeIds.has(link.source) && visibleNodeIds.has(link.target);
-    });
+    // A link is visible if both its source and target nodes are visible.
+    const visibleLinks = currentLinks.filter(link => 
+      visibleNodeIds.has(link.source) && visibleNodeIds.has(link.target)
+    );
 
     // Initialize force simulation with visible nodes.
     // The link force will be added AFTER links are bound to elements.
@@ -173,56 +172,11 @@ const ForeignKeysDiagram = () => {
             .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato")) // Adjust color based on collapsed state
             .on("click", (event, clickedNode) => {
               event.stopPropagation();
-
-              // 1. Toggle the 'collapsed' state of the clicked node.
-              // This updates the React state, triggering a re-render.
+              // Toggle only the clicked node's collapsed state.
               const targetState = !clickedNode.collapsed;
-              let newNodesState = data.nodes.map(n =>
+              const newNodesState = data.nodes.map(n =>
                 n.id === clickedNode.id ? { ...n, collapsed: targetState } : n
               );
-              // Build an adjacency list from links so that connected nodes in any direction are considered.
-              const graph = {};
-              data.links.forEach(link => {
-                if (!graph[link.source]) graph[link.source] = [];
-                if (!graph[link.target]) graph[link.target] = [];
-                graph[link.source].push(link.target);
-                graph[link.target].push(link.source);
-              });
-              if (targetState === true) {
-                // Use a DFS to mark all connected nodes as collapsed.
-                const stack = [clickedNode.id];
-                const visited = new Set();
-                while (stack.length > 0) {
-                  const current = stack.pop();
-                  if (visited.has(current)) continue;
-                  visited.add(current);
-                  (graph[current] || []).forEach(neighbor => {
-                    newNodesState = newNodesState.map(n =>
-                      n.id === neighbor ? { ...n, collapsed: true } : n
-                    );
-                    if (!visited.has(neighbor)) {
-                      stack.push(neighbor);
-                    }
-                  });
-                }
-              } else {
-                // Use a DFS to mark all connected nodes as uncollapsed.
-                const stack = [clickedNode.id];
-                const visited = new Set();
-                while (stack.length > 0) {
-                  const current = stack.pop();
-                  if (visited.has(current)) continue;
-                  visited.add(current);
-                  (graph[current] || []).forEach(neighbor => {
-                    newNodesState = newNodesState.map(n =>
-                      n.id === neighbor ? { ...n, collapsed: false } : n
-                    );
-                    if (!visited.has(neighbor)) {
-                      stack.push(neighbor);
-                    }
-                  });
-                }
-              }
               setData({ nodes: newNodesState, links: data.links });
             });
 
