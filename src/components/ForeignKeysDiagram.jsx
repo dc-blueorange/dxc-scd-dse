@@ -198,7 +198,26 @@ const ForeignKeysDiagram = () => {
                   });
                 }
               }
-              setData({ nodes: newNodesState, links: data.links });
+              // Determine descendant node ids for the clicked node
+              const descendantIds = new Set();
+              {
+                const stack = [clickedNode.id];
+                while (stack.length > 0) {
+                  const current = stack.pop();
+                  (graph[current] || []).forEach(child => {
+                    descendantIds.add(child);
+                    stack.push(child);
+                  });
+                }
+              }
+              // Update links: if a link's source or target is a descendant, set hidden property accordingly.
+              const newLinksState = data.links.map(link => {
+                if (descendantIds.has(link.source) || descendantIds.has(link.target)) {
+                  return { ...link, hidden: targetState };
+                }
+                return link;
+              });
+              setData({ nodes: newNodesState, links: newLinksState });
             });
 
           nodeEnter.append("text")
