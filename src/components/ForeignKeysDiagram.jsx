@@ -176,9 +176,36 @@ const ForeignKeysDiagram = () => {
 
               // 1. Toggle the 'collapsed' state of the clicked node.
               // This updates the React state, triggering a re-render.
-              const newNodesState = data.nodes.map(n =>
-                n.id === clickedNode.id ? { ...n, collapsed: !n.collapsed } : n
+              const targetState = !clickedNode.collapsed;
+              let newNodesState = data.nodes.map(n =>
+                n.id === clickedNode.id ? { ...n, collapsed: targetState } : n
               );
+              if (targetState === true) {
+                // Build an adjacency list from links so that connected nodes in any direction are considered.
+                const graph = {};
+                data.links.forEach(link => {
+                  if (!graph[link.source]) graph[link.source] = [];
+                  if (!graph[link.target]) graph[link.target] = [];
+                  graph[link.source].push(link.target);
+                  graph[link.target].push(link.source);
+                });
+                // Use a DFS to mark all connected nodes as collapsed.
+                const stack = [clickedNode.id];
+                const visited = new Set();
+                while (stack.length > 0) {
+                  const current = stack.pop();
+                  if (visited.has(current)) continue;
+                  visited.add(current);
+                  (graph[current] || []).forEach(neighbor => {
+                    newNodesState = newNodesState.map(n =>
+                      n.id === neighbor ? { ...n, collapsed: true } : n
+                    );
+                    if (!visited.has(neighbor)) {
+                      stack.push(neighbor);
+                    }
+                  });
+                }
+              }
               setData({ nodes: newNodesState, links: data.links });
             });
 
