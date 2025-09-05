@@ -236,7 +236,7 @@ const ForeignKeysDiagram = () => {
             .attr("fill", "navy")
             .style("font-size", "28px")
             .style("pointer-events", "none")
-            .text(d => d.label);
+            .text(d => d.collapsed ? `${d.label} (collapsed)` : `${d.label} (uncollapsed)`);
           return nodeEnter;
         },
         update => {
@@ -244,7 +244,7 @@ const ForeignKeysDiagram = () => {
             .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5)
             .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato"));
           update.select("text")
-            .text(d => d.label); // Update text in case label changes (though unlikely here)
+            .text(d => d.collapsed ? `${d.label} (collapsed)` : `${d.label} (uncollapsed)`); // Update text based on collapse state
           return update;
         },
         exit => exit.remove()
