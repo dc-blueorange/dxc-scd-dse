@@ -215,30 +215,27 @@ const ForeignKeysDiagram = () => {
                 if (n.id === clickedNode.id) return { ...n, collapsed: targetState }
                 return descendantIds.has(n.id) ? { ...n, collapsed: targetState, hidden: targetState } : n
               });
-              // if (!targetState) 
-                {
-                // when uncollapsing, show all descendant nodes and links
-                const stack = [clickedNode.id];
-                const visited = new Set();
-                while (stack.length > 0) {
-                  const current = stack.pop();
-                  (graph[current] || []).forEach((child) => {
-                    if (!visited.has(child)) {
-                      visited.add(child);
-                      newNodesState = newNodesState.map((n) =>
-                        n.id === child ? { ...n, collapsed: targetState, hidden: targetState } : n
-                      );
-                      stack.push(child);
-                    }
-                  });
-                }
-              }
+              // // if (!targetState) 
+              //   {
+              //   // when uncollapsing, show all descendant nodes and links
+              //   const stack = [clickedNode.id];
+              //   const visited = new Set();
+              //   while (stack.length > 0) {
+              //     const current = stack.pop();
+              //     (graph[current] || []).forEach((child) => {
+              //       if (!visited.has(child)) {
+              //         visited.add(child);
+              //         newNodesState = newNodesState.map((n) =>
+              //           n.id === child ? { ...n, collapsed: targetState, hidden: targetState } : n
+              //         );
+              //         stack.push(child);
+              //       }
+              //     });
+              //   }
+              // }
               // Update links: if a link's source or target is a descendant, set hidden property accordingly.
               const newLinksState = data.links.map((link) => {
-                if (
-                  descendantIds.has(link.source) ||
-                  descendantIds.has(link.target)
-                ) {
+                if (descendantIds.has(link.source) || descendantIds.has(link.target)) {
                   return { ...link, hidden: targetState };
                 }
                 return link;
