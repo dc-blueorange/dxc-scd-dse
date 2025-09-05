@@ -13,57 +13,6 @@ const ForeignKeysDiagram = () => {
     };
   };
 
-  // Helper function to get the graph reachable from the root, considering collapsed nodes.
-  const getReachableGraph = (allNodes, allLinks, collapsedNodeIds) => {
-    const visibleNodes = [];
-    const visibleLinks = [];
-    const visited = new Set();
-
-    const queue = allNodes.filter(node => node.id === "root"); // Start with the root node
-
-    while (queue.length > 0) {
-      const currentNode = queue.shift();
-
-      if (visited.has(currentNode.id)) continue;
-      visited.add(currentNode.id);
-
-      visibleNodes.push(currentNode);
-
-      // If the node is not collapsed, explore its children and outgoing links
-      if (!collapsedNodeIds.has(currentNode.id)) {
-        // Add outgoing links
-        allLinks.forEach(link => {
-          if (link.source.id === currentNode.id) {
-            // Check if the target is also a visible node (or will be added)
-            const targetNode = allNodes.find(n => n.id === link.target.id);
-            if (targetNode && !visited.has(targetNode.id)) {
-              visibleLinks.push(link);
-              if (!queue.some(n => n.id === targetNode.id)) {
-                queue.push(targetNode);
-              }
-            } else if (targetNode && visited.has(targetNode.id)) {
-              // If target is already visited, still add the link if it's not already added
-              if (!visibleLinks.some(vl => vl.source.id === link.source.id && vl.target.id === link.target.id)) {
-                visibleLinks.push(link);
-              }
-            }
-          }
-        });
-
-        // Add children to the queue
-        if (currentNode.children) {
-          currentNode.children.forEach(child => {
-            if (!queue.some(n => n.id === child.id)) {
-              queue.push(child);
-            }
-          });
-        }
-      }
-    }
-    return { nodes: visibleNodes, links: visibleLinks };
-  };
-
-
   // Load foreign keys JSON from public/analysis-dean/foreign-keys.json
   useEffect(() => {
     fetch("/analysis-dean/foreign-keys.json")
@@ -71,19 +20,15 @@ const ForeignKeysDiagram = () => {
       .then((fkeys) => {
         const nodesMap = new Map();
         const links = [];
-
         fkeys.forEach((d) => {
           const sourceId = `${d.database || ""}-${d.schema || ""} ${d.table}`;
           const targetId = `${d.fk_table}: ${d.fk_column}`;
-
           if (!nodesMap.has(sourceId)) {
             nodesMap.set(sourceId, {
               id: sourceId,
               label: sourceId,
               type: "source",
-              children: [],
-              _children: null,
-              collapsed: false, // Initialize collapsed state
+              collapsed: false, // Initial state: not collapsed
             });
           }
           if (!nodesMap.has(targetId)) {
@@ -91,48 +36,32 @@ const ForeignKeysDiagram = () => {
               id: targetId,
               label: targetId,
               type: "target",
-              children: [],
-              _children: null,
-              collapsed: false, // Initialize collapsed state
+              collapsed: false, // Initial state: not collapsed
             });
           }
-
-          const sourceNode = nodesMap.get(sourceId);
-          const targetNode = nodesMap.get(targetId);
-          if (sourceNode && targetNode) {
-            // Ensure target is not already a child to avoid duplicates
-            if (!sourceNode.children.some(child => child.id === targetNode.id)) {
-              sourceNode.children.push(targetNode);
-            }
-          }
-
           links.push({
             source: sourceId,
             target: targetId,
             constraint: d.constraint
           });
         });
-
-        const root = { id: "root", label: "Root", type: "root", children: [], _children: null, collapsed: false };
-        const allNodes = Array.from(nodesMap.values());
-
-        // Determine top-level sources (nodes that are 'source' type and not targets of any link)
-        const topLevelSources = allNodes.filter(node =>
-          node.type === "source" && !links.some(link => link.target === node.id)
-        );
-        root.children.push(...topLevelSources);
-
-        // Add all nodes to the data, including the root
-        setData({ nodes: [root, ...allNodes], links: links });
+        setData({ nodes: Array.from(nodesMap.values()), links: links });
       })
-      .catch((err) => console.error("Error loading foreign keys:", err));
+      .catch((err) => console.error(err));
   }, []);
 
   // Build a collapsible force-directed diagram with collapse/uncollapse of connected nodes on click
   useEffect(() => {
     if (data.nodes.length === 0) return;
 
-    const { width, height } = getDimensions();
+    // Create deep copies of the original nodes and links from state.
+    // This prevents D3's force simulation from mutating the React state directly,
+    // ensuring consistent data for filtering and key functions across renders.
+    const currentNodes = data.nodes.map(n => ({ ...n }));
+    const currentLinks = data.links.map(l => ({ ...l }));
+
+    let { width, height } = getDimensions();
+
     const svg = d3.select(svgRef.current)
       .attr("width", width)
       .attr("height", height);
@@ -165,22 +94,58 @@ const ForeignKeysDiagram = () => {
       .attr("d", "M0,-5L10,0L0,5")
       .attr("fill", "gray");
 
-    // Prepare nodes and links for simulation based on collapsed state
-    const currentCollapsedNodeIds = new Set(data.nodes.filter(n => n.collapsed).map(n => n.id));
-    const { nodes: visibleNodes, links: visibleLinks } = getReachableGraph(data.nodes, data.links, currentCollapsedNodeIds);
+    // Create a map of all nodes for quick lookup (using the copied nodes)
+    const allNodesMap = new Map(currentNodes.map(node => [node.id, node]));
 
-    // Initialize force simulation
+    // Determine which nodes are hidden (direct children of collapsed nodes)
+    const nodesToHideIds = new Set(); // Stores IDs of nodes that should be hidden
+    currentNodes.forEach(node => { // Iterate through copied nodes to get collapsed state
+      if (node.collapsed) {
+        // Find all direct children of this collapsed node
+        currentLinks.forEach(link => { // Iterate through copied links
+          const sourceId = link.source;
+          const targetId = link.target;
+          if (sourceId === node.id) {
+            nodesToHideIds.add(targetId);
+          }
+        });
+      }
+    });
+
+    // Filter nodes: only include nodes that are not marked as hidden
+    const visibleNodes = currentNodes.filter(d => !nodesToHideIds.has(d.id));
+    const visibleNodeIds = new Set(visibleNodes.map(n => n.id)); // For quick lookup
+
+    // Filter links: only include links where both source and target are visible,
+    // and the source node is not collapsed.
+    const visibleLinks = currentLinks.filter(l => {
+      const sourceId = l.source;
+      const targetId = l.target;
+      const sourceNode = allNodesMap.get(sourceId);
+
+      // A link is visible if:
+      // 1. Its source node is not hidden (i.e., not a direct child of a collapsed node)
+      // 2. Its target node is not hidden (i.e., not a direct child of a collapsed node)
+      // 3. Its source node is not itself collapsed (to hide outgoing links from the collapsed node)
+      return visibleNodeIds.has(sourceId) &&
+             visibleNodeIds.has(targetId) &&
+             sourceNode && !sourceNode.collapsed;
+    });
+
+    // Initialize force simulation with visible nodes.
+    // The link force will be added AFTER links are bound to elements.
     const simulation = d3.forceSimulation(visibleNodes)
-      .force("link", d3.forceLink(visibleLinks).id(d => d.id).distance(150)) // Apply link force here
       .force("charge", d3.forceManyBody().strength(-50))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
-    // Draw links (edges)
+    // Draw links (edges) using .join() for efficient updates.
+    // This must happen BEFORE the link force is applied to the simulation,
+    // because d3.forceLink mutates the source/target properties of the link objects it's given.
     let link = container.append("g")
       .attr("stroke", "gray")
       .attr("stroke-width", 1.5)
       .selectAll("line")
-      .data(visibleLinks, d => d.source.id + '-' + d.target.id) // Use IDs for keying
+      .data(visibleLinks, d => `${d.source}-${d.target}`) // d.source and d.target are still string IDs here
       .join(
         enter => enter.append("line")
                       .attr("marker-end", "url(#arrowhead)"),
@@ -188,21 +153,30 @@ const ForeignKeysDiagram = () => {
         exit => exit.remove()
       );
 
-    // Draw nodes as groups
+    // Now, apply the link force to the simulation.
+    // The forceLink will mutate the 'source' and 'target' properties of the links in 'visibleLinks'
+    // from string IDs to node objects. This is fine because the .data() call already happened
+    // and 'visibleLinks' is a copy, not the original state data.
+    simulation.force("link", d3.forceLink(visibleLinks).id((d) => d.id).distance(150));
+
+    // Draw nodes as groups using .join() for efficient updates.
     let node = container.append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
-      .selectAll("g.node-group")
+      .selectAll("g.node-group") // Select by class for specificity
       .data(visibleNodes, d => d.id)
       .join(
         enter => {
           const nodeEnter = enter.append("g")
-                                 .attr("class", "node-group");
+                                 .attr("class", "node-group"); // Add class
           nodeEnter.append("circle")
-            .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5)
-            .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato"))
+            .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5) // Adjust radius based on collapsed state
+            .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato")) // Adjust color based on collapsed state
             .on("click", (event, clickedNode) => {
               event.stopPropagation();
+
+              // 1. Toggle the 'collapsed' state of the clicked node.
+              // This updates the React state, triggering a re-render.
               const newNodesState = data.nodes.map(n =>
                 n.id === clickedNode.id ? { ...n, collapsed: !n.collapsed } : n
               );
@@ -223,7 +197,7 @@ const ForeignKeysDiagram = () => {
             .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5)
             .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato"));
           update.select("text")
-            .text(d => d.label);
+            .text(d => d.label); // Update text in case label changes (though unlikely here)
           return update;
         },
         exit => exit.remove()
@@ -276,7 +250,7 @@ const ForeignKeysDiagram = () => {
         .style("opacity", 0);
     }
 
-    node.select("circle").on("mouseover", (event, d) => {
+    node.select("circle").on("mouseover", (event, d) => { // Attach mouseover to circles within the 'node' selection
       tooltip.transition().duration(200).style("opacity", 0.9);
       const htmlContent = `<strong>Source:</strong> ${d.id}<br/>
                            <strong>Target:</strong> ${d.label}<br/>
@@ -306,7 +280,7 @@ const ForeignKeysDiagram = () => {
       window.removeEventListener("resize", handleResize);
       tooltip.remove();
     };
-  }, [data, getReachableGraph]); // getReachableGraph is now defined and used here
+  }, [data]); // Dependency array includes 'data' to re-run on state change
 
   return <svg ref={svgRef}></svg>;
 };
