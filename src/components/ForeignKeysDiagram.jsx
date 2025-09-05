@@ -219,6 +219,9 @@ const ForeignKeysDiagram = () => {
               });
               data.nodes.splice(0, data.nodes.length, ...newNodesState);
               data.links.splice(0, data.links.length, ...newLinksState);
+              d3.select(event.target)
+                .attr("r", 30)
+                .attr("fill", "green");
             });
 
           nodeEnter.append("text")
