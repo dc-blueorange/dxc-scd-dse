@@ -118,8 +118,8 @@ const ForeignKeysDiagram = () => {
       if (!parentIds || parentIds.length === 0) {
         return true; // Node with no parents is visible.
       }
-      // Hide node only if every parent is in the collapsed set.
-      return !parentIds.every(parentId => collapsedNodeIds.has(parentId));
+      // Hide target node if any of its parent source nodes are collapsed.
+      return parentIds.every(parentId => !collapsedNodeIds.has(parentId));
     });
 
     const visibleNodeIds = new Set(visibleNodes.map(n => n.id));
