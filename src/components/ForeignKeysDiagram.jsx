@@ -94,42 +94,41 @@ const ForeignKeysDiagram = () => {
       .attr("d", "M0,-5L10,0L0,5")
       .attr("fill", "gray");
 
-    // Create a map of all nodes for quick lookup (using the copied nodes)
-    const allNodesMap = new Map(currentNodes.map(node => [node.id, node]));
-
-    // Determine which nodes are hidden (direct children of collapsed nodes)
-    const nodesToHideIds = new Set(); // Stores IDs of nodes that should be hidden
-    currentNodes.forEach(node => { // Iterate through copied nodes to get collapsed state
-      if (node.collapsed) {
-        // Find all direct children of this collapsed node
-        currentLinks.forEach(link => { // Iterate through copied links
-          const sourceId = link.source;
-          const targetId = link.target;
-          if (sourceId === node.id) {
-            nodesToHideIds.add(targetId);
-          }
-        });
+    // Map target nodes to their source nodes to handle shared children correctly.
+    const targetToSourcesMap = new Map();
+    currentLinks.forEach(link => {
+      if (!targetToSourcesMap.has(link.target)) {
+        targetToSourcesMap.set(link.target, []);
       }
+      targetToSourcesMap.get(link.target).push(link.source);
     });
 
-    // Filter nodes: only include nodes that are not marked as hidden
-    const visibleNodes = currentNodes.filter(d => !nodesToHideIds.has(d.id));
-    const visibleNodeIds = new Set(visibleNodes.map(n => n.id)); // For quick lookup
+    // Get IDs of all currently collapsed nodes.
+    const collapsedNodeIds = new Set(
+      currentNodes.filter(n => n.collapsed).map(n => n.id)
+    );
 
-    // Filter links: only include links where both source and target are visible,
-    // and the source node is not collapsed.
-    const visibleLinks = currentLinks.filter(l => {
-      const sourceId = l.source;
-      const targetId = l.target;
-      const sourceNode = allNodesMap.get(sourceId);
+    // A node is visible if it's a source node, or if it's a target node
+    // where NOT ALL of its parents are collapsed.
+    const visibleNodes = currentNodes.filter(node => {
+      if (node.type === 'source') {
+        return true; // Source nodes are always visible to allow interaction.
+      }
+      const parentIds = targetToSourcesMap.get(node.id);
+      if (!parentIds || parentIds.length === 0) {
+        return true; // Node with no parents is visible.
+      }
+      // Hide node only if every parent is in the collapsed set.
+      return !parentIds.every(parentId => collapsedNodeIds.has(parentId));
+    });
 
-      // A link is visible if:
-      // 1. Its source node is not hidden (i.e., not a direct child of a collapsed node)
-      // 2. Its target node is not hidden (i.e., not a direct child of a collapsed node)
-      // 3. Its source node is not itself collapsed (to hide outgoing links from the collapsed node)
-      return visibleNodeIds.has(sourceId) &&
-             visibleNodeIds.has(targetId) &&
-             sourceNode && !sourceNode.collapsed;
+    const visibleNodeIds = new Set(visibleNodes.map(n => n.id));
+
+    // A link is visible if its source is not collapsed and both its
+    // source and target nodes are currently visible.
+    const visibleLinks = currentLinks.filter(link => {
+      const sourceIsCollapsed = collapsedNodeIds.has(link.source);
+      return !sourceIsCollapsed && visibleNodeIds.has(link.source) && visibleNodeIds.has(link.target);
     });
 
     // Initialize force simulation with visible nodes.
