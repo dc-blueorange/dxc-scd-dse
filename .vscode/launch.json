@@ -76,10 +76,14 @@
             ]
         },
         {
-            "name": "Attach to Chrome",
+            "name": "Launch Chrome with Debugging",
             "type": "chrome",
-            "request": "attach",
-            "port": 9222,
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "runtimeExecutable": "google-chrome",
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ],
             "webRoot": "${workspaceFolder}"
         }
     ]
