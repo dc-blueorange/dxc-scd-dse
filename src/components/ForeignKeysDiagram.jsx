@@ -21,8 +21,12 @@ const ForeignKeysDiagram = () => {
         const nodesMap = new Map();
         const links = [];
         fkeys.forEach((d) => {
-          const sourceId = `${d.database || ""}-${d.schema || ""} ${d.table}: ${d.fk_key}`;
-          const targetId = `${d.database || ""}-${d.schema || ""} ${d.fk_table}: ${d.fk_column}`;
+          const sourceId = `${d.database || ""}-${d.schema || ""} ${d.table}: ${
+            d.fk_key
+          }`;
+          const targetId = `${d.database || ""}-${d.schema || ""} ${
+            d.fk_table
+          }: ${d.fk_column}`;
           if (!nodesMap.has(sourceId)) {
             nodesMap.set(sourceId, {
               id: sourceId,
@@ -67,7 +71,10 @@ const ForeignKeysDiagram = () => {
 
     const { width, height } = getDimensions();
 
-    const svg = d3.select(svgRef.current).attr("width", width).attr("height", height);
+    const svg = d3
+      .select(svgRef.current)
+      .attr("width", width)
+      .attr("height", height);
     svg.selectAll("*").remove();
 
     const container = svg.append("g");
@@ -75,7 +82,7 @@ const ForeignKeysDiagram = () => {
     svg.call(
       d3
         .zoom()
-        .scaleExtent([0.2, 4])
+        .scaleExtent([0, 4])
         .on("zoom", (event) => {
           container.attr("transform", event.transform);
         })
@@ -119,7 +126,8 @@ const ForeignKeysDiagram = () => {
 
     // Update function to update nodes and links styles & visibility
     const updateVisuals = () => {
-      node.attr("display", (d) => (d.hidden ? "none" : null))
+      node
+        .attr("display", (d) => (d.hidden ? "none" : null))
         .select("circle")
         .attr("r", (d) => (d.collapsed ? 17.5 * 3 : 17.5))
         .attr("fill", (d) =>
@@ -147,26 +155,65 @@ const ForeignKeysDiagram = () => {
             .append("circle")
             .attr("r", (d) => (d.collapsed ? 17.5 * 3 : 17.5))
             .attr("fill", (d) =>
-              d.collapsed ? "green" : d.type === "source" ? "steelblue" : "tomato"
+              d.collapsed
+                ? "green"
+                : d.type === "source"
+                ? "steelblue"
+                : "tomato"
             )
             .on("click", (event, clickedNode) => {
               event.stopPropagation();
               const targetState = !clickedNode.collapsed;
 
-              // Toggle hidden on linked nodes
-              const linkedNodes = linkedIds[clickedNode.id].map((id) =>
-                data.nodes.find((n) => n.id === id)
-              );
+              // Find linked nodes
+              // const linkedNodes = linkedIds[clickedNode.id].map((id) =>
+              //   data.nodes.find((n) => n.id === id)
+              // );
 
+              // const descendantIds = new Set();
+              // {
+              //   const stack = [clickedNode.id];
+              //   while (stack.length > 0) {
+              //     const current = stack.pop();
+              //     (linkedIds[current] || []).forEach((child) => {
+              //       if (!descendantIds.has(child)) { // Prevent infinite loops for cyclic graphs
+              //         descendantIds.add(child);
+              //         stack.push(child);
+              //       }
+              //     });
+              //   }
+              // }
+
+              const linkedNodes = [];
+              { 
+                const nodesVisited = new Set()
+                const stack = [clickedNode.id];
+                const linkedNodeIds = [];
+                while (stack.length > 0) {
+                  const current = stack.pop();
+                  linkedIds[current].forEach((id) => {
+                    if (!nodesVisited.has(id)) {
+                      linkedNodeIds.push(id);
+                      nodesVisited.add(id)
+                      stack.push(id)
+                    }
+                  });
+                }
+                linkedNodes.push(
+                  ...linkedNodeIds.map((id) => data.nodes.find((n) => n.id === id))
+                );
+              }
+              // Toggle hidden on linked nodes
               linkedNodes.forEach((n) => {
                 n.hidden = targetState;
               });
 
-              // Toggle hidden on related links
+              // Toggle hidden for links connected to clicked node
               data.links.forEach((l) => {
                 l.hidden =
                   targetState &&
-                  (l.source.id === clickedNode.id || l.target.id === clickedNode.id);
+                  (l.source.id === clickedNode.id ||
+                    l.target.id === clickedNode.id);
               });
 
               clickedNode.collapsed = targetState;
@@ -185,8 +232,7 @@ const ForeignKeysDiagram = () => {
             .style("pointer-events", "none")
             // .text((d) =>
             //   d.collapsed ? `${d.label} (collapsed)` : `${d.label} (uncollapsed)`
-            .text((d) =>`${d.label}`
-            );
+            .text((d) => `${d.label}`);
           return nodeEnter;
         },
         (update) => update, // no change needed for now
@@ -220,7 +266,9 @@ const ForeignKeysDiagram = () => {
         .attr("x2", (d) => d.target.x)
         .attr("y2", (d) => d.target.y);
 
-      node.attr("display", (d) => (d.hidden ? "none" : null)).attr("transform", (d) => `translate(${d.x}, ${d.y})`);
+      node
+        .attr("display", (d) => (d.hidden ? "none" : null))
+        .attr("transform", (d) => `translate(${d.x}, ${d.y})`);
     });
 
     // Initialize visuals after first render
@@ -266,7 +314,10 @@ const ForeignKeysDiagram = () => {
     const handleResize = () => {
       const { width, height } = getDimensions();
       svg.attr("width", width).attr("height", height);
-      simulation.force("center", d3.forceCenter(width / 2, height / 2)).alpha(0.5).restart();
+      simulation
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .alpha(0.5)
+        .restart();
     };
 
     window.addEventListener("resize", handleResize);
