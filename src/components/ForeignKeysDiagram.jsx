@@ -185,22 +185,24 @@ const ForeignKeysDiagram = () => {
               // }
 
               const linkedNodes = [];
-              { 
-                const nodesVisited = new Set()
+              const linkedNodeIds = [];
+              {
+                const nodesVisited = new Set();
                 const stack = [clickedNode.id];
-                const linkedNodeIds = [];
                 while (stack.length > 0) {
                   const current = stack.pop();
                   linkedIds[current].forEach((id) => {
                     if (!nodesVisited.has(id)) {
                       linkedNodeIds.push(id);
-                      nodesVisited.add(id)
-                      stack.push(id)
+                      nodesVisited.add(id);
+                      stack.push(id);
                     }
                   });
                 }
                 linkedNodes.push(
-                  ...linkedNodeIds.map((id) => data.nodes.find((n) => n.id === id))
+                  ...linkedNodeIds.map((id) =>
+                    data.nodes.find((n) => n.id === id)
+                  )
                 );
               }
               // Toggle hidden on linked nodes
@@ -210,10 +212,12 @@ const ForeignKeysDiagram = () => {
 
               // Toggle hidden for links connected to clicked node
               data.links.forEach((l) => {
-                l.hidden =
-                  targetState &&
-                  (l.source.id === clickedNode.id ||
-                    l.target.id === clickedNode.id);
+                if (
+                  linkedNodeIds.indexOf(l.source.id) >= 0 ||
+                  linkedNodeIds.indexOf(l.target.id) >= 0
+                ) {
+                  l.hidden = targetState;
+                }
               });
 
               clickedNode.collapsed = targetState;
