@@ -133,11 +133,6 @@ const ForeignKeysDiagram = () => {
         .attr("fill", (d) =>
           d.collapsed ? "green" : d.type === "source" ? "steelblue" : "tomato"
         );
-
-      // node.select("text").text((d) =>
-      //   d.collapsed ? `${d.label} (collapsed)` : `${d.label} (uncollapsed)`
-      // );
-
       link.attr("display", (l) => (l.hidden ? "none" : null));
     };
 
