@@ -165,25 +165,6 @@ const ForeignKeysDiagram = () => {
               event.stopPropagation();
               const targetState = !clickedNode.collapsed;
 
-              // Find linked nodes
-              // const linkedNodes = linkedIds[clickedNode.id].map((id) =>
-              //   data.nodes.find((n) => n.id === id)
-              // );
-
-              // const descendantIds = new Set();
-              // {
-              //   const stack = [clickedNode.id];
-              //   while (stack.length > 0) {
-              //     const current = stack.pop();
-              //     (linkedIds[current] || []).forEach((child) => {
-              //       if (!descendantIds.has(child)) { // Prevent infinite loops for cyclic graphs
-              //         descendantIds.add(child);
-              //         stack.push(child);
-              //       }
-              //     });
-              //   }
-              // }
-
               const linkedNodes = [];
               const linkedNodeIds = [];
               {
