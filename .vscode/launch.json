@@ -74,6 +74,17 @@
             "skipFiles": [
                 "<node_internals>/**"
             ]
+        },
+        {
+            "name": "Launch Chrome with Debugging",
+            "type": "chrome",
+            "request": "launch",
+            "url": "http://localhost:3000",
+            "runtimeExecutable": "stable",
+            "runtimeArgs": [
+                "--remote-debugging-port=9222"
+            ],
+            "webRoot": "${workspaceFolder}"
         }
     ]
 }

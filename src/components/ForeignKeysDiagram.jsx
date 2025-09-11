@@ -5,15 +5,15 @@ const ForeignKeysDiagram = () => {
   const svgRef = useRef(null);
   const [data, setData] = useState({ nodes: [], links: [] });
 
-  // Function to update dimensions based on current viewport.
   const getDimensions = () => {
     return {
       width: window.innerWidth,
-      height: window.innerHeight
+      height: window.innerHeight,
     };
   };
 
-  // Load foreign keys JSON from public/analysis-dean/foreign-keys.json
+  const linkedIds = {};
+
   useEffect(() => {
     fetch("/analysis-dean/foreign-keys.json")
       .then((res) => res.json())
@@ -21,14 +21,19 @@ const ForeignKeysDiagram = () => {
         const nodesMap = new Map();
         const links = [];
         fkeys.forEach((d) => {
-          const sourceId = `${d.database || ""}-${d.schema || ""} ${d.table}`;
-          const targetId = `${d.fk_table}: ${d.fk_column}`;
+          const sourceId = `${d.database || ""}-${d.schema || ""} ${d.table}: ${
+            d.fk_key
+          }`;
+          const targetId = `${d.database || ""}-${d.schema || ""} ${
+            d.fk_table
+          }: ${d.fk_column}`;
           if (!nodesMap.has(sourceId)) {
             nodesMap.set(sourceId, {
               id: sourceId,
               label: sourceId,
               type: "source",
-              collapsed: false, // Initial state: not collapsed
+              collapsed: false,
+              hidden: false,
             });
           }
           if (!nodesMap.has(targetId)) {
@@ -36,13 +41,15 @@ const ForeignKeysDiagram = () => {
               id: targetId,
               label: targetId,
               type: "target",
-              collapsed: false, // Initial state: not collapsed
+              collapsed: false,
+              hidden: false,
             });
           }
           links.push({
             source: sourceId,
             target: targetId,
-            constraint: d.constraint
+            constraint: d.constraint,
+            hidden: false,
           });
         });
         setData({ nodes: Array.from(nodesMap.values()), links: links });
@@ -50,39 +57,40 @@ const ForeignKeysDiagram = () => {
       .catch((err) => console.error(err));
   }, []);
 
-  // Build a collapsible force-directed diagram with collapse/uncollapse of connected nodes on click
   useEffect(() => {
     if (data.nodes.length === 0) return;
 
-    // Create deep copies of the original nodes and links from state.
-    // This prevents D3's force simulation from mutating the React state directly,
-    // ensuring consistent data for filtering and key functions across renders.
-    const currentNodes = data.nodes.map(n => ({ ...n }));
-    const currentLinks = data.links.map(l => ({ ...l }));
+    if (Object.keys(linkedIds).length === 0) {
+      data.links.forEach((link) => {
+        if (!linkedIds[link.source]) linkedIds[link.source] = [];
+        linkedIds[link.source].push(link.target);
+        if (!linkedIds[link.target]) linkedIds[link.target] = [];
+        linkedIds[link.target].push(link.source);
+      });
+    }
 
-    let { width, height } = getDimensions();
+    const { width, height } = getDimensions();
 
-    const svg = d3.select(svgRef.current)
+    const svg = d3
+      .select(svgRef.current)
       .attr("width", width)
       .attr("height", height);
-
-    // Clear previous content.
     svg.selectAll("*").remove();
 
-    // Add zoom container.
     const container = svg.append("g");
 
-    // Create zoom handler.
-    const zoom = d3.zoom()
-      .scaleExtent([0.2, 4])
-      .on("zoom", (event) => {
-        container.attr("transform", event.transform);
-      });
-    svg.call(zoom);
+    svg.call(
+      d3
+        .zoom()
+        .scaleExtent([0, 4])
+        .on("zoom", (event) => {
+          container.attr("transform", event.transform);
+        })
+    );
 
-    // Define an arrow marker.
     const defs = svg.append("defs");
-    defs.append("marker")
+    defs
+      .append("marker")
       .attr("id", "arrowhead")
       .attr("viewBox", "0 -5 10 10")
       .attr("refX", 15)
@@ -94,151 +102,187 @@ const ForeignKeysDiagram = () => {
       .attr("d", "M0,-5L10,0L0,5")
       .attr("fill", "gray");
 
-    // Create a map of all nodes for quick lookup (using the copied nodes)
-    const allNodesMap = new Map(currentNodes.map(node => [node.id, node]));
-
-    // Determine which nodes are hidden (direct children of collapsed nodes)
-    const nodesToHideIds = new Set(); // Stores IDs of nodes that should be hidden
-    currentNodes.forEach(node => { // Iterate through copied nodes to get collapsed state
-      if (node.collapsed) {
-        // Find all direct children of this collapsed node
-        currentLinks.forEach(link => { // Iterate through copied links
-          const sourceId = link.source;
-          const targetId = link.target;
-          if (sourceId === node.id) {
-            nodesToHideIds.add(targetId);
-          }
-        });
-      }
-    });
-
-    // Filter nodes: only include nodes that are not marked as hidden
-    const visibleNodes = currentNodes.filter(d => !nodesToHideIds.has(d.id));
-    const visibleNodeIds = new Set(visibleNodes.map(n => n.id)); // For quick lookup
-
-    // Filter links: only include links where both source and target are visible,
-    // and the source node is not collapsed.
-    const visibleLinks = currentLinks.filter(l => {
-      const sourceId = l.source;
-      const targetId = l.target;
-      const sourceNode = allNodesMap.get(sourceId);
-
-      // A link is visible if:
-      // 1. Its source node is not hidden (i.e., not a direct child of a collapsed node)
-      // 2. Its target node is not hidden (i.e., not a direct child of a collapsed node)
-      // 3. Its source node is not itself collapsed (to hide outgoing links from the collapsed node)
-      return visibleNodeIds.has(sourceId) &&
-             visibleNodeIds.has(targetId) &&
-             sourceNode && !sourceNode.collapsed;
-    });
-
-    // Initialize force simulation with visible nodes.
-    // The link force will be added AFTER links are bound to elements.
-    const simulation = d3.forceSimulation(visibleNodes)
+    const simulation = d3
+      .forceSimulation(data.nodes)
       .force("charge", d3.forceManyBody().strength(-50))
       .force("center", d3.forceCenter(width / 2, height / 2));
 
-    // Draw links (edges) using .join() for efficient updates.
-    // This must happen BEFORE the link force is applied to the simulation,
-    // because d3.forceLink mutates the source/target properties of the link objects it's given.
-    let link = container.append("g")
+    let link = container
+      .append("g")
       .attr("stroke", "gray")
       .attr("stroke-width", 1.5)
       .selectAll("line")
-      .data(visibleLinks, d => `${d.source}-${d.target}`) // d.source and d.target are still string IDs here
-      .join(
-        enter => enter.append("line")
-                      .attr("marker-end", "url(#arrowhead)"),
-        update => update,
-        exit => exit.remove()
-      );
+      .data(data.links, (l) => `${l.source}-${l.target}`)
+      .join("line")
+      .attr("marker-end", "url(#arrowhead)");
 
-    // Now, apply the link force to the simulation.
-    // The forceLink will mutate the 'source' and 'target' properties of the links in 'visibleLinks'
-    // from string IDs to node objects. This is fine because the .data() call already happened
-    // and 'visibleLinks' is a copy, not the original state data.
-    simulation.force("link", d3.forceLink(visibleLinks).id((d) => d.id).distance(150));
+    simulation.force(
+      "link",
+      d3
+        .forceLink(data.links)
+        .id((d) => d.id)
+        .distance(150)
+    );
 
-    // Draw nodes as groups using .join() for efficient updates.
-    let node = container.append("g")
+    // Update function to update nodes and links styles & visibility
+    const updateVisuals = () => {
+      node
+        .attr("display", (d) => (d.hidden ? "none" : null))
+        .select("circle")
+        .attr("r", (d) => (d.collapsed ? 17.5 * 3 : 17.5))
+        .attr("fill", (d) =>
+          d.collapsed ? "green" : d.type === "source" ? "steelblue" : "tomato"
+        );
+
+      // node.select("text").text((d) =>
+      //   d.collapsed ? `${d.label} (collapsed)` : `${d.label} (uncollapsed)`
+      // );
+
+      link.attr("display", (l) => (l.hidden ? "none" : null));
+    };
+
+    let node = container
+      .append("g")
       .attr("stroke", "#fff")
       .attr("stroke-width", 1.5)
-      .selectAll("g.node-group") // Select by class for specificity
-      .data(visibleNodes, d => d.id)
+      .selectAll("g.node-group")
+      .data(data.nodes, (d) => d.id)
       .join(
-        enter => {
-          const nodeEnter = enter.append("g")
-                                 .attr("class", "node-group"); // Add class
-          nodeEnter.append("circle")
-            .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5) // Adjust radius based on collapsed state
-            .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato")) // Adjust color based on collapsed state
+        (enter) => {
+          const nodeEnter = enter.append("g").attr("class", "node-group");
+
+          nodeEnter
+            .append("circle")
+            .attr("r", (d) => (d.collapsed ? 17.5 * 3 : 17.5))
+            .attr("fill", (d) =>
+              d.collapsed
+                ? "green"
+                : d.type === "source"
+                ? "steelblue"
+                : "tomato"
+            )
             .on("click", (event, clickedNode) => {
               event.stopPropagation();
+              const targetState = !clickedNode.collapsed;
 
-              // 1. Toggle the 'collapsed' state of the clicked node.
-              // This updates the React state, triggering a re-render.
-              const newNodesState = data.nodes.map(n =>
-                n.id === clickedNode.id ? { ...n, collapsed: !n.collapsed } : n
-              );
-              setData({ nodes: newNodesState, links: data.links });
+              // Find linked nodes
+              // const linkedNodes = linkedIds[clickedNode.id].map((id) =>
+              //   data.nodes.find((n) => n.id === id)
+              // );
+
+              // const descendantIds = new Set();
+              // {
+              //   const stack = [clickedNode.id];
+              //   while (stack.length > 0) {
+              //     const current = stack.pop();
+              //     (linkedIds[current] || []).forEach((child) => {
+              //       if (!descendantIds.has(child)) { // Prevent infinite loops for cyclic graphs
+              //         descendantIds.add(child);
+              //         stack.push(child);
+              //       }
+              //     });
+              //   }
+              // }
+
+              const linkedNodes = [];
+              const linkedNodeIds = [];
+              {
+                const nodesVisited = new Set();
+                const stack = [clickedNode.id];
+                while (stack.length > 0) {
+                  const current = stack.pop();
+                  linkedIds[current].forEach((id) => {
+                    if (!nodesVisited.has(id)) {
+                      linkedNodeIds.push(id);
+                      nodesVisited.add(id);
+                      stack.push(id);
+                    }
+                  });
+                }
+                linkedNodes.push(
+                  ...linkedNodeIds.map((id) =>
+                    data.nodes.find((n) => n.id === id)
+                  )
+                );
+              }
+              // Toggle hidden on linked nodes
+              linkedNodes.forEach((n) => {
+                n.hidden = targetState;
+              });
+
+              // Toggle hidden for links connected to clicked node
+              data.links.forEach((l) => {
+                if (
+                  linkedNodeIds.indexOf(l.source.id) >= 0 ||
+                  linkedNodeIds.indexOf(l.target.id) >= 0
+                ) {
+                  l.hidden = targetState;
+                }
+              });
+
+              clickedNode.collapsed = targetState;
+              clickedNode.hidden = false;
+
+              updateVisuals();
+              simulation.alpha(0.5).restart();
             });
 
-          nodeEnter.append("text")
+          nodeEnter
+            .append("text")
             .attr("x", 12)
             .attr("y", 5)
             .attr("fill", "navy")
             .style("font-size", "28px")
             .style("pointer-events", "none")
-            .text(d => d.label);
+            // .text((d) =>
+            //   d.collapsed ? `${d.label} (collapsed)` : `${d.label} (uncollapsed)`
+            .text((d) => `${d.label}`);
           return nodeEnter;
         },
-        update => {
-          update.select("circle")
-            .attr("r", d => d.collapsed ? 17.5 * 3 : 17.5)
-            .attr("fill", d => d.collapsed ? "green" : (d.type === "source" ? "steelblue" : "tomato"));
-          update.select("text")
-            .text(d => d.label); // Update text in case label changes (though unlikely here)
-          return update;
-        },
-        exit => exit.remove()
+        (update) => update, // no change needed for now
+        (exit) => exit.remove()
       );
 
-    // Re-apply drag behavior to new/updated circles
-    node.select("circle").call(drag(simulation));
+    // Apply drag behavior
+    node.select("circle").call(
+      d3
+        .drag()
+        .on("start", (event, d) => {
+          if (!event.active) simulation.alphaTarget(0.3).restart();
+          d.fx = d.x;
+          d.fy = d.y;
+        })
+        .on("drag", (event, d) => {
+          d.fx = event.x;
+          d.fy = event.y;
+        })
+        .on("end", (event, d) => {
+          if (!event.active) simulation.alphaTarget(0);
+          d.fx = null;
+          d.fy = null;
+        })
+    );
 
     simulation.on("tick", () => {
-      link.attr("x1", d => d.source.x)
-          .attr("y1", d => d.source.y)
-          .attr("x2", d => d.target.x)
-          .attr("y2", d => d.target.y);
-      
-      node.attr("transform", d => `translate(${d.x}, ${d.y})`);
+      link
+        .attr("x1", (d) => d.source.x)
+        .attr("y1", (d) => d.source.y)
+        .attr("x2", (d) => d.target.x)
+        .attr("y2", (d) => d.target.y);
+
+      node
+        .attr("display", (d) => (d.hidden ? "none" : null))
+        .attr("transform", (d) => `translate(${d.x}, ${d.y})`);
     });
 
-    function drag(simulation) {
-      function dragstarted(event, d) {
-        if (!event.active) simulation.alphaTarget(0.3).restart();
-        d.fx = d.x;
-        d.fy = d.y;
-      }
-      function dragged(event, d) {
-        d.fx = event.x;
-        d.fy = event.y;
-      }
-      function dragended(event, d) {
-        if (!event.active) simulation.alphaTarget(0);
-        d.fx = null;
-        d.fy = null;
-      }
-      return d3.drag()
-        .on("start", dragstarted)
-        .on("drag", dragged)
-        .on("end", dragended);
-    }
-    
+    // Initialize visuals after first render
+    updateVisuals();
+
+    // Add hover tooltip popups
     let tooltip = d3.select("body").select(".tooltip");
     if (tooltip.empty()) {
-      tooltip = d3.select("body")
+      tooltip = d3
+        .select("body")
         .append("div")
         .attr("class", "tooltip")
         .style("position", "absolute")
@@ -249,28 +293,35 @@ const ForeignKeysDiagram = () => {
         .style("pointer-events", "none")
         .style("opacity", 0);
     }
-
-    node.select("circle").on("mouseover", (event, d) => { // Attach mouseover to circles within the 'node' selection
-      tooltip.transition().duration(200).style("opacity", 0.9);
-      const htmlContent = `<strong>Source:</strong> ${d.id}<br/>
+    node
+      .select("circle")
+      .on("mouseover", (event, d) => {
+        // Attach mouseover to circles within the 'node' selection
+        tooltip.transition().duration(200).style("opacity", 0.9);
+        const htmlContent = `<strong>Source:</strong> ${d.id}<br/>
                            <strong>Target:</strong> ${d.label}<br/>
-                           <strong>Type:</strong> ${d.type}`;
-      tooltip.html(htmlContent);
-    })
-    .on("mousemove", (event) => {
-      tooltip.style("left", (event.pageX + 10) + "px")
-             .style("top", (event.pageY + 10) + "px");
-    })
-    .on("mouseout", () => {
-      tooltip.transition().duration(500).style("opacity", 0);
-    });
+                           <strong>Type:</strong> ${d.type}<br/>
+                           <strong>Collapsed:</strong> ${d.collapsed}<br/>
+                           <strong>Hidden:</strong> ${d.hidden}
+                           `;
+        tooltip.html(htmlContent);
+      })
+      .on("mousemove", (event) => {
+        tooltip
+          .style("left", event.pageX + 10 + "px")
+          .style("top", event.pageY + 10 + "px");
+      })
+      .on("mouseout", () => {
+        tooltip.transition().duration(500).style("opacity", 0);
+      });
 
     const handleResize = () => {
-      let { width, height } = getDimensions();
+      const { width, height } = getDimensions();
       svg.attr("width", width).attr("height", height);
-      simulation.force("center", d3.forceCenter(width / 2, height / 2))
-                .alpha(0.5)
-                .restart();
+      simulation
+        .force("center", d3.forceCenter(width / 2, height / 2))
+        .alpha(0.5)
+        .restart();
     };
 
     window.addEventListener("resize", handleResize);
@@ -278,9 +329,8 @@ const ForeignKeysDiagram = () => {
     return () => {
       simulation.stop();
       window.removeEventListener("resize", handleResize);
-      tooltip.remove();
     };
-  }, [data]); // Dependency array includes 'data' to re-run on state change
+  }, [data]);
 
   return <svg ref={svgRef}></svg>;
 };
