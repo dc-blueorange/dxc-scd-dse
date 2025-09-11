@@ -21,12 +21,8 @@ const ForeignKeysDiagram = () => {
         const nodesMap = new Map();
         const links = [];
         fkeys.forEach((d) => {
-          const sourceId = `${d.database || ""}-${d.schema || ""} ${d.table}: ${
-            d.fk_key
-          }`;
-          const targetId = `${d.database || ""}-${d.schema || ""} ${
-            d.fk_table
-          }: ${d.fk_column}`;
+          const sourceId = `${d.database || ""}-${d.schema || ""} ${d.table}: ${d.fk_key}`;
+          const targetId = `${d.database || ""}-${d.schema || ""} ${d.fk_table}: ${d.fk_column}`;
           if (!nodesMap.has(sourceId)) {
             nodesMap.set(sourceId, {
               id: sourceId,
@@ -71,10 +67,7 @@ const ForeignKeysDiagram = () => {
 
     const { width, height } = getDimensions();
 
-    const svg = d3
-      .select(svgRef.current)
-      .attr("width", width)
-      .attr("height", height);
+    const svg = d3.select(svgRef.current).attr("width", width).attr("height", height);
     svg.selectAll("*").remove();
 
     const container = svg.append("g");
@@ -124,15 +117,17 @@ const ForeignKeysDiagram = () => {
         .distance(150)
     );
 
+    const nodeRadius = 17.5;
+    const collapsedNodeRadius = 3 * nodeRadius;
+    const calcRadius = (collapsed) => (collapsed ? collapsedNodeRadius : nodeRadius);
+
     // Update function to update nodes and links styles & visibility
     const updateVisuals = () => {
       node
         .attr("display", (d) => (d.hidden ? "none" : null))
         .select("circle")
-        .attr("r", (d) => (d.collapsed ? 17.5 * 3 : 17.5))
-        .attr("fill", (d) =>
-          d.collapsed ? "green" : d.type === "source" ? "steelblue" : "tomato"
-        );
+        .attr("r", (d) => calcRadius(d.collapsed))
+        .attr("fill", (d) => (d.collapsed ? "green" : d.type === "source" ? "steelblue" : "tomato"));
       link.attr("display", (l) => (l.hidden ? "none" : null));
     };
 
@@ -148,18 +143,13 @@ const ForeignKeysDiagram = () => {
 
           nodeEnter
             .append("circle")
-            .attr("r", (d) => (d.collapsed ? 17.5 * 3 : 17.5))
-            .attr("fill", (d) =>
-              d.collapsed
-                ? "green"
-                : d.type === "source"
-                ? "steelblue"
-                : "tomato"
-            )
+            .attr("r", (d) => calcRadius(d.collapsed))
+            .attr("fill", (d) => (d.collapsed ? "green" : d.type === "source" ? "steelblue" : "tomato"))
             .on("click", (event, clickedNode) => {
               event.stopPropagation();
               const targetState = !clickedNode.collapsed;
 
+              // Get linked nodes
               const linkedNodes = [];
               const linkedNodeIds = [];
               {
@@ -175,11 +165,7 @@ const ForeignKeysDiagram = () => {
                     }
                   });
                 }
-                linkedNodes.push(
-                  ...linkedNodeIds.map((id) =>
-                    data.nodes.find((n) => n.id === id)
-                  )
-                );
+                linkedNodes.push(...linkedNodeIds.map((id) => data.nodes.find((n) => n.id === id)));
               }
               // Toggle hidden on linked nodes
               linkedNodes.forEach((n) => {
@@ -188,14 +174,12 @@ const ForeignKeysDiagram = () => {
 
               // Toggle hidden for links connected to clicked node
               data.links.forEach((l) => {
-                if (
-                  linkedNodeIds.indexOf(l.source.id) >= 0 ||
-                  linkedNodeIds.indexOf(l.target.id) >= 0
-                ) {
+                if (linkedNodeIds.indexOf(l.source.id) >= 0 || linkedNodeIds.indexOf(l.target.id) >= 0) {
                   l.hidden = targetState;
                 }
               });
 
+              // Show collapsed clickedNode
               clickedNode.collapsed = targetState;
               clickedNode.hidden = false;
 
@@ -210,8 +194,6 @@ const ForeignKeysDiagram = () => {
             .attr("fill", "navy")
             .style("font-size", "28px")
             .style("pointer-events", "none")
-            // .text((d) =>
-            //   d.collapsed ? `${d.label} (collapsed)` : `${d.label} (uncollapsed)`
             .text((d) => `${d.label}`);
           return nodeEnter;
         },
@@ -239,16 +221,43 @@ const ForeignKeysDiagram = () => {
         })
     );
 
-    simulation.on("tick", () => {
-      link
-        .attr("x1", (d) => d.source.x)
-        .attr("y1", (d) => d.source.y)
-        .attr("x2", (d) => d.target.x)
-        .attr("y2", (d) => d.target.y);
+    function getEdgePoint(d, which) {
+      // (d.source.x, d.source.y) and (d.target.x, d.target.y) are node centers
+      let r = nodeRadius - 5; // default node radius...no idea why -5, but for some reason this is needed to get the arrow tip to just touch the circle...odd....
+      if (which === "source" && d.source.collapsed) r = collapsedNodeRadius;
+      if (which === "target" && d.target.collapsed) r = collapsedNodeRadius;
 
-      node
-        .attr("display", (d) => (d.hidden ? "none" : null))
-        .attr("transform", (d) => `translate(${d.x}, ${d.y})`);
+      const source = { x: d.source.x, y: d.source.y };
+      const target = { x: d.target.x, y: d.target.y };
+
+      let dx, dy, angle;
+      if (which === "source") {
+        dx = target.x - source.x;
+        dy = target.y - source.y;
+        angle = Math.atan2(dy, dx);
+        return {
+          x: source.x + Math.cos(angle) * r,
+          y: source.y + Math.sin(angle) * r,
+        };
+      } else {
+        dx = source.x - target.x;
+        dy = source.y - target.y;
+        angle = Math.atan2(dy, dx);
+        return {
+          x: target.x + Math.cos(angle) * r,
+          y: target.y + Math.sin(angle) * r,
+        };
+      }
+    }
+
+    simulation.on("tick", () => {
+      // prettier-ignore
+      link.attr("x1", function (d) { return getEdgePoint(d, "source").x; })
+        .attr("y1", function (d) { return getEdgePoint(d, "source").y; })
+        .attr("x2", function (d) { return getEdgePoint(d, "target").x; })
+        .attr("y2", function (d) { return getEdgePoint(d, "target").y; });
+
+      node.attr("display", (d) => (d.hidden ? "none" : null)).attr("transform", (d) => `translate(${d.x}, ${d.y})`);
     });
 
     // Initialize visuals after first render
@@ -283,9 +292,7 @@ const ForeignKeysDiagram = () => {
         tooltip.html(htmlContent);
       })
       .on("mousemove", (event) => {
-        tooltip
-          .style("left", event.pageX + 10 + "px")
-          .style("top", event.pageY + 10 + "px");
+        tooltip.style("left", event.pageX + 10 + "px").style("top", event.pageY + 10 + "px");
       })
       .on("mouseout", () => {
         tooltip.transition().duration(500).style("opacity", 0);
