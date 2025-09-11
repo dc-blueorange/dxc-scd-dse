@@ -75,7 +75,7 @@ const ForeignKeysDiagram = () => {
     svg.call(
       d3
         .zoom()
-        .scaleExtent([0, 4])
+        .scaleExtent([0, 1])
         .on("zoom", (event) => {
           container.attr("transform", event.transform);
         })
@@ -307,6 +307,50 @@ const ForeignKeysDiagram = () => {
         .restart();
     };
 
+    const zoom = d3
+      .zoom()
+      .scaleExtent([0, 1])
+      .on("zoom", (event) => {
+        container.attr("transform", event.transform);
+      });
+
+    // Autozoom out initially to show all nodes
+    // Assume: svg is your D3 selection (.call(zoom)), g is your g element holding nodes, width and height are SVG dims
+    function zoomToFit(nodes, svg, g, zoom, width, height, margin = 40) {
+      // 1. Compute bounds
+      const minX = d3.min(nodes, (d) => d.x);
+      const maxX = d3.max(nodes, (d) => d.x);
+      const minY = d3.min(nodes, (d) => d.y);
+      const maxY = d3.max(nodes, (d) => d.y);
+
+      const nodeWidth = maxX - minX;
+      const nodeHeight = maxY - minY;
+
+      // 2. Compute scale
+      const scale = Math.min((width - margin * 2) / nodeWidth, (height - margin * 2) / nodeHeight);
+
+      // 3. Center
+      const midX = (minX + maxX) / 2;
+      const midY = (minY + maxY) / 2;
+      const centerX = width / 2;
+      const centerY = height / 2;
+
+      // 4. Build transform
+      const transform = d3.zoomIdentity.translate(centerX, centerY).scale(scale).translate(-midX, -midY);
+
+      // 5. Animate zoom
+      svg.transition().duration(750).ease(d3.easeCubic).call(zoom.transform, transform);
+    }
+
+    svg.call(zoom);
+
+    let initialZoomedOut = false;
+    simulation.on("end", () => {
+      if (!initialZoomedOut) setTimeout(() => { zoomToFit(data.nodes, svg, container, zoom, width, height, 20);  }, 10)
+      initialZoomedOut = true;
+    });
+
+    // Deal w/window resizes
     window.addEventListener("resize", handleResize);
 
     return () => {
