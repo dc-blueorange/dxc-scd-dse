@@ -17,4 +17,4 @@ These stats as well as the .json and .csv files may be used directly for analysi
 
 Of the 2 vizualizations, the Foreign Keys Diagram is perhaps the more useful.
 
-![DXC Foreign Keys Diagram]("DXC Foreign Keys.png")
+![DXC Foreign Keys Diagram](DXC Foreign Keys.png)
