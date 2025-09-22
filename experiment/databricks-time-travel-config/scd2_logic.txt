@@ -1,0 +1,32 @@
+-- Read changes from staging:
+df_changes = spark.read.format("delta").load("path-to-staging")
+
+-- Read target dimension table:
+from delta.tables import DeltaTable
+delta_dim = DeltaTable.forPath(spark, "path-to-delta-dim-table")
+
+-- Define SCD2 MERGE logic:
+from pyspark.sql.functions import current_timestamp, lit
+df_changes = df_changes.withColumn("is_current", lit(True)) \
+.withColumn("valid_from", current_timestamp()) \
+.withColumn("valid_to", lit(None))
+merge_condition = "target.business_key = source.business_key AND target.is_current =
+delta_dim.alias("target").merge(
+source=df_changes.alias("source"),
+condition=merge_condition
+).whenMatchedUpdate(
+condition="target.tracked_col1 <> source.tracked_col1 OR target.tracked_col2 <> s
+set={
+"is_current": "false",
+"valid_to": "source.valid_from"
+}
+).whenNotMatchedInsert(
+values={
+"business_key": "source.business_key",
+"tracked_col1": "source.tracked_col1",
+"tracked_col2": "source.tracked_col2",
+"is_current": True,
+"valid_from": "source.valid_from",
+"valid_to": None
+}
+).execute()
