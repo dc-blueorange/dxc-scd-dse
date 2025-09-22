@@ -1,0 +1,14 @@
+-- Enable CDC on the database:
+USE YourDatabaseName;
+EXEC sys.sp_cdc_enable_db;
+
+-- Enable CDC on a table (track columns):
+EXEC sys.sp_cdc_enable_table
+@source_schema = N'dbo',
+@source_name = N'Employee',
+@role_name = NULL,
+@captured_column_list = N'FirstName,Department';
+
+-- Confirm CDC is enabled:
+SELECT is_cdc_enabled FROM sys.databases WHERE name = 'YourDatabaseName';
+SELECT * FROM cdc.change_tables;
